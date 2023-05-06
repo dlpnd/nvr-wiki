@@ -2,7 +2,7 @@
 
 ---
 
-## Keys
+## DirectX Scan Codes
 
 The keys are DirectX Scan Codes.
 
@@ -123,6 +123,8 @@ Key Button
 ```
 
 </details>
+
+## Keys
 
 ### KeyAdd
 
