@@ -63,6 +63,12 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
+      algolia: {
+        appId: '6CLCEULF2T',
+        apiKey: 'eebdc3f68946a35a040ca4da530358f3',
+        indexName: 'nvr-wiki',
+        contextualSearch: false,
+      },
       navbar: {
         title: 'New Vegas Reloaded - Wiki',
         logo: {
