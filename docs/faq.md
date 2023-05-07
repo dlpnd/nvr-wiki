@@ -17,7 +17,7 @@ sidebar_position: 3
 - These shortcuts can be changed in the: `NewVegasReloaded/nvse/Plugins/NewVegasReloaded.dll.toml` file.
 
 :::note
-More in [Menu](/docs/Main%20Settings/Menu)
+More in [Menu](/docs/Main#menu)
 :::
 
 ### Keyboards without `Numpad`
