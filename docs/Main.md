@@ -138,25 +138,17 @@ sidebar_position: 4
 
 ### SmartControl
 
-#### Enabled
+#### FlowControl
 
->Default: true
+>Default: -0.5
 
-#### KeyAdd
+#### SmartControl
 
->Default: 78
+>Default: false
 
-#### KeySubtract
+#### SmartControlFPS
 
->Default: 74
-
-#### ScrollMultiplier
-
->Default: 2.0
-
-#### StepValue
-
->Default: 1.0
+>Default: 60
 
 ### Stuttering
 
