@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunknvr_wiki=self.webpackChunknvr_wiki||[]).push([[2535],{5641:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Changelog - May 2023","permalink":"/nvr-wiki/blog/2023/05/06"}]}')}}]);
