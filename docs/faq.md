@@ -250,7 +250,7 @@ To use `dxvk` and `ReShade` together, first install latest `ReShade` and choose 
 
 ## NVR + dxvk + ReShade
 
-This is tested on `nvidia` GPU, Windwos 11, latest `nvidia` drivers, `DLDSR` is `disabled` in nvidia control panel but `Fallout New Vegas` still set to native resolution, all other scaling features are `off`, `Fallout New Vegas` profile are setup according to [FalloutNV-Performance-Guide](https://wallsogb.github.io/FalloutNV-Performance-Guide) for the nvidia control panel, ReShade `5.25` and `5.6`, latest `NVR` nightly
+This is tested on `nvidia` GPU, `Windows 11`, latest `nvidia` drivers, `DLDSR` is `disabled` in nvidia control panel but `Fallout New Vegas` still set to native resolution, all other scaling features are `off`, `Fallout New Vegas` profile are setup according to [FalloutNV-Performance-Guide](https://wallsogb.github.io/FalloutNV-Performance-Guide) for the nvidia control panel, ReShade `5.25` and `5.6`, latest `NVR` nightly
 
 1. Install `NVR`
 1. Install `dxvk` according to [FalloutNV-Performance-Guide](https://wallsogb.github.io/FalloutNV-Performance-Guide)
