@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>New Vegas Reloaded Blog</title>
+        <link>https://dlpnd.github.io/nvr-wiki/blog</link>
+        <description>New Vegas Reloaded Blog</description>
+        <lastBuildDate>Sat, 06 May 2023 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[Changelog - May 2023]]></title>
+            <link>https://dlpnd.github.io/nvr-wiki/blog/2023/05/06</link>
+            <guid>https://dlpnd.github.io/nvr-wiki/blog/2023/05/06</guid>
+            <pubDate>Sat, 06 May 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[* Transfered the toml config into individual md files]]></description>
+            <content:encoded><![CDATA[<ul><li>Transfered the toml config into individual md files</li></ul>]]></content:encoded>
+            <category>changelog</category>
+        </item>
+    </channel>
+</rss>
