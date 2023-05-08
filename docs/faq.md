@@ -116,7 +116,7 @@ More in [Cinema](/docs/Shaders/Cinema)
 
 ![Ash Piles](/img/mesh-alphas.png "Ash Piles")
 
-Use this zip to replace the `Alpha Property` of the `Meshes` (credits @𝔹𝕒𝕝𝕖)
+Use this zip to replace the `Alpha Property` of the `Meshes` (credits [@𝔹𝕒𝕝𝕖](https://www.nexusmods.com/newvegas/users/90554463))
 
 - New Vegas: [AshPiles.rar](/zip/AshPiles.rar)
 - TTW: [AshpilesTTW.rar](/zip/AshpilesTTW.rar)
