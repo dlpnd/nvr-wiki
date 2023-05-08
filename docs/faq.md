@@ -248,6 +248,43 @@ ReShade works but can pose problems with `Depth Buffer` effects, which require d
 
 To use `dxvk` and `ReShade` together, first install latest `ReShade` and choose `Vulkan` option during install. Then, install `dxvk`.
 
+## NVR + dxvk + ReShade
+
+This is tested on `nvidia` GPU, Windwos 11, latest `nvidia` drivers, `DLDSR` enabled in nvidia control panel but `Fallout New Vegas` still set to native resolution, all other scaling features are `off`, `Fallout New Vegas` profile are setup according to [FalloutNV-Performance-Guide](https://wallsogb.github.io/FalloutNV-Performance-Guide) for the nvidia control panel, ReShade `5.25` and `5.6`, latest `NVR` nightly
+
+1. Install `NVR`
+1. Install `dxvk` according to [FalloutNV-Performance-Guide](https://wallsogb.github.io/FalloutNV-Performance-Guide)
+1. Install `ReShade` in Global `Vulkan` mode
+1. Turn `off` in game `MSAA`
+1. Run the game
+
+:::tip Note
+If correct `depth` is `visible/selectable` by `ReShade` then enjoy.
+:::
+
+:::caution
+If the correct `depth` is `selected` but at the wrong `resolution` (for example your game is set to 2560x1440p but the correct `depth buffer` is 2560x2048).
+:::
+
+Then:
+
+1. Take the `depth buffer` height, in this example: `2048` and devide by the games height of `1440`, which will give you a ratio of `1.422`
+1. Add `Reshade_Depth_input_y_scale` to your ReShade global processor definition and set it to `1.422`
+
+:::note Math Calculations
+You can enable `Display Depth` `Shader` in `ReShade`
+
+It will display your depth map.
+
+It also has the option to manually set the `ratio` of the `Depth Map` visually.
+
+You can use it to get the `ratio` needed but you will still need to edit the `ini`
+:::
+
+:::note
+Most depth base effect should works. Some still doesnt and dont know how to fix.
+:::
+
 ## Any recommended mods for best experience?
 
 - [lStewieAl tweaks](https://www.nexusmods.com/newvegas/mods/66347) to improve performance.
