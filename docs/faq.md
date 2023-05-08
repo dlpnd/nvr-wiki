@@ -24,7 +24,7 @@ More in [Menu](/docs/Main#menu)
 
 For keyboards without `Numpad`, you can copy this section to replace the one in the `toml` file:
 
-```ini
+```toml
 [_Main.Menu.Keys]
 KeyAdd = 18
 KeyDown = 208
