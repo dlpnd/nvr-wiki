@@ -4,6 +4,10 @@
 
 ## Main
 
+### PostProcess
+
+>Default: true
+
 ### Activators
 
 >Default: true
@@ -78,6 +82,6 @@
 
 ## Status
 
-### PostProcess
+### Enabled
 
 >Default: true

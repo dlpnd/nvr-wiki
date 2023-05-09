@@ -4,9 +4,13 @@
 
 ## Main
 
-### GlobalMultiplier
+### DayMultiplier
 
->Default: 2.0
+>Default: 0.5
+
+### NightMultiplier
+
+>Default: 0.5
 
 ### LightShaftPasses
 
@@ -16,15 +20,7 @@
 
 >Default: 0.6
 
-### RayB
-
->Default: 1.0
-
 ### RayDensity
-
->Default: 1.0
-
-### RayG
 
 >Default: 1.0
 
@@ -33,10 +29,6 @@
 >Default: 1.0
 
 ### RayLength
-
->Default: 1.0
-
-### RayR
 
 >Default: 1.0
 
@@ -55,6 +47,24 @@
 ### TimeEnabled
 
 >Default: false
+
+## Coloring
+
+### RayR
+
+>Default: 1.0
+
+### RayG
+
+>Default: 1.0
+
+### RayB
+
+>Default: 1.0
+
+### Saturate
+
+>Default: 0.0
 
 ## Status
 

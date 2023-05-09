@@ -120,6 +120,10 @@
 
 ## Main
 
+### PostProcess
+
+>Default: true
+
 ### BlurShadowMaps
 
 >Default: true
@@ -346,6 +350,6 @@
 
 ## Status
 
-### PostProcess
+### Enabled
 
 >Default: true

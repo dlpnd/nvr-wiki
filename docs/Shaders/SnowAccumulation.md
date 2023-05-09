@@ -18,11 +18,11 @@
 
 ### Decrease
 
->Default: 1e-04
+>Default: 12
 
 ### Increase
 
->Default: 5e-04
+>Default: 0.8
 
 ### SunPower
 

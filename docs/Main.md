@@ -408,7 +408,7 @@ Key Button
 
 #### PositionY
 
->Default: 120
+>Default: 60
 
 #### RowSpace
 
@@ -416,7 +416,7 @@ Key Button
 
 #### RowsPerPage
 
->Default: 30
+>Default: 35
 
 #### TextColorEditing
 
