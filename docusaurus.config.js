@@ -64,8 +64,8 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       algolia: {
-        appId: '6CLCEULF2T',
-        apiKey: 'eebdc3f68946a35a040ca4da530358f3',
+        appId: 'N75JTB7151',
+        apiKey: '76d537c5d12a397607f47a7a782a20be',
         indexName: 'nvr-wiki',
         contextualSearch: false,
       },
