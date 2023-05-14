@@ -6,11 +6,7 @@
 
 ### DayMultiplier
 
->Default: 0.5
-
-### NightMultiplier
-
->Default: 0.5
+>Default: 0.8
 
 ### LightShaftPasses
 
@@ -18,11 +14,15 @@
 
 ### Luminance
 
->Default: 0.6
+>Default: 0.8
+
+### NightMultiplier
+
+>Default: 1.0
 
 ### RayDensity
 
->Default: 1.0
+>Default: 0.0
 
 ### RayIntensity
 
@@ -46,7 +46,7 @@
 
 ### TimeEnabled
 
->Default: false
+>Default: true
 
 ## Coloring
 

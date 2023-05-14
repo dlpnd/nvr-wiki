@@ -8,6 +8,10 @@
 
 >Default: true
 
+### UseCastShadowFlag
+
+>Default: false
+
 ### Activators
 
 >Default: true
