@@ -36,7 +36,7 @@
 
 ### MinBrightness
 
->Default: 0.1
+>Default: 0.2
 
 ## Status
 

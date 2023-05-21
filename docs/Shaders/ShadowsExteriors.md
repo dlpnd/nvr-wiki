@@ -130,7 +130,7 @@
 
 ### Darkness
 
->Default: 0.5
+>Default: 0.8
 
 ### Enabled
 
