@@ -69,6 +69,15 @@ const config = {
         indexName: 'nvr-wiki',
         contextualSearch: false,
       },
+      colorMode: {
+        defaultMode: "dark",
+        respectPrefersColorScheme: false,
+      },
+      docs: {
+        sidebar: {
+          hideable: true,
+        },
+      },
       navbar: {
         title: 'New Vegas Reloaded - Wiki',
         logo: {
