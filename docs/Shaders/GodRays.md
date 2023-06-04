@@ -6,7 +6,7 @@
 
 ### DayMultiplier
 
->Default: 0.8
+>Default: 0.5
 
 ### LightShaftPasses
 

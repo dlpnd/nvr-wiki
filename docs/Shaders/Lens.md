@@ -6,11 +6,11 @@
 
 ### DirtLensAmount
 
->Default: 1.0
+>Default: 0.2
 
 ### ExteriorBloomTreshold
 
->Default: 0.8
+>Default: 0.9
 
 ### InteriorBloomTreshold
 

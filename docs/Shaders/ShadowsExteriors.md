@@ -160,6 +160,10 @@
 
 >Default: 8000
 
+### UsePointShadows
+
+>Default: true
+
 ## Middle
 
 ### Activators

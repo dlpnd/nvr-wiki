@@ -6,7 +6,7 @@
 
 ### AspectRatio
 
->Default: 2.39
+>Default: 1
 
 ### ChromaticAberration
 
