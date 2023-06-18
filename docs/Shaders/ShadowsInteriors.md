@@ -84,6 +84,10 @@
 
 >Default: true
 
+### DrawDistance
+
+>Default: 4000
+
 ## Status
 
 ### Enabled
