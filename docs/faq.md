@@ -231,7 +231,7 @@ It depends on your install, but it can for most recent configs dramatically impr
 The setting "float emulation" should be set to "strict".
 
 ```ini
-3d9.floatEmulation = Strict
+d3d9.floatEmulation = Strict
 ```
 
 :::warning
