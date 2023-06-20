@@ -62,7 +62,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/nvr-social-card.png',
       algolia: {
         appId: 'N75JTB7151',
         apiKey: '76d537c5d12a397607f47a7a782a20be',
