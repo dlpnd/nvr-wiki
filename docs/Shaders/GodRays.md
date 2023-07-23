@@ -36,10 +36,6 @@
 
 >Default: 4.0
 
-### Saturate
-
->Default: 0.0
-
 ### SunGlareEnabled
 
 >Default: true

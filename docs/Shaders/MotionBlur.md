@@ -24,12 +24,6 @@
 
 >Default: 6.0
 
-## Status
-
-### Enabled
-
->Default: false
-
 ## ThirdPersonView
 
 ### BlurCutOff
@@ -51,3 +45,9 @@
 ### GaussianWeight
 
 >Default: 6.0
+
+## Status
+
+### Enabled
+
+>Default: false

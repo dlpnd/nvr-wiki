@@ -6,15 +6,11 @@
 
 ### AspectRatio
 
->Default: 1
+>Default: 1.0
 
 ### ChromaticAberration
 
 >Default: 2.0
-
-### DirtLensAmount
-
->Default: 0.3
 
 ### FilmGrainAmount
 
@@ -22,7 +18,7 @@
 
 ### Mode
 
->Default: 1
+>Default: 2
 
 ### OverlayStrength
 

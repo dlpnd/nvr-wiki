@@ -392,6 +392,10 @@ Key Button
 
 >Default: 200
 
+#### EntryUseNumpad
+
+>Default: true
+
 ### Style
 
 #### ItemColumnSize

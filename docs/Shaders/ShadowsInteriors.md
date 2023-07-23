@@ -44,10 +44,6 @@
 
 >Default: true
 
-### Enabled
-
->Default: true
-
 ### Furniture
 
 >Default: true

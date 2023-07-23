@@ -6,7 +6,7 @@
 
 ### BlurMultiplier
 
->Default: 1
+>Default: 1.0
 
 ### DistanceFade
 
@@ -52,7 +52,7 @@
 
 ### Glossiness
 
->Default: 7.0
+>Default: 7
 
 ### SkyTintSaturation
 

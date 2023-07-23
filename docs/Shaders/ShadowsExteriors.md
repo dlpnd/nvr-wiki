@@ -130,7 +130,7 @@
 
 ### Darkness
 
->Default: 0.8
+>Default: 0.6
 
 ### Enabled
 
@@ -160,7 +160,11 @@
 
 >Default: 8000
 
-### UsePointShadows
+### UsePointShadowsDay
+
+>Default: false
+
+### UsePointShadowsNight
 
 >Default: true
 

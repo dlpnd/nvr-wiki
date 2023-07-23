@@ -10,11 +10,11 @@
 
 ### Decrease
 
->Default: 0.3
+>Default: 1.2
 
 ### Increase
 
->Default: 1.2
+>Default: 0.3
 
 ### PuddleCoeff_B
 

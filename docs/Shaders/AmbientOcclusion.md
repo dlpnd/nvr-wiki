@@ -30,7 +30,7 @@
 
 ### Range
 
->Default: 30.1
+>Default: 30.0
 
 ### Samples
 
