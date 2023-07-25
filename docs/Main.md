@@ -12,21 +12,31 @@ sidebar_position: 4
 
 #### ChasingFirst
 
+ Use Chasing camera in first person.
+
 >Default: false
 
 #### ChasingThird
+
+ Use Chasing camera in third person.
 
 >Default: false
 
 #### Crosshair
 
+ Display crosshair in Camera Mode.
+
 >Default: 0
 
 #### Enabled
 
+ Activate Camera Mode.
+
 >Default: false
 
 #### FoV
+
+ custom FOV in Camera Mode.
 
 >Default: 90.0
 
@@ -76,33 +86,49 @@ sidebar_position: 4
 
 #### CompileEffects
 
+ 1 to always recompile, 2 to recompile newer versions.
+
 >Default: 2
 
 #### CompileShaders
+
+ 1 to always recompile, 2 to recompile newer versions.
 
 >Default: 2
 
 #### DebugMode
 
+ Enables debug features like capture shaders and print shadowmaps.
+
 >Default: false
 
 #### DebugVar1
+
+ Custom variable used when developing shaders.
 
 >Default: 1.0
 
 #### DebugVar2
 
+ Custom variable used when developing shaders.
+
 >Default: 1.0
 
 #### DebugVar3
+
+ Custom variable used when developing shaders.
 
 >Default: 1.0
 
 #### DebugVar4
 
+ Custom variable used when developing shaders.
+
 >Default: 1.0
 
 #### TraceShaders
+
+ Keyboard shortcut to print used shaders list to the log.
 
 >Default: 25
 
@@ -190,17 +216,25 @@ sidebar_position: 4
 
 #### ForceMSAA
 
+ Override game setting to force MSAA.
+
 >Default: false
 
 #### RenderEffects
+
+ Toggle rendering of all effects.
 
 >Default: true
 
 #### ReplaceIntro
 
+ Controls rendering of the main menu custom video.
+
 >Default: false
 
 #### ScreenshotKey
+
+ Keycode for custom screenshot hotkey (removes HUD and saves as jpg).
 
 >Default: 87
 
@@ -208,15 +242,21 @@ sidebar_position: 4
 
 #### RemovePrecipitations
 
+ Disables vanilla rain and other precipitations.
+
 >Default: false
 
 ### Water
 
 #### ForceReflections
 
+ Always render the full world in reflection for HD reflections.
+
 >Default: true
 
 #### RemoveUnderwater
+
+ Disables fog underwater. Not compatible with custom underwater shader.
 
 >Default: false
 
@@ -350,49 +390,73 @@ Key Button
 
 #### KeyAdd
 
+ Keycode for increment value shortcut in menu.
+
 >Default: 74
 
 #### KeyDown
+
+ Keycode for the hotkey to navigate down in the main menu.
 
 >Default: 208
 
 #### KeyEditing
 
+ Keycode for the hotkey to toggle custom value entry mode in menu.
+
 >Default: 156
 
 #### KeyEnable
+
+ Keycode for the hotkey to activate the main menu.
 
 >Default: 24
 
 #### KeyLeft
 
+ Keycode for the hotkey to navigate left in the main menu.
+
 >Default: 203
 
 #### KeyPageDown
+
+ Keycode for the hotkey to go to next page of options in the main menu.
 
 >Default: 209
 
 #### KeyPageUp
 
+ Keycode for the hotkey to go to previous page of options in the main menu.
+
 >Default: 201
 
 #### KeyRight
+
+ Keycode for the hotkey to navigate right in the main menu.
 
 >Default: 205
 
 #### KeySave
 
+ Keycode for the hotkey to save changes done in the main menu (if not used, will revert upon restart).
+
 >Default: 28
 
 #### KeySubtract
+
+ Keycode for decrement value shortcut in menu.
 
 >Default: 78
 
 #### KeyUp
 
+ Keycode for the hotkey to navigate up in the main menu.
+
 >Default: 200
 
 #### EntryUseNumpad
+
+ Wether to use the numpad numbers or the other numbers. Start entry with "=" or numpad "Enter"
 
 >Default: true
 
@@ -400,77 +464,115 @@ Key Button
 
 #### ItemColumnSize
 
+ Custom size for menu columns.
+
 >Default: 300
 
 #### MainItemColumnSize
+
+ Custom size for menu leftmost column.
 
 >Default: 100
 
 #### PositionX
 
+ Left position of the menu on the screen.
+
 >Default: 60
 
 #### PositionY
+
+ Top position of the menu on the screen.
 
 >Default: 60
 
 #### RowSpace
 
+ Custom padding between rows for the menu.
+
 >Default: 0
 
 #### RowsPerPage
+
+ Max amount of items to display per page on the menu.
 
 >Default: 35
 
 #### TextColorEditing
 
+ Custom color for value being edited during value entry.
+
 >Default: '255,100,50'
 
 #### TextColorEnabled
+
+ Custom color for active effects.
 
 >Default: '100,170,90'
 
 #### TextColorNormal
 
+ Custom color for normal menu text.
+
 >Default: '240,200,80'
 
 #### TextColorSelected
+
+ Custom color for selected menu text.
 
 >Default: '255,255,255'
 
 #### TextFont
 
+ Custom font for menu text.
+
 >Default: 'Calibri'
 
 #### TextFontStatus
+
+ Custom font for enabled/disabled shader text.
 
 >Default: 'Consolas'
 
 #### TextShadowColorEditing
 
+ Custom shadow color for value being edited during value entry.
+
 >Default: '50,50,50'
 
 #### TextShadowColorEnabled
+
+ Custom shadow color for enabled/disabled text.
 
 >Default: '50,50,50'
 
 #### TextShadowColorNormal
 
+ Custom shadow color for normal text.
+
 >Default: '50,50,50'
 
 #### TextShadowColorSelected
+
+ Custom shadow color for selected text.
 
 >Default: '50,50,50'
 
 #### TextSize
 
+ Font size for normal text.
+
 >Default: 22
 
 #### TextSizeStatus
 
+ Font size for enabled/disabled text.
+
 >Default: 12
 
 #### TitleColumnSize
+
+ Custom size for title column.
 
 >Default: 850
 
@@ -481,6 +583,8 @@ Key Button
 ### Main
 
 #### Enabled
+
+ Custom camera animation when player character goes to sleep.
 
 >Default: false
 
