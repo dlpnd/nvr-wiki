@@ -1,0 +1,669 @@
+[_Main.CameraMode.Main]
+ChasingFirst = false    # Use Chasing camera in first person.
+ChasingThird = false    # Use Chasing camera in third person.
+Crosshair = 0           # Display crosshair in Camera Mode.
+Enabled = false         # Activate Camera Mode.
+FoV = 90.0              # custom FOV in Camera Mode.
+
+[_Main.CameraMode.Positioning]
+AimingOffsetX = -1.0
+AimingOffsetY = 15.0
+AimingOffsetZ = 4.5
+DialogOffsetX = -50.0
+DialogOffsetY = -50.0
+DialogOffsetZ = 10.0
+OffsetX = 0.0
+OffsetY = 15.0
+OffsetZ = 5.0
+
+[_Main.Develop.Main]
+CompileEffects = 2      # 1 to always recompile, 2 to recompile newer versions.
+CompileShaders = 2      # 1 to always recompile, 2 to recompile newer versions.
+DebugMode = false       # Enables debug features like capture shaders and print shadowmaps.
+DebugVar1 = 1.0         # Custom variable used when developing shaders.
+DebugVar2 = 1.0         # Custom variable used when developing shaders.
+DebugVar3 = 1.0         # Custom variable used when developing shaders.
+DebugVar4 = 1.0         # Custom variable used when developing shaders.
+TraceShaders = 25       # Keyboard shortcut to print used shaders list to the log.
+
+[_Main.FlyCam.Main]
+Enabled = true
+KeyAdd = 78
+KeySubtract = 74
+ScrollMultiplier = 2.0
+StepValue = 1.0
+
+[_Main.FrameRate.SmartControl]
+FlowControl = -0.5
+SmartControl = false
+SmartControlFPS = 60
+
+[_Main.FrameRate.Stuttering]
+BackgroundThreadPriority = 5
+SmartBackgroundProcess = false
+
+[_Main.LowHFSound.Main]
+FatigueCoeff = 0.5
+FatigueEnabled = true
+HealthCoeff = 0.5
+HealthEnabled = false
+
+[_Main.Main.Misc]
+ForceMSAA = false           # Override game setting to force MSAA.
+RenderEffects = true        # Toggle rendering of all effects.
+ReplaceIntro = false        # Controls rendering of the main menu custom video.
+ScreenshotKey = 87          # Keycode for custom screenshot hotkey (removes HUD and saves as jpg).
+
+[_Main.Main.Precipitations]
+RemovePrecipitations = false   # Disables vanilla rain and other precipitations.
+
+[_Main.Main.Water]
+ForceReflections = true     # Always render the full world in reflection for HD reflections.
+RemoveUnderwater = false    # Disables fog underwater. Not compatible with custom underwater shader.
+
+[_Main.Menu.Keys]
+KeyAdd = 74                 # Keycode for increment value shortcut in menu.
+KeyDown = 208               # Keycode for the hotkey to navigate down in the main menu.
+KeyEditing = 156            # Keycode for the hotkey to toggle custom value entry mode in menu.
+KeyEnable = 24              # Keycode for the hotkey to activate the main menu.
+KeyLeft = 203               # Keycode for the hotkey to navigate left in the main menu.
+KeyPageDown = 209           # Keycode for the hotkey to go to next page of options in the main menu.
+KeyPageUp = 201             # Keycode for the hotkey to go to previous page of options in the main menu.
+KeyRight = 205              # Keycode for the hotkey to navigate right in the main menu.
+KeySave = 28                # Keycode for the hotkey to save changes done in the main menu (if not used, will revert upon restart).
+KeySubtract = 78            # Keycode for decrement value shortcut in menu.
+KeyUp = 200                 # Keycode for the hotkey to navigate up in the main menu.
+EntryUseNumpad = true       # Wether to use the numpad numbers or the other numbers. Start entry with "=" or numpad "Enter"
+
+[_Main.Menu.Style]
+ItemColumnSize = 300                    # Custom size for menu columns.
+MainItemColumnSize = 100                # Custom size for menu leftmost column.
+PositionX = 60                          # Left position of the menu on the screen.
+PositionY = 60                          # Top position of the menu on the screen.
+RowSpace = 0                            # Custom padding between rows for the menu.
+RowsPerPage = 35                        # Max amount of items to display per page on the menu.
+TextColorEditing = '255,100,50'         # Custom color for value being edited during value entry.
+TextColorEnabled = '100,170,90'         # Custom color for active effects.
+TextColorNormal = '240,200,80'          # Custom color for normal menu text.
+TextColorSelected = '255,255,255'       # Custom color for selected menu text.
+TextFont = 'Calibri'                    # Custom font for menu text.
+TextFontStatus = 'Consolas'             # Custom font for enabled/disabled shader text.
+TextShadowColorEditing = '50,50,50'     # Custom shadow color for value being edited during value entry.
+TextShadowColorEnabled = '50,50,50'     # Custom shadow color for enabled/disabled text.
+TextShadowColorNormal = '50,50,50'      # Custom shadow color for normal text.
+TextShadowColorSelected = '50,50,50'    # Custom shadow color for selected text.
+TextSize = 22                           # Font size for normal text.
+TextSizeStatus = 12                     # Font size for enabled/disabled text.
+TitleColumnSize = 850                   # Custom size for title column.
+
+[_Main.SleepingMode.Main]
+Enabled = false                         # Custom camera animation when player character goes to sleep.
+Mode = 0
+
+[_Main.WeatherMode.General]
+CoeffFogB = 0.86
+CoeffFogG = 0.88
+CoeffFogR = 0.9
+CoeffNightB = 0.5
+CoeffNightG = 0.6
+CoeffNightR = 0.6
+CoeffSunB = 0.8
+CoeffSunG = 0.9
+CoeffSunR = 1.0
+
+[_Main.WeatherMode.Main]
+Enabled = false
+
+[_Shaders.AmbientOcclusion.Exteriors]
+AngleBias = 0.0                         # Value to increase the contribution of closer samples for more detail in creases.
+BlurDropThreshold = 8.0                 # Distance cutoff for areas that shouldn't be blurred together (edge aware denoise).
+BlurRadiusMultiplier = 2.0              # Blur radius to denoise AO.
+ClampStrength = 0.2                     # lower limit to AO darkness (0 for pure black and 1 for pure white).
+Enabled = true                          # Enable Ambient occlusion in exteriors.
+LumThreshold = 0.7                      # Treshold to reduce AO strength on bright surfaces.
+Range = 30.0                            # Distance for sampling. Larger values create a softer AO, smaller creates sharper details.
+Samples = 5                             # Not used (currently hardcoded).
+StrengthMultiplier = 2.0                # Global AO strength/darkness multiplier.
+
+[_Shaders.AmbientOcclusion.Interiors]
+AngleBias = 0.0                         # Value to increase the contribution of closer samples for more detail in creases.
+BlurDropThreshold = 8.0                 # Distance cutoff for areas that shouldn't be blurred together (edge aware denoise).
+BlurRadiusMultiplier = 2.0              # Blur radius to denoise AO.
+ClampStrength = 0.2                     # lower limit to AO darkness (0 for pure black and 1 for pure white).
+Enabled = true                          # Enable Ambient occlusion in exteriors.
+LumThreshold = 0.5                      # Treshold to reduce AO strength on bright surfaces.
+Range = 30.0                            # Distance for sampling. Larger values create a softer AO, smaller creates sharper details.
+Samples = 5                             # Not used (currently hardcoded).
+StrengthMultiplier = 2.0                # Global AO strength/darkness multiplier.
+
+[_Shaders.AmbientOcclusion.Status]
+Enabled = true                          # Shadows based on object proximity/creases for more realistic light contribution.
+
+[_Shaders.Blood.Status]
+Enabled = false                         # Not currently used
+
+[_Shaders.BloodLens.Main]
+Chance = 10.0
+ColorB = 0.16
+ColorG = 0.16
+ColorR = 0.92
+Intensity = 0.8
+Time = 900.0
+
+[_Shaders.BloodLens.Status]
+Enabled = false
+
+[_Shaders.Bloom.Exteriors]
+BloomIntensity = 1.4
+BloomSaturation = 1.2
+Luminance = 0.06
+MiddleGray = 0.18
+OriginalIntensity = 1.0
+OriginalSaturation = 1.0
+WhiteCutOff = 0.8
+
+[_Shaders.Bloom.Interiors]
+BloomIntensity = 1.4
+BloomSaturation = 1.2
+Luminance = 0.06
+MiddleGray = 0.18
+OriginalIntensity = 1.0
+OriginalSaturation = 1.0
+WhiteCutOff = 0.8
+
+[_Shaders.Bloom.Status]
+Enabled = false                         # Increases the blurriness and light bleed caused by bright lights.
+
+[_Shaders.Cinema.Main]
+AspectRatio = 1.0                       # Letterbox/black bars effect. Use the value of Width/Height of the visible window (1 to disable).
+ChromaticAberration = 2.0               # Lens distortion effect that separates the red/green and blue channels slightly as a real lens would.
+FilmGrainAmount = 0.5                   # Animated cinema grain at 24fps like film.
+Mode = 2                                # Chose when the letterbox effect is activated 0: always, 1: not during dialog, 2: only during dialog.
+OverlayStrength = 0.3                   # Overlays the screen image onto itself to increase color intensity and contrast.
+VignetteDarkness = 1.0                  # Darkening of the edges of the screen.
+VignetteRadius = 0.6                    # Distance to the center for the start of the Vignette effect.
+
+[_Shaders.Cinema.Status]
+Enabled = true                          # A collection of tweaks to give a more cinematic post processing feel.
+
+[_Shaders.Coloring.Default]
+BaseGamma = 1.6
+Bleach = 0.1
+BleachLuma = 0.2
+ColorCurve = 1.2
+ColorCurveB = 1.0
+ColorCurveG = 1.0
+ColorCurveR = 0.9
+Contrast = 0.8
+EffectGamma = 0.9
+EffectGammaB = 1.0
+EffectGammaG = 1.0
+EffectGammaR = 1.0
+Fade = 0.0
+Linearization = 1.1
+Saturation = -0.1
+Strength = 0.5
+
+[_Shaders.Coloring.Status]
+Enabled = false                        # 
+
+[_Shaders.Debug.Status]
+Enabled = false                        # Displays debug information: depth, normal and shadow buffers, colors of the weather/fog and lights positions.
+
+[_Shaders.DepthOfField.FirstPersonView]
+BaseBlurRadius = 2.0                   # Strength of the blurriness caused by depth of Field.
+BlurFallOff = 1.5                      # Hyperfocal distance (x1000). Before this distance, near and far field are blurred. After, only the near field is.
+DiameterRange = 0.8                    # Bokeh treshold. Areas with brightness above this value will bloom in a bokeh like effect.
+DistantBlur = true                     # Activate a constant blurriness in the far distance to hide LOD.
+DistantBlurEndRange = 150000           # Far end of the area blurred in the distance (fully blurry).
+DistantBlurStartRange = 30000          # Start of the area blurred in the distance (not yet blurry).
+Enabled = true                         # Wether to activate the DOF effect in first person.
+Mode = 0                               # Chose when the DOF is activated: 0: always, 1: not during dialog, 2: only in dialog.
+NearBlurCutOff = 100                   # Close up range that doesn't get blurred to avoid blurry gun/player character.
+Radius = 1.5                           # Radius for the bokeh blur.
+
+[_Shaders.DepthOfField.Status]
+Enabled = true                         # Depth of Field blurriness with animated autofocus. Simulates a real camera autofocus with a focus on playability.
+
+[_Shaders.DepthOfField.ThirdPersonView]
+BaseBlurRadius = 2.0                   # Strength of the blurriness caused by depth of Field.
+BlurFallOff = 1.5                      # Hyperfocal distance (x1000). Before this distance, near and far field are blurred. After, only the near field is.
+DiameterRange = 0.8                    # Bokeh treshold. Areas with brightness above this value will bloom in a bokeh like effect.
+DistantBlur = true                     # Activate a constant blurriness in the far distance to hide LOD.
+DistantBlurEndRange = 150000           # Far end of the area blurred in the distance (fully blurry).
+DistantBlurStartRange = 30000          # Start of the area blurred in the distance (not yet blurry).
+Enabled = true                         # Wether to activate the DOF effect in third person.
+Mode = 0                               # Chose when the DOF is activated: 0: always, 1: not during dialog, 2: only in dialog.
+NearBlurCutOff = 200                   # Close up range that doesn't get blurred to avoid blurry gun/player character.
+Radius = 1.5                           # Radius for the bokeh blur.
+
+[_Shaders.DepthOfField.VanityView]
+BaseBlurRadius = 2.0                   # Strength of the blurriness caused by depth of Field.
+BlurFallOff = 1.5                      # Hyperfocal distance (x1000). Before this distance, near and far field are blurred. After, only the near field is.
+DiameterRange = 0.8                    # Bokeh treshold. Areas with brightness above this value will bloom in a bokeh like effect.
+DistantBlur = true                     # Activate a constant blurriness in the far distance to hide LOD.
+DistantBlurEndRange = 150000           # Far end of the area blurred in the distance (fully blurry).
+DistantBlurStartRange = 30000          # Start of the area blurred in the distance (not yet blurry).
+Enabled = true                         # Wether to activate the DOF effect in vanity camera (free rotation camera).
+Mode = 0                               # Chose when the DOF is activated: 0: always, 1: not during dialog, 2: only in dialog.
+NearBlurCutOff = 0                     # Close up range that doesn't get blurred to avoid blurry gun/player character.
+Radius = 1.5                           # Radius for the bokeh blur.
+
+[_Shaders.Exposure.Day]
+DarkAdaptSpeed = 1.5                   # Speed for the exposure to adjust when the screen gets darker.
+LightAdaptSpeed = 0.5                  # Speed for the exposure to adjust when the screen gets brighter.
+MaxBrightness = 0.5                    # Brightness treshold above which the screen will be darkened.
+MinBrightness = 0.3                    # Brightness treshold below which the screen will be brightened.
+
+[_Shaders.Exposure.Interiors]
+DarkAdaptSpeed = 1.5                   # Speed for the exposure to adjust when the screen gets darker.
+LightAdaptSpeed = 0.5                  # Speed for the exposure to adjust when the screen gets brighter.
+MaxBrightness = 0.9                    # Brightness treshold above which the screen will be darkened.
+MinBrightness = 0.2                    # Brightness treshold below which the screen will be brightened.
+
+[_Shaders.Exposure.Night]
+DarkAdaptSpeed = 1.5                   # Speed for the exposure to adjust when the screen gets darker.
+LightAdaptSpeed = 0.5                  # Speed for the exposure to adjust when the screen gets brighter.
+MaxBrightness = 0.9                    # Brightness treshold above which the screen will be darkened.
+MinBrightness = 0.2                    # Brightness treshold below which the screen will be brightened.
+
+[_Shaders.Exposure.Status]
+Enabled = true                         # Modulates screen gamma to correct exposure based on average brightness. Avoids screens that are too bright/dark.
+
+[_Shaders.ExtraEffects.Status]
+Enabled = false                        # Not currently used. Enables loading of Effects in ExtraEffects folder that are not natively handled.
+
+[_Shaders.ExtraShaders.Status]
+Enabled = false                        # Not currently used. Enables loading of Shaders in ExtraShaders folder that are not natively handled.
+
+[_Shaders.Grass.Main]
+WindEnabled = false
+GrassDensity = 1
+WindCoefficient = 0.0
+ScaleX = 1.0
+ScaleY = 1.0
+ScaleZ = 1.0
+MinDistance = 0
+MaxDistance = 0
+
+[_Shaders.Grass.Status]
+Enabled = false                       # Not currently used. Replaces grass shaders and game options.  
+
+[_Shaders.GodRays.Main]
+DayMultiplier = 0.5                   # Strength of godrays during the day.
+LightShaftPasses = 8                  # Not used.
+Luminance = 0.8                       # Treshold for minimum luminosity of areas casting rays. Lower means more of the sky will cast rays.
+NightMultiplier = 1.0                 # Strength of godrays during the night.
+RayDensity = 0.0                      # Curve for reduction of the intensity of godrays near the sunglare.
+RayIntensity = 1.0                    # Multiplier for the intensity of the bright areas being blurred to create the rays.
+RayLength = 1.0                       # Multiplier for the length of rays.
+RayVisibility = 4.0                   # Exponent for the godrays contrast.
+SunGlareEnabled = true                # Strength of the effect will be scaled with the weather sunglare setting.
+TimeEnabled = true                    # Strength of the effect will be strongest around sunset/sunrise and not at all during noon.
+
+[_Shaders.GodRays.Coloring]
+RayR = 1.0                            # Red channel for custom coloring of the godrays. Use Saturate setting to tweak the global influence.
+RayG = 1.0                            # Green channel for custom coloring of the godrays. Use Saturate setting to tweak the global influence.
+RayB = 1.0                            # Blue channel for custom coloring of the godrays. Use Saturate setting to tweak the global influence.
+Saturate = 0.0                        # Influence of the coloring setting. 0: use the sky/sun color 1: use only the specified color.
+
+
+[_Shaders.GodRays.Status]
+Enabled = true                        # Screenspace godrays/volumetric rays.
+
+[_Shaders.HDR.Main]
+Linearization = 2.2
+ToneMapping = 1.0
+ToneMappingBlur = 0.0
+ToneMappingColor = 1.2
+
+[_Shaders.HDR.Status]
+Enabled = false                       # Not currently used. Replaces HDR tonemapping shaders with custom ones.
+
+
+[_Shaders.ImageAdjust.Main]
+Brightness = 1.1                      # Overall image brightness.
+Saturation = 0.7                      # Overall image saturation.
+Contrast = 1.2                        # Overall image contrast.
+Strength = 1.0                        # Strength of the effect.
+DarkColorR = 0.9                      # Red channel multiplier for darker tones.
+DarkColorG = 0.7                      # Green channel multiplier for darker tones.
+DarkColorB = 0.7                      # Blue channel multiplier for darker tones.
+LightColorR = 1.0                     # Red channel multiplier for lighter tones.
+LightColorG = 1.0                     # Green channel multiplier for lighter tones.
+LightColorB = 1.0                     # Blue channel multiplier for lighter tones.
+
+[_Shaders.ImageAdjust.Night]
+Brightness = 1.4                      # Overall image brightness.
+Saturation = 0.8                      # Overall image saturation.
+Contrast = 1.2                        # Overall image contrast.
+Strength = 0.8                        # Strength of the effect.
+DarkColorR = 0.8                      # Red channel multiplier for darker tones.
+DarkColorG = 0.8                      # Green channel multiplier for darker tones.
+DarkColorB = 1.2                      # Blue channel multiplier for darker tones.
+LightColorR = 0.8                     # Red channel multiplier for lighter tones.
+LightColorG = 1.0                     # Green channel multiplier for lighter tones.
+LightColorB = 1.0                     # Blue channel multiplier for lighter tones.
+
+[_Shaders.ImageAdjust.Interiors]
+Brightness = 1.215                    # Overall image brightness.
+Saturation = 1.2                      # Overall image saturation.
+Contrast = 1.45                       # Overall image contrast.
+Strength = 1.0                        # Strength of the effect.
+DarkColorR = 0.9                      # Red channel multiplier for darker tones.
+DarkColorG = 0.7                      # Green channel multiplier for darker tones.
+DarkColorB = 1.0                      # Blue channel multiplier for darker tones.
+LightColorR = 0.8                     # Red channel multiplier for lighter tones.
+LightColorG = 0.8                     # Green channel multiplier for lighter tones.
+LightColorB = 1.0                     # Blue channel multiplier for lighter tones.
+
+[_Shaders.ImageAdjust.Status]
+Enabled = true                        # Basic Image adjustment controls.
+
+
+[_Shaders.Lens.Main]
+DirtLensAmount = 0.2                  # Global effect strength multiplier.
+ExteriorBloomTreshold = 0.9           # Treshold for the max brightness to trigger the effect in exteriors.
+InteriorBloomTreshold = 2.0           # Treshold for the max brightness to trigger the effect in interiors.
+
+[_Shaders.Lens.Status]
+Enabled = true                        # Simulates lens smudges refracting light around brightest areas of the screen.
+
+[_Shaders.LowHF.Main]
+BlurMultiplier = 0.2
+DarknessMultiplier = 1.0
+FatigueLimit = 0.25
+HealthLimit = 0.5
+LumaMultiplier = 1.0
+VignetteMultiplier = 1.0
+
+[_Shaders.LowHF.Status]
+Enabled = false                       # Screen and sound effects when the player health is low.
+
+[_Shaders.MotionBlur.FirstPersonView]
+BlurCutOff = 15.0
+BlurOffsetMax = 24.0
+BlurScale = 4.0
+Enabled = true
+GaussianWeight = 6.0
+
+[_Shaders.MotionBlur.ThirdPersonView]
+BlurCutOff = 15.0
+BlurOffsetMax = 24.0
+BlurScale = 4.0
+Enabled = false
+GaussianWeight = 6.0
+
+[_Shaders.MotionBlur.Status]
+Enabled = false                      # Blur in direction of the camera when turning. 
+
+[_Shaders.POM.Main]
+HeightMapScale = 0.55
+MaxSamples = 32
+MinSamples = 8
+
+[_Shaders.POM.Status]
+Enabled = false                      # Not currently used. Parallax occlusion mapping on object shaders to simulate extra detail.
+
+[_Shaders.Precipitations.Main]
+Bloom = 0.1                          # Rain effect that is blocked by objects above and refracts light.
+Coloring = 0.3                       # Base coloring amount added to the refracted color.
+Opacity = 1.0                        # Opacity of the drops.
+Refraction = 0.3                     # Distance of the refraction of the screen image by the droplets.
+Speed = 2.0                          # Multiplier for the rain speed.
+VerticalScale = 1.0                  # Multiplier for the length of the drops/streaks.
+
+[_Shaders.Precipitations.Status]
+Enabled = true                       # Rain effect that is blocked by objects above and refracts light.
+
+[_Shaders.ShadowsExteriors.Far]
+Activators = false                   # Wether to include objects with "Activator" flag when rendering shadowmaps.
+Actors = true                        # Wether to include objects with "Actors" flag when rendering shadowmaps.
+AlphaEnabled = true                  # Wether to take into account alpha of objects when rendering shadowmaps.
+Apparatus = false                    # Wether to include objects with "Apparatus" flag when rendering shadowmaps.
+Books = false                        # Wether to include objects with "Books" flag when rendering shadowmaps.
+Containers = true                    # Wether to include objects with "Containers" flag when rendering shadowmaps.
+Doors = true                         # Wether to include objects with "Doors" flag when rendering shadowmaps.
+Furniture = true                     # Wether to include objects with "Furniture" flag when rendering shadowmaps.
+Lod = false                          # Wether to include objects with "Lod" flag when rendering shadowmaps.
+MinRadius = 10.0                     # Wether to include objects with a radius of less than x pixels on the screen in the shadowmaps.
+Misc = true                          # Wether to include objects with misc flags when rendering shadowmaps.
+Statics = true                       # Wether to include objects with "Statics" flag when rendering shadowmaps.
+Terrain = true                       # Wether to include Terrain when rendering shadowmaps.
+Trees = true                         # Wether to include Trees when rendering shadowmaps.
+
+[_Shaders.ShadowsExteriors.Lod]
+Activators = false                   # Wether to include objects with "Activator" flag when rendering shadowmaps.
+Actors = false                       # Wether to include objects with "Actors" flag when rendering shadowmaps.
+AlphaEnabled = false                 # Wether to take into account alpha of objects when rendering shadowmaps.
+Apparatus = false                    # Wether to include objects with "Apparatus" flag when rendering shadowmaps.
+Books = false                        # Wether to include objects with "Books" flag when rendering shadowmaps.
+Containers = false                   # Wether to include objects with "Containers" flag when rendering shadowmaps.
+Doors = true                         # Wether to include objects with "Doors" flag when rendering shadowmaps.
+Furniture = false                    # Wether to include objects with "Furniture" flag when rendering shadowmaps.
+Lod = false                          # Wether to include objects with "Lod" flag when rendering shadowmaps.
+MinRadius = 100.0                    # Wether to include objects with a radius of less than x pixels on the screen in the shadowmaps.
+Misc = false                         # Wether to include objects with misc flags when rendering shadowmaps.
+Statics = true                       # Wether to include objects with "Statics" flag when rendering shadowmaps.
+Terrain = true                       # Wether to include Terrain when rendering shadowmaps.
+Trees = true                         # Wether to include Trees when rendering shadowmaps.
+
+[_Shaders.ShadowsExteriors.Main]
+PostProcess = true                   # Wether to render shadows as a post process effect. Currently the only supported mode.
+BlurShadowMaps = true                # Blur shadow maps for soft shadows.
+Darkness = 0.6                       # Darkness of shadows.
+Enabled = true                       # Enable sun shadows using rendered shadow maps.
+NightMinDarkness = 0.3               # Darkness of shadows during dark moon phase. Set to 0 to disable shadows completely when there is no moon.
+Quality = 2                          # not used.
+ShadowMapFarPlane = 32768            # Used for shadow frustum. Don't change this value.
+ShadowMapResolution = 1024           # Resolution of the texture used to store the shadow maps. LOD map is twice this value. Needs restart to take effect.
+ShadowMode = 1                       # Shadow algorithm used. 1: Variance Shadow Maps, 2: unfiltered Exponenial Shadow Map, 3: filtered ESM.
+ShadowsRadius = 8000                 # Max distance for rendering of shadow from the camera.
+UsePointShadowsDay = false           # Wether to cast shadows from point lights. Requires a slight darkening of the entire screen.
+UsePointShadowsNight = true          # Wether to cast shadows from point lights during Nights. Requires a slight darkening of the entire screen.
+
+[_Shaders.ShadowsExteriors.Middle]
+Activators = false                   # Wether to include objects with "Activator" flag when rendering shadowmaps.
+Actors = true                        # Wether to include objects with "Actors" flag when rendering shadowmaps.
+AlphaEnabled = true                  # Wether to take into account alpha of objects when rendering shadowmaps.
+Apparatus = false                    # Wether to include objects with "Apparatus" flag when rendering shadowmaps.
+Books = false                        # Wether to include objects with "Books" flag when rendering shadowmaps.
+Containers = true                    # Wether to include objects with "Containers" flag when rendering shadowmaps.
+Doors = true                         # Wether to include objects with "Doors" flag when rendering shadowmaps.
+Furniture = true                     # Wether to include objects with "Furniture" flag when rendering shadowmaps.
+Lod = false                          # Wether to include objects with "Lod" flag when rendering shadowmaps.
+MinRadius = 10.0                     # Wether to include objects with a radius of less than x pixels on the screen in the shadowmaps.
+Misc = true                          # Wether to include objects with misc flags when rendering shadowmaps.
+Statics = true                       # Wether to include objects with "Statics" flag when rendering shadowmaps.
+Terrain = true                       # Wether to include Terrain when rendering shadowmaps.
+Trees = true                         # Wether to include Trees when rendering shadowmaps.
+
+[_Shaders.ShadowsExteriors.Near]
+Activators = false                   # Wether to include objects with "Activator" flag when rendering shadowmaps.
+Actors = true                        # Wether to include objects with "Actors" flag when rendering shadowmaps.
+AlphaEnabled = true                  # Wether to take into account alpha of objects when rendering shadowmaps.
+Apparatus = false                    # Wether to include objects with "Apparatus" flag when rendering shadowmaps.
+Books = false                        # Wether to include objects with "Books" flag when rendering shadowmaps.
+Containers = true                    # Wether to include objects with "Containers" flag when rendering shadowmaps.
+Doors = true                         # Wether to include objects with "Doors" flag when rendering shadowmaps.
+Furniture = true                     # Wether to include objects with "Furniture" flag when rendering shadowmaps.
+Lod = false                          # Wether to include objects with "Lod" flag when rendering shadowmaps.
+MinRadius = 10.0                     # Wether to include objects with a radius of less than x pixels on the screen in the shadowmaps.
+Misc = true                          # Wether to include objects with misc flags when rendering shadowmaps.
+Statics = true                       # Wether to include objects with "Statics" flag when rendering shadowmaps.
+Terrain = true                       # Wether to include Terrain when rendering shadowmaps.
+Trees = true                         # Wether to include Trees when rendering shadowmaps.
+
+
+[_Shaders.ShadowsExteriors.Ortho]
+Activators = false                   # Wether to include objects with "Activator" flag when rendering ortho map.
+Actors = false                       # Wether to include objects with "Actors" flag when rendering ortho map.
+AlphaEnabled = true                  # Wether to take into account alpha of objects when rendering ortho map.
+Apparatus = false                    # Wether to include objects with "Apparatus" flag when rendering ortho map.
+Books = false                        # Wether to include objects with "Books" flag when rendering ortho map.
+Containers = false                   # Wether to include objects with "Containers" flag when rendering ortho map.
+Doors = false                        # Wether to include objects with "Doors" flag when rendering ortho map.
+Furniture = false                    # Wether to include objects with "Furniture" flag when rendering ortho map.
+Lod = false                          # Wether to include objects with "Lod" flag when rendering ortho map.
+MinRadius = 100.0                    # Wether to include objects with a radius of less than x pixels on the screen in the ortho map.
+Misc = false                         # Wether to include objects with misc flags when rendering ortho map.
+Statics = true                       # Wether to include objects with "Statics" flag when rendering ortho map.
+Terrain = true                       # Wether to include Terrain when rendering ortho map.
+Trees = false                        # Wether to include Trees when rendering ortho map.
+
+[_Shaders.ShadowsExteriors.ScreenSpace]
+BlurRadius = 1.0                     # Blur strength for denoising screenspace shadows
+Enabled = true                       # Wether to render screen space contact/detail shadows
+RenderDistance = 8000                # Max distance at which to compute screen space shadows
+
+[_Shaders.ShadowsExteriors.Status]
+Enabled = true                       # Post process sun and pointlights shadows in exteriors.
+
+[_Shaders.ShadowsInteriors.Main]
+PostProcess = true                   # Wether to render shadows as a post process effect. Currently the only supported mode.
+UseCastShadowFlag = false            # Objects without the cast shadow flag will not be rendered to the shadow maps
+Activators = true                    # Wether to include objects with "Activator" flag when rendering shadowmaps.
+Actors = true                        # Wether to include objects with "Actors" flag when rendering shadowmaps.
+AlphaEnabled = true                  # Wether to take into account alpha of objects when rendering shadowmaps.
+Apparatus = true                     # Wether to include objects with "Apparatus" flag when rendering shadowmaps.
+Books = true                         # Wether to include objects with "Books" flag when rendering shadowmaps.
+Containers = true                    # Wether to include objects with "Containers" flag when rendering shadowmaps.
+Darkness = 0.7                       # Darkness of shadows.
+Doors = true                         # Wether to include objects with "Doors" flag when rendering shadowmaps.
+Furniture = true                     # Wether to include objects with "Furniture" flag when rendering shadowmaps.
+LightPoints = 12                     # Number of Lights being taken into account for shadows. 12 maximum.
+LightRadiusMult = 1.0                # A muliplier for the lights radius to render shadows for.
+MinRadius = 10.0                     # Wether to include objects with a radius of less than x pixels on the screen in the shadowmaps.
+Misc = true                          # Wether to include objects with misc flags when rendering shadowmaps.
+Quality = 1                          # Not currently used.
+ShadowCubeMapSize = 512              # The resolution of one face for the point light shadow cubemaps.
+Statics = true                       # Wether to include objects with "Statics" flag when rendering shadowmaps.
+TorchesCastShadows = true            # Used in Oblivion to enable shadows on torches.
+DrawDistance = 4000                  # Max distance for point light shadow rendering.
+
+[_Shaders.ShadowsInteriors.Status]
+Enabled = true                      # Post process pointlights shadows in exteriors.
+
+[_Shaders.Sharpening.Main]
+Clamp = 0.1
+Offset = 2.0
+Strength = 0.75
+
+[_Shaders.Sharpening.Status]
+Enabled = false                     # Edge contrast shader to increase detail sharpness.
+
+[_Shaders.Skin.Main]
+Attenuation = 0.84
+CoeffBlue = 0.12
+CoeffGreen = 0.22
+CoeffRed = 0.36
+MaterialThickness = 0.12
+RimScalar = 0.5
+SpecularPower = 0.78
+
+[_Shaders.Skin.Status]
+Enabled = false                     # Not currently used. Replaces the skin shader.
+
+[_Shaders.Snow.Main]
+DepthStep = 2.5
+Flakes = 0.5
+Speed = 1.4
+
+[_Shaders.Snow.Status]
+Enabled = true                      # Snow precipitation shader.
+
+[_Shaders.SnowAccumulation.Main]
+Amount = 1.6
+BlurNormDropThreshhold = 0.82
+BlurRadiusMultiplier = 0.6
+Decrease = 12
+Increase = 0.8
+SunPower = 0.3
+
+[_Shaders.SnowAccumulation.Status]
+Enabled = true                      # Snow accumulation on the floor during snowstorms.
+
+[_Shaders.Specular.Exterior]
+BlurMultiplier = 1.0                # Blur strength for detail smoothing.
+DistanceFade = 30000                # Max distance at which the effects will be displayed. Doesn't apply to sky tint.
+FresnelStrength = 0.7               # Strength for the grazing surface lighting boost called fresnel.
+Glossiness = 16                     # Higher value will make the specular effect affect more intensely a smaller region.
+SkyTintSaturation = 1.8             # Saturation of the sky lighting effect. Sky lighting is based on sky color. 
+SkyTintStrength = 0.3               # Strength for the sky lighting effect. This mostly affects horizontal, dark areas outside.
+SpecLumaTreshold = 0.5              # Treshold for the luma of areas affected by the specular boost.
+SpecularStrength = 0.7              # Strength of the effect for specular boost.
+
+[_Shaders.Specular.Rain]
+BlurMultiplier = 3.0                # Blur strength for detail smoothing during rainy weathers.
+DistanceFade = 30000                # Max distance at which the effects will be displayed during rainy weathers. Doesn't apply to sky tint.
+FresnelStrength = 1.0               # Strength for the grazing surface lighting boost called fresnel during rainy weathers.
+Glossiness = 7                      # Higher value will make the specular effect affect more intensely a smaller region during rainy weathers.
+SkyTintSaturation = 1.0             # Saturation of the sky lighting effect. Sky lighting is based on sky color during rainy weathers. 
+SkyTintStrength = 0.1               # Strength for the sky lighting effect during rainy weathers. This mostly affects horizontal, dark areas outside.
+SpecLumaTreshold = 0.1              # Treshold for the luma of areas affected by the specular boost during rainy weathers.
+SpecularStrength = 4.0              # Strength of the effect for specular boost during rainy weathers.
+
+[_Shaders.Specular.Status]
+Enabled = true                      # Shader that boosts a few lighting effects: specular boost, sky lighting and fresnel boost.
+
+[_Shaders.Terrain.Main]
+DistantNoise = 0.6
+DistantSpecular = 0.2
+MiddleSpecular = 0.0
+NearSpecular = 0.0
+
+[_Shaders.Terrain.Status]
+Enabled = false                     # Not currently used. Replaces shaders used by terrain.
+
+[_Shaders.Underwater.Status]
+Enabled = true                      # Post Process underwater fog/godrays/caustics effect.
+
+[_Shaders.VolumetricFog.Main]
+Amount = 1.0                        # Multiplier for the strength of the fog, otherwise dependent on weathers.
+ColorCoeff = 0.5                    # Influence of the sun coloring in the tinting of the fog.
+Exponent = 8.0                      # Exponent for the sun coloring. A higher value will affect a smaller area around the sun
+MaxDistance = 80000                 # Max Fog height for vertical effect.
+
+[_Shaders.VolumetricFog.Status]
+Enabled = true                      # Volumetric fog shader tinted by the sun. Rendered after shadows and other effects for more accurate effect.
+
+[_Shaders.Water.Default]
+causticsStrength = 3.0              # Caustic strength underwater. Caustics seen from above water not currently supported
+causticsStrengthS = 0.2             # Not used.
+choppiness = 0.7                    # Exponent for the waves normals. A higher value will create more defined wave crests.
+depthDarkness = 1.0                 # How much light reaches the bottom of the water.
+inExtCoeff_B = 1.0                  # Not used.
+inExtCoeff_G = 1.0                  # Not used.
+inExtCoeff_R = 1.0                  # Not used.
+inScattCoeff = 1.0                  # Not used.
+reflectivity = 1.0                  # Multiplier for the strength of reflections on the surface.
+shoreFactor = 6.0                   # Size of the shore fading area on shallow slope areas.
+shoreMovement = 0.3                 # Speed of wave movement in the shore.
+turbidity = 3.0                     # Ability of light to travel through water. Basically clearness of water.
+waveSpeed = 0.7                     # Speed multiplier for waves animation.
+waveWidth = 0.8                     # Multiplier for the wave texture size.
+
+[_Shaders.Water.Status]
+Enabled = true                      # Replaces water shaders with a custom shader.
+
+[_Shaders.WaterLens.Main]
+Amount = 0.1
+Time = 180.0
+TimeMultA = 0.1
+TimeMultB = 0.2
+Viscosity = 0.05
+
+[_Shaders.WaterLens.Status]
+Enabled = true                      # Short refraction water drop animation on the lens when exiting water.
+
+[_Shaders.WetWorld.Main]
+Amount = 0.85                       # Darkness of puddles
+Decrease = 1.2                      # Time it takes in game hours for puddles to dissipate
+Increase = 0.3                      # Time it takes in game hours for puddles to appear
+PuddleCoeff_B = 0.48                # Not used.
+PuddleCoeff_G = 0.62                # Not used.
+PuddleCoeff_R = 0.72                # Not used.
+PuddleSpecularMultiplier = 0.2      # Not used.
+
+[_Shaders.WetWorld.Status]
+Enabled = true                      # Water ripples on surfaces, and puddles based on physical terrain pockets during rainy weathers. 
