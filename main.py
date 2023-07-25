@@ -78,6 +78,6 @@ def write_shader_settings(shader_config):
                 else:
                     save_file(f"{SHADERS_SAVE_LOCATION}{menu_items}", f"{DEFAULT}{get_str(value)}{NEW_LINE}{UNDERLINE}", "a")
 
-nvr_config_toml = toml.load("NewVegasReloaded.dll.toml", decoder=toml.TomlPreserveCommentDecoder())
+nvr_config_toml = toml.load("NewVegasReloaded.dll.defaults.toml", decoder=toml.TomlPreserveCommentDecoder())
 write_main_settings(nvr_config_toml[MAIN])
 write_shader_settings(nvr_config_toml[SHADERS])
