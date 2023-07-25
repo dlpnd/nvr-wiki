@@ -10,11 +10,15 @@
 
 >Default: 0.5
 
+---
+
 ### LightShaftPasses
 
  Not used.
 
 >Default: 8
+
+---
 
 ### Luminance
 
@@ -22,11 +26,15 @@
 
 >Default: 0.8
 
+---
+
 ### NightMultiplier
 
  Strength of godrays during the night.
 
 >Default: 1.0
+
+---
 
 ### RayDensity
 
@@ -34,11 +42,15 @@
 
 >Default: 0.0
 
+---
+
 ### RayIntensity
 
  Multiplier for the intensity of the bright areas being blurred to create the rays.
 
 >Default: 1.0
+
+---
 
 ### RayLength
 
@@ -46,11 +58,15 @@
 
 >Default: 1.0
 
+---
+
 ### RayVisibility
 
  Exponent for the godrays contrast.
 
 >Default: 4.0
+
+---
 
 ### SunGlareEnabled
 
@@ -58,11 +74,15 @@
 
 >Default: true
 
+---
+
 ### TimeEnabled
 
  Strength of the effect will be strongest around sunset/sunrise and not at all during noon.
 
 >Default: true
+
+---
 
 ## Coloring
 
@@ -72,11 +92,15 @@
 
 >Default: 1.0
 
+---
+
 ### RayG
 
  Green channel for custom coloring of the godrays. Use Saturate setting to tweak the global influence.
 
 >Default: 1.0
+
+---
 
 ### RayB
 
@@ -84,11 +108,15 @@
 
 >Default: 1.0
 
+---
+
 ### Saturate
 
  Influence of the coloring setting. 0: use the sky/sun color 1: use only the specified color.
 
 >Default: 0.0
+
+---
 
 ## Status
 
@@ -97,3 +125,5 @@
  Screenspace godrays/volumetric rays.
 
 >Default: true
+
+---

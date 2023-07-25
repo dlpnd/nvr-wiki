@@ -10,11 +10,15 @@
 
 >Default: true
 
+---
+
 ### UseCastShadowFlag
 
  Objects without the cast shadow flag will not be rendered to the shadow maps
 
 >Default: false
+
+---
 
 ### Activators
 
@@ -22,11 +26,15 @@
 
 >Default: true
 
+---
+
 ### Actors
 
  Wether to include objects with "Actors" flag when rendering shadowmaps.
 
 >Default: true
+
+---
 
 ### AlphaEnabled
 
@@ -34,11 +42,15 @@
 
 >Default: true
 
+---
+
 ### Apparatus
 
  Wether to include objects with "Apparatus" flag when rendering shadowmaps.
 
 >Default: true
+
+---
 
 ### Books
 
@@ -46,11 +58,15 @@
 
 >Default: true
 
+---
+
 ### Containers
 
  Wether to include objects with "Containers" flag when rendering shadowmaps.
 
 >Default: true
+
+---
 
 ### Darkness
 
@@ -58,11 +74,15 @@
 
 >Default: 0.7
 
+---
+
 ### Doors
 
  Wether to include objects with "Doors" flag when rendering shadowmaps.
 
 >Default: true
+
+---
 
 ### Furniture
 
@@ -70,11 +90,15 @@
 
 >Default: true
 
+---
+
 ### LightPoints
 
  Number of Lights being taken into account for shadows. 12 maximum.
 
 >Default: 12
+
+---
 
 ### LightRadiusMult
 
@@ -82,11 +106,15 @@
 
 >Default: 1.0
 
+---
+
 ### MinRadius
 
  Wether to include objects with a radius of less than x pixels on the screen in the shadowmaps.
 
 >Default: 10.0
+
+---
 
 ### Misc
 
@@ -94,11 +122,15 @@
 
 >Default: true
 
+---
+
 ### Quality
 
  Not currently used.
 
 >Default: 1
+
+---
 
 ### ShadowCubeMapSize
 
@@ -106,11 +138,15 @@
 
 >Default: 512
 
+---
+
 ### Statics
 
  Wether to include objects with "Statics" flag when rendering shadowmaps.
 
 >Default: true
+
+---
 
 ### TorchesCastShadows
 
@@ -118,11 +154,15 @@
 
 >Default: true
 
+---
+
 ### DrawDistance
 
  Max distance for point light shadow rendering.
 
 >Default: 4000
+
+---
 
 ## Status
 
@@ -131,3 +171,5 @@
  Post process pointlights shadows in exteriors.
 
 >Default: true
+
+---

@@ -10,11 +10,15 @@
 
 >Default: 3.0
 
+---
+
 ### causticsStrengthS
 
  Not used.
 
 >Default: 0.2
+
+---
 
 ### choppiness
 
@@ -22,11 +26,15 @@
 
 >Default: 0.7
 
+---
+
 ### depthDarkness
 
  How much light reaches the bottom of the water.
 
 >Default: 1.0
+
+---
 
 ### inExtCoeff_B
 
@@ -34,11 +42,15 @@
 
 >Default: 1.0
 
+---
+
 ### inExtCoeff_G
 
  Not used.
 
 >Default: 1.0
+
+---
 
 ### inExtCoeff_R
 
@@ -46,11 +58,15 @@
 
 >Default: 1.0
 
+---
+
 ### inScattCoeff
 
  Not used.
 
 >Default: 1.0
+
+---
 
 ### reflectivity
 
@@ -58,11 +74,15 @@
 
 >Default: 1.0
 
+---
+
 ### shoreFactor
 
  Size of the shore fading area on shallow slope areas.
 
 >Default: 6.0
+
+---
 
 ### shoreMovement
 
@@ -70,11 +90,15 @@
 
 >Default: 0.3
 
+---
+
 ### turbidity
 
  Ability of light to travel through water. Basically clearness of water.
 
 >Default: 3.0
+
+---
 
 ### waveSpeed
 
@@ -82,11 +106,15 @@
 
 >Default: 0.7
 
+---
+
 ### waveWidth
 
  Multiplier for the wave texture size.
 
 >Default: 0.8
+
+---
 
 ## Status
 
@@ -95,3 +123,5 @@
  Replaces water shaders with a custom shader.
 
 >Default: true
+
+---

@@ -8,13 +8,19 @@
 
 >Default: 2.5
 
+---
+
 ### Flakes
 
 >Default: 0.5
 
+---
+
 ### Speed
 
 >Default: 1.4
+
+---
 
 ## Status
 
@@ -23,3 +29,5 @@
  Snow precipitation shader.
 
 >Default: true
+
+---

@@ -10,11 +10,15 @@
 
 >Default: 1.1
 
+---
+
 ### Saturation
 
  Overall image saturation.
 
 >Default: 0.7
+
+---
 
 ### Contrast
 
@@ -22,11 +26,15 @@
 
 >Default: 1.2
 
+---
+
 ### Strength
 
  Strength of the effect.
 
 >Default: 1.0
+
+---
 
 ### DarkColorR
 
@@ -34,11 +42,15 @@
 
 >Default: 0.9
 
+---
+
 ### DarkColorG
 
  Green channel multiplier for darker tones.
 
 >Default: 0.7
+
+---
 
 ### DarkColorB
 
@@ -46,11 +58,15 @@
 
 >Default: 0.7
 
+---
+
 ### LightColorR
 
  Red channel multiplier for lighter tones.
 
 >Default: 1.0
+
+---
 
 ### LightColorG
 
@@ -58,11 +74,15 @@
 
 >Default: 1.0
 
+---
+
 ### LightColorB
 
  Blue channel multiplier for lighter tones.
 
 >Default: 1.0
+
+---
 
 ## Night
 
@@ -72,11 +92,15 @@
 
 >Default: 1.4
 
+---
+
 ### Saturation
 
  Overall image saturation.
 
 >Default: 0.8
+
+---
 
 ### Contrast
 
@@ -84,11 +108,15 @@
 
 >Default: 1.2
 
+---
+
 ### Strength
 
  Strength of the effect.
 
 >Default: 0.8
+
+---
 
 ### DarkColorR
 
@@ -96,11 +124,15 @@
 
 >Default: 0.8
 
+---
+
 ### DarkColorG
 
  Green channel multiplier for darker tones.
 
 >Default: 0.8
+
+---
 
 ### DarkColorB
 
@@ -108,11 +140,15 @@
 
 >Default: 1.2
 
+---
+
 ### LightColorR
 
  Red channel multiplier for lighter tones.
 
 >Default: 0.8
+
+---
 
 ### LightColorG
 
@@ -120,11 +156,15 @@
 
 >Default: 1.0
 
+---
+
 ### LightColorB
 
  Blue channel multiplier for lighter tones.
 
 >Default: 1.0
+
+---
 
 ## Interiors
 
@@ -134,11 +174,15 @@
 
 >Default: 1.215
 
+---
+
 ### Saturation
 
  Overall image saturation.
 
 >Default: 1.2
+
+---
 
 ### Contrast
 
@@ -146,11 +190,15 @@
 
 >Default: 1.45
 
+---
+
 ### Strength
 
  Strength of the effect.
 
 >Default: 1.0
+
+---
 
 ### DarkColorR
 
@@ -158,11 +206,15 @@
 
 >Default: 0.9
 
+---
+
 ### DarkColorG
 
  Green channel multiplier for darker tones.
 
 >Default: 0.7
+
+---
 
 ### DarkColorB
 
@@ -170,11 +222,15 @@
 
 >Default: 1.0
 
+---
+
 ### LightColorR
 
  Red channel multiplier for lighter tones.
 
 >Default: 0.8
+
+---
 
 ### LightColorG
 
@@ -182,11 +238,15 @@
 
 >Default: 0.8
 
+---
+
 ### LightColorB
 
  Blue channel multiplier for lighter tones.
 
 >Default: 1.0
+
+---
 
 ## Status
 
@@ -195,3 +255,5 @@
  Basic Image adjustment controls.
 
 >Default: true
+
+---

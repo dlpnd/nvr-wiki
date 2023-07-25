@@ -10,11 +10,15 @@
 
 >Default: 1.0
 
+---
+
 ### ColorCoeff
 
  Influence of the sun coloring in the tinting of the fog.
 
 >Default: 0.5
+
+---
 
 ### Exponent
 
@@ -22,11 +26,15 @@
 
 >Default: 8.0
 
+---
+
 ### MaxDistance
 
  Max Fog height for vertical effect.
 
 >Default: 80000
+
+---
 
 ## Status
 
@@ -35,3 +43,5 @@
  Volumetric fog shader tinted by the sun. Rendered after shadows and other effects for more accurate effect.
 
 >Default: true
+
+---

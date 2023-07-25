@@ -16,11 +16,15 @@ sidebar_position: 4
 
 >Default: false
 
+---
+
 #### ChasingThird
 
  Use Chasing camera in third person.
 
 >Default: false
+
+---
 
 #### Crosshair
 
@@ -28,11 +32,15 @@ sidebar_position: 4
 
 >Default: 0
 
+---
+
 #### Enabled
 
  Activate Camera Mode.
 
 >Default: false
+
+---
 
 #### FoV
 
@@ -40,43 +48,63 @@ sidebar_position: 4
 
 >Default: 90.0
 
+---
+
 ### Positioning
 
 #### AimingOffsetX
 
 >Default: -1.0
 
+---
+
 #### AimingOffsetY
 
 >Default: 15.0
+
+---
 
 #### AimingOffsetZ
 
 >Default: 4.5
 
+---
+
 #### DialogOffsetX
 
 >Default: -50.0
+
+---
 
 #### DialogOffsetY
 
 >Default: -50.0
 
+---
+
 #### DialogOffsetZ
 
 >Default: 10.0
+
+---
 
 #### OffsetX
 
 >Default: 0.0
 
+---
+
 #### OffsetY
 
 >Default: 15.0
 
+---
+
 #### OffsetZ
 
 >Default: 5.0
+
+---
 
 ## Develop
 
@@ -90,11 +118,15 @@ sidebar_position: 4
 
 >Default: 2
 
+---
+
 #### CompileShaders
 
  1 to always recompile, 2 to recompile newer versions.
 
 >Default: 2
+
+---
 
 #### DebugMode
 
@@ -102,11 +134,15 @@ sidebar_position: 4
 
 >Default: false
 
+---
+
 #### DebugVar1
 
  Custom variable used when developing shaders.
 
 >Default: 1.0
+
+---
 
 #### DebugVar2
 
@@ -114,11 +150,15 @@ sidebar_position: 4
 
 >Default: 1.0
 
+---
+
 #### DebugVar3
 
  Custom variable used when developing shaders.
 
 >Default: 1.0
+
+---
 
 #### DebugVar4
 
@@ -126,11 +166,15 @@ sidebar_position: 4
 
 >Default: 1.0
 
+---
+
 #### TraceShaders
 
  Keyboard shortcut to print used shaders list to the log.
 
 >Default: 25
+
+---
 
 ## FlyCam
 
@@ -142,21 +186,31 @@ sidebar_position: 4
 
 >Default: true
 
+---
+
 #### KeyAdd
 
 >Default: 78
+
+---
 
 #### KeySubtract
 
 >Default: 74
 
+---
+
 #### ScrollMultiplier
 
 >Default: 2.0
 
+---
+
 #### StepValue
 
 >Default: 1.0
+
+---
 
 ## FrameRate
 
@@ -168,13 +222,19 @@ sidebar_position: 4
 
 >Default: -0.5
 
+---
+
 #### SmartControl
 
 >Default: false
 
+---
+
 #### SmartControlFPS
 
 >Default: 60
+
+---
 
 ### Stuttering
 
@@ -182,9 +242,13 @@ sidebar_position: 4
 
 >Default: 5
 
+---
+
 #### SmartBackgroundProcess
 
 >Default: false
+
+---
 
 ## LowHFSound
 
@@ -196,17 +260,25 @@ sidebar_position: 4
 
 >Default: 0.5
 
+---
+
 #### FatigueEnabled
 
 >Default: true
+
+---
 
 #### HealthCoeff
 
 >Default: 0.5
 
+---
+
 #### HealthEnabled
 
 >Default: false
+
+---
 
 ## Main
 
@@ -220,11 +292,15 @@ sidebar_position: 4
 
 >Default: false
 
+---
+
 #### RenderEffects
 
  Toggle rendering of all effects.
 
 >Default: true
+
+---
 
 #### ReplaceIntro
 
@@ -232,11 +308,15 @@ sidebar_position: 4
 
 >Default: false
 
+---
+
 #### ScreenshotKey
 
  Keycode for custom screenshot hotkey (removes HUD and saves as jpg).
 
 >Default: 87
+
+---
 
 ### Precipitations
 
@@ -246,6 +326,8 @@ sidebar_position: 4
 
 >Default: false
 
+---
+
 ### Water
 
 #### ForceReflections
@@ -254,11 +336,15 @@ sidebar_position: 4
 
 >Default: true
 
+---
+
 #### RemoveUnderwater
 
  Disables fog underwater. Not compatible with custom underwater shader.
 
 >Default: false
+
+---
 
 ## Menu
 
@@ -394,11 +480,15 @@ Key Button
 
 >Default: 74
 
+---
+
 #### KeyDown
 
  Keycode for the hotkey to navigate down in the main menu.
 
 >Default: 208
+
+---
 
 #### KeyEditing
 
@@ -406,11 +496,15 @@ Key Button
 
 >Default: 156
 
+---
+
 #### KeyEnable
 
  Keycode for the hotkey to activate the main menu.
 
 >Default: 24
+
+---
 
 #### KeyLeft
 
@@ -418,11 +512,15 @@ Key Button
 
 >Default: 203
 
+---
+
 #### KeyPageDown
 
  Keycode for the hotkey to go to next page of options in the main menu.
 
 >Default: 209
+
+---
 
 #### KeyPageUp
 
@@ -430,11 +528,15 @@ Key Button
 
 >Default: 201
 
+---
+
 #### KeyRight
 
  Keycode for the hotkey to navigate right in the main menu.
 
 >Default: 205
+
+---
 
 #### KeySave
 
@@ -442,11 +544,15 @@ Key Button
 
 >Default: 28
 
+---
+
 #### KeySubtract
 
  Keycode for decrement value shortcut in menu.
 
 >Default: 78
+
+---
 
 #### KeyUp
 
@@ -454,11 +560,15 @@ Key Button
 
 >Default: 200
 
+---
+
 #### EntryUseNumpad
 
  Wether to use the numpad numbers or the other numbers. Start entry with "=" or numpad "Enter"
 
 >Default: true
+
+---
 
 ### Style
 
@@ -468,11 +578,15 @@ Key Button
 
 >Default: 300
 
+---
+
 #### MainItemColumnSize
 
  Custom size for menu leftmost column.
 
 >Default: 100
+
+---
 
 #### PositionX
 
@@ -480,11 +594,15 @@ Key Button
 
 >Default: 60
 
+---
+
 #### PositionY
 
  Top position of the menu on the screen.
 
 >Default: 60
+
+---
 
 #### RowSpace
 
@@ -492,11 +610,15 @@ Key Button
 
 >Default: 0
 
+---
+
 #### RowsPerPage
 
  Max amount of items to display per page on the menu.
 
 >Default: 35
+
+---
 
 #### TextColorEditing
 
@@ -504,11 +626,15 @@ Key Button
 
 >Default: '255,100,50'
 
+---
+
 #### TextColorEnabled
 
  Custom color for active effects.
 
 >Default: '100,170,90'
+
+---
 
 #### TextColorNormal
 
@@ -516,11 +642,15 @@ Key Button
 
 >Default: '240,200,80'
 
+---
+
 #### TextColorSelected
 
  Custom color for selected menu text.
 
 >Default: '255,255,255'
+
+---
 
 #### TextFont
 
@@ -528,11 +658,15 @@ Key Button
 
 >Default: 'Calibri'
 
+---
+
 #### TextFontStatus
 
  Custom font for enabled/disabled shader text.
 
 >Default: 'Consolas'
+
+---
 
 #### TextShadowColorEditing
 
@@ -540,11 +674,15 @@ Key Button
 
 >Default: '50,50,50'
 
+---
+
 #### TextShadowColorEnabled
 
  Custom shadow color for enabled/disabled text.
 
 >Default: '50,50,50'
+
+---
 
 #### TextShadowColorNormal
 
@@ -552,11 +690,15 @@ Key Button
 
 >Default: '50,50,50'
 
+---
+
 #### TextShadowColorSelected
 
  Custom shadow color for selected text.
 
 >Default: '50,50,50'
+
+---
 
 #### TextSize
 
@@ -564,17 +706,23 @@ Key Button
 
 >Default: 22
 
+---
+
 #### TextSizeStatus
 
  Font size for enabled/disabled text.
 
 >Default: 12
 
+---
+
 #### TitleColumnSize
 
  Custom size for title column.
 
 >Default: 850
+
+---
 
 ## SleepingMode
 
@@ -588,9 +736,13 @@ Key Button
 
 >Default: false
 
+---
+
 #### Mode
 
 >Default: 0
+
+---
 
 ## WeatherMode
 
@@ -602,40 +754,60 @@ Key Button
 
 >Default: 0.86
 
+---
+
 #### CoeffFogG
 
 >Default: 0.88
+
+---
 
 #### CoeffFogR
 
 >Default: 0.9
 
+---
+
 #### CoeffNightB
 
 >Default: 0.5
+
+---
 
 #### CoeffNightG
 
 >Default: 0.6
 
+---
+
 #### CoeffNightR
 
 >Default: 0.6
+
+---
 
 #### CoeffSunB
 
 >Default: 0.8
 
+---
+
 #### CoeffSunG
 
 >Default: 0.9
 
+---
+
 #### CoeffSunR
 
 >Default: 1.0
+
+---
 
 ### Main
 
 #### Enabled
 
 >Default: false
+
+---

@@ -10,11 +10,15 @@
 
 >Default: 0.0
 
+---
+
 ### BlurDropThreshold
 
  Distance cutoff for areas that shouldn't be blurred together (edge aware denoise).
 
 >Default: 8.0
+
+---
 
 ### BlurRadiusMultiplier
 
@@ -22,11 +26,15 @@
 
 >Default: 2.0
 
+---
+
 ### ClampStrength
 
  lower limit to AO darkness (0 for pure black and 1 for pure white).
 
 >Default: 0.2
+
+---
 
 ### Enabled
 
@@ -34,11 +42,15 @@
 
 >Default: true
 
+---
+
 ### LumThreshold
 
  Treshold to reduce AO strength on bright surfaces.
 
 >Default: 0.7
+
+---
 
 ### Range
 
@@ -46,17 +58,23 @@
 
 >Default: 30.0
 
+---
+
 ### Samples
 
  Not used (currently hardcoded).
 
 >Default: 5
 
+---
+
 ### StrengthMultiplier
 
  Global AO strength/darkness multiplier.
 
 >Default: 2.0
+
+---
 
 ## Interiors
 
@@ -66,11 +84,15 @@
 
 >Default: 0.0
 
+---
+
 ### BlurDropThreshold
 
  Distance cutoff for areas that shouldn't be blurred together (edge aware denoise).
 
 >Default: 8.0
+
+---
 
 ### BlurRadiusMultiplier
 
@@ -78,11 +100,15 @@
 
 >Default: 2.0
 
+---
+
 ### ClampStrength
 
  lower limit to AO darkness (0 for pure black and 1 for pure white).
 
 >Default: 0.2
+
+---
 
 ### Enabled
 
@@ -90,11 +116,15 @@
 
 >Default: true
 
+---
+
 ### LumThreshold
 
  Treshold to reduce AO strength on bright surfaces.
 
 >Default: 0.5
+
+---
 
 ### Range
 
@@ -102,17 +132,23 @@
 
 >Default: 30.0
 
+---
+
 ### Samples
 
  Not used (currently hardcoded).
 
 >Default: 5
 
+---
+
 ### StrengthMultiplier
 
  Global AO strength/darkness multiplier.
 
 >Default: 2.0
+
+---
 
 ## Status
 
@@ -121,3 +157,5 @@
  Shadows based on object proximity/creases for more realistic light contribution.
 
 >Default: true
+
+---

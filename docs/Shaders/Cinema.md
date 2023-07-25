@@ -10,11 +10,15 @@
 
 >Default: 1.0
 
+---
+
 ### ChromaticAberration
 
  Lens distortion effect that separates the red/green and blue channels slightly as a real lens would.
 
 >Default: 2.0
+
+---
 
 ### FilmGrainAmount
 
@@ -22,11 +26,15 @@
 
 >Default: 0.5
 
+---
+
 ### Mode
 
  Chose when the letterbox effect is activated 0: always, 1: not during dialog, 2: only during dialog.
 
 >Default: 2
+
+---
 
 ### OverlayStrength
 
@@ -34,17 +42,23 @@
 
 >Default: 0.3
 
+---
+
 ### VignetteDarkness
 
  Darkening of the edges of the screen.
 
 >Default: 1.0
 
+---
+
 ### VignetteRadius
 
  Distance to the center for the start of the Vignette effect.
 
 >Default: 0.6
+
+---
 
 ## Status
 
@@ -53,3 +67,5 @@
  A collection of tweaks to give a more cinematic post processing feel.
 
 >Default: true
+
+---

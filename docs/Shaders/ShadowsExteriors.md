@@ -10,11 +10,15 @@
 
 >Default: false
 
+---
+
 ### Actors
 
  Wether to include objects with "Actors" flag when rendering shadowmaps.
 
 >Default: true
+
+---
 
 ### AlphaEnabled
 
@@ -22,11 +26,15 @@
 
 >Default: true
 
+---
+
 ### Apparatus
 
  Wether to include objects with "Apparatus" flag when rendering shadowmaps.
 
 >Default: false
+
+---
 
 ### Books
 
@@ -34,11 +42,15 @@
 
 >Default: false
 
+---
+
 ### Containers
 
  Wether to include objects with "Containers" flag when rendering shadowmaps.
 
 >Default: true
+
+---
 
 ### Doors
 
@@ -46,11 +58,15 @@
 
 >Default: true
 
+---
+
 ### Furniture
 
  Wether to include objects with "Furniture" flag when rendering shadowmaps.
 
 >Default: true
+
+---
 
 ### Lod
 
@@ -58,11 +74,15 @@
 
 >Default: false
 
+---
+
 ### MinRadius
 
  Wether to include objects with a radius of less than x pixels on the screen in the shadowmaps.
 
 >Default: 10.0
+
+---
 
 ### Misc
 
@@ -70,11 +90,15 @@
 
 >Default: true
 
+---
+
 ### Statics
 
  Wether to include objects with "Statics" flag when rendering shadowmaps.
 
 >Default: true
+
+---
 
 ### Terrain
 
@@ -82,11 +106,15 @@
 
 >Default: true
 
+---
+
 ### Trees
 
  Wether to include Trees when rendering shadowmaps.
 
 >Default: true
+
+---
 
 ## Lod
 
@@ -96,11 +124,15 @@
 
 >Default: false
 
+---
+
 ### Actors
 
  Wether to include objects with "Actors" flag when rendering shadowmaps.
 
 >Default: false
+
+---
 
 ### AlphaEnabled
 
@@ -108,11 +140,15 @@
 
 >Default: false
 
+---
+
 ### Apparatus
 
  Wether to include objects with "Apparatus" flag when rendering shadowmaps.
 
 >Default: false
+
+---
 
 ### Books
 
@@ -120,11 +156,15 @@
 
 >Default: false
 
+---
+
 ### Containers
 
  Wether to include objects with "Containers" flag when rendering shadowmaps.
 
 >Default: false
+
+---
 
 ### Doors
 
@@ -132,11 +172,15 @@
 
 >Default: true
 
+---
+
 ### Furniture
 
  Wether to include objects with "Furniture" flag when rendering shadowmaps.
 
 >Default: false
+
+---
 
 ### Lod
 
@@ -144,11 +188,15 @@
 
 >Default: false
 
+---
+
 ### MinRadius
 
  Wether to include objects with a radius of less than x pixels on the screen in the shadowmaps.
 
 >Default: 100.0
+
+---
 
 ### Misc
 
@@ -156,11 +204,15 @@
 
 >Default: false
 
+---
+
 ### Statics
 
  Wether to include objects with "Statics" flag when rendering shadowmaps.
 
 >Default: true
+
+---
 
 ### Terrain
 
@@ -168,11 +220,15 @@
 
 >Default: true
 
+---
+
 ### Trees
 
  Wether to include Trees when rendering shadowmaps.
 
 >Default: true
+
+---
 
 ## Main
 
@@ -182,11 +238,15 @@
 
 >Default: true
 
+---
+
 ### BlurShadowMaps
 
  Blur shadow maps for soft shadows.
 
 >Default: true
+
+---
 
 ### Darkness
 
@@ -194,11 +254,15 @@
 
 >Default: 0.6
 
+---
+
 ### Enabled
 
  Enable sun shadows using rendered shadow maps.
 
 >Default: true
+
+---
 
 ### NightMinDarkness
 
@@ -206,11 +270,15 @@
 
 >Default: 0.3
 
+---
+
 ### Quality
 
  not used.
 
 >Default: 2
+
+---
 
 ### ShadowMapFarPlane
 
@@ -218,11 +286,15 @@
 
 >Default: 32768
 
+---
+
 ### ShadowMapResolution
 
  Resolution of the texture used to store the shadow maps. LOD map is twice this value. Needs restart to take effect.
 
 >Default: 1024
+
+---
 
 ### ShadowMode
 
@@ -230,11 +302,15 @@
 
 >Default: 1
 
+---
+
 ### ShadowsRadius
 
  Max distance for rendering of shadow from the camera.
 
 >Default: 8000
+
+---
 
 ### UsePointShadowsDay
 
@@ -242,11 +318,15 @@
 
 >Default: false
 
+---
+
 ### UsePointShadowsNight
 
  Wether to cast shadows from point lights during Nights. Requires a slight darkening of the entire screen.
 
 >Default: true
+
+---
 
 ## Middle
 
@@ -256,11 +336,15 @@
 
 >Default: false
 
+---
+
 ### Actors
 
  Wether to include objects with "Actors" flag when rendering shadowmaps.
 
 >Default: true
+
+---
 
 ### AlphaEnabled
 
@@ -268,11 +352,15 @@
 
 >Default: true
 
+---
+
 ### Apparatus
 
  Wether to include objects with "Apparatus" flag when rendering shadowmaps.
 
 >Default: false
+
+---
 
 ### Books
 
@@ -280,11 +368,15 @@
 
 >Default: false
 
+---
+
 ### Containers
 
  Wether to include objects with "Containers" flag when rendering shadowmaps.
 
 >Default: true
+
+---
 
 ### Doors
 
@@ -292,11 +384,15 @@
 
 >Default: true
 
+---
+
 ### Furniture
 
  Wether to include objects with "Furniture" flag when rendering shadowmaps.
 
 >Default: true
+
+---
 
 ### Lod
 
@@ -304,11 +400,15 @@
 
 >Default: false
 
+---
+
 ### MinRadius
 
  Wether to include objects with a radius of less than x pixels on the screen in the shadowmaps.
 
 >Default: 10.0
+
+---
 
 ### Misc
 
@@ -316,11 +416,15 @@
 
 >Default: true
 
+---
+
 ### Statics
 
  Wether to include objects with "Statics" flag when rendering shadowmaps.
 
 >Default: true
+
+---
 
 ### Terrain
 
@@ -328,11 +432,15 @@
 
 >Default: true
 
+---
+
 ### Trees
 
  Wether to include Trees when rendering shadowmaps.
 
 >Default: true
+
+---
 
 ## Near
 
@@ -342,11 +450,15 @@
 
 >Default: false
 
+---
+
 ### Actors
 
  Wether to include objects with "Actors" flag when rendering shadowmaps.
 
 >Default: true
+
+---
 
 ### AlphaEnabled
 
@@ -354,11 +466,15 @@
 
 >Default: true
 
+---
+
 ### Apparatus
 
  Wether to include objects with "Apparatus" flag when rendering shadowmaps.
 
 >Default: false
+
+---
 
 ### Books
 
@@ -366,11 +482,15 @@
 
 >Default: false
 
+---
+
 ### Containers
 
  Wether to include objects with "Containers" flag when rendering shadowmaps.
 
 >Default: true
+
+---
 
 ### Doors
 
@@ -378,11 +498,15 @@
 
 >Default: true
 
+---
+
 ### Furniture
 
  Wether to include objects with "Furniture" flag when rendering shadowmaps.
 
 >Default: true
+
+---
 
 ### Lod
 
@@ -390,11 +514,15 @@
 
 >Default: false
 
+---
+
 ### MinRadius
 
  Wether to include objects with a radius of less than x pixels on the screen in the shadowmaps.
 
 >Default: 10.0
+
+---
 
 ### Misc
 
@@ -402,11 +530,15 @@
 
 >Default: true
 
+---
+
 ### Statics
 
  Wether to include objects with "Statics" flag when rendering shadowmaps.
 
 >Default: true
+
+---
 
 ### Terrain
 
@@ -414,11 +546,15 @@
 
 >Default: true
 
+---
+
 ### Trees
 
  Wether to include Trees when rendering shadowmaps.
 
 >Default: true
+
+---
 
 ## Ortho
 
@@ -428,11 +564,15 @@
 
 >Default: false
 
+---
+
 ### Actors
 
  Wether to include objects with "Actors" flag when rendering ortho map.
 
 >Default: false
+
+---
 
 ### AlphaEnabled
 
@@ -440,11 +580,15 @@
 
 >Default: true
 
+---
+
 ### Apparatus
 
  Wether to include objects with "Apparatus" flag when rendering ortho map.
 
 >Default: false
+
+---
 
 ### Books
 
@@ -452,11 +596,15 @@
 
 >Default: false
 
+---
+
 ### Containers
 
  Wether to include objects with "Containers" flag when rendering ortho map.
 
 >Default: false
+
+---
 
 ### Doors
 
@@ -464,11 +612,15 @@
 
 >Default: false
 
+---
+
 ### Furniture
 
  Wether to include objects with "Furniture" flag when rendering ortho map.
 
 >Default: false
+
+---
 
 ### Lod
 
@@ -476,11 +628,15 @@
 
 >Default: false
 
+---
+
 ### MinRadius
 
  Wether to include objects with a radius of less than x pixels on the screen in the ortho map.
 
 >Default: 100.0
+
+---
 
 ### Misc
 
@@ -488,11 +644,15 @@
 
 >Default: false
 
+---
+
 ### Statics
 
  Wether to include objects with "Statics" flag when rendering ortho map.
 
 >Default: true
+
+---
 
 ### Terrain
 
@@ -500,11 +660,15 @@
 
 >Default: true
 
+---
+
 ### Trees
 
  Wether to include Trees when rendering ortho map.
 
 >Default: false
+
+---
 
 ## ScreenSpace
 
@@ -514,17 +678,23 @@
 
 >Default: 1.0
 
+---
+
 ### Enabled
 
  Wether to render screen space contact/detail shadows
 
 >Default: true
 
+---
+
 ### RenderDistance
 
  Max distance at which to compute screen space shadows
 
 >Default: 8000
+
+---
 
 ## Status
 
@@ -533,3 +703,5 @@
  Post process sun and pointlights shadows in exteriors.
 
 >Default: true
+
+---

@@ -8,21 +8,31 @@
 
 >Default: 15.0
 
+---
+
 ### BlurOffsetMax
 
 >Default: 24.0
+
+---
 
 ### BlurScale
 
 >Default: 4.0
 
+---
+
 ### Enabled
 
 >Default: true
 
+---
+
 ### GaussianWeight
 
 >Default: 6.0
+
+---
 
 ## ThirdPersonView
 
@@ -30,21 +40,31 @@
 
 >Default: 15.0
 
+---
+
 ### BlurOffsetMax
 
 >Default: 24.0
+
+---
 
 ### BlurScale
 
 >Default: 4.0
 
+---
+
 ### Enabled
 
 >Default: false
 
+---
+
 ### GaussianWeight
 
 >Default: 6.0
+
+---
 
 ## Status
 
@@ -53,3 +73,5 @@
  Blur in direction of the camera when turning.
 
 >Default: false
+
+---

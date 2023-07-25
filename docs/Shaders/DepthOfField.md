@@ -10,11 +10,15 @@
 
 >Default: 2.0
 
+---
+
 ### BlurFallOff
 
  Hyperfocal distance (x1000). Before this distance, near and far field are blurred. After, only the near field is.
 
 >Default: 1.5
+
+---
 
 ### DiameterRange
 
@@ -22,11 +26,15 @@
 
 >Default: 0.8
 
+---
+
 ### DistantBlur
 
  Activate a constant blurriness in the far distance to hide LOD.
 
 >Default: true
+
+---
 
 ### DistantBlurEndRange
 
@@ -34,11 +42,15 @@
 
 >Default: 150000
 
+---
+
 ### DistantBlurStartRange
 
  Start of the area blurred in the distance (not yet blurry).
 
 >Default: 30000
+
+---
 
 ### Enabled
 
@@ -46,11 +58,15 @@
 
 >Default: true
 
+---
+
 ### Mode
 
  Chose when the DOF is activated: 0: always, 1: not during dialog, 2: only in dialog.
 
 >Default: 0
+
+---
 
 ### NearBlurCutOff
 
@@ -58,11 +74,15 @@
 
 >Default: 100
 
+---
+
 ### Radius
 
  Radius for the bokeh blur.
 
 >Default: 1.5
+
+---
 
 ## Status
 
@@ -72,6 +92,8 @@
 
 >Default: true
 
+---
+
 ## ThirdPersonView
 
 ### BaseBlurRadius
@@ -80,11 +102,15 @@
 
 >Default: 2.0
 
+---
+
 ### BlurFallOff
 
  Hyperfocal distance (x1000). Before this distance, near and far field are blurred. After, only the near field is.
 
 >Default: 1.5
+
+---
 
 ### DiameterRange
 
@@ -92,11 +118,15 @@
 
 >Default: 0.8
 
+---
+
 ### DistantBlur
 
  Activate a constant blurriness in the far distance to hide LOD.
 
 >Default: true
+
+---
 
 ### DistantBlurEndRange
 
@@ -104,11 +134,15 @@
 
 >Default: 150000
 
+---
+
 ### DistantBlurStartRange
 
  Start of the area blurred in the distance (not yet blurry).
 
 >Default: 30000
+
+---
 
 ### Enabled
 
@@ -116,11 +150,15 @@
 
 >Default: true
 
+---
+
 ### Mode
 
  Chose when the DOF is activated: 0: always, 1: not during dialog, 2: only in dialog.
 
 >Default: 0
+
+---
 
 ### NearBlurCutOff
 
@@ -128,11 +166,15 @@
 
 >Default: 200
 
+---
+
 ### Radius
 
  Radius for the bokeh blur.
 
 >Default: 1.5
+
+---
 
 ## VanityView
 
@@ -142,11 +184,15 @@
 
 >Default: 2.0
 
+---
+
 ### BlurFallOff
 
  Hyperfocal distance (x1000). Before this distance, near and far field are blurred. After, only the near field is.
 
 >Default: 1.5
+
+---
 
 ### DiameterRange
 
@@ -154,11 +200,15 @@
 
 >Default: 0.8
 
+---
+
 ### DistantBlur
 
  Activate a constant blurriness in the far distance to hide LOD.
 
 >Default: true
+
+---
 
 ### DistantBlurEndRange
 
@@ -166,11 +216,15 @@
 
 >Default: 150000
 
+---
+
 ### DistantBlurStartRange
 
  Start of the area blurred in the distance (not yet blurry).
 
 >Default: 30000
+
+---
 
 ### Enabled
 
@@ -178,11 +232,15 @@
 
 >Default: true
 
+---
+
 ### Mode
 
  Chose when the DOF is activated: 0: always, 1: not during dialog, 2: only in dialog.
 
 >Default: 0
+
+---
 
 ### NearBlurCutOff
 
@@ -190,8 +248,12 @@
 
 >Default: 0
 
+---
+
 ### Radius
 
  Radius for the bokeh blur.
 
 >Default: 1.5
+
+---

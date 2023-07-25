@@ -10,11 +10,15 @@
 
 >Default: 1.5
 
+---
+
 ### LightAdaptSpeed
 
  Speed for the exposure to adjust when the screen gets brighter.
 
 >Default: 0.5
+
+---
 
 ### MaxBrightness
 
@@ -22,11 +26,15 @@
 
 >Default: 0.5
 
+---
+
 ### MinBrightness
 
  Brightness treshold below which the screen will be brightened.
 
 >Default: 0.3
+
+---
 
 ## Interiors
 
@@ -36,11 +44,15 @@
 
 >Default: 1.5
 
+---
+
 ### LightAdaptSpeed
 
  Speed for the exposure to adjust when the screen gets brighter.
 
 >Default: 0.5
+
+---
 
 ### MaxBrightness
 
@@ -48,11 +60,15 @@
 
 >Default: 0.9
 
+---
+
 ### MinBrightness
 
  Brightness treshold below which the screen will be brightened.
 
 >Default: 0.2
+
+---
 
 ## Night
 
@@ -62,11 +78,15 @@
 
 >Default: 1.5
 
+---
+
 ### LightAdaptSpeed
 
  Speed for the exposure to adjust when the screen gets brighter.
 
 >Default: 0.5
+
+---
 
 ### MaxBrightness
 
@@ -74,11 +94,15 @@
 
 >Default: 0.9
 
+---
+
 ### MinBrightness
 
  Brightness treshold below which the screen will be brightened.
 
 >Default: 0.2
+
+---
 
 ## Status
 
@@ -87,3 +111,5 @@
  Modulates screen gamma to correct exposure based on average brightness. Avoids screens that are too bright/dark.
 
 >Default: true
+
+---
