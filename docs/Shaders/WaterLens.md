@@ -28,4 +28,6 @@
 
 ### Enabled
 
+ Short refraction water drop animation on the lens when exiting water.
+
 >Default: true

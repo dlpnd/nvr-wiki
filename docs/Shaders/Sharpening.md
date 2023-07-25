@@ -20,4 +20,6 @@
 
 ### Enabled
 
+ Edge contrast shader to increase detail sharpness.
+
 >Default: false

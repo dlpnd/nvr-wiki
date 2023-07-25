@@ -40,4 +40,6 @@
 
 ### Enabled
 
+ Not currently used. Replaces grass shaders and game options.  
+
 >Default: false

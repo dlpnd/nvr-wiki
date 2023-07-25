@@ -24,4 +24,6 @@
 
 ### Enabled
 
+ Not currently used. Replaces HDR tonemapping shaders with custom ones.
+
 >Default: false

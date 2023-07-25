@@ -20,4 +20,6 @@
 
 ### Enabled
 
+ Snow precipitation shader.
+
 >Default: true

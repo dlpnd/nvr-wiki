@@ -66,4 +66,6 @@
 
 ### Enabled
 
+ Increases the blurriness and light bleed caused by bright lights.
+
 >Default: false

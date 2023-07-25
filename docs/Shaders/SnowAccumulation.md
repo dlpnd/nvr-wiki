@@ -32,4 +32,6 @@
 
 ### Enabled
 
+ Snow accumulation on the floor during snowstorms.
+
 >Default: true

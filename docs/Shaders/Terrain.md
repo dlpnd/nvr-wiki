@@ -24,4 +24,6 @@
 
 ### Enabled
 
+ Not currently used. Replaces shaders used by terrain.
+
 >Default: false
