@@ -17,7 +17,7 @@ If you are not familiar with the terms, we recommend following one of the follow
 
 ### Prerequisites
 
-* Fallout New Vegas from [Steam](https://store.steampowered.com/sub/13435) or [GOG](https://www.gog.com/en/game/fallout_new_vegas_ultimate_edition)
+* Fallout New Vegas from [Steam](https://store.steampowered.com/sub/13435), [GOG](https://www.gog.com/en/game/fallout_new_vegas_ultimate_edition) or [Epic Games](https://store.epicgames.com/en-US/p/fallout-new-vegas--ultimate-edition)
 :::caution
 Any other versions are not supported by `xNVSE`.
 :::
@@ -26,7 +26,11 @@ Any other versions are not supported by `xNVSE`.
 
 ## Downloads
 
-New Vegas Reloaded is officially available for download via 2 methods: `Nexusmods` and `GitHub`. Nexus releases are generally tested and ready for general public to download.
+New Vegas Reloaded is officially available for download via 3 methods: `Discord`, `NexusMods` and `GitHub`. Nexus releases are generally tested and ready for general public to download.
+
+## Discord
+
+[New Vegas Reloaded Nightly](https://discord.com/channels/344843935123898369/825386797151813662)
 
 ### Nexus
 

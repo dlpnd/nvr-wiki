@@ -127,6 +127,22 @@ Use this zip to replace the `Alpha Property` of the `Meshes` (credits [@𝔹𝕒
 
 `Water Shaders` requires `Reflections` and `Refractions` to be enabled in the game's `ini`.
 
+## Why does the depth buffer look like it has the wrong size?
+
+![Depth Buffer](/img/depth-buffer.png)
+
+This is due to a wrong value in the `fallout.ini.` The easiest fix is to replace the values with the ones from the `ini` in [Viva New Vegas](https://vivanewvegas.moddinglinked.com/utilities.html#customIni)
+
+## Why do black squares appear around trees/tumbleweeds?
+
+![MSAA](/img/msaa.png)
+
+To fix, `enable` MSAA in launcher options.
+
+:::note
+if using `dxvk`, also set `bTransparencyMultisampling` to `1` 
+:::
+
 ## Can New Vegas Reloaded be used with mod `x`?
 
 New Vegas Reloaded currently has the following conflics with:
