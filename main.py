@@ -23,14 +23,12 @@ def save_file(filename, content, mode):
         f.write(content)
 
 def get_str(value):
-    if isinstance(value, bool):
+    if isinstance(value, (bool, toml.decoder.CommentValue)):
         return str(value).lower()
     elif isinstance(value, (int, float)):
         return str(value)
     elif isinstance(value, str):
         return f"'{value}'"
-    elif isinstance(value, toml.decoder.CommentValue):
-        return str(value.val).lower()
 
 with open("dx.md", "r") as f:
     dx_md = f.read()
