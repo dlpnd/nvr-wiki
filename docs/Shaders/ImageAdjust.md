@@ -172,7 +172,7 @@
 
  Overall image brightness.
 
->Default: 1.215
+>Default: 1.12
 
 ---
 
@@ -188,7 +188,7 @@
 
  Overall image contrast.
 
->Default: 1.45
+>Default: 1.3
 
 ---
 
@@ -196,7 +196,7 @@
 
  Strength of the effect.
 
->Default: 1.0
+>Default: 0.8
 
 ---
 
@@ -204,7 +204,7 @@
 
  Red channel multiplier for darker tones.
 
->Default: 0.9
+>Default: 0.8
 
 ---
 
@@ -212,7 +212,7 @@
 
  Green channel multiplier for darker tones.
 
->Default: 0.7
+>Default: 0.8
 
 ---
 
@@ -220,7 +220,7 @@
 
  Blue channel multiplier for darker tones.
 
->Default: 1.0
+>Default: 1.3
 
 ---
 
@@ -228,7 +228,7 @@
 
  Red channel multiplier for lighter tones.
 
->Default: 0.8
+>Default: 1.3
 
 ---
 
@@ -236,7 +236,7 @@
 
  Green channel multiplier for lighter tones.
 
->Default: 0.8
+>Default: 1.4
 
 ---
 

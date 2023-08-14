@@ -60,6 +60,14 @@
 
 ---
 
+### LetterBoxDepth
+
+ Depth of the letter box bars
+
+>Default: 0.0
+
+---
+
 ## Status
 
 ### Enabled

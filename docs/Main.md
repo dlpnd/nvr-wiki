@@ -478,7 +478,7 @@ Key Button
 
  Keycode for increment value shortcut in menu.
 
->Default: 74
+>Default: 78
 
 ---
 
@@ -550,7 +550,7 @@ Key Button
 
  Keycode for decrement value shortcut in menu.
 
->Default: 78
+>Default: 74
 
 ---
 

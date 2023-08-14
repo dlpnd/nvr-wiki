@@ -4,13 +4,9 @@
 
 ## Main
 
-### Amount
-
->Default: 1.6
-
----
-
 ### BlurNormDropThreshhold
+
+ Treshold for normals blurring above which normals will not be blended
 
 >Default: 0.82
 
@@ -18,11 +14,15 @@
 
 ### BlurRadiusMultiplier
 
+ Strength of normals blur
+
 >Default: 0.6
 
 ---
 
 ### Decrease
+
+ Time in game Hours for the snow to disappear
 
 >Default: 12
 
@@ -30,7 +30,9 @@
 
 ### Increase
 
->Default: 0.8
+ Time in game Hours for the snow to accumulate
+
+>Default: 0.3
 
 ---
 

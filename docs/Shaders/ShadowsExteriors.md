@@ -692,7 +692,7 @@
 
  Max distance at which to compute screen space shadows
 
->Default: 8000
+>Default: 80000
 
 ---
 

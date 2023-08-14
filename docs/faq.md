@@ -140,7 +140,7 @@ This is due to a wrong value in the `fallout.ini.` The easiest fix is to replace
 To fix, `enable` MSAA in launcher options.
 
 :::note
-if using `dxvk`, also set `bTransparencyMultisampling` to `1` 
+if using `dxvk`, also set `bTransparencyMultisampling` to `1`
 :::
 
 ## Can New Vegas Reloaded be used with mod `x`?
