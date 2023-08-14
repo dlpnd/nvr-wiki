@@ -143,6 +143,16 @@ To fix, `enable` MSAA in launcher options.
 if using `dxvk`, also set `bTransparencyMultisampling` to `1`
 :::
 
+## Why are nights/interiors too bright/dark?
+
+You need to tweak the default of the `ImageAdjust` Shader which might not be right for your weather/lighting mod.
+
+## Why are there lines over the screen?
+
+![DXVK](/img/dxvk-lines.jpg)
+
+This bug is caused by using an older version of `dxvk`
+
 ## Can New Vegas Reloaded be used with mod `x`?
 
 New Vegas Reloaded currently has the following conflics with:
