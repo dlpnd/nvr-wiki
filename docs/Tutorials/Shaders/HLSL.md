@@ -6,6 +6,8 @@
 
 ---
 
+> Original Source: <https://fiftytifty.net/forum/viewtopic.php?p=10#p10>
+
 New Vegas Reloaded is a great piece of software, which hooks into New Vegas' renderer and adds some new effects. Such as making many statics cast shadows, darkening shadows, adding AO for nice object shading (fake mini-shadows), rain puddles during rainy weather...And colour adjustment with HLSL shaders!
 
 Unfortunately, it's not quite as pick-up-and-go as it is for ReShade, or ENBSeries. This is not out of laziness, but out of near two decades of work on/off by the community. It's not just throwing post processing on top, but doing low level engine stuff.
@@ -58,6 +60,8 @@ Give it a second to load, and you'll see Visual Studio pop up and look like the 
 Congratulations, we've now ready to start doing code stuff! Unfortunately, we're now going to start doing code stuff.
 
 ---
+
+## Tutorial
 
 For this tutorial, because I'm only interested in doing stuff for New Vegas, we will be making modifications to the `NewVegasReloaded` project. The process should be similar for the other two, but I'm no authority on that.
 
