@@ -63,6 +63,8 @@ Congratulations, we've now ready to start doing code stuff! Unfortunately, we're
 
 ## Tutorial
 
+---
+
 For this tutorial, because I'm only interested in doing stuff for New Vegas, we will be making modifications to the `NewVegasReloaded` project. The process should be similar for the other two, but I'm no authority on that.
 
 We have several things we need to do:
