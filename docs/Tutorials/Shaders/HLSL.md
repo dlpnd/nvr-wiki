@@ -76,8 +76,8 @@ This is all very daunting for people doing this for the first time. It was for m
 
 We will be doing our work in `ShaderManager.cpp`, `ShaderManager.h`, and `NewVegasReloaded.dll.defaults.toml`. They function as follows:
 
-`ShaderManager.cpp` -> Where we calculate the values given to our shader, and call for it to be rendered
-`ShaderManager.h` -> Where we define the values, there's not much to do for this
-`NewVegasReloaded.dll.defaults.toml` -> Where we define the settings for our shader
+- `ShaderManager.cpp` -> Where we calculate the values given to our shader, and call for it to be rendered
+- `ShaderManager.h` -> Where we define the values, there's not much to do for this
+- `NewVegasReloaded.dll.defaults.toml` -> Where we define the settings for our shader
 
 The first two can be found right inside Visual Studio, but the .toml file we will edit with Notepad++ (Windows' built in Notepad works, but it's clunky and yucky to use), and is located in `TESReloaded10\Extra\NewVegasReloaded.dll.defaults.toml`
