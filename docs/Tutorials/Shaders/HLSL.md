@@ -68,7 +68,7 @@ For this tutorial, because I'm only interested in doing stuff for New Vegas, we 
 We have several things we need to do:
 
 1. Get the game data we want to pass to our shader (day/night, interior/exterior, etc)
-1. Define our shader in the NewVegasReloaded code
+1. Define our shader in the `NewVegasReloaded` code
 1. Create our shader file
 1. Port over the ENB shader, which will involve changing up the hlsl code, as well as editing a bit of the C++ code
 
@@ -80,4 +80,4 @@ We will be doing our work in `ShaderManager.cpp`, `ShaderManager.h`, and `NewVeg
 - `ShaderManager.h` -> Where we define the values, there's not much to do for this
 - `NewVegasReloaded.dll.defaults.toml` -> Where we define the settings for our shader
 
-The first two can be found right inside Visual Studio, but the .toml file we will edit with Notepad++ (Windows' built in Notepad works, but it's clunky and yucky to use), and is located in `TESReloaded10\Extra\NewVegasReloaded.dll.defaults.toml`
+The first two can be found right inside `Visual Studio`, but the `.toml` file we will edit with `Notepad++` (Windows' built in Notepad works, but it's clunky and yucky to use), and is located in `TESReloaded10\Extra\NewVegasReloaded.dll.defaults.toml`
