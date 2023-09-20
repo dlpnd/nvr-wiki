@@ -8,7 +8,7 @@
 
  Strength of godrays during the day.
 
->Default: 0.5
+>Default: 0.3
 
 ---
 
@@ -24,7 +24,7 @@
 
  Treshold for minimum luminosity of areas casting rays. Lower means more of the sky will cast rays.
 
->Default: 0.8
+>Default: 0.9
 
 ---
 

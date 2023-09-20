@@ -6,17 +6,17 @@
 
 ### BlurNormDropThreshhold
 
- Treshold for normals blurring above which normals will not be blended
+ Distance for ortho average sampling around ortho covered area
 
->Default: 0.82
+>Default: 120
 
 ---
 
 ### BlurRadiusMultiplier
 
- Strength of normals blur
+ Screen space blur radius for ortho coverage smoothing
 
->Default: 0.6
+>Default: 2.0
 
 ---
 
@@ -24,7 +24,7 @@
 
  Time in game Hours for the snow to disappear
 
->Default: 12
+>Default: 12.0
 
 ---
 
@@ -38,7 +38,33 @@
 
 ### SunPower
 
->Default: 0.3
+ Multiplier for the lighting strength
+
+>Default: 1.0
+
+---
+
+### SnowColorR
+
+ Red chanel for the color of snow coverage
+
+>Default: 0.9
+
+---
+
+### SnowColorG
+
+ Green chanel for the color of snow coverage
+
+>Default: 0.9
+
+---
+
+### SnowColorB
+
+ Blue chanel for the color of snow coverage
+
+>Default: 0.8
 
 ---
 
