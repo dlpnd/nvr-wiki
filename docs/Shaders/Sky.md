@@ -36,6 +36,38 @@
 
 ---
 
+### ReplaceSun
+
+ replaces vanilla sun by a procedural sun for whatever reason
+
+>Default: false
+
+---
+
+### SunsetR
+
+ Color boost for sunset/sunrise sun color (Red)
+
+>Default: 0.5
+
+---
+
+### SunsetG
+
+ Color boost for sunset/sunrise sun color (Green)
+
+>Default: 0.0
+
+---
+
+### SunsetB
+
+ Color boost for sunset/sunrise sun color (Blue)
+
+>Default: 0.03
+
+---
+
 ## Clouds
 
 ### UseNormals

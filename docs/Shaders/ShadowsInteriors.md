@@ -104,7 +104,7 @@
 
  A muliplier for the lights radius to render shadows for.
 
->Default: 1.0
+>Default: 1.5
 
 ---
 
