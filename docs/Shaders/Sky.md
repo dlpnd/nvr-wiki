@@ -8,7 +8,7 @@
 
  Determins the height of the athmosphere on the horizon
 
->Default: 4.0
+>Default: 5.0
 
 ---
 
@@ -16,7 +16,7 @@
 
  How wide a side of the athmosphere will the sky lit up.
 
->Default: 1.0
+>Default: 0.5
 
 ---
 
@@ -24,7 +24,7 @@
 
  How strong is the sun brighness when reflected by athmosphere
 
->Default: 0.5
+>Default: 0.9
 
 ---
 
@@ -32,7 +32,7 @@
 
  Multiplier for stars brightness
 
->Default: 4.0
+>Default: 1.0
 
 ---
 
@@ -82,7 +82,7 @@
 
  EXPERIMENTAL-Uses this setting if the normals of the clouds point to the center of the panoramic texture
 
->Default: false
+>Default: true
 
 ---
 
@@ -90,7 +90,7 @@
 
  Clouds base transparency
 
->Default: 0.5
+>Default: 0.8
 
 ---
 
@@ -98,7 +98,7 @@
 
  Clouds base brightness
 
->Default: 0.2
+>Default: 1.0
 
 ---
 

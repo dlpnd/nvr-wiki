@@ -2,7 +2,7 @@
 
 ---
 
-## Day
+## Main
 
 ### DarkAdaptSpeed
 

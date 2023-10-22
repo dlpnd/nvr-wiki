@@ -48,7 +48,7 @@
 
  Strength for the sky lighting effect. This mostly affects horizontal, dark areas outside.
 
->Default: 0.6
+>Default: 1.0
 
 ---
 
