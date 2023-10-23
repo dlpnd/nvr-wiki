@@ -24,7 +24,7 @@
 
  scales the lighting strength before tonemap
 
->Default: 2.5
+>Default: 1.1
 
 ---
 
@@ -32,7 +32,7 @@
 
  gamma modifier to be applied after tonemapping
 
->Default: 0.4
+>Default: 2.2
 
 ---
 
@@ -54,7 +54,7 @@
 
  Saturation of the image before tonemapping
 
->Default: 1.2
+>Default: 1.0
 
 ---
 
@@ -62,11 +62,13 @@
 
  Scales the brightness of the sky and sky textures. Requires Sky shader enabled
 
->Default: 1.4
+>Default: 1.3
 
 ---
 
 ### ToneMapping
+
+ Unused
 
 >Default: 1.0
 
@@ -74,11 +76,15 @@
 
 ### ToneMappingBlur
 
+ Unused
+
 >Default: 0.0
 
 ---
 
 ### ToneMappingColor
+
+ Unused
 
 >Default: 1.2
 
@@ -96,7 +102,7 @@
 
  White point setting for Reinhard tonemapper. Changes the value of the brightest pixels
 
->Default: 1.0
+>Default: 100.0
 
 ---
 
@@ -104,7 +110,7 @@
 
  Contrast setting for Lotte Tonemapper
 
->Default: 1.9
+>Default: 5.9
 
 ---
 
@@ -112,7 +118,7 @@
 
  Brightness setting for Lotte Tonemapper
 
->Default: 0.14
+>Default: 0.5
 
 ---
 
@@ -120,7 +126,15 @@
 
  Midpoint setting for Lotte Tonemapper
 
->Default: 1.3
+>Default: 1.2
+
+---
+
+### LotteShoulder
+
+ Curve shape towards white point for Lotte Tonemapper
+
+>Default: 0.5
 
 ---
 
@@ -130,7 +144,7 @@
 
  makes the bloom more spread out or more focused
 
->Default: 0.7
+>Default: 0.8
 
 ---
 
@@ -138,7 +152,7 @@
 
  scales the game's bloom pass strength
 
->Default: 5.0
+>Default: 2.0
 
 ---
 
@@ -146,7 +160,7 @@
 
  scales the lighting strength before tonemap
 
->Default: 3.0
+>Default: 1.5
 
 ---
 
@@ -154,7 +168,7 @@
 
  gamma modifier to be applied after tonemapping
 
->Default: 0.8
+>Default: 2.2
 
 ---
 
@@ -176,7 +190,7 @@
 
  Saturation of the image before tonemapping
 
->Default: 0.8
+>Default: 1.0
 
 ---
 
@@ -190,17 +204,23 @@
 
 ### ToneMapping
 
+ Unused
+
 >Default: 1.0
 
 ---
 
 ### ToneMappingBlur
 
+ Unused
+
 >Default: 0.0
 
 ---
 
 ### ToneMappingColor
+
+ Unused
 
 >Default: 1.0
 
@@ -218,7 +238,7 @@
 
  White point setting for Reinhard tonemapper. Changes the value of the brightest pixels
 
->Default: 1.0
+>Default: 100.0
 
 ---
 
@@ -226,7 +246,7 @@
 
  Contrast setting for Lotte Tonemapper
 
->Default: 1.9
+>Default: 5.0
 
 ---
 
@@ -234,7 +254,7 @@
 
  Brightness setting for Lotte Tonemapper
 
->Default: 0.14
+>Default: 1.0
 
 ---
 
@@ -242,7 +262,15 @@
 
  Midpoint setting for Lotte Tonemapper
 
->Default: 1.3
+>Default: 2.0
+
+---
+
+### LotteShoulder
+
+ Curve shape towards white point for Lotte Tonemapper
+
+>Default: 0.5
 
 ---
 
@@ -252,7 +280,7 @@
 
  makes the bloom more spread out or more focused
 
->Default: 0.8
+>Default: 0.9
 
 ---
 
@@ -260,7 +288,7 @@
 
  scales the game's bloom pass strength
 
->Default: 10.0
+>Default: 8.0
 
 ---
 
@@ -268,7 +296,7 @@
 
  scales the lighting strength before tonemap
 
->Default: 2.5
+>Default: 1.0
 
 ---
 
@@ -276,7 +304,7 @@
 
  gamma modifier to be applied after tonemapping
 
->Default: 0.5
+>Default: 2.2
 
 ---
 
@@ -306,11 +334,13 @@
 
  Scales the brightness of the sky and sky textures. Requires Sky shader enabled
 
->Default: 1.0
+>Default: 1.1
 
 ---
 
 ### ToneMapping
+
+ Unused
 
 >Default: 1.0
 
@@ -318,11 +348,15 @@
 
 ### ToneMappingBlur
 
+ Unused
+
 >Default: 0.0
 
 ---
 
 ### ToneMappingColor
+
+ Unused
 
 >Default: 1.2
 
@@ -340,7 +374,7 @@
 
  White point setting for Reinhard tonemapper. Changes the value of the brightest pixels
 
->Default: 1.0
+>Default: 100.0
 
 ---
 
@@ -348,7 +382,7 @@
 
  Contrast setting for Lotte Tonemapper
 
->Default: 1.9
+>Default: 3.0
 
 ---
 
@@ -356,7 +390,7 @@
 
  Brightness setting for Lotte Tonemapper
 
->Default: 0.14
+>Default: 0.8
 
 ---
 
@@ -364,7 +398,15 @@
 
  Midpoint setting for Lotte Tonemapper
 
->Default: 1.3
+>Default: 2.5
+
+---
+
+### LotteShoulder
+
+ Curve shape towards white point for Lotte Tonemapper
+
+>Default: 0.5
 
 ---
 
@@ -374,6 +416,6 @@
 
  Replaces HDR tonemapping shaders with custom ones.
 
->Default: false
+>Default: true
 
 ---

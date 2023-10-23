@@ -316,60 +316,65 @@ Enabled = true                        # Screenspace godrays/volumetric rays.
 [_Shaders.HDR.Main]
 BloomExponent = 1.0                   # makes the bloom more spread out or more focused
 BloomStrength = 2.1                   # scales the game's bloom pass strength
-Exposure = 2.5                        # scales the lighting strength before tonemap
-Gamma = 0.4                           # gamma modifier to be applied after tonemapping
+Exposure = 1.1                        # scales the lighting strength before tonemap
+Gamma = 2.2                           # gamma modifier to be applied after tonemapping
 Linearization = 2.2
 PointLightMultiplier = 1.0            # Experimental - modifies the strength of all point lights
-Saturation = 1.2                      # Saturation of the image before tonemapping
-SkyMultiplier = 1.4                   # Scales the brightness of the sky and sky textures. Requires Sky shader enabled
-ToneMapping = 1.0
-ToneMappingBlur = 0.0
-ToneMappingColor = 1.2
+Saturation = 1.0                      # Saturation of the image before tonemapping
+SkyMultiplier = 1.3                   # Scales the brightness of the sky and sky textures. Requires Sky shader enabled
+ToneMapping = 1.0                     # Unused
+ToneMappingBlur = 0.0                 # Unused
+ToneMappingColor = 1.2                # Unused
 TonemappingMode = 3                   # changes the tonemapping algorithm. 0: game native, 1:ACES, 2:Reinhard, 3: Lotte, 4:Uncharted2
-WhitePoint = 1.0                      # White point setting for Reinhard tonemapper. Changes the value of the brightest pixels
-LotteContrast = 1.9                   # Contrast setting for Lotte Tonemapper
-LotteBrightness = 0.14                # Brightness setting for Lotte Tonemapper
-LotteMidpoint = 1.3                   # Midpoint setting for Lotte Tonemapper
+WhitePoint = 100.0                    # White point setting for Reinhard tonemapper. Changes the value of the brightest pixels
+LotteContrast = 5.9                   # Contrast setting for Lotte Tonemapper
+LotteBrightness = 0.5                 # Brightness setting for Lotte Tonemapper
+LotteMidpoint = 1.2                   # Midpoint setting for Lotte Tonemapper
+LotteShoulder = 0.5                   # Curve shape towards white point for Lotte Tonemapper
+
 
 [_Shaders.HDR.Interiors]
-BloomExponent = 0.7                   # makes the bloom more spread out or more focused
-BloomStrength = 5.0                   # scales the game's bloom pass strength
-Exposure = 3.0                        # scales the lighting strength before tonemap
-Gamma = 0.8                           # gamma modifier to be applied after tonemapping
-Linearization = 2.2
-PointLightMultiplier = 1.0            # Experimental - modifies the strength of all point lights
-Saturation = 0.8                      # Saturation of the image before tonemapping
-SkyMultiplier = 1.0                   # Scales the brightness of the sky and sky textures. Requires Sky shader enabled
-ToneMapping = 1.0
-ToneMappingBlur = 0.0
-ToneMappingColor = 1.0
-TonemappingMode = 3                   # changes the tonemapping algorithm. 0: game native, 1:ACES, 2:Reinhard, 3:Uncharted
-WhitePoint = 1.0                      # White point setting for Reinhard tonemapper. Changes the value of the brightest pixels
-LotteContrast = 1.9                   # Contrast setting for Lotte Tonemapper
-LotteBrightness = 0.14                # Brightness setting for Lotte Tonemapper
-LotteMidpoint = 1.3                   # Midpoint setting for Lotte Tonemapper
-
-[_Shaders.HDR.Night]
 BloomExponent = 0.8                   # makes the bloom more spread out or more focused
-BloomStrength = 10.0                  # scales the game's bloom pass strength
-Exposure = 2.5                        # scales the lighting strength before tonemap
-Gamma = 0.5                           # gamma modifier to be applied after tonemapping
+BloomStrength = 2.0                   # scales the game's bloom pass strength
+Exposure = 1.5                        # scales the lighting strength before tonemap
+Gamma = 2.2                           # gamma modifier to be applied after tonemapping
 Linearization = 2.2
 PointLightMultiplier = 1.0            # Experimental - modifies the strength of all point lights
 Saturation = 1.0                      # Saturation of the image before tonemapping
 SkyMultiplier = 1.0                   # Scales the brightness of the sky and sky textures. Requires Sky shader enabled
-ToneMapping = 1.0
-ToneMappingBlur = 0.0
-ToneMappingColor = 1.2
+ToneMapping = 1.0                     # Unused
+ToneMappingBlur = 0.0                 # Unused
+ToneMappingColor = 1.0                # Unused
 TonemappingMode = 3                   # changes the tonemapping algorithm. 0: game native, 1:ACES, 2:Reinhard, 3:Uncharted
-WhitePoint = 1.0                      # White point setting for Reinhard tonemapper. Changes the value of the brightest pixels
-LotteContrast = 1.9                   # Contrast setting for Lotte Tonemapper
-LotteBrightness = 0.14                # Brightness setting for Lotte Tonemapper
-LotteMidpoint = 1.3                   # Midpoint setting for Lotte Tonemapper
+WhitePoint = 100.0                    # White point setting for Reinhard tonemapper. Changes the value of the brightest pixels
+LotteContrast = 5.0                   # Contrast setting for Lotte Tonemapper
+LotteBrightness = 1.0                 # Brightness setting for Lotte Tonemapper
+LotteMidpoint = 2.0                   # Midpoint setting for Lotte Tonemapper
+LotteShoulder = 0.5                   # Curve shape towards white point for Lotte Tonemapper
+
+
+[_Shaders.HDR.Night]
+BloomExponent = 0.9                   # makes the bloom more spread out or more focused
+BloomStrength = 8.0                   # scales the game's bloom pass strength
+Exposure = 1.0                        # scales the lighting strength before tonemap
+Gamma = 2.2                           # gamma modifier to be applied after tonemapping
+Linearization = 2.2
+PointLightMultiplier = 1.0            # Experimental - modifies the strength of all point lights
+Saturation = 1.0                      # Saturation of the image before tonemapping
+SkyMultiplier = 1.1                   # Scales the brightness of the sky and sky textures. Requires Sky shader enabled
+ToneMapping = 1.0                     # Unused
+ToneMappingBlur = 0.0                 # Unused
+ToneMappingColor = 1.2                # Unused
+TonemappingMode = 3                   # changes the tonemapping algorithm. 0: game native, 1:ACES, 2:Reinhard, 3:Uncharted
+WhitePoint = 100.0                    # White point setting for Reinhard tonemapper. Changes the value of the brightest pixels
+LotteContrast = 3.0                   # Contrast setting for Lotte Tonemapper
+LotteBrightness = 0.8                 # Brightness setting for Lotte Tonemapper
+LotteMidpoint = 2.5                   # Midpoint setting for Lotte Tonemapper
+LotteShoulder = 0.5                   # Curve shape towards white point for Lotte Tonemapper
 
 
 [_Shaders.HDR.Status]
-Enabled = false                       # Replaces HDR tonemapping shaders with custom ones.
+Enabled = true                        # Replaces HDR tonemapping shaders with custom ones.
 
 
 [_Shaders.ImageAdjust.Main]
