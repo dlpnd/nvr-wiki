@@ -12,7 +12,7 @@
 
 ### Speed
 
- Speed multiplier for snow falling
+Speed multiplier for snow falling
 
 >Default: 1.4
 
@@ -22,7 +22,7 @@
 
 ### Enabled
 
- Snow precipitation shader.
+Snow precipitation shader.
 
 >Default: true
 

@@ -26,7 +26,7 @@
 
 ### Enabled
 
- Not currently used. Parallax occlusion mapping on object shaders to simulate extra detail.
+Not currently used. Parallax occlusion mapping on object shaders to simulate extra detail.
 
 >Default: false
 

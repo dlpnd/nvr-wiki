@@ -6,7 +6,7 @@
 
 ### Enabled
 
- Not currently used
+Not currently used
 
 >Default: false
 

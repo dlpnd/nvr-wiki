@@ -50,7 +50,7 @@
 
 ### Enabled
 
- Not currently used. Replaces the skin shader.
+Not currently used. Replaces the skin shader.
 
 >Default: false
 

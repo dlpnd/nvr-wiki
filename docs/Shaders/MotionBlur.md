@@ -70,7 +70,7 @@
 
 ### Enabled
 
- Blur in direction of the camera when turning.
+Blur in direction of the camera when turning.
 
 >Default: false
 

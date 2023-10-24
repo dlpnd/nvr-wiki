@@ -57,7 +57,7 @@ def write_main_settings(main_config):
                           f"{HEADING[4]}{key}{NEW_LINE}", "a")
                 if hasattr(value, "val"):
                     save_file(MAIN_SAVE_LOCATION,
-                              f"{value.comment[2:]}{NEW_LINE}", "a")
+                              f"{value.comment[3:]}{NEW_LINE}", "a")
                     save_file(
                         MAIN_SAVE_LOCATION, f"{DEFAULT}{get_str(value.val)}{NEW_LINE}{UNDERLINE}", "a")
                 else:
@@ -83,7 +83,7 @@ def write_shader_settings(shader_config):
                           f"{HEADING[3]}{key}{NEW_LINE}", "a")
                 if hasattr(value, "val"):
                     save_file(f"{SHADERS_SAVE_LOCATION}{menu_items}",
-                              f"{value.comment[2:]}{NEW_LINE}", "a")
+                              f"{value.comment[3:]}{NEW_LINE}", "a")
                     save_file(f"{SHADERS_SAVE_LOCATION}{menu_items}",
                               f"{DEFAULT}{get_str(value.val)}{NEW_LINE}{UNDERLINE}", "a")
                 else:

@@ -44,7 +44,7 @@
 
 ### Enabled
 
- Screen and sound effects when the player health is low.
+Screen and sound effects when the player health is low.
 
 >Default: false
 

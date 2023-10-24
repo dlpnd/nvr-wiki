@@ -32,7 +32,7 @@
 
 ### Enabled
 
- Not currently used. Replaces shaders used by terrain.
+Not currently used. Replaces shaders used by terrain.
 
 >Default: false
 

@@ -6,7 +6,7 @@
 
 ### Amount
 
- Darkness of puddles
+Darkness of puddles
 
 >Default: 0.85
 
@@ -14,7 +14,7 @@
 
 ### Decrease
 
- Time it takes in game hours for puddles to dissipate
+Time it takes in game hours for puddles to dissipate
 
 >Default: 1.2
 
@@ -22,7 +22,7 @@
 
 ### Increase
 
- Time it takes in game hours for puddles to appear
+Time it takes in game hours for puddles to appear
 
 >Default: 0.3
 
@@ -30,7 +30,7 @@
 
 ### PuddleCoeff_B
 
- Not used.
+Not used.
 
 >Default: 0.48
 
@@ -38,7 +38,7 @@
 
 ### PuddleCoeff_G
 
- Not used.
+Not used.
 
 >Default: 0.62
 
@@ -46,7 +46,7 @@
 
 ### PuddleCoeff_R
 
- Not used.
+Not used.
 
 >Default: 0.72
 
@@ -54,7 +54,7 @@
 
 ### PuddleSpecularMultiplier
 
- Not used.
+Not used.
 
 >Default: 0.2
 
@@ -64,7 +64,7 @@
 
 ### Enabled
 
- Water ripples on surfaces, and puddles based on physical terrain pockets during rainy weathers.
+Water ripples on surfaces, and puddles based on physical terrain pockets during rainy weathers.
 
 >Default: true
 
