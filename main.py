@@ -1,4 +1,5 @@
 import toml
+from typing import Any
 
 HEADING = [" ", "# ", "## ", "### ", "#### "]
 DEFAULT = ">Default: "
@@ -7,21 +8,21 @@ NEW_LINE = LINE_BREAK * 2
 SEPARATOR = "---"
 UNDERLINE = SEPARATOR + NEW_LINE
 
-MAIN = "_Main"
-MAIN_SAVE_LOCATION = f"./docs/{MAIN[1:]}"
 MAIN_HEADER = f"{SEPARATOR}{LINE_BREAK}sidebar_position: 4{LINE_BREAK}{UNDERLINE}"
 MAIN_SUB_HEADER = f"{HEADING[1]}Main Settings{NEW_LINE}"
+MAIN = "_Main"
+MAIN_SAVE_LOCATION = f"./docs/{MAIN[1:]}"
 
 SHADERS = "_Shaders"
 SHADERS_SAVE_LOCATION = f"./docs/{SHADERS[1:]}/"
 
 
-def save_file(filename, content, mode):
-    with open(f"{filename}.md", mode) as f:
-        f.write(content)
+def save_file(filename: str, content: str, mode: str) -> None:
+    with open(f"{filename}.md", mode) as file:
+        file.write(content)
 
 
-def get_str(value):
+def get_str(value: Any) -> str | None:
     if isinstance(value, (bool, toml.decoder.CommentValue)):
         return str(value).lower()
     elif isinstance(value, (int, float)):
@@ -30,11 +31,11 @@ def get_str(value):
         return f"'{value}'"
 
 
-with open("dx.md", "r") as f:
-    dx_md = f.read()
+with open("dx.md", "r") as file:
+    dx_md = file.read()
 
 
-def write_main_settings(main_config):
+def write_main_settings(main_config: dict[str, Any]) -> None:
     save_file(MAIN_SAVE_LOCATION, "", "w")
     save_file(MAIN_SAVE_LOCATION, MAIN_HEADER, "a")
     save_file(MAIN_SAVE_LOCATION, MAIN_SUB_HEADER, "a")
@@ -65,7 +66,7 @@ def write_main_settings(main_config):
                         MAIN_SAVE_LOCATION, f"{DEFAULT}{get_str(value)}{NEW_LINE}{UNDERLINE}", "a")
 
 
-def write_shader_settings(shader_config):
+def write_shader_settings(shader_config: dict[str, Any]) -> None:
     for menu_items, section_config in shader_config.items():
         save_file(f"{SHADERS_SAVE_LOCATION}{menu_items}", "", "w")
         save_file(f"{SHADERS_SAVE_LOCATION}{menu_items}",

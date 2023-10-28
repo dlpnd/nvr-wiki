@@ -24,7 +24,7 @@ scales the game's bloom pass strength
 
 scales the lighting strength before tonemap
 
->Default: 1.1
+>Default: 1.0
 
 ---
 
@@ -62,7 +62,7 @@ Saturation of the image before tonemapping
 
 Scales the brightness of the sky and sky textures. Requires Sky shader enabled
 
->Default: 1.3
+>Default: 1.1
 
 ---
 
@@ -84,23 +84,23 @@ Unused
 
 ### ToneMappingColor
 
-Unused
+Changes the strength of the vanilla weather tint influence
 
->Default: 1.2
+>Default: 0.3
 
 ---
 
 ### TonemappingMode
 
-changes the tonemapping algorithm. 0: game native, 1:ACES, 2:Reinhard, 3: Lotte, 4:Uncharted2
+changes the tonemapping algorithm. 0: game native, 1:ACES, 2:Reinhard, 4: Lotte, 5: ACES Fitted, 6:Uncharted
 
->Default: 3
+>Default: 4
 
 ---
 
 ### WhitePoint
 
-White point setting for Reinhard tonemapper. Changes the value of the brightest pixels
+White point setting for Lotte/Reinhard tonemapper. Changes the value of the brightest pixels
 
 >Default: 100.0
 
@@ -110,7 +110,7 @@ White point setting for Reinhard tonemapper. Changes the value of the brightest 
 
 Contrast setting for Lotte Tonemapper
 
->Default: 5.9
+>Default: 0.5
 
 ---
 
@@ -126,7 +126,7 @@ Brightness setting for Lotte Tonemapper
 
 Midpoint setting for Lotte Tonemapper
 
->Default: 1.2
+>Default: 1.3
 
 ---
 
@@ -134,7 +134,7 @@ Midpoint setting for Lotte Tonemapper
 
 Curve shape towards white point for Lotte Tonemapper
 
->Default: 0.5
+>Default: 2.5
 
 ---
 
@@ -144,7 +144,7 @@ Curve shape towards white point for Lotte Tonemapper
 
 makes the bloom more spread out or more focused
 
->Default: 0.8
+>Default: 1.0
 
 ---
 
@@ -152,7 +152,7 @@ makes the bloom more spread out or more focused
 
 scales the game's bloom pass strength
 
->Default: 2.0
+>Default: 1.0
 
 ---
 
@@ -160,7 +160,7 @@ scales the game's bloom pass strength
 
 scales the lighting strength before tonemap
 
->Default: 1.5
+>Default: 1.9
 
 ---
 
@@ -220,23 +220,23 @@ Unused
 
 ### ToneMappingColor
 
-Unused
+Changes the strength of the vanilla weather tint influence
 
->Default: 1.0
+>Default: 0.4
 
 ---
 
 ### TonemappingMode
 
-changes the tonemapping algorithm. 0: game native, 1:ACES, 2:Reinhard, 3:Uncharted
+changes the tonemapping algorithm. 0: game native, 1:ACES, 2:Reinhard, 4: Lotte, 5: ACES Fitted, 6:Uncharted
 
->Default: 3
+>Default: 4
 
 ---
 
 ### WhitePoint
 
-White point setting for Reinhard tonemapper. Changes the value of the brightest pixels
+White point setting for Lotte/Reinhard tonemapper. Changes the value of the brightest pixels
 
 >Default: 100.0
 
@@ -246,7 +246,7 @@ White point setting for Reinhard tonemapper. Changes the value of the brightest 
 
 Contrast setting for Lotte Tonemapper
 
->Default: 5.0
+>Default: 2.7
 
 ---
 
@@ -254,7 +254,7 @@ Contrast setting for Lotte Tonemapper
 
 Brightness setting for Lotte Tonemapper
 
->Default: 1.0
+>Default: 2.0
 
 ---
 
@@ -262,7 +262,7 @@ Brightness setting for Lotte Tonemapper
 
 Midpoint setting for Lotte Tonemapper
 
->Default: 2.0
+>Default: 3.8
 
 ---
 
@@ -270,7 +270,7 @@ Midpoint setting for Lotte Tonemapper
 
 Curve shape towards white point for Lotte Tonemapper
 
->Default: 0.5
+>Default: 2.5
 
 ---
 
@@ -280,7 +280,7 @@ Curve shape towards white point for Lotte Tonemapper
 
 makes the bloom more spread out or more focused
 
->Default: 0.9
+>Default: 0.8
 
 ---
 
@@ -288,7 +288,7 @@ makes the bloom more spread out or more focused
 
 scales the game's bloom pass strength
 
->Default: 8.0
+>Default: 1.5
 
 ---
 
@@ -296,7 +296,7 @@ scales the game's bloom pass strength
 
 scales the lighting strength before tonemap
 
->Default: 1.0
+>Default: 0.7
 
 ---
 
@@ -334,7 +334,7 @@ Saturation of the image before tonemapping
 
 Scales the brightness of the sky and sky textures. Requires Sky shader enabled
 
->Default: 1.1
+>Default: 1.0
 
 ---
 
@@ -356,23 +356,23 @@ Unused
 
 ### ToneMappingColor
 
-Unused
+Changes the strength of the vanilla weather tint influence
 
->Default: 1.2
+>Default: 0.5
 
 ---
 
 ### TonemappingMode
 
-changes the tonemapping algorithm. 0: game native, 1:ACES, 2:Reinhard, 3:Uncharted
+changes the tonemapping algorithm. 0: game native, 1:ACES, 2:Reinhard, 4: Lotte, 5: ACES Fitted, 6:Uncharted
 
->Default: 3
+>Default: 4
 
 ---
 
 ### WhitePoint
 
-White point setting for Reinhard tonemapper. Changes the value of the brightest pixels
+White point setting for Lotte/Reinhard tonemapper. Changes the value of the brightest pixels
 
 >Default: 100.0
 
@@ -382,7 +382,7 @@ White point setting for Reinhard tonemapper. Changes the value of the brightest 
 
 Contrast setting for Lotte Tonemapper
 
->Default: 3.0
+>Default: 1.4
 
 ---
 
@@ -390,7 +390,7 @@ Contrast setting for Lotte Tonemapper
 
 Brightness setting for Lotte Tonemapper
 
->Default: 0.8
+>Default: 0.0
 
 ---
 
@@ -398,7 +398,7 @@ Brightness setting for Lotte Tonemapper
 
 Midpoint setting for Lotte Tonemapper
 
->Default: 2.5
+>Default: 0.8
 
 ---
 
@@ -406,7 +406,7 @@ Midpoint setting for Lotte Tonemapper
 
 Curve shape towards white point for Lotte Tonemapper
 
->Default: 0.5
+>Default: 1.0
 
 ---
 
