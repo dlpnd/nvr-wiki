@@ -292,6 +292,10 @@ If correct `depth` is `visible/selectable` by `ReShade` then enjoy.
 If the correct `depth` is `selected` but at the wrong `resolution` (for example your game is set to 2560x1440p but the correct `depth buffer` is 2560x2048).
 :::
 
+:::danger
+`MSAA` should only be `disabled` if trying to use `ReShades` `Depth Buffer`, or `ENB`. In any other circumstance it should be left on, it has a substantial visual cost.
+:::
+
 Then:
 
 1. Take the `depth buffer` height, in this example: `2048` and devide by the games height of `1440`, which will give you a ratio of `1.422`
