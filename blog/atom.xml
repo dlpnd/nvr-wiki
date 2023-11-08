@@ -13,7 +13,11 @@
         <link href="https://dlpnd.github.io/nvr-wiki/blog/2023/05/08"/>
         <updated>2023-05-08T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[* Added NVR + dxvk + ReShade instructions]]></summary>
-        <content type="html"><![CDATA[<ul><li>Added NVR + dxvk + ReShade instructions</li><li>Added missing Shader information</li><li>Added Theme to the wiki (Thanks to TheMany from <a href="https://wastelandsurvivalguide.com/" target="_blank" rel="noopener noreferrer">Wasteland SurvivalGuide</a>)</li></ul>]]></content>
+        <content type="html"><![CDATA[<ul>
+<li>Added NVR + dxvk + ReShade instructions</li>
+<li>Added missing Shader information</li>
+<li>Added Theme to the wiki (Thanks to TheMany from <a href="https://wastelandsurvivalguide.com/" target="_blank" rel="noopener noreferrer">Wasteland SurvivalGuide</a>)</li>
+</ul>]]></content>
         <category label="changelog" term="changelog"/>
     </entry>
     <entry>
@@ -22,7 +26,9 @@
         <link href="https://dlpnd.github.io/nvr-wiki/blog/2023/05/06"/>
         <updated>2023-05-06T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[* Transfered the toml config into individual md files]]></summary>
-        <content type="html"><![CDATA[<ul><li>Transfered the toml config into individual md files</li></ul>]]></content>
+        <content type="html"><![CDATA[<ul>
+<li>Transfered the toml config into individual md files</li>
+</ul>]]></content>
         <category label="changelog" term="changelog"/>
     </entry>
 </feed>
