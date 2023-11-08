@@ -6,7 +6,7 @@
 
 ---
 
-> Original Source: <https://fiftytifty.net/forum/viewtopic.php?p=10#p10>
+> Original [Source](https://iftytifty.net/forum/viewtopic.php?p=10#p10)
 
 New Vegas Reloaded is a great piece of software, which hooks into New Vegas' renderer and adds some new effects. Such as making many statics cast shadows, darkening shadows, adding AO for nice object shading (fake mini-shadows), rain puddles during rainy weather...And colour adjustment with HLSL shaders!
 
