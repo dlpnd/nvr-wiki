@@ -274,7 +274,7 @@ Darkness of shadows during dark moon phase. Set to 0 to disable shadows complete
 
 ### Quality
 
-not used.
+Not used.
 
 >Default: 2
 
@@ -578,7 +578,7 @@ Wether to include objects with "Actors" flag when rendering ortho map.
 
 Wether to take into account alpha of objects when rendering ortho map.
 
->Default: true
+>Default: false
 
 ---
 
@@ -666,7 +666,7 @@ Wether to include Terrain when rendering ortho map.
 
 Wether to include Trees when rendering ortho map.
 
->Default: false
+>Default: true
 
 ---
 

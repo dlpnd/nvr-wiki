@@ -8,7 +8,7 @@
 
 Letterbox/black bars effect. Use the value of Width/Height of the visible window (1 to disable).
 
->Default: 1.0
+>Default: 2.35
 
 ---
 
@@ -16,7 +16,7 @@ Letterbox/black bars effect. Use the value of Width/Height of the visible window
 
 Lens distortion effect that separates the red/green and blue channels slightly as a real lens would.
 
->Default: 2.0
+>Default: 1.0
 
 ---
 
@@ -24,7 +24,7 @@ Lens distortion effect that separates the red/green and blue channels slightly a
 
 Animated cinema grain at 24fps like film.
 
->Default: 0.5
+>Default: 0.3
 
 ---
 
@@ -40,7 +40,7 @@ Chose when the letterbox effect is activated 0: always, 1: not during dialog, 2:
 
 Overlays the screen image onto itself to increase color intensity and contrast.
 
->Default: 0.3
+>Default: 0.2
 
 ---
 
@@ -48,7 +48,7 @@ Overlays the screen image onto itself to increase color intensity and contrast.
 
 Darkening of the edges of the screen.
 
->Default: 1.0
+>Default: 1.2
 
 ---
 

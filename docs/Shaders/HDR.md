@@ -6,7 +6,7 @@
 
 ### BloomExponent
 
-makes the bloom more spread out or more focused
+Makes the bloom more spread out or more focused
 
 >Default: 1.0
 
@@ -14,15 +14,15 @@ makes the bloom more spread out or more focused
 
 ### BloomStrength
 
-scales the game's bloom pass strength
+Scales the game's bloom pass strength
 
->Default: 2.1
+>Default: 1.0
 
 ---
 
 ### Exposure
 
-scales the lighting strength before tonemap
+Scales the lighting strength before tonemap
 
 >Default: 1.0
 
@@ -30,7 +30,7 @@ scales the lighting strength before tonemap
 
 ### Gamma
 
-gamma modifier to be applied after tonemapping
+Gamma modifier to be applied after tonemapping
 
 >Default: 2.2
 
@@ -92,7 +92,7 @@ Changes the strength of the vanilla weather tint influence
 
 ### TonemappingMode
 
-changes the tonemapping algorithm. 0: game native, 1:ACES, 2:Reinhard, 4: Lotte, 5: ACES Fitted, 6:Uncharted
+Changes the tonemapping algorithm. 0: game native, 1:ACES, 2:Reinhard, 4: Lotte, 5: ACES Fitted, 6:Uncharted
 
 >Default: 4
 
@@ -118,7 +118,7 @@ Contrast setting for Lotte Tonemapper
 
 Brightness setting for Lotte Tonemapper
 
->Default: 0.5
+>Default: 2.4
 
 ---
 
@@ -126,7 +126,7 @@ Brightness setting for Lotte Tonemapper
 
 Midpoint setting for Lotte Tonemapper
 
->Default: 1.3
+>Default: 1.2
 
 ---
 
@@ -134,7 +134,7 @@ Midpoint setting for Lotte Tonemapper
 
 Curve shape towards white point for Lotte Tonemapper
 
->Default: 2.5
+>Default: 20.0
 
 ---
 
@@ -142,7 +142,7 @@ Curve shape towards white point for Lotte Tonemapper
 
 ### BloomExponent
 
-makes the bloom more spread out or more focused
+Makes the bloom more spread out or more focused
 
 >Default: 1.0
 
@@ -150,7 +150,7 @@ makes the bloom more spread out or more focused
 
 ### BloomStrength
 
-scales the game's bloom pass strength
+Scales the game's bloom pass strength
 
 >Default: 1.0
 
@@ -158,15 +158,15 @@ scales the game's bloom pass strength
 
 ### Exposure
 
-scales the lighting strength before tonemap
+Scales the lighting strength before tonemap
 
->Default: 1.9
+>Default: 1.0
 
 ---
 
 ### Gamma
 
-gamma modifier to be applied after tonemapping
+Gamma modifier to be applied after tonemapping
 
 >Default: 2.2
 
@@ -228,7 +228,7 @@ Changes the strength of the vanilla weather tint influence
 
 ### TonemappingMode
 
-changes the tonemapping algorithm. 0: game native, 1:ACES, 2:Reinhard, 4: Lotte, 5: ACES Fitted, 6:Uncharted
+Changes the tonemapping algorithm. 0: game native, 1:ACES, 2:Reinhard, 4: Lotte, 5: ACES Fitted, 6:Uncharted
 
 >Default: 4
 
@@ -246,7 +246,7 @@ White point setting for Lotte/Reinhard tonemapper. Changes the value of the brig
 
 Contrast setting for Lotte Tonemapper
 
->Default: 2.7
+>Default: 1.3
 
 ---
 
@@ -262,7 +262,7 @@ Brightness setting for Lotte Tonemapper
 
 Midpoint setting for Lotte Tonemapper
 
->Default: 3.8
+>Default: 1.3
 
 ---
 
@@ -270,7 +270,7 @@ Midpoint setting for Lotte Tonemapper
 
 Curve shape towards white point for Lotte Tonemapper
 
->Default: 2.5
+>Default: 40.0
 
 ---
 
@@ -278,15 +278,15 @@ Curve shape towards white point for Lotte Tonemapper
 
 ### BloomExponent
 
-makes the bloom more spread out or more focused
+Makes the bloom more spread out or more focused
 
->Default: 0.8
+>Default: 0.7
 
 ---
 
 ### BloomStrength
 
-scales the game's bloom pass strength
+Scales the game's bloom pass strength
 
 >Default: 1.5
 
@@ -294,7 +294,7 @@ scales the game's bloom pass strength
 
 ### Exposure
 
-scales the lighting strength before tonemap
+Scales the lighting strength before tonemap
 
 >Default: 0.7
 
@@ -302,7 +302,7 @@ scales the lighting strength before tonemap
 
 ### Gamma
 
-gamma modifier to be applied after tonemapping
+Gamma modifier to be applied after tonemapping
 
 >Default: 2.2
 
@@ -334,7 +334,7 @@ Saturation of the image before tonemapping
 
 Scales the brightness of the sky and sky textures. Requires Sky shader enabled
 
->Default: 1.0
+>Default: 0.5
 
 ---
 
@@ -364,7 +364,7 @@ Changes the strength of the vanilla weather tint influence
 
 ### TonemappingMode
 
-changes the tonemapping algorithm. 0: game native, 1:ACES, 2:Reinhard, 4: Lotte, 5: ACES Fitted, 6:Uncharted
+Changes the tonemapping algorithm. 0: game native, 1:ACES, 2:Reinhard, 4: Lotte, 5: ACES Fitted, 6:Uncharted
 
 >Default: 4
 
@@ -382,7 +382,7 @@ White point setting for Lotte/Reinhard tonemapper. Changes the value of the brig
 
 Contrast setting for Lotte Tonemapper
 
->Default: 1.4
+>Default: 1.2
 
 ---
 
@@ -406,7 +406,7 @@ Midpoint setting for Lotte Tonemapper
 
 Curve shape towards white point for Lotte Tonemapper
 
->Default: 1.0
+>Default: 2.0
 
 ---
 

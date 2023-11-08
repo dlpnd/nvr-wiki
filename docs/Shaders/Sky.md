@@ -8,7 +8,7 @@
 
 Determins the height of the athmosphere on the horizon
 
->Default: 5.0
+>Default: 1.0
 
 ---
 
@@ -16,7 +16,7 @@ Determins the height of the athmosphere on the horizon
 
 How wide a side of the athmosphere will the sky lit up.
 
->Default: 0.5
+>Default: 1.0
 
 ---
 
@@ -24,7 +24,7 @@ How wide a side of the athmosphere will the sky lit up.
 
 How strong is the sun brighness when reflected by athmosphere
 
->Default: 0.9
+>Default: 1.0
 
 ---
 
@@ -38,7 +38,7 @@ Multiplier for stars brightness
 
 ### ReplaceSun
 
-replaces vanilla sun by a procedural sun for whatever reason
+Replaces vanilla sun by a procedural sun for whatever reason
 
 >Default: false
 

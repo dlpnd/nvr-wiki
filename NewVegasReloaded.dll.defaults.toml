@@ -3,7 +3,7 @@ ChasingFirst = false    # Use Chasing camera in first person.
 ChasingThird = false    # Use Chasing camera in third person.
 Crosshair = 0           # Display crosshair in Camera Mode.
 Enabled = false         # Activate Camera Mode.
-FoV = 90.0              # custom FOV in Camera Mode.
+FoV = 90.0              # Custom FOV in Camera Mode.
 
 [_Main.CameraMode.Positioning]
 AimingOffsetX = -1.0
@@ -118,7 +118,7 @@ Enabled = false
 AngleBias = 0.0                         # Value to increase the contribution of closer samples for more detail in creases.
 BlurDropThreshold = 8.0                 # Distance cutoff for areas that shouldn't be blurred together (edge aware denoise).
 BlurRadiusMultiplier = 2.0              # Blur radius to denoise AO.
-ClampStrength = 0.2                     # lower limit to AO darkness (0 for pure black and 1 for pure white).
+ClampStrength = 0.2                     # Lower limit to AO darkness (0 for pure black and 1 for pure white).
 Enabled = true                          # Enable Ambient occlusion in exteriors.
 LumThreshold = 0.7                      # Treshold to reduce AO strength on bright surfaces.
 Range = 30.0                            # Distance for sampling. Larger values create a softer AO, smaller creates sharper details.
@@ -129,7 +129,7 @@ StrengthMultiplier = 2.0                # Global AO strength/darkness multiplier
 AngleBias = 0.0                         # Value to increase the contribution of closer samples for more detail in creases.
 BlurDropThreshold = 8.0                 # Distance cutoff for areas that shouldn't be blurred together (edge aware denoise).
 BlurRadiusMultiplier = 2.0              # Blur radius to denoise AO.
-ClampStrength = 0.2                     # lower limit to AO darkness (0 for pure black and 1 for pure white).
+ClampStrength = 0.2                     # Lower limit to AO darkness (0 for pure black and 1 for pure white).
 Enabled = true                          # Enable Ambient occlusion in exteriors.
 LumThreshold = 0.5                      # Treshold to reduce AO strength on bright surfaces.
 Range = 30.0                            # Distance for sampling. Larger values create a softer AO, smaller creates sharper details.
@@ -175,12 +175,12 @@ WhiteCutOff = 0.8
 Enabled = false                         # Increases the blurriness and light bleed caused by bright lights.
 
 [_Shaders.Cinema.Main]
-AspectRatio = 1.0                       # Letterbox/black bars effect. Use the value of Width/Height of the visible window (1 to disable).
-ChromaticAberration = 2.0               # Lens distortion effect that separates the red/green and blue channels slightly as a real lens would.
-FilmGrainAmount = 0.5                   # Animated cinema grain at 24fps like film.
+AspectRatio = 2.35                      # Letterbox/black bars effect. Use the value of Width/Height of the visible window (1 to disable).
+ChromaticAberration = 1.0               # Lens distortion effect that separates the red/green and blue channels slightly as a real lens would.
+FilmGrainAmount = 0.3                   # Animated cinema grain at 24fps like film.
 Mode = 2                                # Chose when the letterbox effect is activated 0: always, 1: not during dialog, 2: only during dialog.
-OverlayStrength = 0.3                   # Overlays the screen image onto itself to increase color intensity and contrast.
-VignetteDarkness = 1.0                  # Darkening of the edges of the screen.
+OverlayStrength = 0.2                   # Overlays the screen image onto itself to increase color intensity and contrast.
+VignetteDarkness = 1.2                  # Darkening of the edges of the screen.
 VignetteRadius = 0.6                    # Distance to the center for the start of the Vignette effect.
 LetterBoxDepth = 0.0                    # Depth of the letter box bars
 
@@ -253,7 +253,7 @@ Radius = 1.5                           # Radius for the bokeh blur.
 [_Shaders.Exposure.Main]
 DarkAdaptSpeed = 1.5                   # Speed for the exposure to adjust when the screen gets darker.
 LightAdaptSpeed = 0.5                  # Speed for the exposure to adjust when the screen gets brighter.
-MaxBrightness = 0.5                    # Brightness treshold above which the screen will be darkened.
+MaxBrightness = 0.9                    # Brightness treshold above which the screen will be darkened.
 MinBrightness = 0.3                    # Brightness treshold below which the screen will be brightened.
 
 [_Shaders.Exposure.Interiors]
@@ -265,7 +265,7 @@ MinBrightness = 0.2                    # Brightness treshold below which the scr
 [_Shaders.Exposure.Night]
 DarkAdaptSpeed = 1.5                   # Speed for the exposure to adjust when the screen gets darker.
 LightAdaptSpeed = 0.5                  # Speed for the exposure to adjust when the screen gets brighter.
-MaxBrightness = 0.9                    # Brightness treshold above which the screen will be darkened.
+MaxBrightness = 0.8                    # Brightness treshold above which the screen will be darkened.
 MinBrightness = 0.2                    # Brightness treshold below which the screen will be brightened.
 
 [_Shaders.Exposure.Status]
@@ -275,7 +275,7 @@ Enabled = true                         # Modulates screen gamma to correct expos
 Enabled = false                        # Not currently used. Enables loading of Effects in ExtraEffects folder that are not natively handled.
 
 [_Shaders.ExtraShaders.Status]
-Enabled = false                        # Not currently used. Enables loading of Shaders in ExtraShaders folder that are not natively handled.
+Enabled = true                         # Enables loading of Shaders in ExtraShaders folder that are not natively handled. Use for compatibility with Realtime Reflections
 
 [_Shaders.Grass.Main]
 WindEnabled = false
@@ -295,7 +295,7 @@ DayMultiplier = 0.3                   # Strength of godrays during the day.
 LightShaftPasses = 8                  # Not used.
 Luminance = 0.9                       # Treshold for minimum luminosity of areas casting rays. Lower means more of the sky will cast rays.
 NightMultiplier = 1.0                 # Strength of godrays during the night.
-RayDensity = 0.0                      # Curve for reduction of the intensity of godrays near the sunglare.
+RayDensity = 0.3                      # Curve for reduction of the intensity of godrays near the sunglare.
 RayIntensity = 1.0                    # Multiplier for the intensity of the bright areas being blurred to create the rays.
 RayLength = 1.0                       # Multiplier for the length of rays.
 RayVisibility = 4.0                   # Exponent for the godrays contrast.
@@ -314,10 +314,10 @@ Enabled = true                        # Screenspace godrays/volumetric rays.
 
 
 [_Shaders.HDR.Main]
-BloomExponent = 1.0                   # makes the bloom more spread out or more focused
-BloomStrength = 2.1                   # scales the game's bloom pass strength
-Exposure = 1.0                        # scales the lighting strength before tonemap
-Gamma = 2.2                           # gamma modifier to be applied after tonemapping
+BloomExponent = 1.0                   # Makes the bloom more spread out or more focused
+BloomStrength = 1.0                   # Scales the game's bloom pass strength
+Exposure = 1.0                        # Scales the lighting strength before tonemap
+Gamma = 2.2                           # Gamma modifier to be applied after tonemapping
 Linearization = 2.2
 PointLightMultiplier = 1.0            # Experimental - modifies the strength of all point lights
 Saturation = 1.0                      # Saturation of the image before tonemapping
@@ -325,19 +325,19 @@ SkyMultiplier = 1.1                   # Scales the brightness of the sky and sky
 ToneMapping = 1.0                     # Unused
 ToneMappingBlur = 0.0                 # Unused
 ToneMappingColor = 0.3                # Changes the strength of the vanilla weather tint influence
-TonemappingMode = 4                   # changes the tonemapping algorithm. 0: game native, 1:ACES, 2:Reinhard, 4: Lotte, 5: ACES Fitted, 6:Uncharted
+TonemappingMode = 4                   # Changes the tonemapping algorithm. 0: game native, 1:ACES, 2:Reinhard, 4: Lotte, 5: ACES Fitted, 6:Uncharted
 WhitePoint = 100.0                    # White point setting for Lotte/Reinhard tonemapper. Changes the value of the brightest pixels
 LotteContrast = 0.5                   # Contrast setting for Lotte Tonemapper
-LotteBrightness = 0.5                 # Brightness setting for Lotte Tonemapper
-LotteMidpoint = 1.3                   # Midpoint setting for Lotte Tonemapper
-LotteShoulder = 2.5                   # Curve shape towards white point for Lotte Tonemapper
+LotteBrightness = 2.4                 # Brightness setting for Lotte Tonemapper
+LotteMidpoint = 1.2                   # Midpoint setting for Lotte Tonemapper
+LotteShoulder = 20.0                  # Curve shape towards white point for Lotte Tonemapper
 
 
 [_Shaders.HDR.Interiors]
-BloomExponent = 1.0                   # makes the bloom more spread out or more focused
-BloomStrength = 1.0                   # scales the game's bloom pass strength
-Exposure = 1.9                        # scales the lighting strength before tonemap
-Gamma = 2.2                           # gamma modifier to be applied after tonemapping
+BloomExponent = 1.0                   # Makes the bloom more spread out or more focused
+BloomStrength = 1.0                   # Scales the game's bloom pass strength
+Exposure = 1.0                        # Scales the lighting strength before tonemap
+Gamma = 2.2                           # Gamma modifier to be applied after tonemapping
 Linearization = 2.2
 PointLightMultiplier = 1.0            # Experimental - modifies the strength of all point lights
 Saturation = 1.0                      # Saturation of the image before tonemapping
@@ -345,32 +345,32 @@ SkyMultiplier = 1.0                   # Scales the brightness of the sky and sky
 ToneMapping = 1.0                     # Unused
 ToneMappingBlur = 0.0                 # Unused
 ToneMappingColor = 0.4                # Changes the strength of the vanilla weather tint influence
-TonemappingMode = 4                   # changes the tonemapping algorithm. 0: game native, 1:ACES, 2:Reinhard, 4: Lotte, 5: ACES Fitted, 6:Uncharted
+TonemappingMode = 4                   # Changes the tonemapping algorithm. 0: game native, 1:ACES, 2:Reinhard, 4: Lotte, 5: ACES Fitted, 6:Uncharted
 WhitePoint = 100.0                    # White point setting for Lotte/Reinhard tonemapper. Changes the value of the brightest pixels
-LotteContrast = 2.7                   # Contrast setting for Lotte Tonemapper
+LotteContrast = 1.3                   # Contrast setting for Lotte Tonemapper
 LotteBrightness = 2.0                 # Brightness setting for Lotte Tonemapper
-LotteMidpoint = 3.8                   # Midpoint setting for Lotte Tonemapper
-LotteShoulder = 2.5                   # Curve shape towards white point for Lotte Tonemapper
+LotteMidpoint = 1.3                   # Midpoint setting for Lotte Tonemapper
+LotteShoulder = 40.0                   # Curve shape towards white point for Lotte Tonemapper
 
 
 [_Shaders.HDR.Night]
-BloomExponent = 0.8                   # makes the bloom more spread out or more focused
-BloomStrength = 1.5                   # scales the game's bloom pass strength
-Exposure = 0.7                        # scales the lighting strength before tonemap
-Gamma = 2.2                           # gamma modifier to be applied after tonemapping
+BloomExponent = 0.7                   # Makes the bloom more spread out or more focused
+BloomStrength = 1.5                   # Scales the game's bloom pass strength
+Exposure = 0.7                        # Scales the lighting strength before tonemap
+Gamma = 2.2                           # Gamma modifier to be applied after tonemapping
 Linearization = 2.2
 PointLightMultiplier = 1.0            # Experimental - modifies the strength of all point lights
 Saturation = 1.0                      # Saturation of the image before tonemapping
-SkyMultiplier = 1.0                   # Scales the brightness of the sky and sky textures. Requires Sky shader enabled
+SkyMultiplier = 0.5                   # Scales the brightness of the sky and sky textures. Requires Sky shader enabled
 ToneMapping = 1.0                     # Unused
 ToneMappingBlur = 0.0                 # Unused
 ToneMappingColor = 0.5                # Changes the strength of the vanilla weather tint influence
-TonemappingMode = 4                   # changes the tonemapping algorithm. 0: game native, 1:ACES, 2:Reinhard, 4: Lotte, 5: ACES Fitted, 6:Uncharted
+TonemappingMode = 4                   # Changes the tonemapping algorithm. 0: game native, 1:ACES, 2:Reinhard, 4: Lotte, 5: ACES Fitted, 6:Uncharted
 WhitePoint = 100.0                    # White point setting for Lotte/Reinhard tonemapper. Changes the value of the brightest pixels
-LotteContrast = 1.4                   # Contrast setting for Lotte Tonemapper
+LotteContrast = 1.2                   # Contrast setting for Lotte Tonemapper
 LotteBrightness = 0.0                 # Brightness setting for Lotte Tonemapper
 LotteMidpoint = 0.8                   # Midpoint setting for Lotte Tonemapper
-LotteShoulder = 1.0                   # Curve shape towards white point for Lotte Tonemapper
+LotteShoulder = 2.0                   # Curve shape towards white point for Lotte Tonemapper
 
 
 [_Shaders.HDR.Status]
@@ -397,20 +397,20 @@ Strength = 0.8                        # Strength of the effect.
 DarkColorR = 0.8                      # Red channel multiplier for darker tones.
 DarkColorG = 0.8                      # Green channel multiplier for darker tones.
 DarkColorB = 1.0                      # Blue channel multiplier for darker tones.
-LightColorR = 0.8                     # Red channel multiplier for lighter tones.
+LightColorR = 1.1                     # Red channel multiplier for lighter tones.
 LightColorG = 1.1                     # Green channel multiplier for lighter tones.
-LightColorB = 1.1                     # Blue channel multiplier for lighter tones.
+LightColorB = 0.8                     # Blue channel multiplier for lighter tones.
 
 [_Shaders.ImageAdjust.Interiors]
-Brightness = 1.12                     # Overall image brightness.
-Saturation = 0.9                      # Overall image saturation.
-Contrast = 1.2                        # Overall image contrast.
-Strength = 1.0                        # Strength of the effect.
+Brightness = 1.0                      # Overall image brightness.
+Saturation = 1.0                      # Overall image saturation.
+Contrast = 1.0                        # Overall image contrast.
+Strength = 0.7                        # Strength of the effect.
 DarkColorR = 0.9                      # Red channel multiplier for darker tones.
 DarkColorG = 0.8                      # Green channel multiplier for darker tones.
-DarkColorB = 1.1                      # Blue channel multiplier for darker tones.
-LightColorR = 1.3                     # Red channel multiplier for lighter tones.
-LightColorG = 1.4                     # Green channel multiplier for lighter tones.
+DarkColorB = 1.2                      # Blue channel multiplier for darker tones.
+LightColorR = 1.0                     # Red channel multiplier for lighter tones.
+LightColorG = 1.0                     # Green channel multiplier for lighter tones.
 LightColorB = 0.7                     # Blue channel multiplier for lighter tones.
 
 [_Shaders.ImageAdjust.Status]
@@ -511,7 +511,7 @@ BlurShadowMaps = true                # Blur shadow maps for soft shadows.
 Darkness = 0.6                       # Darkness of shadows.
 Enabled = true                       # Enable sun shadows using rendered shadow maps.
 NightMinDarkness = 0.3               # Darkness of shadows during dark moon phase. Set to 0 to disable shadows completely when there is no moon.
-Quality = 2                          # not used.
+Quality = 2                          # Not used.
 ShadowMapFarPlane = 32768            # Used for shadow frustum. Don't change this value.
 ShadowMapResolution = 1024           # Resolution of the texture used to store the shadow maps. LOD map is twice this value. Needs restart to take effect.
 ShadowMode = 1                       # Shadow algorithm used. 1: Variance Shadow Maps, 2: unfiltered Exponenial Shadow Map, 3: filtered ESM.
@@ -555,7 +555,7 @@ Trees = true                         # Wether to include Trees when rendering sh
 [_Shaders.ShadowsExteriors.Ortho]
 Activators = false                   # Wether to include objects with "Activator" flag when rendering ortho map.
 Actors = false                       # Wether to include objects with "Actors" flag when rendering ortho map.
-AlphaEnabled = true                  # Wether to take into account alpha of objects when rendering ortho map.
+AlphaEnabled = false                 # Wether to take into account alpha of objects when rendering ortho map.
 Apparatus = false                    # Wether to include objects with "Apparatus" flag when rendering ortho map.
 Books = false                        # Wether to include objects with "Books" flag when rendering ortho map.
 Containers = false                   # Wether to include objects with "Containers" flag when rendering ortho map.
@@ -566,7 +566,7 @@ MinRadius = 100.0                    # Wether to include objects with a radius o
 Misc = false                         # Wether to include objects with misc flags when rendering ortho map.
 Statics = true                       # Wether to include objects with "Statics" flag when rendering ortho map.
 Terrain = true                       # Wether to include Terrain when rendering ortho map.
-Trees = false                        # Wether to include Trees when rendering ortho map.
+Trees = true                         # Wether to include Trees when rendering ortho map.
 
 [_Shaders.ShadowsExteriors.ScreenSpace]
 BlurRadius = 1.0                     # Blur strength for denoising screenspace shadows
@@ -623,11 +623,11 @@ Enabled = false                     # Not currently used. Replaces the skin shad
 
 
 [_Shaders.Sky.Main]
-AthmosphereThickness = 5.0          # Determins the height of the athmosphere on the horizon
-SunInfluence = 0.5                  # How wide a side of the athmosphere will the sky lit up.
-SunStrength = 0.9                   # How strong is the sun brighness when reflected by athmosphere
+AthmosphereThickness = 1.0          # Determins the height of the athmosphere on the horizon
+SunInfluence = 1.0                  # How wide a side of the athmosphere will the sky lit up.
+SunStrength = 1.0                   # How strong is the sun brighness when reflected by athmosphere
 StarStrength = 1.0                  # Multiplier for stars brightness
-ReplaceSun = false                  # replaces vanilla sun by a procedural sun for whatever reason
+ReplaceSun = false                  # Replaces vanilla sun by a procedural sun for whatever reason
 SunsetR = 0.5                       # Color boost for sunset/sunrise sun color (Red)
 SunsetG = 0.0                       # Color boost for sunset/sunrise sun color (Green)
 SunsetB = 0.03                      # Color boost for sunset/sunrise sun color (Blue)
@@ -655,7 +655,7 @@ BlurRadiusMultiplier = 2.0          # Screen space blur radius for ortho coverag
 Decrease = 12.0                     # Time in game Hours for the snow to disappear
 Increase = 0.3                      # Time in game Hours for the snow to accumulate
 SunPower = 1.0                      # Multiplier for the lighting strength
-SnowColorR = 0.9                   # Red chanel for the color of snow coverage
+SnowColorR = 0.9                    # Red chanel for the color of snow coverage
 SnowColorG = 0.9                    # Green chanel for the color of snow coverage
 SnowColorB = 0.8                    # Blue chanel for the color of snow coverage
 
@@ -736,13 +736,13 @@ Viscosity = 0.05
 Enabled = true                      # Short refraction water drop animation on the lens when exiting water.
 
 [_Shaders.WetWorld.Main]
-Amount = 0.85                       # Darkness of puddles
+Amount = 1.0                        # Darkness of puddles
 Decrease = 1.2                      # Time it takes in game hours for puddles to dissipate
 Increase = 0.3                      # Time it takes in game hours for puddles to appear
 PuddleCoeff_B = 0.48                # Not used.
 PuddleCoeff_G = 0.62                # Not used.
 PuddleCoeff_R = 0.72                # Not used.
-PuddleSpecularMultiplier = 0.2      # Not used.
+PuddleSpecularMultiplier = 0.4      # Not used.
 
 [_Shaders.WetWorld.Status]
 Enabled = true                      # Water ripples on surfaces, and puddles based on physical terrain pockets during rainy weathers. 

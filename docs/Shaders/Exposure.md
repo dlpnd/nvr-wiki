@@ -24,7 +24,7 @@ Speed for the exposure to adjust when the screen gets brighter.
 
 Brightness treshold above which the screen will be darkened.
 
->Default: 0.5
+>Default: 0.9
 
 ---
 
@@ -92,7 +92,7 @@ Speed for the exposure to adjust when the screen gets brighter.
 
 Brightness treshold above which the screen will be darkened.
 
->Default: 0.9
+>Default: 0.8
 
 ---
 

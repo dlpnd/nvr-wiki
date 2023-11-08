@@ -40,7 +40,7 @@ Strength of godrays during the night.
 
 Curve for reduction of the intensity of godrays near the sunglare.
 
->Default: 0.0
+>Default: 0.3
 
 ---
 

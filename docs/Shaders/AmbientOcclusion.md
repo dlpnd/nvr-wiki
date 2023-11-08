@@ -30,7 +30,7 @@ Blur radius to denoise AO.
 
 ### ClampStrength
 
-lower limit to AO darkness (0 for pure black and 1 for pure white).
+Lower limit to AO darkness (0 for pure black and 1 for pure white).
 
 >Default: 0.2
 
@@ -104,7 +104,7 @@ Blur radius to denoise AO.
 
 ### ClampStrength
 
-lower limit to AO darkness (0 for pure black and 1 for pure white).
+Lower limit to AO darkness (0 for pure black and 1 for pure white).
 
 >Default: 0.2
 

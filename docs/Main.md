@@ -44,7 +44,7 @@ Activate Camera Mode.
 
 #### FoV
 
-custom FOV in Camera Mode.
+Custom FOV in Camera Mode.
 
 >Default: 90.0
 

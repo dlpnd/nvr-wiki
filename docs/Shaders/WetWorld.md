@@ -8,7 +8,7 @@
 
 Darkness of puddles
 
->Default: 0.85
+>Default: 1.0
 
 ---
 
@@ -56,7 +56,7 @@ Not used.
 
 Not used.
 
->Default: 0.2
+>Default: 0.4
 
 ---
 
