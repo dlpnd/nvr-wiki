@@ -51,6 +51,7 @@ HealthEnabled = false
 [_Main.Main.Misc]
 ForceMSAA = false           # Override game setting to force MSAA.
 RenderEffects = true        # Toggle rendering of all effects.
+RenderPreTonemapping = true # Toggle rendering of some effects in HDR before the game image space effects (can cause glitches).
 ReplaceIntro = false        # Controls rendering of the main menu custom video.
 ScreenshotKey = 87          # Keycode for custom screenshot hotkey (removes HUD and saves as jpg).
 
@@ -153,7 +154,7 @@ Time = 900.0
 [_Shaders.BloodLens.Status]
 Enabled = false
 
-[_Shaders.Bloom.Exteriors]
+[_Shaders.BloomLegacy.Exteriors]
 BloomIntensity = 1.4
 BloomSaturation = 1.2
 Luminance = 0.06
@@ -162,7 +163,7 @@ OriginalIntensity = 1.0
 OriginalSaturation = 1.0
 WhiteCutOff = 0.8
 
-[_Shaders.Bloom.Interiors]
+[_Shaders.BloomLegacy.Interiors]
 BloomIntensity = 1.4
 BloomSaturation = 1.2
 Luminance = 0.06
@@ -171,7 +172,7 @@ OriginalIntensity = 1.0
 OriginalSaturation = 1.0
 WhiteCutOff = 0.8
 
-[_Shaders.Bloom.Status]
+[_Shaders.BloomLegacy.Status]
 Enabled = false                         # Increases the blurriness and light bleed caused by bright lights.
 
 [_Shaders.Cinema.Main]
@@ -325,12 +326,13 @@ SkyMultiplier = 1.1                   # Scales the brightness of the sky and sky
 ToneMapping = 1.0                     # Unused
 ToneMappingBlur = 0.0                 # Unused
 ToneMappingColor = 0.3                # Changes the strength of the vanilla weather tint influence
-TonemappingMode = 4                   # Changes the tonemapping algorithm. 0: game native, 1:ACES, 2:Reinhard, 4: Lotte, 5: ACES Fitted, 6:Uncharted
+TonemappingMode = 4                   # Changes the tonemapping algorithm. 0: raw buffer, 1: game native, 2:ACES, 3:Reinhard, 4: Lotte, 5: ACES Fitted, 6:Uncharted
 WhitePoint = 100.0                    # White point setting for Lotte/Reinhard tonemapper. Changes the value of the brightest pixels
 LotteContrast = 0.5                   # Contrast setting for Lotte Tonemapper
 LotteBrightness = 2.4                 # Brightness setting for Lotte Tonemapper
 LotteMidpoint = 1.2                   # Midpoint setting for Lotte Tonemapper
 LotteShoulder = 20.0                  # Curve shape towards white point for Lotte Tonemapper
+WeatherModifier = 1.0                 # Influence of the vanilla weather modifiers
 
 
 [_Shaders.HDR.Interiors]
@@ -345,12 +347,13 @@ SkyMultiplier = 1.0                   # Scales the brightness of the sky and sky
 ToneMapping = 1.0                     # Unused
 ToneMappingBlur = 0.0                 # Unused
 ToneMappingColor = 0.4                # Changes the strength of the vanilla weather tint influence
-TonemappingMode = 4                   # Changes the tonemapping algorithm. 0: game native, 1:ACES, 2:Reinhard, 4: Lotte, 5: ACES Fitted, 6:Uncharted
+TonemappingMode = 4                   # Changes the tonemapping algorithm. 0: raw buffer, 1: game native, 2:ACES, 3:Reinhard, 4: Lotte, 5: ACES Fitted, 6:Uncharted
 WhitePoint = 100.0                    # White point setting for Lotte/Reinhard tonemapper. Changes the value of the brightest pixels
 LotteContrast = 1.3                   # Contrast setting for Lotte Tonemapper
 LotteBrightness = 2.0                 # Brightness setting for Lotte Tonemapper
 LotteMidpoint = 1.3                   # Midpoint setting for Lotte Tonemapper
 LotteShoulder = 40.0                   # Curve shape towards white point for Lotte Tonemapper
+WeatherModifier = 1.0                 # Influence of the vanilla weather modifiers
 
 
 [_Shaders.HDR.Night]
@@ -365,12 +368,13 @@ SkyMultiplier = 0.5                   # Scales the brightness of the sky and sky
 ToneMapping = 1.0                     # Unused
 ToneMappingBlur = 0.0                 # Unused
 ToneMappingColor = 0.5                # Changes the strength of the vanilla weather tint influence
-TonemappingMode = 4                   # Changes the tonemapping algorithm. 0: game native, 1:ACES, 2:Reinhard, 4: Lotte, 5: ACES Fitted, 6:Uncharted
+TonemappingMode = 4                   # Changes the tonemapping algorithm. 0: raw buffer, 1: game native, 2:ACES, 3:Reinhard, 4: Lotte, 5: ACES Fitted, 6:Uncharted
 WhitePoint = 100.0                    # White point setting for Lotte/Reinhard tonemapper. Changes the value of the brightest pixels
 LotteContrast = 1.2                   # Contrast setting for Lotte Tonemapper
 LotteBrightness = 0.0                 # Brightness setting for Lotte Tonemapper
 LotteMidpoint = 0.8                   # Midpoint setting for Lotte Tonemapper
 LotteShoulder = 2.0                   # Curve shape towards white point for Lotte Tonemapper
+WeatherModifier = 1.0                 # Influence of the vanilla weather modifiers
 
 
 [_Shaders.HDR.Status]

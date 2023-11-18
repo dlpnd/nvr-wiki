@@ -92,7 +92,7 @@ Changes the strength of the vanilla weather tint influence
 
 ### TonemappingMode
 
-Changes the tonemapping algorithm. 0: game native, 1:ACES, 2:Reinhard, 4: Lotte, 5: ACES Fitted, 6:Uncharted
+Changes the tonemapping algorithm. 0: raw buffer, 1: game native, 2:ACES, 3:Reinhard, 4: Lotte, 5: ACES Fitted, 6:Uncharted
 
 >Default: 4
 
@@ -135,6 +135,14 @@ Midpoint setting for Lotte Tonemapper
 Curve shape towards white point for Lotte Tonemapper
 
 >Default: 20.0
+
+---
+
+### WeatherModifier
+
+Influence of the vanilla weather modifiers
+
+>Default: 1.0
 
 ---
 
@@ -228,7 +236,7 @@ Changes the strength of the vanilla weather tint influence
 
 ### TonemappingMode
 
-Changes the tonemapping algorithm. 0: game native, 1:ACES, 2:Reinhard, 4: Lotte, 5: ACES Fitted, 6:Uncharted
+Changes the tonemapping algorithm. 0: raw buffer, 1: game native, 2:ACES, 3:Reinhard, 4: Lotte, 5: ACES Fitted, 6:Uncharted
 
 >Default: 4
 
@@ -271,6 +279,14 @@ Midpoint setting for Lotte Tonemapper
 Curve shape towards white point for Lotte Tonemapper
 
 >Default: 40.0
+
+---
+
+### WeatherModifier
+
+Influence of the vanilla weather modifiers
+
+>Default: 1.0
 
 ---
 
@@ -364,7 +380,7 @@ Changes the strength of the vanilla weather tint influence
 
 ### TonemappingMode
 
-Changes the tonemapping algorithm. 0: game native, 1:ACES, 2:Reinhard, 4: Lotte, 5: ACES Fitted, 6:Uncharted
+Changes the tonemapping algorithm. 0: raw buffer, 1: game native, 2:ACES, 3:Reinhard, 4: Lotte, 5: ACES Fitted, 6:Uncharted
 
 >Default: 4
 
@@ -407,6 +423,14 @@ Midpoint setting for Lotte Tonemapper
 Curve shape towards white point for Lotte Tonemapper
 
 >Default: 2.0
+
+---
+
+### WeatherModifier
+
+Influence of the vanilla weather modifiers
+
+>Default: 1.0
 
 ---
 

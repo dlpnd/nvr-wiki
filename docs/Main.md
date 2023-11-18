@@ -302,6 +302,14 @@ Toggle rendering of all effects.
 
 ---
 
+#### RenderPreTonemapping
+
+Toggle rendering of some effects in HDR before the game image space effects (can cause glitches).
+
+>Default: true
+
+---
+
 #### ReplaceIntro
 
 Controls rendering of the main menu custom video.
