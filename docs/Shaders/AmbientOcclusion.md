@@ -8,7 +8,7 @@
 
 Value to increase the contribution of closer samples for more detail in creases.
 
->Default: 0.0
+>Default: 1.6
 
 ---
 
@@ -32,7 +32,7 @@ Blur radius to denoise AO.
 
 Lower limit to AO darkness (0 for pure black and 1 for pure white).
 
->Default: 0.2
+>Default: 0.25
 
 ---
 
@@ -72,7 +72,7 @@ Not used (currently hardcoded).
 
 Global AO strength/darkness multiplier.
 
->Default: 2.0
+>Default: 1.0
 
 ---
 
@@ -146,7 +146,7 @@ Not used (currently hardcoded).
 
 Global AO strength/darkness multiplier.
 
->Default: 2.0
+>Default: 1.0
 
 ---
 

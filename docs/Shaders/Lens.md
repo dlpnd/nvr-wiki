@@ -16,7 +16,7 @@ Global effect strength multiplier.
 
 Treshold for the max brightness to trigger the effect in exteriors.
 
->Default: 0.65
+>Default: 0.7
 
 ---
 
@@ -24,7 +24,7 @@ Treshold for the max brightness to trigger the effect in exteriors.
 
 Treshold for the max brightness to trigger the effect at night.
 
->Default: 0.2
+>Default: 0.1
 
 ---
 
@@ -32,7 +32,7 @@ Treshold for the max brightness to trigger the effect at night.
 
 Treshold for the max brightness to trigger the effect in interiors.
 
->Default: 0.2
+>Default: 0.6
 
 ---
 

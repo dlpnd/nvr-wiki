@@ -8,7 +8,7 @@
 
 Determins the height of the athmosphere on the horizon
 
->Default: 1.0
+>Default: 2.0
 
 ---
 
@@ -16,13 +16,21 @@ Determins the height of the athmosphere on the horizon
 
 How wide a side of the athmosphere will the sky lit up.
 
->Default: 1.0
+>Default: 2.0
 
 ---
 
 ### SunStrength
 
 How strong is the sun brighness when reflected by athmosphere
+
+>Default: 2.0
+
+---
+
+### GlareStrength
+
+How much influence does the Sun have over Glare, inversed
 
 >Default: 1.0
 
@@ -90,7 +98,7 @@ EXPERIMENTAL-Uses this setting if the normals of the clouds point to the center 
 
 Clouds base transparency
 
->Default: 0.8
+>Default: 1.0
 
 ---
 

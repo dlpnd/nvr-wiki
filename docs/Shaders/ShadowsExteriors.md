@@ -252,7 +252,7 @@ Blur shadow maps for soft shadows.
 
 Darkness of shadows.
 
->Default: 0.6
+>Default: 0.5
 
 ---
 
@@ -676,7 +676,7 @@ Wether to include Trees when rendering ortho map.
 
 Blur strength for denoising screenspace shadows
 
->Default: 1.0
+>Default: 5.0
 
 ---
 
@@ -692,7 +692,7 @@ Wether to render screen space contact/detail shadows
 
 Max distance at which to compute screen space shadows
 
->Default: 80000
+>Default: 12000
 
 ---
 

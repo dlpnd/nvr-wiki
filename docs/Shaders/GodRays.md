@@ -8,7 +8,7 @@
 
 Strength of godrays during the day.
 
->Default: 0.3
+>Default: 0.5
 
 ---
 
@@ -24,7 +24,7 @@ Not used.
 
 Treshold for minimum luminosity of areas casting rays. Lower means more of the sky will cast rays.
 
->Default: 0.9
+>Default: 0.7
 
 ---
 
@@ -40,7 +40,7 @@ Strength of godrays during the night.
 
 Curve for reduction of the intensity of godrays near the sunglare.
 
->Default: 0.3
+>Default: 0.5
 
 ---
 
@@ -64,7 +64,7 @@ Multiplier for the length of rays.
 
 Exponent for the godrays contrast.
 
->Default: 4.0
+>Default: 5.0
 
 ---
 

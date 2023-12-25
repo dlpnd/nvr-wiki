@@ -32,7 +32,7 @@ Animated cinema grain at 24fps like film.
 
 Chose when the letterbox effect is activated 0: always, 1: not during dialog, 2: only during dialog.
 
->Default: 2
+>Default: 3
 
 ---
 
@@ -40,7 +40,7 @@ Chose when the letterbox effect is activated 0: always, 1: not during dialog, 2:
 
 Overlays the screen image onto itself to increase color intensity and contrast.
 
->Default: 0.2
+>Default: 0.1
 
 ---
 

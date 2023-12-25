@@ -116,15 +116,15 @@ CoeffSunR = 1.0
 Enabled = false
 
 [_Shaders.AmbientOcclusion.Exteriors]
-AngleBias = 0.0                         # Value to increase the contribution of closer samples for more detail in creases.
+AngleBias = 1.6                         # Value to increase the contribution of closer samples for more detail in creases.
 BlurDropThreshold = 8.0                 # Distance cutoff for areas that shouldn't be blurred together (edge aware denoise).
 BlurRadiusMultiplier = 2.0              # Blur radius to denoise AO.
-ClampStrength = 0.2                     # Lower limit to AO darkness (0 for pure black and 1 for pure white).
+ClampStrength = 0.25                     # Lower limit to AO darkness (0 for pure black and 1 for pure white).
 Enabled = true                          # Enable Ambient occlusion in exteriors.
 LumThreshold = 0.7                      # Treshold to reduce AO strength on bright surfaces.
 Range = 30.0                            # Distance for sampling. Larger values create a softer AO, smaller creates sharper details.
 Samples = 5                             # Not used (currently hardcoded).
-StrengthMultiplier = 2.0                # Global AO strength/darkness multiplier.
+StrengthMultiplier = 1.0                # Global AO strength/darkness multiplier.
 
 [_Shaders.AmbientOcclusion.Interiors]
 AngleBias = 0.0                         # Value to increase the contribution of closer samples for more detail in creases.
@@ -135,7 +135,7 @@ Enabled = true                          # Enable Ambient occlusion in exteriors.
 LumThreshold = 0.5                      # Treshold to reduce AO strength on bright surfaces.
 Range = 30.0                            # Distance for sampling. Larger values create a softer AO, smaller creates sharper details.
 Samples = 5                             # Not used (currently hardcoded).
-StrengthMultiplier = 2.0                # Global AO strength/darkness multiplier.
+StrengthMultiplier = 1.0                # Global AO strength/darkness multiplier.
 
 [_Shaders.AmbientOcclusion.Status]
 Enabled = true                          # Shadows based on object proximity/creases for more realistic light contribution.
@@ -179,8 +179,8 @@ Enabled = false                         # Increases the blurriness and light ble
 AspectRatio = 2.35                      # Letterbox/black bars effect. Use the value of Width/Height of the visible window (1 to disable).
 ChromaticAberration = 1.0               # Lens distortion effect that separates the red/green and blue channels slightly as a real lens would.
 FilmGrainAmount = 0.3                   # Animated cinema grain at 24fps like film.
-Mode = 2                                # Chose when the letterbox effect is activated 0: always, 1: not during dialog, 2: only during dialog.
-OverlayStrength = 0.2                   # Overlays the screen image onto itself to increase color intensity and contrast.
+Mode = 3                                # Chose when the letterbox effect is activated 0: always, 1: not during dialog, 2: only during dialog.
+OverlayStrength = 0.1                   # Overlays the screen image onto itself to increase color intensity and contrast.
 VignetteDarkness = 1.2                  # Darkening of the edges of the screen.
 VignetteRadius = 0.6                    # Distance to the center for the start of the Vignette effect.
 LetterBoxDepth = 0.0                    # Depth of the letter box bars
@@ -292,14 +292,14 @@ MaxDistance = 0
 Enabled = false                       # Not currently used. Replaces grass shaders and game options.  
 
 [_Shaders.GodRays.Main]
-DayMultiplier = 0.3                   # Strength of godrays during the day.
+DayMultiplier = 0.5                   # Strength of godrays during the day.
 LightShaftPasses = 8                  # Not used.
-Luminance = 0.9                       # Treshold for minimum luminosity of areas casting rays. Lower means more of the sky will cast rays.
+Luminance = 0.7                       # Treshold for minimum luminosity of areas casting rays. Lower means more of the sky will cast rays.
 NightMultiplier = 1.0                 # Strength of godrays during the night.
-RayDensity = 0.3                      # Curve for reduction of the intensity of godrays near the sunglare.
+RayDensity = 0.5                      # Curve for reduction of the intensity of godrays near the sunglare.
 RayIntensity = 1.0                    # Multiplier for the intensity of the bright areas being blurred to create the rays.
 RayLength = 1.0                       # Multiplier for the length of rays.
-RayVisibility = 4.0                   # Exponent for the godrays contrast.
+RayVisibility = 5.0                   # Exponent for the godrays contrast.
 SunGlareEnabled = true                # Strength of the effect will be scaled with the weather sunglare setting.
 TimeEnabled = true                    # Strength of the effect will be strongest around sunset/sunrise and not at all during noon.
 
@@ -314,108 +314,108 @@ Saturate = 0.0                        # Influence of the coloring setting. 0: us
 Enabled = true                        # Screenspace godrays/volumetric rays.
 
 
-[_Shaders.HDR.Main]
+[_Shaders.Tonemapping.Main]
+TonemappingMode = 1                   # Tonemapping Algorithm -  0: None (vanilla), 1: VTLottes (default), 2:NVRLottes, 3:Reinhard, 4: Reinhard Jodie, 5: ACES Filmic, 6: ACES Fitted, 7:Uncharted 2, 8:Uchimura (GT), 9:AGX
+Exposure = 1.0                        # Scales the engine lighting strength/brightness range before tonemap, useful for HDR rendering
+Gamma = 2.2                           # Gamma modifier to be applied after tonemapping, delinearises output. If placed at 1.0, outputs at linear space for HDR (UI unaffected)
+Linearization = 2.2                   # Converts image to corrected linear space before tonemapping. 1.0 is non-linear, if so place Gamma at 1.0 as well
+SkyMultiplier = 1.0                   # Scales the brightness of the sky/sun textures. Requires Sky shader enabled
+WeatherModifier = 1.0                 # Influence of the vanilla weather modifiers (brightness, contrast, saturation)
+WeatherContrast = 0.25                # Influence of the vanilla contrast setting, applies post-tonemap. Scales atop WeatherModifier, can cause black crush
+Saturation = 1.0                      # Saturation of the image before tonemapping
+ToneMappingColor = 1.0                # Changes the strength of the vanilla tint influence (not fades)
+TonemapContrast = 1.0                 # Contrast setting for Lottes, Uchimura
+TonemapBrightness = 1.0               # Brightness setting for Lottes, Uncharted, Uchimura
+TonemapMidpoint = 1.0                 # Midpoint setting for Lottes Tonemapper (avoid changing), Linear Section Start for Uchimura
+TonemapShoulder = 1.0                 # White Shoulder for Lottes (max 1.0, should be left default), Black shoulder for Uchimura
+TonemapWhitePoint = 1.0               # White point Setting for Lottes, Reinhard (both), Uncharted. Adjust point that the image clips/exceeds max brightness. For Uchimura, adjusts Linear Section Length (soft clips whites)
+HighlightSaturation = 1.0             # Highlight saturation for VT Lottes, controls how saturated bright elements are as they approach the White Point
+BloomExponent = 1.5                   # Makes the bloom more spread out or more focused
+BloomStrength = 0.75                   # Scales the game's bloom pass strength
+PointLightMultiplier = 1.0            # Experimental - modifies the strength of all point lights
+
+
+[_Shaders.Tonemapping.Interiors]
+TonemappingMode = 1                   # Tonemapping Algorithm -  0: None (vanilla), 1: VTLottes (default), 2:NVRLottes, 3:Reinhard, 4: Reinhard Jodie, 5: ACES Filmic, 6: ACES Fitted, 7:Uncharted 2, 8:Uchimura (GT), 9:AGX
+Exposure = 1.0                        # Scales the engine lighting strength/brightness range before tonemap, useful for HDR rendering
+Gamma = 2.2                           # Gamma modifier to be applied after tonemapping, delinearises output. If placed at 1.0, outputs at linear space for HDR (UI unaffected)
+Linearization = 2.2                   # Converts image to corrected linear space before tonemapping. 1.0 is non-linear, if so place Gamma at 1.0 as well
+SkyMultiplier = 1.0                   # Scales the brightness of the sky/sun textures. Requires Sky shader enabled
+WeatherModifier = 1.0                 # Influence of the vanilla weather modifiers (brightness, contrast, saturation)
+WeatherContrast = 0.25                # Influence of the vanilla contrast setting, applies post-tonemap. Scales atop WeatherModifier, can cause black crush notably in Interiors
+Saturation = 1.0                      # Saturation of the image before tonemapping
+ToneMappingColor = 1.0                # Changes the strength of the vanilla tint influence (not fades)
+TonemapContrast = 1.0                 # Contrast setting for Lottes, Uchimura
+TonemapBrightness = 1.0               # Brightness setting for Lottes, Uncharted, Uchimura
+TonemapMidpoint = 1.0                 # Midpoint setting for Lottes Tonemapper (avoid changing), Linear Section Start for Uchimura
+TonemapShoulder = 1.0                 # White Shoulder for Lottes (max 1.0, should be left default), Black shoulder for Uchimura
+TonemapWhitePoint = 1.0               # White point Setting for Lottes, Reinhard (both), Uncharted. Adjust point that the image clips/exceeds max brightness. For Uchimura, adjusts Linear Section Length (soft clips whites)
+HighlightSaturation = 1.0             # Highlight saturation for VT Lottes, controls how saturated bright elements are as they approach the White Point
 BloomExponent = 1.0                   # Makes the bloom more spread out or more focused
 BloomStrength = 1.0                   # Scales the game's bloom pass strength
-Exposure = 1.0                        # Scales the lighting strength before tonemap
-Gamma = 2.2                           # Gamma modifier to be applied after tonemapping
-Linearization = 2.2
 PointLightMultiplier = 1.0            # Experimental - modifies the strength of all point lights
+
+
+[_Shaders.Tonemapping.Night]
+TonemappingMode = 1                   # Tonemapping Algorithm -  0: None (vanilla), 1: VTLottes (default), 2:NVRLottes, 3:Reinhard, 4: Reinhard Jodie, 5: ACES Filmic, 6: ACES Fitted, 7:Uncharted 2, 8:Uchimura (GT), 9:AGX
+Exposure = 1.0                        # Scales the engine lighting strength/brightness range before tonemap, useful for HDR rendering
+Gamma = 2.2                           # Gamma modifier to be applied after tonemapping, delinearises output. If placed at 1.0, outputs at linear space for HDR (UI unaffected)
+Linearization = 2.2                   # Converts image to corrected linear space before tonemapping. 1.0 is non-linear, if so place Gamma at 1.0 as well
+SkyMultiplier = 1.0                   # Scales the brightness of the sky/sun textures. Requires Sky shader enabled
+WeatherModifier = 1.0                 # Influence of the vanilla weather modifiers (brightness, contrast, saturation)
+WeatherContrast = 0.25                # Influence of the vanilla contrast setting, applies post-tonemap. Scales atop WeatherModifier, can cause black crush notably in Interiors
 Saturation = 1.0                      # Saturation of the image before tonemapping
-SkyMultiplier = 1.1                   # Scales the brightness of the sky and sky textures. Requires Sky shader enabled
-ToneMapping = 1.0                     # Unused
-ToneMappingBlur = 0.0                 # Unused
-ToneMappingColor = 0.3                # Changes the strength of the vanilla weather tint influence
-TonemappingMode = 4                   # Changes the tonemapping algorithm. 0: raw buffer, 1: game native, 2:ACES, 3:Reinhard, 4: Lotte, 5: ACES Fitted, 6:Uncharted
-WhitePoint = 100.0                    # White point setting for Lotte/Reinhard tonemapper. Changes the value of the brightest pixels
-LotteContrast = 0.5                   # Contrast setting for Lotte Tonemapper
-LotteBrightness = 2.4                 # Brightness setting for Lotte Tonemapper
-LotteMidpoint = 1.2                   # Midpoint setting for Lotte Tonemapper
-LotteShoulder = 20.0                  # Curve shape towards white point for Lotte Tonemapper
-WeatherModifier = 1.0                 # Influence of the vanilla weather modifiers
-
-
-[_Shaders.HDR.Interiors]
+ToneMappingColor = 1.0                # Changes the strength of the vanilla tint influence (not fades)
+TonemapContrast = 1.0                 # Contrast setting for Lottes, Uchimura
+TonemapBrightness = 1.0               # Brightness setting for Lottes, Uncharted, Uchimura
+TonemapMidpoint = 1.0                 # Midpoint setting for Lottes Tonemapper (avoid changing), Linear Section Start for Uchimura
+TonemapShoulder = 1.0                 # White Shoulder for Lottes (max 1.0, should be left default), Black shoulder for Uchimura
+TonemapWhitePoint = 1.0               # White point Setting for Lottes, Reinhard (both), Uncharted. Adjust point that the image clips/exceeds max brightness. For Uchimura, adjusts Linear Section Length (soft clips whites)
+HighlightSaturation = 1.0             # Highlight saturation for VT Lottes, controls how saturated bright elements are as they approach the White Point
 BloomExponent = 1.0                   # Makes the bloom more spread out or more focused
 BloomStrength = 1.0                   # Scales the game's bloom pass strength
-Exposure = 1.0                        # Scales the lighting strength before tonemap
-Gamma = 2.2                           # Gamma modifier to be applied after tonemapping
-Linearization = 2.2
 PointLightMultiplier = 1.0            # Experimental - modifies the strength of all point lights
-Saturation = 1.0                      # Saturation of the image before tonemapping
-SkyMultiplier = 1.0                   # Scales the brightness of the sky and sky textures. Requires Sky shader enabled
-ToneMapping = 1.0                     # Unused
-ToneMappingBlur = 0.0                 # Unused
-ToneMappingColor = 0.4                # Changes the strength of the vanilla weather tint influence
-TonemappingMode = 4                   # Changes the tonemapping algorithm. 0: raw buffer, 1: game native, 2:ACES, 3:Reinhard, 4: Lotte, 5: ACES Fitted, 6:Uncharted
-WhitePoint = 100.0                    # White point setting for Lotte/Reinhard tonemapper. Changes the value of the brightest pixels
-LotteContrast = 1.3                   # Contrast setting for Lotte Tonemapper
-LotteBrightness = 2.0                 # Brightness setting for Lotte Tonemapper
-LotteMidpoint = 1.3                   # Midpoint setting for Lotte Tonemapper
-LotteShoulder = 40.0                   # Curve shape towards white point for Lotte Tonemapper
-WeatherModifier = 1.0                 # Influence of the vanilla weather modifiers
 
 
-[_Shaders.HDR.Night]
-BloomExponent = 0.7                   # Makes the bloom more spread out or more focused
-BloomStrength = 1.5                   # Scales the game's bloom pass strength
-Exposure = 0.7                        # Scales the lighting strength before tonemap
-Gamma = 2.2                           # Gamma modifier to be applied after tonemapping
-Linearization = 2.2
-PointLightMultiplier = 1.0            # Experimental - modifies the strength of all point lights
-Saturation = 1.0                      # Saturation of the image before tonemapping
-SkyMultiplier = 0.5                   # Scales the brightness of the sky and sky textures. Requires Sky shader enabled
-ToneMapping = 1.0                     # Unused
-ToneMappingBlur = 0.0                 # Unused
-ToneMappingColor = 0.5                # Changes the strength of the vanilla weather tint influence
-TonemappingMode = 4                   # Changes the tonemapping algorithm. 0: raw buffer, 1: game native, 2:ACES, 3:Reinhard, 4: Lotte, 5: ACES Fitted, 6:Uncharted
-WhitePoint = 100.0                    # White point setting for Lotte/Reinhard tonemapper. Changes the value of the brightest pixels
-LotteContrast = 1.2                   # Contrast setting for Lotte Tonemapper
-LotteBrightness = 0.0                 # Brightness setting for Lotte Tonemapper
-LotteMidpoint = 0.8                   # Midpoint setting for Lotte Tonemapper
-LotteShoulder = 2.0                   # Curve shape towards white point for Lotte Tonemapper
-WeatherModifier = 1.0                 # Influence of the vanilla weather modifiers
-
-
-[_Shaders.HDR.Status]
-Enabled = true                        # Replaces HDR tonemapping shaders with custom ones.
+[_Shaders.Tonemapping.Status]
+Enabled = true                        # Replaces vanilla HDR tonemapping shaders with custom ones.
 
 
 [_Shaders.ImageAdjust.Main]
 Brightness = 1.0                      # Overall image brightness.
-Saturation = 0.7                      # Overall image saturation.
+Saturation = 1.0                      # Overall image saturation.
 Contrast = 1.0                        # Overall image contrast.
-Strength = 0.4                        # Strength of the effect.
-DarkColorR = 0.9                      # Red channel multiplier for darker tones.
-DarkColorG = 0.7                      # Green channel multiplier for darker tones.
-DarkColorB = 0.7                      # Blue channel multiplier for darker tones.
+Strength = 1.0                        # Strength of the effect.
+DarkColorR = 1.0                      # Red channel multiplier for darker tones.
+DarkColorG = 1.0                      # Green channel multiplier for darker tones.
+DarkColorB = 1.0                      # Blue channel multiplier for darker tones.
 LightColorR = 1.0                     # Red channel multiplier for lighter tones.
 LightColorG = 1.0                     # Green channel multiplier for lighter tones.
 LightColorB = 1.0                     # Blue channel multiplier for lighter tones.
 
 [_Shaders.ImageAdjust.Night]
-Brightness = 1.1                      # Overall image brightness.
-Saturation = 0.8                      # Overall image saturation.
-Contrast = 1.2                        # Overall image contrast.
-Strength = 0.8                        # Strength of the effect.
-DarkColorR = 0.8                      # Red channel multiplier for darker tones.
-DarkColorG = 0.8                      # Green channel multiplier for darker tones.
+Brightness = 1.0                      # Overall image brightness.
+Saturation = 1.0                      # Overall image saturation.
+Contrast = 1.0                        # Overall image contrast.
+Strength = 1.0                        # Strength of the effect.
+DarkColorR = 1.0                      # Red channel multiplier for darker tones.
+DarkColorG = 1.0                      # Green channel multiplier for darker tones.
 DarkColorB = 1.0                      # Blue channel multiplier for darker tones.
-LightColorR = 1.1                     # Red channel multiplier for lighter tones.
-LightColorG = 1.1                     # Green channel multiplier for lighter tones.
-LightColorB = 0.8                     # Blue channel multiplier for lighter tones.
+LightColorR = 1.0                     # Red channel multiplier for lighter tones.
+LightColorG = 1.0                     # Green channel multiplier for lighter tones.
+LightColorB = 1.0                     # Blue channel multiplier for lighter tones.
 
 [_Shaders.ImageAdjust.Interiors]
 Brightness = 1.0                      # Overall image brightness.
 Saturation = 1.0                      # Overall image saturation.
 Contrast = 1.0                        # Overall image contrast.
-Strength = 0.7                        # Strength of the effect.
-DarkColorR = 0.9                      # Red channel multiplier for darker tones.
-DarkColorG = 0.8                      # Green channel multiplier for darker tones.
-DarkColorB = 1.2                      # Blue channel multiplier for darker tones.
+Strength = 1.0                        # Strength of the effect.
+DarkColorR = 1.0                      # Red channel multiplier for darker tones.
+DarkColorG = 1.0                      # Green channel multiplier for darker tones.
+DarkColorB = 1.0                      # Blue channel multiplier for darker tones.
 LightColorR = 1.0                     # Red channel multiplier for lighter tones.
 LightColorG = 1.0                     # Green channel multiplier for lighter tones.
-LightColorB = 0.7                     # Blue channel multiplier for lighter tones.
+LightColorB = 1.0                     # Blue channel multiplier for lighter tones.
 
 [_Shaders.ImageAdjust.Status]
 Enabled = true                        # Basic Image adjustment controls.
@@ -423,9 +423,9 @@ Enabled = true                        # Basic Image adjustment controls.
 
 [_Shaders.Lens.Main]
 DirtLensAmount = 0.4                  # Global effect strength multiplier.
-ExteriorBloomTreshold = 0.65          # Treshold for the max brightness to trigger the effect in exteriors.
-NightBloomTreshold = 0.2              # Treshold for the max brightness to trigger the effect at night.
-InteriorBloomTreshold = 0.2           # Treshold for the max brightness to trigger the effect in interiors.
+ExteriorBloomTreshold = 0.7           # Treshold for the max brightness to trigger the effect in exteriors.
+NightBloomTreshold = 0.1              # Treshold for the max brightness to trigger the effect at night.
+InteriorBloomTreshold = 0.6           # Treshold for the max brightness to trigger the effect in interiors.
 
 [_Shaders.Lens.Status]
 Enabled = true                        # Simulates lens smudges refracting light around brightest areas of the screen.
@@ -512,7 +512,7 @@ Trees = true                         # Wether to include Trees when rendering sh
 [_Shaders.ShadowsExteriors.Main]
 PostProcess = true                   # Wether to render shadows as a post process effect. Currently the only supported mode.
 BlurShadowMaps = true                # Blur shadow maps for soft shadows.
-Darkness = 0.6                       # Darkness of shadows.
+Darkness = 0.5                       # Darkness of shadows.
 Enabled = true                       # Enable sun shadows using rendered shadow maps.
 NightMinDarkness = 0.3               # Darkness of shadows during dark moon phase. Set to 0 to disable shadows completely when there is no moon.
 Quality = 2                          # Not used.
@@ -573,9 +573,9 @@ Terrain = true                       # Wether to include Terrain when rendering 
 Trees = true                         # Wether to include Trees when rendering ortho map.
 
 [_Shaders.ShadowsExteriors.ScreenSpace]
-BlurRadius = 1.0                     # Blur strength for denoising screenspace shadows
+BlurRadius = 5.0                     # Blur strength for denoising screenspace shadows
 Enabled = true                       # Wether to render screen space contact/detail shadows
-RenderDistance = 80000               # Max distance at which to compute screen space shadows
+RenderDistance = 12000               # Max distance at which to compute screen space shadows
 
 [_Shaders.ShadowsExteriors.Status]
 Enabled = true                       # Post process sun and pointlights shadows in exteriors.
@@ -627,9 +627,10 @@ Enabled = false                     # Not currently used. Replaces the skin shad
 
 
 [_Shaders.Sky.Main]
-AthmosphereThickness = 1.0          # Determins the height of the athmosphere on the horizon
-SunInfluence = 1.0                  # How wide a side of the athmosphere will the sky lit up.
-SunStrength = 1.0                   # How strong is the sun brighness when reflected by athmosphere
+AthmosphereThickness = 2.0          # Determins the height of the athmosphere on the horizon
+SunInfluence = 2.0                  # How wide a side of the athmosphere will the sky lit up.
+SunStrength = 2.0                   # How strong is the sun brighness when reflected by athmosphere
+GlareStrength = 1.0                 # How much influence does the Sun have over Glare, inversed
 StarStrength = 1.0                  # Multiplier for stars brightness
 ReplaceSun = false                  # Replaces vanilla sun by a procedural sun for whatever reason
 SunsetR = 0.5                       # Color boost for sunset/sunrise sun color (Red)
@@ -640,7 +641,7 @@ SunsetB = 0.03                      # Color boost for sunset/sunrise sun color (
 [_Shaders.Sky.Clouds]
 UseNormals = false                  # EXPERIMENTAL-Uses the R & G channels of the clouds texture to calculate normals for lighting. Requires special textures
 SphericalNormals = true             # EXPERIMENTAL-Uses this setting if the normals of the clouds point to the center of the panoramic texture
-Transparency = 0.8                  # Clouds base transparency
+Transparency = 1.0                  # Clouds base transparency
 Brightness = 1.0                    # Clouds base brightness
 
 [_Shaders.Sky.Status]
@@ -669,12 +670,12 @@ Enabled = true                      # Snow accumulation on the floor during snow
 [_Shaders.Specular.Exterior]
 BlurMultiplier = 1.0                # Blur strength for detail smoothing.
 DistanceFade = 30000                # Max distance at which the effects will be displayed. Doesn't apply to sky tint.
-FresnelStrength = 0.7               # Strength for the grazing surface lighting boost called fresnel.
+FresnelStrength = 1.0               # Strength for the grazing surface lighting boost called fresnel.
 Glossiness = 16                     # Higher value will make the specular effect affect more intensely a smaller region.
-SkyTintSaturation = 1.8             # Saturation of the sky lighting effect. Sky lighting is based on sky color. 
-SkyTintStrength = 1.0               # Strength for the sky lighting effect. This mostly affects horizontal, dark areas outside.
-SpecLumaTreshold = 0.5              # Treshold for the luma of areas affected by the specular boost.
-SpecularStrength = 0.7              # Strength of the effect for specular boost.
+SkyTintSaturation = 1.0             # Saturation of the sky lighting effect. Sky lighting is based on sky color. 
+SkyTintStrength = 0.5               # Strength for the sky lighting effect. This mostly affects horizontal, dark areas outside.
+SpecLumaTreshold = 0.2              # Treshold for the luma of areas affected by the specular boost.
+SpecularStrength = 1.0              # Strength of the effect for specular boost.
 
 [_Shaders.Specular.Rain]
 BlurMultiplier = 3.0                # Blur strength for detail smoothing during rainy weathers.
@@ -683,8 +684,8 @@ FresnelStrength = 1.0               # Strength for the grazing surface lighting 
 Glossiness = 7                      # Higher value will make the specular effect affect more intensely a smaller region during rainy weathers.
 SkyTintSaturation = 1.0             # Saturation of the sky lighting effect. Sky lighting is based on sky color during rainy weathers. 
 SkyTintStrength = 0.1               # Strength for the sky lighting effect during rainy weathers. This mostly affects horizontal, dark areas outside.
-SpecLumaTreshold = 0.1              # Treshold for the luma of areas affected by the specular boost during rainy weathers.
-SpecularStrength = 4.0              # Strength of the effect for specular boost during rainy weathers.
+SpecLumaTreshold = 0.2              # Treshold for the luma of areas affected by the specular boost during rainy weathers.
+SpecularStrength = 2.0              # Strength of the effect for specular boost during rainy weathers.
 
 [_Shaders.Specular.Status]
 Enabled = true                      # Shader that boosts a few lighting effects: specular boost, sky lighting and fresnel boost.

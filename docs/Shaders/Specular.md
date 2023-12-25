@@ -24,7 +24,7 @@ Max distance at which the effects will be displayed. Doesn't apply to sky tint.
 
 Strength for the grazing surface lighting boost called fresnel.
 
->Default: 0.7
+>Default: 1.0
 
 ---
 
@@ -40,7 +40,7 @@ Higher value will make the specular effect affect more intensely a smaller regio
 
 Saturation of the sky lighting effect. Sky lighting is based on sky color.
 
->Default: 1.8
+>Default: 1.0
 
 ---
 
@@ -48,7 +48,7 @@ Saturation of the sky lighting effect. Sky lighting is based on sky color.
 
 Strength for the sky lighting effect. This mostly affects horizontal, dark areas outside.
 
->Default: 1.0
+>Default: 0.5
 
 ---
 
@@ -56,7 +56,7 @@ Strength for the sky lighting effect. This mostly affects horizontal, dark areas
 
 Treshold for the luma of areas affected by the specular boost.
 
->Default: 0.5
+>Default: 0.2
 
 ---
 
@@ -64,7 +64,7 @@ Treshold for the luma of areas affected by the specular boost.
 
 Strength of the effect for specular boost.
 
->Default: 0.7
+>Default: 1.0
 
 ---
 
@@ -122,7 +122,7 @@ Strength for the sky lighting effect during rainy weathers. This mostly affects 
 
 Treshold for the luma of areas affected by the specular boost during rainy weathers.
 
->Default: 0.1
+>Default: 0.2
 
 ---
 
@@ -130,7 +130,7 @@ Treshold for the luma of areas affected by the specular boost during rainy weath
 
 Strength of the effect for specular boost during rainy weathers.
 
->Default: 4.0
+>Default: 2.0
 
 ---
 
