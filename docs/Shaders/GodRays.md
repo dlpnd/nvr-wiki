@@ -24,7 +24,7 @@ Not used.
 
 Treshold for minimum luminosity of areas casting rays. Lower means more of the sky will cast rays.
 
->Default: 0.7
+>Default: 0.8
 
 ---
 

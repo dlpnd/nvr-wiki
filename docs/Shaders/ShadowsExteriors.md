@@ -252,7 +252,7 @@ Blur shadow maps for soft shadows.
 
 Darkness of shadows.
 
->Default: 0.5
+>Default: 0.65
 
 ---
 
@@ -268,7 +268,7 @@ Enable sun shadows using rendered shadow maps.
 
 Darkness of shadows during dark moon phase. Set to 0 to disable shadows completely when there is no moon.
 
->Default: 0.3
+>Default: 0.35
 
 ---
 

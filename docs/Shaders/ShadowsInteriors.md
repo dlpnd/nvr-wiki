@@ -72,7 +72,7 @@ Wether to include objects with "Containers" flag when rendering shadowmaps.
 
 Darkness of shadows.
 
->Default: 0.7
+>Default: 0.65
 
 ---
 

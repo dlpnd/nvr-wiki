@@ -56,7 +56,7 @@ Influence of the vanilla weather modifiers (brightness, contrast, saturation)
 
 Influence of the vanilla contrast setting, applies post-tonemap. Scales atop WeatherModifier, can cause black crush
 
->Default: 0.25
+>Default: 0.1
 
 ---
 
@@ -128,7 +128,7 @@ Highlight saturation for VT Lottes, controls how saturated bright elements are a
 
 Makes the bloom more spread out or more focused
 
->Default: 1.5
+>Default: 1.0
 
 ---
 
@@ -162,7 +162,7 @@ Tonemapping Algorithm -  0: None (vanilla), 1: VTLottes (default), 2:NVRLottes, 
 
 Scales the engine lighting strength/brightness range before tonemap, useful for HDR rendering
 
->Default: 1.0
+>Default: 1.2
 
 ---
 
@@ -202,7 +202,7 @@ Influence of the vanilla weather modifiers (brightness, contrast, saturation)
 
 Influence of the vanilla contrast setting, applies post-tonemap. Scales atop WeatherModifier, can cause black crush notably in Interiors
 
->Default: 0.25
+>Default: 0.1
 
 ---
 
@@ -308,7 +308,7 @@ Tonemapping Algorithm -  0: None (vanilla), 1: VTLottes (default), 2:NVRLottes, 
 
 Scales the engine lighting strength/brightness range before tonemap, useful for HDR rendering
 
->Default: 1.0
+>Default: 1.2
 
 ---
 
@@ -348,7 +348,7 @@ Influence of the vanilla weather modifiers (brightness, contrast, saturation)
 
 Influence of the vanilla contrast setting, applies post-tonemap. Scales atop WeatherModifier, can cause black crush notably in Interiors
 
->Default: 0.25
+>Default: 0.1
 
 ---
 

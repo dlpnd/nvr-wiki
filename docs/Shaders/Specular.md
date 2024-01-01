@@ -56,7 +56,7 @@ Strength for the sky lighting effect. This mostly affects horizontal, dark areas
 
 Treshold for the luma of areas affected by the specular boost.
 
->Default: 0.2
+>Default: 0.25
 
 ---
 
@@ -64,7 +64,7 @@ Treshold for the luma of areas affected by the specular boost.
 
 Strength of the effect for specular boost.
 
->Default: 1.0
+>Default: 0.2
 
 ---
 
@@ -122,7 +122,7 @@ Strength for the sky lighting effect during rainy weathers. This mostly affects 
 
 Treshold for the luma of areas affected by the specular boost during rainy weathers.
 
->Default: 0.2
+>Default: 0.25
 
 ---
 
@@ -130,7 +130,7 @@ Treshold for the luma of areas affected by the specular boost during rainy weath
 
 Strength of the effect for specular boost during rainy weathers.
 
->Default: 2.0
+>Default: 1.0
 
 ---
 

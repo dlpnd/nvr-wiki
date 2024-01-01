@@ -16,7 +16,7 @@ Determins the height of the athmosphere on the horizon
 
 How wide a side of the athmosphere will the sky lit up.
 
->Default: 2.0
+>Default: 1.0
 
 ---
 
@@ -24,7 +24,7 @@ How wide a side of the athmosphere will the sky lit up.
 
 How strong is the sun brighness when reflected by athmosphere
 
->Default: 2.0
+>Default: 1.0
 
 ---
 
