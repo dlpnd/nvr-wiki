@@ -703,6 +703,8 @@ Enabled = false                     # Not currently used. Replaces shaders used 
 Enabled = true                      # Post Process underwater fog/godrays/caustics effect.
 
 [_Shaders.VolumetricFog.Main]
+Amount = 1.0                        # Global multiplier for fog strength in exteriors
+AmountInterior = 1.0                # Global multiplier for fog strength in interiors
 SunPower = 1.0                      # Controls the influence of Sun Color when shining through fog
 LowFogDensity = 1.0                 # Density of low lying fog using weather fog colors and sun influence
 LowFogFalloff = 1.0                 # Vertical falloff of low fog

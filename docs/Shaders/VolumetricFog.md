@@ -4,6 +4,22 @@
 
 ## Main
 
+### Amount
+
+Global multiplier for fog strength in exteriors
+
+>Default: 1.0
+
+---
+
+### AmountInterior
+
+Global multiplier for fog strength in interiors
+
+>Default: 1.0
+
+---
+
 ### SunPower
 
 Controls the influence of Sun Color when shining through fog

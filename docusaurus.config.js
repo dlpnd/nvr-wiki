@@ -125,7 +125,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} DLpnd & NVR Team. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} DLpnd & NVR Team.`,
       },
       prism: {
         theme: lightCodeTheme,
