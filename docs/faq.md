@@ -64,10 +64,8 @@ It is recommended that you follow this great guide made by `Wall_SoGB#2421`: [Fa
 Could be several things:
 
 - Having `Enhanced Camera` with `Shadows` enabled see [Enhanced Camera](#enhanced-camera)
-- Most likely it is because of using `dxvk`+`NVHR` and having the `Water Shader` on. Disable one of the three, depending on your setup.
-- `dxvk`+`NVHR` can also have issues even without water enabled if `Steam` cache is enabled. [Disable Steam cache to fix the issue](https://10scopes.com/disable-shader-pre-caching-in-steam/)
 - Could also be because of using a preset for an older version.
-- Currently `NVR` crashes on `AMD` cards when using `dxvk` version `2.0.0`. `dxvk` version `1.10.3` works fine. On Intel, use version `1.10.1`
+- On Intel, use version `1.10.1`
 - Make sure `NVTF` has the following setting:
 
 ```ini
@@ -238,7 +236,7 @@ For the transparency issue, use this [fix](https://www.nexusmods.com/newvegas/mo
 
 ### NVHR
 
-Can cause crashes at startup when using `dxvk` and custom shaders such as the `Water Replacement Shader`.
+Can be used with `NVR`.
 
 :::note
 NVHR is not installed via MO2. It must be manually copied into the root folder. Make sure to check the mod's Nexus page for more info.
@@ -259,10 +257,6 @@ The setting "float emulation" should be set to "strict".
 ```ini
 d3d9.floatEmulation = Strict
 ```
-
-:::warning
-`dxvk` can cause crashes if installed alongside `NVHR` and with `Water Shader` activated
-:::
 
 :::note
 Its better to follow the [Performance Guide](https://wallsogb.github.io/FalloutNV-Performance-Guide/) for the most stable New Vegas experience.
