@@ -164,6 +164,22 @@ Max distance for point light shadow rendering.
 
 ---
 
+### PlayerShadowThirdPerson
+
+Enable shadows for Player Model in third person in pointlights shadows
+
+>Default: true
+
+---
+
+### PlayerShadowFirstPerson
+
+Enable shadows for Player Model in first person in pointlights shadows
+
+>Default: false
+
+---
+
 ## Status
 
 ### Enabled

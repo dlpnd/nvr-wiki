@@ -589,7 +589,7 @@ AlphaEnabled = true                  # Wether to take into account alpha of obje
 Apparatus = true                     # Wether to include objects with "Apparatus" flag when rendering shadowmaps.
 Books = true                         # Wether to include objects with "Books" flag when rendering shadowmaps.
 Containers = true                    # Wether to include objects with "Containers" flag when rendering shadowmaps.
-Darkness = 0.65                       # Darkness of shadows.
+Darkness = 0.65                      # Darkness of shadows.
 Doors = true                         # Wether to include objects with "Doors" flag when rendering shadowmaps.
 Furniture = true                     # Wether to include objects with "Furniture" flag when rendering shadowmaps.
 LightPoints = 12                     # Number of Lights being taken into account for shadows. 12 maximum.
@@ -601,6 +601,8 @@ ShadowCubeMapSize = 512              # The resolution of one face for the point 
 Statics = true                       # Wether to include objects with "Statics" flag when rendering shadowmaps.
 TorchesCastShadows = true            # Used in Oblivion to enable shadows on torches.
 DrawDistance = 4000                  # Max distance for point light shadow rendering.
+PlayerShadowThirdPerson = true       # Enable shadows for Player Model in third person in pointlights shadows
+PlayerShadowFirstPerson = false      # Enable shadows for Player Model in first person in pointlights shadows
 
 [_Shaders.ShadowsInteriors.Status]
 Enabled = true                      # Post process pointlights shadows in exteriors.
