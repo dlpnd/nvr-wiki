@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunknvr_wiki=self.webpackChunknvr_wiki||[]).push([[5050],{6018:e=>{e.exports=JSON.parse('[{"label":"changelog","permalink":"/nvr-wiki/blog/tags/changelog","count":2}]')}}]);
