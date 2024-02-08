@@ -742,9 +742,32 @@ inScattCoeff = 1.0                  # Not used.
 reflectivity = 1.0                  # Multiplier for the strength of reflections on the surface.
 shoreFactor = 6.0                   # Size of the shore fading area on shallow slope areas.
 shoreMovement = 0.3                 # Speed of wave movement in the shore.
-turbidity = 3.0                     # Ability of light to travel through water. Basically clearness of water.
+turbidity = 3.0                     # Water murkiness.
 waveSpeed = 0.7                     # Speed multiplier for waves animation.
 waveWidth = 0.8                     # Multiplier for the wave texture size.
+refractionPower = 0.2               # Multiplier for the refraction.
+
+[_Shaders.Water.Interiors]
+choppiness = 0.5                    # Exponent for the waves normals. A higher value will create more defined wave crests.
+depthDarkness = 10.0                # How much light reaches the bottom of the water.
+reflectivity = 0.0                  # Multiplier for the strength of reflections on the surface.
+shoreFactor = 6.0                   # Size of the shore fading area on shallow slope areas.
+shoreMovement = 0.6                 # Speed of wave movement in the shore.
+turbidity = 1.0                     # Water murkiness.
+waveSpeed = 0.7                     # Speed multiplier for waves animation.
+waveWidth = 0.8                     # Multiplier for the wave texture size.
+refractionPower = 0.2               # Multiplier for the refraction.
+
+[_Shaders.Water.Placed]
+choppiness = 0.5                    # Exponent for the waves normals. A higher value will create more defined wave crests.
+depthDarkness = 10.0                # How much light reaches the bottom of the water.
+reflectivity = 0.0                  # Multiplier for the strength of reflections on the surface.
+shoreFactor = 6.0                   # Size of the shore fading area on shallow slope areas.
+shoreMovement = 0.6                 # Speed of wave movement in the shore.
+turbidity = 1.0                     # Water murkiness.
+waveSpeed = 0.7                     # Speed multiplier for waves animation.
+waveWidth = 0.8                     # Multiplier for the wave texture size.
+refractionPower = 0.2               # Multiplier for the refraction.
 
 [_Shaders.Water.Status]
 Enabled = true                      # Replaces water shaders with a custom shader.
