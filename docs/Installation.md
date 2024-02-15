@@ -18,9 +18,11 @@ If you are not familiar with the terms, we recommend following one of the follow
 ### Prerequisites
 
 * Fallout New Vegas from [Steam](https://store.steampowered.com/sub/13435), [GOG](https://www.gog.com/en/game/fallout_new_vegas_ultimate_edition) or [Epic Games](https://store.epicgames.com/en-US/p/fallout-new-vegas--ultimate-edition)
+
 :::caution
 Any other versions are not supported by `xNVSE`.
 :::
+
 * [xNVSE](https://www.nexusmods.com/newvegas/mods/67883) - A script extender that allows loading of NVR.
 * [Mod Organizer 2](https://www.nexusmods.com/skyrimspecialedition/mods/6194?tab=files) - A Mod organization tools, allows for better control over what mods are installed.
 
