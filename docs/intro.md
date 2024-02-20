@@ -4,9 +4,13 @@ sidebar_position: 1
 
 # Introduction
 
----
+The main purpose of the website is to keep track of the features available in NVR, and provide users with information about the functionality and how to get started with NVR.
 
-The main purpose of the wiki is to keep track of the features available in NVR, and provide users with information about the functionality.
+The following steps will guide you through installing New Vegas Reloaded for the first time
+
+## Before you start
+
+As NVR (New Vegas Reloaded) can be quite performance intensive, it's **HIGHLY** recommended you follow [WallSogB's Fallout New Vegas Performance Guide](https://wallsogb.github.io/FalloutNV-Performance-Guide) first!
 
 # Contribution
 

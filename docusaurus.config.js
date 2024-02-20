@@ -58,9 +58,20 @@ const config = {
     ],
   ],
 
+  plugins: [
+    'docusaurus-plugin-image-zoom', // can also just be 'image-zoom'
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      // Declare some <meta> tags
+      metadata: [
+        { name: 'keywords', content: 'new, vegas, reloaded, shaders, nvr, tesreloaded, enb' },
+        { name: 'description', content: 'New Vegas Reloaded is a custom graphical extender for Obsidian\'s Fallout: New Vegas. It overrides the rendering pipeline to inject various effects that can be completely configured.' },
+        { name: 'author', content: 'New Vegas Reloaded Community' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+      ],
       // Replace with your project's social card
       image: 'img/nvr-social-card.png',
       algolia: {
@@ -79,7 +90,7 @@ const config = {
         },
       },
       navbar: {
-        title: 'New Vegas Reloaded - Wiki',
+        title: 'New Vegas Reloaded',
         logo: {
           alt: 'New Vegas Reloaded - Wiki Logo',
           src: 'img/logo.svg',
@@ -92,46 +103,35 @@ const config = {
             label: 'Introduction',
           },
           { to: '/blog', label: 'Changelog', position: 'left' },
+          { to: '/docs/gallery', label: 'Gallery', position: 'left' },
           {
             href: 'https://github.com/dlpnd/nvr-wiki',
             label: 'GitHub',
             position: 'right',
           },
-        ],
-      },
-      footer: {
-        style: 'dark',
-        links: [
           {
-            title: 'Community',
-            items: [
-              {
-                label: 'Discord',
-                href: 'https://discord.com/invite/QgN6mR6eTK',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Changelog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/dlpnd/nvr-wiki',
-              },
-            ],
+            href: 'https://github.com/dlpnd/nvr-wiki',
+            label: 'Discord',
+            position: 'right',
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} DLpnd & NVR Team.`,
       },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      zoom: {
+        selector: '.gallery img',
+        background: {
+          light: 'rgb(255, 255, 255)',
+          dark: 'rgb(0, 0, 0)'
+        },
+        config: {
+          // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
+        }
+      }
     }),
+
 };
 
 module.exports = config;

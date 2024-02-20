@@ -12,10 +12,17 @@ function HomepageHeader() {
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <h1 className="hero__title">{siteConfig.title}</h1>
+        <div className="preamble">
+          <p>
+            New Vegas Reloaded is a custom graphical extender for Obsidian's "Fallout: New Vegas"</p>
+          <p>
+            It overrides the rendering pipeline to inject various effects that can be completely configured
+          </p>
+        </div>
         <br />
         <div className={styles.buttons}>
           <Link
-            className="button button--secondary button--lg" to="/docs/intro">
+            className="getting-started-button" to="/docs/intro">
             Get Started
           </Link>
         </div>
@@ -29,7 +36,7 @@ export default function Home() {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="New Vegas Reloaded Wiki">
+      description="New Vegas Reloaded is a custom graphical extender for Obsidian's 'Fallout: New Vegas'">
       <HomepageHeader />
     </Layout>
   );
