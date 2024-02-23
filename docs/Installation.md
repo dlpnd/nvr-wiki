@@ -24,26 +24,23 @@ Any other versions are not supported by `xNVSE`.
 :::
 
 * [xNVSE](https://www.nexusmods.com/newvegas/mods/67883) - A script extender that allows loading of NVR.
-* [Mod Organizer 2](https://www.nexusmods.com/skyrimspecialedition/mods/6194?tab=files) - A Mod organization tools, allows for better control over what mods are installed.
+* [Mod Organizer 2](https://www.nexusmods.com/skyrimspecialedition/mods/6194?tab=files) - A Mod organization tool, allows for better control over what mods are installed.
 
 ## Downloads
 
-New Vegas Reloaded is officially available for download via 3 methods: `Discord`, `NexusMods` and `GitHub`. Nexus releases are generally tested and ready for general public to download.
+New Vegas Reloaded is officially available for download via [Discord](https://discord.com/invite/QgN6mR6eTK).
 
-## Discord
+There are many other versions floating around the interwebs but it's **HIGHLY** recommended you use the latest nightly build, downloaded from the TES Reloaded Discord.
 
-[New Vegas Reloaded Nightly](https://discord.com/channels/344843935123898369/825386797151813662)
+:::caution
+Versions such as 3.14 or versions found from the Nexus are old, lacking many new features and unsupported by the current maintainers of NVR.
+:::
 
-### Nexus
+## Latest NVR Download
 
-[New Vegas Reloaded](https://www.nexusmods.com/newvegas/mods/65525)
+* [Download from Discord](https://discord.com/channels/344843935123898369/1077004762425348106)
 
-### Github
-
-* Latest Release: [github](https://github.com/llde/TESReloaded10/releases)
-* Latest Nightly: [github](https://github.com/llde/TESReloaded10/actions/workflows/main.yml)
-
-## Installation
+## Installing
 
 Once you downloaded all the prerequisites and have the latest version of `New Vegas Reloaded`
 
@@ -52,5 +49,4 @@ Once you downloaded all the prerequisites and have the latest version of `New Ve
 * Drag and Drop the `NewVegasReloaded.zip` file into `Downloads` tab in `Mod Organizer 2`.
 * Doubleclick on/or drag the newly appeared `NewVegasReloaded.zip` into the `Mod` page on the left pane.
 
-:::note
-A [video](https://youtu.be/dDFTyOfjr84?t=93) from the following timestamp is available to show this process.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oACctUEaBsg?si=-8lcbYlNSGye9dw8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
