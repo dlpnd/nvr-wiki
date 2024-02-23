@@ -82,7 +82,6 @@ pre {
 
 /* Container for text content */
 .container {
-  background-color: #0000000e;
   border-radius: 25px;
   animation: fadein 2s;
   -moz-animation: fadein 2s; /* Firefox */
@@ -158,6 +157,8 @@ pre {
 
 /* Getting Started Button */
 .getting-started-button {
+  font-family: 'Roboto Slab', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
   padding: 0.6em 2em;
   border: none;
   outline: none;
