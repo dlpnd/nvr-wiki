@@ -1,6 +1,22 @@
-# NVR Wiki
+# New Vegas Reloaded - Wiki
+
+![](https://dlpnd.github.io/nvr-wiki/img/nvr-social-card.png)
+
+[![Discord Link](https://img.shields.io/discord/713369537948549191?color=black&label=Discord&style=for-the-badge)](https://discord.com/invite/QgN6mR6eTK)
+
+New Vegas Reloaded is the Fallout: New Vegas part of TESReloaded, a custom made graphical extender for Bethesda games.
+
+It overrides the rendering pipeline to inject various effects that can be completely configured.
+
+This repo contains the source for the **Wiki** of New Vegas Reloaded. If you want to download the mod and interact with the community, please reach out on the Discord linked above.
+
+## Source
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+
+### Requirements
+
+* NodeJS v21.6.2
 
 ### Installation
 
