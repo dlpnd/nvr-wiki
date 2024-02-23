@@ -2,11 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dlpnd.github.io/nvr-wiki/blog</id>
     <title>New Vegas Reloaded Blog</title>
-    <updated>2023-05-08T00:00:00.000Z</updated>
+    <updated>2024-02-23T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dlpnd.github.io/nvr-wiki/blog"/>
     <subtitle>New Vegas Reloaded Blog</subtitle>
     <icon>https://dlpnd.github.io/nvr-wiki/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Changelog - February 2024]]></title>
+        <id>https://dlpnd.github.io/nvr-wiki/blog/2024/23/02</id>
+        <link href="https://dlpnd.github.io/nvr-wiki/blog/2024/23/02"/>
+        <updated>2024-02-23T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[* Added a Gallery]]></summary>
+        <content type="html"><![CDATA[<ul>
+<li>Added a Gallery</li>
+<li>Redid the landing page</li>
+<li>Added a note about following the Performance Guide before installing</li>
+<li>Fixed some outdated info regarding installation instructions</li>
+<li>Added an embed of Salamanders video for how to install</li>
+<li>Added some small SEOs</li>
+<li>Updated build requirements</li>
+</ul>]]></content>
+        <category label="changelog" term="changelog"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Changelog - May 2023]]></title>
         <id>https://dlpnd.github.io/nvr-wiki/blog/2023/05/08</id>
