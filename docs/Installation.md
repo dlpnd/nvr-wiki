@@ -40,7 +40,7 @@ Versions such as 3.14 or versions found from the Nexus are old, lacking many new
 
 * [Download from Discord](https://discord.com/channels/344843935123898369/1077004762425348106)
 
-## Installation
+## Installing
 
 Once you downloaded all the prerequisites and have the latest version of `New Vegas Reloaded`
 
@@ -49,5 +49,4 @@ Once you downloaded all the prerequisites and have the latest version of `New Ve
 * Drag and Drop the `NewVegasReloaded.zip` file into `Downloads` tab in `Mod Organizer 2`.
 * Doubleclick on/or drag the newly appeared `NewVegasReloaded.zip` into the `Mod` page on the left pane.
 
-:::note
-A [video](https://youtu.be/dDFTyOfjr84?t=93) from the following timestamp is available to show this process.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oACctUEaBsg?si=-8lcbYlNSGye9dw8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

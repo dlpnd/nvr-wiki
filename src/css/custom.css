@@ -22,7 +22,7 @@
 }
 
 [data-theme="dark"] {
-  --ifm-color-primary: #ffff80;
+  --ifm-color-primary: #dbb002fa;
   --ifm-color-primary-dark: #fffd71;
   --ifm-color-primary-darker: #ffef6a;
   --ifm-color-primary-darkest: #ffc558;
@@ -171,6 +171,9 @@ pre {
   -webkit-user-select: none;
   touch-action: manipulation;
 }
+.getting-started-button:hover {
+  transform: scale(1.1);
+}
 
 .getting-started-button:before {
   content: "";
@@ -224,8 +227,12 @@ pre {
   border-radius: 10px;
 }
 
+.getting-started-button:link {
+  text-decoration: none; 
+}
+
 .gallery {
-  width: 80vw;
+  width: 73vw;
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
@@ -234,7 +241,6 @@ pre {
 
 /* Create four equal columns that sits next to each other */
 .column {
-  -ms-flex: 25%; /* IE10 */
   flex: 25%;
   max-width: 25%;
   padding: 0 4px;
@@ -249,7 +255,6 @@ pre {
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .column {
-    -ms-flex: 50%;
     flex: 50%;
     max-width: 50%;
   }
@@ -258,7 +263,6 @@ pre {
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
-    -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
   }
