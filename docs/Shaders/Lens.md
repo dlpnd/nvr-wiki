@@ -4,7 +4,7 @@
 
 ## Main
 
-### DirtLensAmount
+### Strength
 
 Global effect strength multiplier.
 
@@ -12,27 +12,71 @@ Global effect strength multiplier.
 
 ---
 
-### ExteriorBloomTreshold
+### BloomExponent
 
-Treshold for the max brightness to trigger the effect in exteriors.
+Determins how far from the light source the dirt particles are lit
 
 >Default: 0.7
 
 ---
 
-### NightBloomTreshold
+### Smudginess
 
-Treshold for the max brightness to trigger the effect at night.
+Scales the texture so that more of the screen is affected
 
->Default: 0.1
+>Default: 0.0
 
 ---
 
-### InteriorBloomTreshold
+## Night
 
-Treshold for the max brightness to trigger the effect in interiors.
+### Strength
+
+Global effect strength multiplier.
+
+>Default: 0.4
+
+---
+
+### BloomExponent
+
+Determins how far from the light source the dirt particles are lit
+
+>Default: 0.7
+
+---
+
+### Smudginess
+
+Scales the texture so that more of the screen is affected
+
+>Default: 0.4
+
+---
+
+## Interiors
+
+### Strength
+
+Global effect strength multiplier.
+
+>Default: 0.05
+
+---
+
+### BloomExponent
+
+Determins how far from the light source the dirt particles are lit
 
 >Default: 0.6
+
+---
+
+### Smudginess
+
+Scales the texture so that more of the screen is affected
+
+>Default: 0.2
 
 ---
 

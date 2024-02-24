@@ -90,57 +90,37 @@ Now before we get into the dirty innards of the code, we need to do a little fix
 The reason this isn't bundled in properly after downloading from Github, is because it's a big lump of code that takes up a few hundred MB of space. Fortunately, it's easy for us to rectify this.
 
 1. Go to `Tools -> NuGet Package Manager -> Manage NuGet Packages for Solution...`
-
 ![04](/img/04.png "04")
-
-2. You will see the following appear, give it a moment to load if the window doesn't pop up right away.
-
+1. You will see the following appear, give it a moment to load if the window doesn't pop up right away.
 ![05](/img/05.png "05")
-
-3. Click `Restore` at the right of the yellow banner
-
+1. Click `Restore` at the right of the yellow banner
 ![06](/img/06.png "06")
-
-4. Wait for `Visual Studio` to finish fixing up the packages. If all went well, you'll see a nice green tick next to the icon of the Microsoft.DXSDK.D3DX package.
-
+1. Wait for `Visual Studio` to finish fixing up the packages. If all went well, you'll see a nice green tick next to the icon of the Microsoft.DXSDK.D3DX package.
 ![07](/img/07.png "07")
-
-Then you are done fixing the compilation issues.
-
-But wait! There's more!
-
-We'll fix those icky warnings at the bottom of the screen.
-
-5. Right-click on `NewVegasReloaded` -> `Properties`
-
+    Then you are done fixing the compilation issues.
+    But wait! There's more!
+    We'll fix those icky warnings at the bottom of the screen.
+1. Right-click on `NewVegasReloaded` -> `Properties`
 ![08](/img/08.png "08")
-
-6. The `Property Pages` window will pop up. Navigate to `Configuration Properties` -> `VC++ Directories` -> `General` -> `Include Directories`
-
+1. The `Property Pages` window will pop up. Navigate to `Configuration Properties` -> `VC++ Directories` -> `General` -> `Include Directories`
 ![09](/img/09.png "09")
+1. What we want to do here, is paste the relative path from the `.sln` file to where that DirectX SDK got put. Which is:
 
-7. What we want to do here, is paste the relative path from the `.sln` file to where that DirectX SDK got put. Which is:
+    ```text
+    packages\Microsoft.DXSDK.D3DX.9.29.952.8
+    ```
 
-```text
-packages\Microsoft.DXSDK.D3DX.9.29.952.8
-```
+    The result should be this:
 
-The result should be this:
+    ```text
+    $(IncludePath);packages\Microsoft.DXSDK.D3DX.9.29.952.8
+    ```
 
-```text
-$(IncludePath);packages\Microsoft.DXSDK.D3DX.9.29.952.8
-```
-
-![10](/img/10.png "10")
-
-8. We've fixed the `Debug` settings, and we will do the same for the Release settings. Mainly because Debug is wonky for this project so we will be using Release. Yay.
-
+    ![10](/img/10.png "10")
+1. We've fixed the `Debug` settings, and we will do the same for the Release settings. Mainly because Debug is wonky for this project so we will be using Release. Yay.
 At the top left, change the `Configuration` setting to `Release`.
-
-9. Make the same changes again to `Include Directories`, then click OK.
-
+1. Make the same changes again to `Include Directories`, then click OK.
 ![11](/img/11.png "11")
-
 Bam! Fixed those DirectX errors. We got some others kicking about, but ignore those because, err, it works anyway?
 
 ### Chapter 1: Understanding the shader we want to port
@@ -521,26 +501,23 @@ The `.fx.hlsl` files contain the source code, which is what we've been working w
 With that done, it's time to create our various settings. There are several things to do here.
 
 1. Open the`NewVegasReloaded.dll.defaults.toml` file in Visual Studio (can be done in Notepad++, but easier and nicer to have the text in the same program for easy copy-paste and comparing)
-
 ![13](/img/13.png "13")
-
-2. Create two new sections for our settings: `.Status`, and `.Main`
+1. Create two new sections for our settings: `.Status`, and `.Main`
    1. `[_Shaders.SweetFXLiftGammaGain.Status]` - This will contain only one setting, which is used to toggle the effect
    1. `[_Shaders.SweetFXLiftGammaGain.Main]` - This will contain the user-adjustable variables.
-
 We'll also add a comment to it, which is done with # (unlike //, which is for C++ and HLSL):
 
-```toml
-[_Shaders.SweetFXLiftGammaGain.Status]
-Enabled = false #Port of SweetFX's LiftGammaGain. Allows adjusting shadows, midtones, and highlights
+    ```toml
+    [_Shaders.SweetFXLiftGammaGain.Status]
+    Enabled = false #Port of SweetFX's LiftGammaGain. Allows adjusting shadows, midtones, and highlights
 
-[_Shaders.SweetFXLiftGammaGain.Main]
-```
+    [_Shaders.SweetFXLiftGammaGain.Main]
+    ```
 
-3. Add our settings to those sections
-4. Define our shader's structure in `ShaderManager.h`
-5. Fill the variables with data in `ShaderManager.cpp`
-6. Pass the data to our shader in `ShaderManager.cpp`
+1. Add our settings to those sections
+1. Define our shader's structure in `ShaderManager.h`
+1. Fill the variables with data in `ShaderManager.cpp`
+1. Pass the data to our shader in `ShaderManager.cpp`
 
 Now let's add our variables to the .toml (steps 2 & 3). Remember those comments we made in the .hlsl file?
 

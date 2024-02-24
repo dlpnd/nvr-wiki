@@ -102,7 +102,11 @@ const config = {
             position: 'left',
             label: 'Introduction',
           },
-          { to: '/blog', label: 'Changelog', position: 'left' },
+          {
+            to: '/blog',
+            label: 'Changelog',
+            position: 'left'
+          },
           {
             type: 'doc',
             position: 'left',

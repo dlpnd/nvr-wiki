@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Introduction
 
-![](/img/screenshots/guide/guide.png)
+![Introduction](/img/screenshots/guide/guide.png)
 
 **New Vegas Reloaded** is a highly configurable, custom made graphics extender for Fallout: New Vegas.
 

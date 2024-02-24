@@ -128,7 +128,7 @@ Highlight saturation for VT Lottes, controls how saturated bright elements are a
 
 Makes the bloom more spread out or more focused
 
->Default: 1.0
+>Default: 0.7
 
 ---
 
@@ -136,7 +136,7 @@ Makes the bloom more spread out or more focused
 
 Scales the game's bloom pass strength
 
->Default: 0.75
+>Default: 0.15
 
 ---
 
@@ -274,7 +274,7 @@ Highlight saturation for VT Lottes, controls how saturated bright elements are a
 
 Makes the bloom more spread out or more focused
 
->Default: 1.0
+>Default: 0.9
 
 ---
 
@@ -282,7 +282,7 @@ Makes the bloom more spread out or more focused
 
 Scales the game's bloom pass strength
 
->Default: 1.0
+>Default: 0.03
 
 ---
 
@@ -420,7 +420,7 @@ Highlight saturation for VT Lottes, controls how saturated bright elements are a
 
 Makes the bloom more spread out or more focused
 
->Default: 1.0
+>Default: 0.9
 
 ---
 
@@ -428,7 +428,7 @@ Makes the bloom more spread out or more focused
 
 Scales the game's bloom pass strength
 
->Default: 1.0
+>Default: 0.3
 
 ---
 

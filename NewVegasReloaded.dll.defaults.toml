@@ -154,6 +154,27 @@ Time = 900.0
 [_Shaders.BloodLens.Status]
 Enabled = false
 
+[_Shaders.Bloom]
+
+[_Shaders.Bloom.Main]
+Treshold = 2.0                          # treshold value above which lights will bloom
+Scale = 0.31                            # scale the brightness of the bloom
+Strength = 0.1                          # power of the bloom when applied
+
+[_Shaders.Bloom.Night]
+Treshold = 0.4                          # treshold value above which lights will bloom
+Scale = 2.0                             # scale the brightness of the bloom
+Strength = 0.5                          # power of the bloom when applied
+
+[_Shaders.Bloom.Interiors]
+Treshold = 0.0                          # treshold value above which lights will bloom
+Scale = 0.61                            # scale the brightness of the bloom
+Strength = 2.3                          # power of the bloom when applied
+
+[_Shaders.Bloom.Status]
+Enabled = true                          # Replace the vanilla bloom
+
+
 [_Shaders.BloomLegacy.Exteriors]
 BloomIntensity = 1.4
 BloomSaturation = 1.2
@@ -330,8 +351,8 @@ TonemapMidpoint = 1.0                 # Midpoint setting for Lottes Tonemapper (
 TonemapShoulder = 1.0                 # White Shoulder for Lottes (max 1.0, should be left default), Black shoulder for Uchimura
 TonemapWhitePoint = 1.0               # White point Setting for Lottes, Reinhard (both), Uncharted. Adjust point that the image clips/exceeds max brightness. For Uchimura, adjusts Linear Section Length (soft clips whites)
 HighlightSaturation = 1.0             # Highlight saturation for VT Lottes, controls how saturated bright elements are as they approach the White Point
-BloomExponent = 1.0                   # Makes the bloom more spread out or more focused
-BloomStrength = 0.75                  # Scales the game's bloom pass strength
+BloomExponent = 0.7                   # Makes the bloom more spread out or more focused
+BloomStrength = 0.15                  # Scales the game's bloom pass strength
 PointLightMultiplier = 1.0            # Experimental - modifies the strength of all point lights
 
 
@@ -351,8 +372,8 @@ TonemapMidpoint = 1.0                 # Midpoint setting for Lottes Tonemapper (
 TonemapShoulder = 1.0                 # White Shoulder for Lottes (max 1.0, should be left default), Black shoulder for Uchimura
 TonemapWhitePoint = 1.0               # White point Setting for Lottes, Reinhard (both), Uncharted. Adjust point that the image clips/exceeds max brightness. For Uchimura, adjusts Linear Section Length (soft clips whites)
 HighlightSaturation = 1.0             # Highlight saturation for VT Lottes, controls how saturated bright elements are as they approach the White Point
-BloomExponent = 1.0                   # Makes the bloom more spread out or more focused
-BloomStrength = 1.0                   # Scales the game's bloom pass strength
+BloomExponent = 0.9                   # Makes the bloom more spread out or more focused
+BloomStrength = 0.03                  # Scales the game's bloom pass strength
 PointLightMultiplier = 1.0            # Experimental - modifies the strength of all point lights
 
 
@@ -372,8 +393,8 @@ TonemapMidpoint = 1.0                 # Midpoint setting for Lottes Tonemapper (
 TonemapShoulder = 1.0                 # White Shoulder for Lottes (max 1.0, should be left default), Black shoulder for Uchimura
 TonemapWhitePoint = 1.0               # White point Setting for Lottes, Reinhard (both), Uncharted. Adjust point that the image clips/exceeds max brightness. For Uchimura, adjusts Linear Section Length (soft clips whites)
 HighlightSaturation = 1.0             # Highlight saturation for VT Lottes, controls how saturated bright elements are as they approach the White Point
-BloomExponent = 1.0                   # Makes the bloom more spread out or more focused
-BloomStrength = 1.0                   # Scales the game's bloom pass strength
+BloomExponent = 0.9                   # Makes the bloom more spread out or more focused
+BloomStrength = 0.3                   # Scales the game's bloom pass strength
 PointLightMultiplier = 1.0            # Experimental - modifies the strength of all point lights
 
 
@@ -422,10 +443,19 @@ Enabled = true                        # Basic Image adjustment controls.
 
 
 [_Shaders.Lens.Main]
-DirtLensAmount = 0.4                  # Global effect strength multiplier.
-ExteriorBloomTreshold = 0.7           # Treshold for the max brightness to trigger the effect in exteriors.
-NightBloomTreshold = 0.1              # Treshold for the max brightness to trigger the effect at night.
-InteriorBloomTreshold = 0.6           # Treshold for the max brightness to trigger the effect in interiors.
+Strength = 0.4                  # Global effect strength multiplier.
+BloomExponent = 0.7             # Determins how far from the light source the dirt particles are lit 
+Smudginess = 0.0                # Scales the texture so that more of the screen is affected 
+
+[_Shaders.Lens.Night]
+Strength = 0.4                  # Global effect strength multiplier.
+BloomExponent = 0.7             # Determins how far from the light source the dirt particles are lit
+Smudginess = 0.4                # Scales the texture so that more of the screen is affected
+
+[_Shaders.Lens.Interiors]
+Strength = 0.05                 # Global effect strength multiplier.
+BloomExponent = 0.6             # Determins how far from the light source the dirt particles are lit
+Smudginess = 0.2                # Scales the texture so that more of the screen is affected
 
 [_Shaders.Lens.Status]
 Enabled = true                        # Simulates lens smudges refracting light around brightest areas of the screen.

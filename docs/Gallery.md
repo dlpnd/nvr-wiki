@@ -1,3 +1,9 @@
+---
+sidebar_position: 3
+---
+
+# Gallery
+
 <div>
     <!-- Mathieu -->
     <h2><a href="https://github.com/mchaptel">Mathieu C</a></h2>
