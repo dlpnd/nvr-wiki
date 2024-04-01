@@ -54,6 +54,7 @@ RenderEffects = true        # Toggle rendering of all effects.
 RenderPreTonemapping = true # Toggle rendering of some effects in HDR before the game image space effects (can cause glitches).
 ReplaceIntro = false        # Controls rendering of the main menu custom video.
 ScreenshotKey = 87          # Keycode for custom screenshot hotkey (removes HUD and saves as jpg).
+HDRScreenshot = false       # Save screenshots in fbx (use with DXVK HDR)
 
 [_Main.Main.Precipitations]
 RemovePrecipitations = false   # Disables vanilla rain and other precipitations.
@@ -119,7 +120,7 @@ Enabled = false
 AngleBias = 1.6                         # Value to increase the contribution of closer samples for more detail in creases.
 BlurDropThreshold = 8.0                 # Distance cutoff for areas that shouldn't be blurred together (edge aware denoise).
 BlurRadiusMultiplier = 2.0              # Blur radius to denoise AO.
-ClampStrength = 0.25                     # Lower limit to AO darkness (0 for pure black and 1 for pure white).
+ClampStrength = 0.25                    # Lower limit to AO darkness (0 for pure black and 1 for pure white).
 Enabled = true                          # Enable Ambient occlusion in exteriors.
 LumThreshold = 0.7                      # Treshold to reduce AO strength on bright surfaces.
 Range = 30.0                            # Distance for sampling. Larger values create a softer AO, smaller creates sharper details.
@@ -160,19 +161,25 @@ Enabled = false
 Treshold = 2.0                          # treshold value above which lights will bloom
 Scale = 0.31                            # scale the brightness of the bloom
 Strength = 0.1                          # power of the bloom when applied
+Blending = 0.15                         # How much of the bloom is visible
+BloomExponent = 0.7                     # Makes the bloom more spread out or more focused
 
 [_Shaders.Bloom.Night]
 Treshold = 0.4                          # treshold value above which lights will bloom
 Scale = 2.0                             # scale the brightness of the bloom
 Strength = 0.5                          # power of the bloom when applied
+Blending = 0.5                          # How much of the bloom is visible
+BloomExponent = 1.0                     # Makes the bloom more spread out or more focused
 
 [_Shaders.Bloom.Interiors]
 Treshold = 0.0                          # treshold value above which lights will bloom
 Scale = 0.61                            # scale the brightness of the bloom
 Strength = 2.3                          # power of the bloom when applied
+Blending = 0.3                          # How much of the bloom is visible
+BloomExponent = 0.9                     # Makes the bloom more spread out or more focused
 
 [_Shaders.Bloom.Status]
-Enabled = true                          # Replace the vanilla bloom
+Enabled = true                          # Replace the vanilla bloom. Requires tonemapping shader to be applied. Also impacts Dirt Lens and Rain shaders
 
 
 [_Shaders.BloomLegacy.Exteriors]
@@ -298,6 +305,24 @@ Enabled = false                        # Not currently used. Enables loading of 
 
 [_Shaders.ExtraShaders.Status]
 Enabled = true                         # Enables loading of Shaders in ExtraShaders folder that are not natively handled. Use for compatibility with Realtime Reflections
+
+
+[_Shaders.Flashlight.Main]
+ColorR = 2.0                           # R Channel of the color of the flashlight
+ColorG = 2.0                           # G Channel of the color of the flashlight
+ColorB = 1.0                           # B Channel of the color of the flashlight
+Dimmer = 1.0                           # Dimmer for the color of the flashlight
+Angle = 30.0                           # Angle for the flashlight cone
+Distance = 1000                        # Distance radius for the light
+OffsetX = 0.0                          # X coordinate offset for the position of the light relative to the weapon position 
+OffsetY = 0.0                          # Y coordinate offset for the position of the light relative to the weapon position
+OffsetZ = 0.0                          # Z coordinate offset for the position of the light relative to the weapon position
+RenderShadows = true                   # Wether to use rendered shadows in the flashlight cone
+AttachToWeapon = true                  # The flashlight will move with the weapon instead of being fixed to the camera
+
+[_Shaders.Flashlight.Status]
+Enabled = true                         # Replace the pipboy light with a post process flashlight attached to the weapon
+
 
 [_Shaders.Grass.Main]
 WindEnabled = false
@@ -508,7 +533,7 @@ VerticalScale = 1.0                  # Multiplier for the length of the drops/st
 Enabled = true                       # Rain effect that is blocked by objects above and refracts light.
 
 [_Shaders.ShadowsExteriors.Far]
-Activators = false                   # Wether to include objects with "Activator" flag when rendering shadowmaps.
+Activators = false                   # Wether to include objects with "Activator" flag when rendering ps.
 Actors = true                        # Wether to include objects with "Actors" flag when rendering shadowmaps.
 AlphaEnabled = true                  # Wether to take into account alpha of objects when rendering shadowmaps.
 Apparatus = false                    # Wether to include objects with "Apparatus" flag when rendering shadowmaps.
@@ -542,14 +567,16 @@ Trees = true                         # Wether to include Trees when rendering sh
 [_Shaders.ShadowsExteriors.Main]
 PostProcess = true                   # Wether to render shadows as a post process effect. Currently the only supported mode.
 BlurShadowMaps = true                # Blur shadow maps for soft shadows.
-Darkness = 0.65                       # Darkness of shadows.
+Darkness = 0.65                      # Darkness of shadows.
 Enabled = true                       # Enable sun shadows using rendered shadow maps.
-NightMinDarkness = 0.35               # Darkness of shadows during dark moon phase. Set to 0 to disable shadows completely when there is no moon.
+NightMinDarkness = 0.35              # Darkness of shadows during dark moon phase. Set to 0 to disable shadows completely when there is no moon.
 Quality = 2                          # Not used.
 ShadowMapFarPlane = 32768            # Used for shadow frustum. Don't change this value.
 ShadowMapResolution = 1024           # Resolution of the texture used to store the shadow maps. LOD map is twice this value. Needs restart to take effect.
+OrthoMapResolution = 1024            # Resolution of the texture used to store the ortho map.
 ShadowMode = 1                       # Shadow algorithm used. 1: Variance Shadow Maps, 2: unfiltered Exponenial Shadow Map, 3: filtered ESM.
 ShadowsRadius = 8000                 # Max distance for rendering of shadow from the camera.
+OrthoRadius = 8000                   # Max distance for rendering of ortho map.
 UsePointShadowsDay = false           # Wether to cast shadows from point lights. Requires a slight darkening of the entire screen.
 UsePointShadowsNight = true          # Wether to cast shadows from point lights during Nights. Requires a slight darkening of the entire screen.
 
@@ -665,9 +692,11 @@ SunStrength = 1.0                   # How strong is the sun brighness when refle
 GlareStrength = 1.0                 # How much influence does the Sun have over Glare, inversed
 StarStrength = 1.0                  # Multiplier for stars brightness
 ReplaceSun = false                  # Replaces vanilla sun by a procedural sun for whatever reason
+UseSunDiskColor = false             # Uses the color from the sun disk from the game weather to calculate the sky tint. Otherwise uses the sun lighting
 SunsetR = 0.5                       # Color boost for sunset/sunrise sun color (Red)
 SunsetG = 0.0                       # Color boost for sunset/sunrise sun color (Green)
 SunsetB = 0.03                      # Color boost for sunset/sunrise sun color (Blue)
+StarTwinkle = 1.0                   # Speed of the star twinkling
 
 
 [_Shaders.Sky.Clouds]

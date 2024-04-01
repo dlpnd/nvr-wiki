@@ -52,6 +52,14 @@ Replaces vanilla sun by a procedural sun for whatever reason
 
 ---
 
+### UseSunDiskColor
+
+Uses the color from the sun disk from the game weather to calculate the sky tint. Otherwise uses the sun lighting
+
+>Default: false
+
+---
+
 ### SunsetR
 
 Color boost for sunset/sunrise sun color (Red)
@@ -73,6 +81,14 @@ Color boost for sunset/sunrise sun color (Green)
 Color boost for sunset/sunrise sun color (Blue)
 
 >Default: 0.03
+
+---
+
+### StarTwinkle
+
+Speed of the star twinkling
+
+>Default: 1.0
 
 ---
 

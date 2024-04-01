@@ -6,7 +6,7 @@
 
 ### Activators
 
-Wether to include objects with "Activator" flag when rendering shadowmaps.
+Wether to include objects with "Activator" flag when rendering ps.
 
 >Default: false
 
@@ -296,6 +296,14 @@ Resolution of the texture used to store the shadow maps. LOD map is twice this v
 
 ---
 
+### OrthoMapResolution
+
+Resolution of the texture used to store the ortho map.
+
+>Default: 1024
+
+---
+
 ### ShadowMode
 
 Shadow algorithm used. 1: Variance Shadow Maps, 2: unfiltered Exponenial Shadow Map, 3: filtered ESM.
@@ -307,6 +315,14 @@ Shadow algorithm used. 1: Variance Shadow Maps, 2: unfiltered Exponenial Shadow 
 ### ShadowsRadius
 
 Max distance for rendering of shadow from the camera.
+
+>Default: 8000
+
+---
+
+### OrthoRadius
+
+Max distance for rendering of ortho map.
 
 >Default: 8000
 

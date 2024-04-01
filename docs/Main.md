@@ -326,6 +326,14 @@ Keycode for custom screenshot hotkey (removes HUD and saves as jpg).
 
 ---
 
+#### HDRScreenshot
+
+Save screenshots in fbx (use with DXVK HDR)
+
+>Default: false
+
+---
+
 ### Precipitations
 
 #### RemovePrecipitations
