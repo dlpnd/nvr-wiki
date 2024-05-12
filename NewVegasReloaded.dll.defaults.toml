@@ -376,8 +376,6 @@ TonemapMidpoint = 1.0                 # Midpoint setting for Lottes Tonemapper (
 TonemapShoulder = 1.0                 # White Shoulder for Lottes (max 1.0, should be left default), Black shoulder for Uchimura
 TonemapWhitePoint = 1.0               # White point Setting for Lottes, Reinhard (both), Uncharted. Adjust point that the image clips/exceeds max brightness. For Uchimura, adjusts Linear Section Length (soft clips whites)
 HighlightSaturation = 1.0             # Highlight saturation for VT Lottes, controls how saturated bright elements are as they approach the White Point
-BloomExponent = 0.7                   # Makes the bloom more spread out or more focused
-BloomStrength = 0.15                  # Scales the game's bloom pass strength
 PointLightMultiplier = 1.0            # Experimental - modifies the strength of all point lights
 
 
@@ -397,8 +395,6 @@ TonemapMidpoint = 1.0                 # Midpoint setting for Lottes Tonemapper (
 TonemapShoulder = 1.0                 # White Shoulder for Lottes (max 1.0, should be left default), Black shoulder for Uchimura
 TonemapWhitePoint = 1.0               # White point Setting for Lottes, Reinhard (both), Uncharted. Adjust point that the image clips/exceeds max brightness. For Uchimura, adjusts Linear Section Length (soft clips whites)
 HighlightSaturation = 1.0             # Highlight saturation for VT Lottes, controls how saturated bright elements are as they approach the White Point
-BloomExponent = 0.9                   # Makes the bloom more spread out or more focused
-BloomStrength = 0.03                  # Scales the game's bloom pass strength
 PointLightMultiplier = 1.0            # Experimental - modifies the strength of all point lights
 
 
@@ -418,8 +414,6 @@ TonemapMidpoint = 1.0                 # Midpoint setting for Lottes Tonemapper (
 TonemapShoulder = 1.0                 # White Shoulder for Lottes (max 1.0, should be left default), Black shoulder for Uchimura
 TonemapWhitePoint = 1.0               # White point Setting for Lottes, Reinhard (both), Uncharted. Adjust point that the image clips/exceeds max brightness. For Uchimura, adjusts Linear Section Length (soft clips whites)
 HighlightSaturation = 1.0             # Highlight saturation for VT Lottes, controls how saturated bright elements are as they approach the White Point
-BloomExponent = 0.9                   # Makes the bloom more spread out or more focused
-BloomStrength = 0.3                   # Scales the game's bloom pass strength
 PointLightMultiplier = 1.0            # Experimental - modifies the strength of all point lights
 
 
@@ -765,26 +759,44 @@ Enabled = true                      # Post Process underwater fog/godrays/causti
 
 [_Shaders.VolumetricFog.Main]
 Amount = 1.0                        # Global multiplier for fog strength in exteriors
-AmountInterior = 1.0                # Global multiplier for fog strength in interiors
-SunPower = 1.0                      # Controls the influence of Sun Color when shining through fog
-LowFogDensity = 1.0                 # Density of low lying fog using weather fog colors and sun influence
-LowFogFalloff = 1.0                 # Vertical falloff of low fog
-LowFogDist = 1.0                    # Distance falloff of low fog, low values disperse fog vs concentrate distant fog
-LowFogBlend = 1.0                   # Influence of low fog vs height fog when blending the two forms
-LowFogHeight = 1.0                  # Adjusts the level that additional height falloff occurs at for low fog
-HeightFogDensity = 1.0              # Density of low lying fog using a weather fog color, sky color blend and sun color blend
-HeightFogFalloff = 1.0              # Vertical falloff of atmospheric height fog,
-HeightFogDist = 1.0                 # Distance falloff of atmospheric height fog, low values disperse fog vs concentrate distant fog
-HeightFogSkyColor = 1.0             # Distance falloff of Sky Coloring in Height Fog, lower values push sky color closer to the camera
-HeightFogHeight = 1.0               # Adjusts the level that additional height falloff occurs at for high fog
-HeightFogBlend = 1.0                # Influence of height fog vs low fog when blending the two forms
-HeightFogRolloff = 1.0              # Combined falloff of Height and Low fog, high values disperse fog vs low values concentrating distant fog
-SimpleFogExtinction = 1.0           # Extinction factor in coloring, or light lost due to absorption of particles
-SimpleFogInscattering = 1.0         # Inscattering factor in coloring, or light gained from sun scaterring
-SimpleFogNight = 1.0                # Power of extinction factor at night time, which uses only simple fog
-SimpleFogSkyColor = 1.0             # Distance falloff of Sky Coloring in Simple Fog, lower values push sky color closer to the camera
-SimpleFogHeight = 1.0               # Adjusts the level that additional height falloff occurs at for simple fog
-SimpleFogBlend = 1.0                # Final blend of simple fog vs height/low fog, low values can remove influence of latter forms and vice versa
+SunPower = 0.2                      # Controls the influence of Sun Color when shining through fog
+FogSaturation = 1.7                 # Tune the saturation of the fog
+MinimumBaseFog = 0.2                # How much fog will be present as a base line when weather has no fog
+WeatherImpact = 0.6                 # How much the fog will scale with weather fog strength
+DistantFogRange = 0.9               # Range of the distance fog that blends moutains into the sky.
+DistantFogBlend = 0.3               # Blending power of the distant fog
+DistantFogHeight = 0.3              # Height limit for the distant fog. If set to 0, will use the sky as a mask.
+HeightFogDensity = 0.6              # Density multiplier for the general height fog
+HeightFogFalloff = 50.0             # Vertical falloff of atmospheric height fog,
+HeightFogDist = 0.3                 # Distance multiplier for Height fog. Pushes back the fog.
+HeightFogSkyColor = 4.0             # Strong fogs will use the weather fog color instead of the sky. This setting changes how strong the fog should be for that.
+HeightFogHeight = 3.0               # "Sea level" from which the Height fog starts to decrease.
+HeightFogBlend = 1.0                # General strength of the impact of Height fog on the final look.
+HeightFogRolloff = 1.3              # Pushes back the Height fog without changing the far distance. Changes the curve of progression
+Extinction = 3.0                    # Light lost due to absorption of particles when seen throught the fog.
+Inscattering = 1.9                  # Light gained from light scattering when seen through the fog.
+FogNight = 2.0                      # Scales the fog distances at night.
+SimpleFogSkyColor = 20.0            # Strong fogs will use the weather fog color instead of the sky. This setting changes how strong the fog should be for that.
+SimpleFogHeight = 0.5               # Limit the sky influence/height rate of dissipation for simple fog.
+SimpleFogBlend = 1.0                # General strength of the impact of simple fog on the final look.
+
+
+[_Shaders.VolumetricFog.Interiors]
+Amount = 1.0                        # Global multiplier for fog strength in interiors
+FogSaturation = 1.7                 # Tune the saturation of the fog
+MinimumBaseFog = 0.2                # How much fog will be present as a base line when weather has no fog
+WeatherImpact = 0.6                 # How much the fog will scale with weather fog strength
+HeightFogDensity = 0.6              # Density multiplier for the general height fog
+HeightFogFalloff = 50.0             # Vertical falloff of atmospheric height fog,
+HeightFogDist = 0.3                 # Distance multiplier for Height fog. Pushes back the fog.
+HeightFogHeight = 3.0               # "Sea level" from which the Height fog starts to decrease.
+HeightFogBlend = 1.0                # General strength of the impact of Height fog on the final look.
+HeightFogRolloff = 1.3              # Pushes back the Height fog without changing the far distance. Changes the curve of progression
+Extinction = 3.0                    # Light lost due to absorption of particles when seen throught the fog.
+Inscattering = 1.9                  # Light gained from light scattering when seen through the fog.
+SimpleFogHeight = 0.5               # Limit the sky influence/height rate of dissipation for simple fog.
+SimpleFogBlend = 1.0                # General strength of the impact of simple fog on the final look.
+
 
 [_Shaders.VolumetricFog.Status]
 Enabled = true                      # Volumetric fog shader tinted by the sun. Rendered after shadows and other effects for more accurate effect.

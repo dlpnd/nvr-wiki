@@ -12,67 +12,67 @@ Global multiplier for fog strength in exteriors
 
 ---
 
-### AmountInterior
-
-Global multiplier for fog strength in interiors
-
->Default: 1.0
-
----
-
 ### SunPower
 
 Controls the influence of Sun Color when shining through fog
 
->Default: 1.0
+>Default: 0.2
 
 ---
 
-### LowFogDensity
+### FogSaturation
 
-Density of low lying fog using weather fog colors and sun influence
+Tune the saturation of the fog
 
->Default: 1.0
-
----
-
-### LowFogFalloff
-
-Vertical falloff of low fog
-
->Default: 1.0
+>Default: 1.7
 
 ---
 
-### LowFogDist
+### MinimumBaseFog
 
-Distance falloff of low fog, low values disperse fog vs concentrate distant fog
+How much fog will be present as a base line when weather has no fog
 
->Default: 1.0
-
----
-
-### LowFogBlend
-
-Influence of low fog vs height fog when blending the two forms
-
->Default: 1.0
+>Default: 0.2
 
 ---
 
-### LowFogHeight
+### WeatherImpact
 
-Adjusts the level that additional height falloff occurs at for low fog
+How much the fog will scale with weather fog strength
 
->Default: 1.0
+>Default: 0.6
+
+---
+
+### DistantFogRange
+
+Range of the distance fog that blends moutains into the sky.
+
+>Default: 0.9
+
+---
+
+### DistantFogBlend
+
+Blending power of the distant fog
+
+>Default: 0.3
+
+---
+
+### DistantFogHeight
+
+Height limit for the distant fog. If set to 0, will use the sky as a mask.
+
+>Default: 0.3
 
 ---
 
 ### HeightFogDensity
 
-Density of low lying fog using a weather fog color, sky color blend and sun color blend
+Density multiplier for the general height fog
 
->Default: 1.0
+>Default: 0.6
 
 ---
 
@@ -80,37 +80,37 @@ Density of low lying fog using a weather fog color, sky color blend and sun colo
 
 Vertical falloff of atmospheric height fog,
 
->Default: 1.0
+>Default: 50.0
 
 ---
 
 ### HeightFogDist
 
-Distance falloff of atmospheric height fog, low values disperse fog vs concentrate distant fog
+Distance multiplier for Height fog. Pushes back the fog.
 
->Default: 1.0
+>Default: 0.3
 
 ---
 
 ### HeightFogSkyColor
 
-Distance falloff of Sky Coloring in Height Fog, lower values push sky color closer to the camera
+Strong fogs will use the weather fog color instead of the sky. This setting changes how strong the fog should be for that.
 
->Default: 1.0
+>Default: 4.0
 
 ---
 
 ### HeightFogHeight
 
-Adjusts the level that additional height falloff occurs at for high fog
+"Sea level" from which the Height fog starts to decrease.
 
->Default: 1.0
+>Default: 3.0
 
 ---
 
 ### HeightFogBlend
 
-Influence of height fog vs low fog when blending the two forms
+General strength of the impact of Height fog on the final look.
 
 >Default: 1.0
 
@@ -118,55 +118,169 @@ Influence of height fog vs low fog when blending the two forms
 
 ### HeightFogRolloff
 
-Combined falloff of Height and Low fog, high values disperse fog vs low values concentrating distant fog
+Pushes back the Height fog without changing the far distance. Changes the curve of progression
 
->Default: 1.0
-
----
-
-### SimpleFogExtinction
-
-Extinction factor in coloring, or light lost due to absorption of particles
-
->Default: 1.0
+>Default: 1.3
 
 ---
 
-### SimpleFogInscattering
+### Extinction
 
-Inscattering factor in coloring, or light gained from sun scaterring
+Light lost due to absorption of particles when seen throught the fog.
 
->Default: 1.0
+>Default: 3.0
 
 ---
 
-### SimpleFogNight
+### Inscattering
 
-Power of extinction factor at night time, which uses only simple fog
+Light gained from light scattering when seen through the fog.
 
->Default: 1.0
+>Default: 1.9
+
+---
+
+### FogNight
+
+Scales the fog distances at night.
+
+>Default: 2.0
 
 ---
 
 ### SimpleFogSkyColor
 
-Distance falloff of Sky Coloring in Simple Fog, lower values push sky color closer to the camera
+Strong fogs will use the weather fog color instead of the sky. This setting changes how strong the fog should be for that.
 
->Default: 1.0
+>Default: 20.0
 
 ---
 
 ### SimpleFogHeight
 
-Adjusts the level that additional height falloff occurs at for simple fog
+Limit the sky influence/height rate of dissipation for simple fog.
 
->Default: 1.0
+>Default: 0.5
 
 ---
 
 ### SimpleFogBlend
 
-Final blend of simple fog vs height/low fog, low values can remove influence of latter forms and vice versa
+General strength of the impact of simple fog on the final look.
+
+>Default: 1.0
+
+---
+
+## Interiors
+
+### Amount
+
+Global multiplier for fog strength in interiors
+
+>Default: 1.0
+
+---
+
+### FogSaturation
+
+Tune the saturation of the fog
+
+>Default: 1.7
+
+---
+
+### MinimumBaseFog
+
+How much fog will be present as a base line when weather has no fog
+
+>Default: 0.2
+
+---
+
+### WeatherImpact
+
+How much the fog will scale with weather fog strength
+
+>Default: 0.6
+
+---
+
+### HeightFogDensity
+
+Density multiplier for the general height fog
+
+>Default: 0.6
+
+---
+
+### HeightFogFalloff
+
+Vertical falloff of atmospheric height fog,
+
+>Default: 50.0
+
+---
+
+### HeightFogDist
+
+Distance multiplier for Height fog. Pushes back the fog.
+
+>Default: 0.3
+
+---
+
+### HeightFogHeight
+
+"Sea level" from which the Height fog starts to decrease.
+
+>Default: 3.0
+
+---
+
+### HeightFogBlend
+
+General strength of the impact of Height fog on the final look.
+
+>Default: 1.0
+
+---
+
+### HeightFogRolloff
+
+Pushes back the Height fog without changing the far distance. Changes the curve of progression
+
+>Default: 1.3
+
+---
+
+### Extinction
+
+Light lost due to absorption of particles when seen throught the fog.
+
+>Default: 3.0
+
+---
+
+### Inscattering
+
+Light gained from light scattering when seen through the fog.
+
+>Default: 1.9
+
+---
+
+### SimpleFogHeight
+
+Limit the sky influence/height rate of dissipation for simple fog.
+
+>Default: 0.5
+
+---
+
+### SimpleFogBlend
+
+General strength of the impact of simple fog on the final look.
 
 >Default: 1.0
 

@@ -124,22 +124,6 @@ Highlight saturation for VT Lottes, controls how saturated bright elements are a
 
 ---
 
-### BloomExponent
-
-Makes the bloom more spread out or more focused
-
->Default: 0.7
-
----
-
-### BloomStrength
-
-Scales the game's bloom pass strength
-
->Default: 0.15
-
----
-
 ### PointLightMultiplier
 
 Experimental - modifies the strength of all point lights
@@ -270,22 +254,6 @@ Highlight saturation for VT Lottes, controls how saturated bright elements are a
 
 ---
 
-### BloomExponent
-
-Makes the bloom more spread out or more focused
-
->Default: 0.9
-
----
-
-### BloomStrength
-
-Scales the game's bloom pass strength
-
->Default: 0.03
-
----
-
 ### PointLightMultiplier
 
 Experimental - modifies the strength of all point lights
@@ -413,22 +381,6 @@ White point Setting for Lottes, Reinhard (both), Uncharted. Adjust point that th
 Highlight saturation for VT Lottes, controls how saturated bright elements are as they approach the White Point
 
 >Default: 1.0
-
----
-
-### BloomExponent
-
-Makes the bloom more spread out or more focused
-
->Default: 0.9
-
----
-
-### BloomStrength
-
-Scales the game's bloom pass strength
-
->Default: 0.3
 
 ---
 
