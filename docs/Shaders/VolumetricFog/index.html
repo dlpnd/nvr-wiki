@@ -9,7 +9,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="New Vegas Reloaded" href="/nvr-wiki/opensearch.xml"><link rel="stylesheet" href="/nvr-wiki/assets/css/styles.96aae6f7.css">
-<script src="/nvr-wiki/assets/js/runtime~main.76169c46.js" defer="defer"></script>
+<script src="/nvr-wiki/assets/js/runtime~main.13c219d5.js" defer="defer"></script>
 <script src="/nvr-wiki/assets/js/main.85a4091b.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -22,122 +22,207 @@
 <p>Default: 1.0</p>
 </blockquote>
 <hr>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="amountinterior">AmountInterior<a href="#amountinterior" class="hash-link" aria-label="Direct link to AmountInterior" title="Direct link to AmountInterior">​</a></h3>
-<p>Global multiplier for fog strength in interiors</p>
-<blockquote>
-<p>Default: 1.0</p>
-</blockquote>
-<hr>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="sunpower">SunPower<a href="#sunpower" class="hash-link" aria-label="Direct link to SunPower" title="Direct link to SunPower">​</a></h3>
 <p>Controls the influence of Sun Color when shining through fog</p>
 <blockquote>
-<p>Default: 1.0</p>
+<p>Default: 0.2</p>
 </blockquote>
 <hr>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="lowfogdensity">LowFogDensity<a href="#lowfogdensity" class="hash-link" aria-label="Direct link to LowFogDensity" title="Direct link to LowFogDensity">​</a></h3>
-<p>Density of low lying fog using weather fog colors and sun influence</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="fogsaturation">FogSaturation<a href="#fogsaturation" class="hash-link" aria-label="Direct link to FogSaturation" title="Direct link to FogSaturation">​</a></h3>
+<p>Tune the saturation of the fog</p>
 <blockquote>
-<p>Default: 1.0</p>
+<p>Default: 1.7</p>
 </blockquote>
 <hr>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="lowfogfalloff">LowFogFalloff<a href="#lowfogfalloff" class="hash-link" aria-label="Direct link to LowFogFalloff" title="Direct link to LowFogFalloff">​</a></h3>
-<p>Vertical falloff of low fog</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="minimumbasefog">MinimumBaseFog<a href="#minimumbasefog" class="hash-link" aria-label="Direct link to MinimumBaseFog" title="Direct link to MinimumBaseFog">​</a></h3>
+<p>How much fog will be present as a base line when weather has no fog</p>
 <blockquote>
-<p>Default: 1.0</p>
+<p>Default: 0.2</p>
 </blockquote>
 <hr>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="lowfogdist">LowFogDist<a href="#lowfogdist" class="hash-link" aria-label="Direct link to LowFogDist" title="Direct link to LowFogDist">​</a></h3>
-<p>Distance falloff of low fog, low values disperse fog vs concentrate distant fog</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="weatherimpact">WeatherImpact<a href="#weatherimpact" class="hash-link" aria-label="Direct link to WeatherImpact" title="Direct link to WeatherImpact">​</a></h3>
+<p>How much the fog will scale with weather fog strength</p>
 <blockquote>
-<p>Default: 1.0</p>
+<p>Default: 0.6</p>
 </blockquote>
 <hr>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="lowfogblend">LowFogBlend<a href="#lowfogblend" class="hash-link" aria-label="Direct link to LowFogBlend" title="Direct link to LowFogBlend">​</a></h3>
-<p>Influence of low fog vs height fog when blending the two forms</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="distantfogrange">DistantFogRange<a href="#distantfogrange" class="hash-link" aria-label="Direct link to DistantFogRange" title="Direct link to DistantFogRange">​</a></h3>
+<p>Range of the distance fog that blends moutains into the sky.</p>
 <blockquote>
-<p>Default: 1.0</p>
+<p>Default: 0.9</p>
 </blockquote>
 <hr>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="lowfogheight">LowFogHeight<a href="#lowfogheight" class="hash-link" aria-label="Direct link to LowFogHeight" title="Direct link to LowFogHeight">​</a></h3>
-<p>Adjusts the level that additional height falloff occurs at for low fog</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="distantfogblend">DistantFogBlend<a href="#distantfogblend" class="hash-link" aria-label="Direct link to DistantFogBlend" title="Direct link to DistantFogBlend">​</a></h3>
+<p>Blending power of the distant fog</p>
 <blockquote>
-<p>Default: 1.0</p>
+<p>Default: 0.3</p>
+</blockquote>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="distantfogheight">DistantFogHeight<a href="#distantfogheight" class="hash-link" aria-label="Direct link to DistantFogHeight" title="Direct link to DistantFogHeight">​</a></h3>
+<p>Height limit for the distant fog. If set to 0, will use the sky as a mask.</p>
+<blockquote>
+<p>Default: 0.3</p>
 </blockquote>
 <hr>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="heightfogdensity">HeightFogDensity<a href="#heightfogdensity" class="hash-link" aria-label="Direct link to HeightFogDensity" title="Direct link to HeightFogDensity">​</a></h3>
-<p>Density of low lying fog using a weather fog color, sky color blend and sun color blend</p>
+<p>Density multiplier for the general height fog</p>
 <blockquote>
-<p>Default: 1.0</p>
+<p>Default: 0.6</p>
 </blockquote>
 <hr>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="heightfogfalloff">HeightFogFalloff<a href="#heightfogfalloff" class="hash-link" aria-label="Direct link to HeightFogFalloff" title="Direct link to HeightFogFalloff">​</a></h3>
 <p>Vertical falloff of atmospheric height fog,</p>
 <blockquote>
-<p>Default: 1.0</p>
+<p>Default: 50.0</p>
 </blockquote>
 <hr>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="heightfogdist">HeightFogDist<a href="#heightfogdist" class="hash-link" aria-label="Direct link to HeightFogDist" title="Direct link to HeightFogDist">​</a></h3>
-<p>Distance falloff of atmospheric height fog, low values disperse fog vs concentrate distant fog</p>
+<p>Distance multiplier for Height fog. Pushes back the fog.</p>
 <blockquote>
-<p>Default: 1.0</p>
+<p>Default: 0.3</p>
 </blockquote>
 <hr>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="heightfogskycolor">HeightFogSkyColor<a href="#heightfogskycolor" class="hash-link" aria-label="Direct link to HeightFogSkyColor" title="Direct link to HeightFogSkyColor">​</a></h3>
-<p>Distance falloff of Sky Coloring in Height Fog, lower values push sky color closer to the camera</p>
+<p>Strong fogs will use the weather fog color instead of the sky. This setting changes how strong the fog should be for that.</p>
 <blockquote>
-<p>Default: 1.0</p>
+<p>Default: 4.0</p>
 </blockquote>
 <hr>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="heightfogheight">HeightFogHeight<a href="#heightfogheight" class="hash-link" aria-label="Direct link to HeightFogHeight" title="Direct link to HeightFogHeight">​</a></h3>
-<p>Adjusts the level that additional height falloff occurs at for high fog</p>
+<p>&quot;Sea level&quot; from which the Height fog starts to decrease.</p>
 <blockquote>
-<p>Default: 1.0</p>
+<p>Default: 3.0</p>
 </blockquote>
 <hr>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="heightfogblend">HeightFogBlend<a href="#heightfogblend" class="hash-link" aria-label="Direct link to HeightFogBlend" title="Direct link to HeightFogBlend">​</a></h3>
-<p>Influence of height fog vs low fog when blending the two forms</p>
+<p>General strength of the impact of Height fog on the final look.</p>
 <blockquote>
 <p>Default: 1.0</p>
 </blockquote>
 <hr>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="heightfogrolloff">HeightFogRolloff<a href="#heightfogrolloff" class="hash-link" aria-label="Direct link to HeightFogRolloff" title="Direct link to HeightFogRolloff">​</a></h3>
-<p>Combined falloff of Height and Low fog, high values disperse fog vs low values concentrating distant fog</p>
+<p>Pushes back the Height fog without changing the far distance. Changes the curve of progression</p>
 <blockquote>
-<p>Default: 1.0</p>
+<p>Default: 1.3</p>
 </blockquote>
 <hr>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="simplefogextinction">SimpleFogExtinction<a href="#simplefogextinction" class="hash-link" aria-label="Direct link to SimpleFogExtinction" title="Direct link to SimpleFogExtinction">​</a></h3>
-<p>Extinction factor in coloring, or light lost due to absorption of particles</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="extinction">Extinction<a href="#extinction" class="hash-link" aria-label="Direct link to Extinction" title="Direct link to Extinction">​</a></h3>
+<p>Light lost due to absorption of particles when seen throught the fog.</p>
 <blockquote>
-<p>Default: 1.0</p>
+<p>Default: 3.0</p>
 </blockquote>
 <hr>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="simplefoginscattering">SimpleFogInscattering<a href="#simplefoginscattering" class="hash-link" aria-label="Direct link to SimpleFogInscattering" title="Direct link to SimpleFogInscattering">​</a></h3>
-<p>Inscattering factor in coloring, or light gained from sun scaterring</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="inscattering">Inscattering<a href="#inscattering" class="hash-link" aria-label="Direct link to Inscattering" title="Direct link to Inscattering">​</a></h3>
+<p>Light gained from light scattering when seen through the fog.</p>
 <blockquote>
-<p>Default: 1.0</p>
+<p>Default: 1.9</p>
 </blockquote>
 <hr>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="simplefognight">SimpleFogNight<a href="#simplefognight" class="hash-link" aria-label="Direct link to SimpleFogNight" title="Direct link to SimpleFogNight">​</a></h3>
-<p>Power of extinction factor at night time, which uses only simple fog</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="fognight">FogNight<a href="#fognight" class="hash-link" aria-label="Direct link to FogNight" title="Direct link to FogNight">​</a></h3>
+<p>Scales the fog distances at night.</p>
 <blockquote>
-<p>Default: 1.0</p>
+<p>Default: 2.0</p>
 </blockquote>
 <hr>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="simplefogskycolor">SimpleFogSkyColor<a href="#simplefogskycolor" class="hash-link" aria-label="Direct link to SimpleFogSkyColor" title="Direct link to SimpleFogSkyColor">​</a></h3>
-<p>Distance falloff of Sky Coloring in Simple Fog, lower values push sky color closer to the camera</p>
+<p>Strong fogs will use the weather fog color instead of the sky. This setting changes how strong the fog should be for that.</p>
 <blockquote>
-<p>Default: 1.0</p>
+<p>Default: 20.0</p>
 </blockquote>
 <hr>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="simplefogheight">SimpleFogHeight<a href="#simplefogheight" class="hash-link" aria-label="Direct link to SimpleFogHeight" title="Direct link to SimpleFogHeight">​</a></h3>
-<p>Adjusts the level that additional height falloff occurs at for simple fog</p>
+<p>Limit the sky influence/height rate of dissipation for simple fog.</p>
+<blockquote>
+<p>Default: 0.5</p>
+</blockquote>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="simplefogblend">SimpleFogBlend<a href="#simplefogblend" class="hash-link" aria-label="Direct link to SimpleFogBlend" title="Direct link to SimpleFogBlend">​</a></h3>
+<p>General strength of the impact of simple fog on the final look.</p>
 <blockquote>
 <p>Default: 1.0</p>
 </blockquote>
 <hr>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="simplefogblend">SimpleFogBlend<a href="#simplefogblend" class="hash-link" aria-label="Direct link to SimpleFogBlend" title="Direct link to SimpleFogBlend">​</a></h3>
-<p>Final blend of simple fog vs height/low fog, low values can remove influence of latter forms and vice versa</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="interiors">Interiors<a href="#interiors" class="hash-link" aria-label="Direct link to Interiors" title="Direct link to Interiors">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="amount-1">Amount<a href="#amount-1" class="hash-link" aria-label="Direct link to Amount" title="Direct link to Amount">​</a></h3>
+<p>Global multiplier for fog strength in interiors</p>
+<blockquote>
+<p>Default: 1.0</p>
+</blockquote>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="fogsaturation-1">FogSaturation<a href="#fogsaturation-1" class="hash-link" aria-label="Direct link to FogSaturation" title="Direct link to FogSaturation">​</a></h3>
+<p>Tune the saturation of the fog</p>
+<blockquote>
+<p>Default: 1.7</p>
+</blockquote>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="minimumbasefog-1">MinimumBaseFog<a href="#minimumbasefog-1" class="hash-link" aria-label="Direct link to MinimumBaseFog" title="Direct link to MinimumBaseFog">​</a></h3>
+<p>How much fog will be present as a base line when weather has no fog</p>
+<blockquote>
+<p>Default: 0.2</p>
+</blockquote>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="weatherimpact-1">WeatherImpact<a href="#weatherimpact-1" class="hash-link" aria-label="Direct link to WeatherImpact" title="Direct link to WeatherImpact">​</a></h3>
+<p>How much the fog will scale with weather fog strength</p>
+<blockquote>
+<p>Default: 0.6</p>
+</blockquote>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="heightfogdensity-1">HeightFogDensity<a href="#heightfogdensity-1" class="hash-link" aria-label="Direct link to HeightFogDensity" title="Direct link to HeightFogDensity">​</a></h3>
+<p>Density multiplier for the general height fog</p>
+<blockquote>
+<p>Default: 0.6</p>
+</blockquote>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="heightfogfalloff-1">HeightFogFalloff<a href="#heightfogfalloff-1" class="hash-link" aria-label="Direct link to HeightFogFalloff" title="Direct link to HeightFogFalloff">​</a></h3>
+<p>Vertical falloff of atmospheric height fog,</p>
+<blockquote>
+<p>Default: 50.0</p>
+</blockquote>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="heightfogdist-1">HeightFogDist<a href="#heightfogdist-1" class="hash-link" aria-label="Direct link to HeightFogDist" title="Direct link to HeightFogDist">​</a></h3>
+<p>Distance multiplier for Height fog. Pushes back the fog.</p>
+<blockquote>
+<p>Default: 0.3</p>
+</blockquote>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="heightfogheight-1">HeightFogHeight<a href="#heightfogheight-1" class="hash-link" aria-label="Direct link to HeightFogHeight" title="Direct link to HeightFogHeight">​</a></h3>
+<p>&quot;Sea level&quot; from which the Height fog starts to decrease.</p>
+<blockquote>
+<p>Default: 3.0</p>
+</blockquote>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="heightfogblend-1">HeightFogBlend<a href="#heightfogblend-1" class="hash-link" aria-label="Direct link to HeightFogBlend" title="Direct link to HeightFogBlend">​</a></h3>
+<p>General strength of the impact of Height fog on the final look.</p>
+<blockquote>
+<p>Default: 1.0</p>
+</blockquote>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="heightfogrolloff-1">HeightFogRolloff<a href="#heightfogrolloff-1" class="hash-link" aria-label="Direct link to HeightFogRolloff" title="Direct link to HeightFogRolloff">​</a></h3>
+<p>Pushes back the Height fog without changing the far distance. Changes the curve of progression</p>
+<blockquote>
+<p>Default: 1.3</p>
+</blockquote>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="extinction-1">Extinction<a href="#extinction-1" class="hash-link" aria-label="Direct link to Extinction" title="Direct link to Extinction">​</a></h3>
+<p>Light lost due to absorption of particles when seen throught the fog.</p>
+<blockquote>
+<p>Default: 3.0</p>
+</blockquote>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="inscattering-1">Inscattering<a href="#inscattering-1" class="hash-link" aria-label="Direct link to Inscattering" title="Direct link to Inscattering">​</a></h3>
+<p>Light gained from light scattering when seen through the fog.</p>
+<blockquote>
+<p>Default: 1.9</p>
+</blockquote>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="simplefogheight-1">SimpleFogHeight<a href="#simplefogheight-1" class="hash-link" aria-label="Direct link to SimpleFogHeight" title="Direct link to SimpleFogHeight">​</a></h3>
+<p>Limit the sky influence/height rate of dissipation for simple fog.</p>
+<blockquote>
+<p>Default: 0.5</p>
+</blockquote>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="simplefogblend-1">SimpleFogBlend<a href="#simplefogblend-1" class="hash-link" aria-label="Direct link to SimpleFogBlend" title="Direct link to SimpleFogBlend">​</a></h3>
+<p>General strength of the impact of simple fog on the final look.</p>
 <blockquote>
 <p>Default: 1.0</p>
 </blockquote>
@@ -148,6 +233,6 @@
 <blockquote>
 <p>Default: true</p>
 </blockquote>
-<hr></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/dlpnd/nvr-wiki/edit/master/docs/Shaders/VolumetricFog.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/nvr-wiki/docs/Shaders/Underwater"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Underwater</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/nvr-wiki/docs/Shaders/Water"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Water</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#main" class="table-of-contents__link toc-highlight">Main</a><ul><li><a href="#amount" class="table-of-contents__link toc-highlight">Amount</a></li><li><a href="#amountinterior" class="table-of-contents__link toc-highlight">AmountInterior</a></li><li><a href="#sunpower" class="table-of-contents__link toc-highlight">SunPower</a></li><li><a href="#lowfogdensity" class="table-of-contents__link toc-highlight">LowFogDensity</a></li><li><a href="#lowfogfalloff" class="table-of-contents__link toc-highlight">LowFogFalloff</a></li><li><a href="#lowfogdist" class="table-of-contents__link toc-highlight">LowFogDist</a></li><li><a href="#lowfogblend" class="table-of-contents__link toc-highlight">LowFogBlend</a></li><li><a href="#lowfogheight" class="table-of-contents__link toc-highlight">LowFogHeight</a></li><li><a href="#heightfogdensity" class="table-of-contents__link toc-highlight">HeightFogDensity</a></li><li><a href="#heightfogfalloff" class="table-of-contents__link toc-highlight">HeightFogFalloff</a></li><li><a href="#heightfogdist" class="table-of-contents__link toc-highlight">HeightFogDist</a></li><li><a href="#heightfogskycolor" class="table-of-contents__link toc-highlight">HeightFogSkyColor</a></li><li><a href="#heightfogheight" class="table-of-contents__link toc-highlight">HeightFogHeight</a></li><li><a href="#heightfogblend" class="table-of-contents__link toc-highlight">HeightFogBlend</a></li><li><a href="#heightfogrolloff" class="table-of-contents__link toc-highlight">HeightFogRolloff</a></li><li><a href="#simplefogextinction" class="table-of-contents__link toc-highlight">SimpleFogExtinction</a></li><li><a href="#simplefoginscattering" class="table-of-contents__link toc-highlight">SimpleFogInscattering</a></li><li><a href="#simplefognight" class="table-of-contents__link toc-highlight">SimpleFogNight</a></li><li><a href="#simplefogskycolor" class="table-of-contents__link toc-highlight">SimpleFogSkyColor</a></li><li><a href="#simplefogheight" class="table-of-contents__link toc-highlight">SimpleFogHeight</a></li><li><a href="#simplefogblend" class="table-of-contents__link toc-highlight">SimpleFogBlend</a></li></ul></li><li><a href="#status" class="table-of-contents__link toc-highlight">Status</a><ul><li><a href="#enabled" class="table-of-contents__link toc-highlight">Enabled</a></li></ul></li></ul></div></div></div></div></main></div></div></div></div>
+<hr></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/dlpnd/nvr-wiki/edit/master/docs/Shaders/VolumetricFog.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/nvr-wiki/docs/Shaders/Underwater"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Underwater</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/nvr-wiki/docs/Shaders/Water"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Water</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#main" class="table-of-contents__link toc-highlight">Main</a><ul><li><a href="#amount" class="table-of-contents__link toc-highlight">Amount</a></li><li><a href="#sunpower" class="table-of-contents__link toc-highlight">SunPower</a></li><li><a href="#fogsaturation" class="table-of-contents__link toc-highlight">FogSaturation</a></li><li><a href="#minimumbasefog" class="table-of-contents__link toc-highlight">MinimumBaseFog</a></li><li><a href="#weatherimpact" class="table-of-contents__link toc-highlight">WeatherImpact</a></li><li><a href="#distantfogrange" class="table-of-contents__link toc-highlight">DistantFogRange</a></li><li><a href="#distantfogblend" class="table-of-contents__link toc-highlight">DistantFogBlend</a></li><li><a href="#distantfogheight" class="table-of-contents__link toc-highlight">DistantFogHeight</a></li><li><a href="#heightfogdensity" class="table-of-contents__link toc-highlight">HeightFogDensity</a></li><li><a href="#heightfogfalloff" class="table-of-contents__link toc-highlight">HeightFogFalloff</a></li><li><a href="#heightfogdist" class="table-of-contents__link toc-highlight">HeightFogDist</a></li><li><a href="#heightfogskycolor" class="table-of-contents__link toc-highlight">HeightFogSkyColor</a></li><li><a href="#heightfogheight" class="table-of-contents__link toc-highlight">HeightFogHeight</a></li><li><a href="#heightfogblend" class="table-of-contents__link toc-highlight">HeightFogBlend</a></li><li><a href="#heightfogrolloff" class="table-of-contents__link toc-highlight">HeightFogRolloff</a></li><li><a href="#extinction" class="table-of-contents__link toc-highlight">Extinction</a></li><li><a href="#inscattering" class="table-of-contents__link toc-highlight">Inscattering</a></li><li><a href="#fognight" class="table-of-contents__link toc-highlight">FogNight</a></li><li><a href="#simplefogskycolor" class="table-of-contents__link toc-highlight">SimpleFogSkyColor</a></li><li><a href="#simplefogheight" class="table-of-contents__link toc-highlight">SimpleFogHeight</a></li><li><a href="#simplefogblend" class="table-of-contents__link toc-highlight">SimpleFogBlend</a></li></ul></li><li><a href="#interiors" class="table-of-contents__link toc-highlight">Interiors</a><ul><li><a href="#amount-1" class="table-of-contents__link toc-highlight">Amount</a></li><li><a href="#fogsaturation-1" class="table-of-contents__link toc-highlight">FogSaturation</a></li><li><a href="#minimumbasefog-1" class="table-of-contents__link toc-highlight">MinimumBaseFog</a></li><li><a href="#weatherimpact-1" class="table-of-contents__link toc-highlight">WeatherImpact</a></li><li><a href="#heightfogdensity-1" class="table-of-contents__link toc-highlight">HeightFogDensity</a></li><li><a href="#heightfogfalloff-1" class="table-of-contents__link toc-highlight">HeightFogFalloff</a></li><li><a href="#heightfogdist-1" class="table-of-contents__link toc-highlight">HeightFogDist</a></li><li><a href="#heightfogheight-1" class="table-of-contents__link toc-highlight">HeightFogHeight</a></li><li><a href="#heightfogblend-1" class="table-of-contents__link toc-highlight">HeightFogBlend</a></li><li><a href="#heightfogrolloff-1" class="table-of-contents__link toc-highlight">HeightFogRolloff</a></li><li><a href="#extinction-1" class="table-of-contents__link toc-highlight">Extinction</a></li><li><a href="#inscattering-1" class="table-of-contents__link toc-highlight">Inscattering</a></li><li><a href="#simplefogheight-1" class="table-of-contents__link toc-highlight">SimpleFogHeight</a></li><li><a href="#simplefogblend-1" class="table-of-contents__link toc-highlight">SimpleFogBlend</a></li></ul></li><li><a href="#status" class="table-of-contents__link toc-highlight">Status</a><ul><li><a href="#enabled" class="table-of-contents__link toc-highlight">Enabled</a></li></ul></li></ul></div></div></div></div></main></div></div></div></div>
 </body>
 </html>
