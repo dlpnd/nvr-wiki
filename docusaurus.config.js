@@ -119,7 +119,7 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://github.com/dlpnd/nvr-wiki',
+            href: 'https://discord.com/invite/QgN6mR6eTK',
             label: 'Discord',
             position: 'right',
           },
