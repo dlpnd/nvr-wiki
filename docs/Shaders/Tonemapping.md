@@ -6,7 +6,7 @@
 
 ### TonemappingMode
 
-Tonemapping Algorithm -  0: None (vanilla), 1: VTLottes (default), 2:NVRLottes, 3:Reinhard, 4: Reinhard Jodie, 5: ACES Filmic, 6: ACES Fitted, 7:Uncharted 2, 8:Uchimura (GT), 9:AGX
+Tonemapping Algorithm -  0:None (vanilla - DXVK HDR), 1:VTLottes (default), 2:NVRLottes, 3:Reinhard, 4:Reinhard Jodie, 5:ACES Filmic, 6:ACES Fitted, 7:Uncharted 2, 8:Uchimura (GT), 9:AGX, 10:DICE
 
 >Default: 1
 
@@ -56,7 +56,7 @@ Influence of the vanilla weather modifiers (brightness, contrast, saturation)
 
 Influence of the vanilla contrast setting, applies post-tonemap. Scales atop WeatherModifier, can cause black crush
 
->Default: 0.1
+>Default: 1.0
 
 ---
 
@@ -136,7 +136,7 @@ Experimental - modifies the strength of all point lights
 
 ### TonemappingMode
 
-Tonemapping Algorithm -  0: None (vanilla), 1: VTLottes (default), 2:NVRLottes, 3:Reinhard, 4: Reinhard Jodie, 5: ACES Filmic, 6: ACES Fitted, 7:Uncharted 2, 8:Uchimura (GT), 9:AGX
+Tonemapping Algorithm -  0:None (vanilla - DXVK HDR), 1:VTLottes (default), 2:NVRLottes, 3:Reinhard, 4:Reinhard Jodie, 5:ACES Filmic, 6:ACES Fitted, 7:Uncharted 2, 8:Uchimura (GT), 9:AGX, 10:DICE
 
 >Default: 1
 
@@ -186,7 +186,7 @@ Influence of the vanilla weather modifiers (brightness, contrast, saturation)
 
 Influence of the vanilla contrast setting, applies post-tonemap. Scales atop WeatherModifier, can cause black crush notably in Interiors
 
->Default: 0.1
+>Default: 1.0
 
 ---
 
@@ -266,7 +266,7 @@ Experimental - modifies the strength of all point lights
 
 ### TonemappingMode
 
-Tonemapping Algorithm -  0: None (vanilla), 1: VTLottes (default), 2:NVRLottes, 3:Reinhard, 4: Reinhard Jodie, 5: ACES Filmic, 6: ACES Fitted, 7:Uncharted 2, 8:Uchimura (GT), 9:AGX
+Tonemapping Algorithm -  0:None (vanilla - DXVK HDR), 1:VTLottes (default), 2:NVRLottes, 3:Reinhard, 4:Reinhard Jodie, 5:ACES Filmic, 6:ACES Fitted, 7:Uncharted 2, 8:Uchimura (GT), 9:AGX, 10:DICE
 
 >Default: 1
 
@@ -316,7 +316,7 @@ Influence of the vanilla weather modifiers (brightness, contrast, saturation)
 
 Influence of the vanilla contrast setting, applies post-tonemap. Scales atop WeatherModifier, can cause black crush notably in Interiors
 
->Default: 0.1
+>Default: 1.0
 
 ---
 

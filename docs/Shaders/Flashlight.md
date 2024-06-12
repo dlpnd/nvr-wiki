@@ -80,7 +80,7 @@ Z coordinate offset for the position of the light relative to the weapon positio
 
 Wether to use rendered shadows in the flashlight cone
 
->Default: true
+>Default: false
 
 ---
 

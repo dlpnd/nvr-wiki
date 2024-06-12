@@ -317,7 +317,7 @@ Distance = 1000                        # Distance radius for the light
 OffsetX = 0.0                          # X coordinate offset for the position of the light relative to the weapon position 
 OffsetY = 0.0                          # Y coordinate offset for the position of the light relative to the weapon position
 OffsetZ = 0.0                          # Z coordinate offset for the position of the light relative to the weapon position
-RenderShadows = true                   # Wether to use rendered shadows in the flashlight cone
+RenderShadows = false                  # Wether to use rendered shadows in the flashlight cone
 AttachToWeapon = true                  # The flashlight will move with the weapon instead of being fixed to the camera
 
 [_Shaders.Flashlight.Status]
@@ -361,13 +361,13 @@ Enabled = true                        # Screenspace godrays/volumetric rays.
 
 
 [_Shaders.Tonemapping.Main]
-TonemappingMode = 1                   # Tonemapping Algorithm -  0: None (vanilla), 1: VTLottes (default), 2:NVRLottes, 3:Reinhard, 4: Reinhard Jodie, 5: ACES Filmic, 6: ACES Fitted, 7:Uncharted 2, 8:Uchimura (GT), 9:AGX
+TonemappingMode = 1                   # Tonemapping Algorithm -  0:None (vanilla - DXVK HDR), 1:VTLottes (default), 2:NVRLottes, 3:Reinhard, 4:Reinhard Jodie, 5:ACES Filmic, 6:ACES Fitted, 7:Uncharted 2, 8:Uchimura (GT), 9:AGX, 10:DICE
 Exposure = 1.0                        # Scales the engine lighting strength/brightness range before tonemap, useful for HDR rendering
 Gamma = 2.2                           # Gamma modifier to be applied after tonemapping, delinearises output. If placed at 1.0, outputs at linear space for HDR (UI unaffected)
 Linearization = 2.2                   # Converts image to corrected linear space before tonemapping. 1.0 is non-linear, if so place Gamma at 1.0 as well
 SkyMultiplier = 1.0                   # Scales the brightness of the sky/sun textures. Requires Sky shader enabled
 WeatherModifier = 1.0                 # Influence of the vanilla weather modifiers (brightness, contrast, saturation)
-WeatherContrast = 0.1                 # Influence of the vanilla contrast setting, applies post-tonemap. Scales atop WeatherModifier, can cause black crush
+WeatherContrast = 1.0                 # Influence of the vanilla contrast setting, applies post-tonemap. Scales atop WeatherModifier, can cause black crush
 Saturation = 1.0                      # Saturation of the image before tonemapping
 ToneMappingColor = 1.0                # Changes the strength of the vanilla tint influence (not fades)
 TonemapContrast = 1.0                 # Contrast setting for Lottes, Uchimura
@@ -380,13 +380,13 @@ PointLightMultiplier = 1.0            # Experimental - modifies the strength of 
 
 
 [_Shaders.Tonemapping.Interiors]
-TonemappingMode = 1                   # Tonemapping Algorithm -  0: None (vanilla), 1: VTLottes (default), 2:NVRLottes, 3:Reinhard, 4: Reinhard Jodie, 5: ACES Filmic, 6: ACES Fitted, 7:Uncharted 2, 8:Uchimura (GT), 9:AGX
+TonemappingMode = 1                   # Tonemapping Algorithm -  0:None (vanilla - DXVK HDR), 1:VTLottes (default), 2:NVRLottes, 3:Reinhard, 4:Reinhard Jodie, 5:ACES Filmic, 6:ACES Fitted, 7:Uncharted 2, 8:Uchimura (GT), 9:AGX, 10:DICE
 Exposure = 1.2                        # Scales the engine lighting strength/brightness range before tonemap, useful for HDR rendering
 Gamma = 2.2                           # Gamma modifier to be applied after tonemapping, delinearises output. If placed at 1.0, outputs at linear space for HDR (UI unaffected)
 Linearization = 2.2                   # Converts image to corrected linear space before tonemapping. 1.0 is non-linear, if so place Gamma at 1.0 as well
 SkyMultiplier = 1.0                   # Scales the brightness of the sky/sun textures. Requires Sky shader enabled
 WeatherModifier = 1.0                 # Influence of the vanilla weather modifiers (brightness, contrast, saturation)
-WeatherContrast = 0.1                 # Influence of the vanilla contrast setting, applies post-tonemap. Scales atop WeatherModifier, can cause black crush notably in Interiors
+WeatherContrast = 1.0                 # Influence of the vanilla contrast setting, applies post-tonemap. Scales atop WeatherModifier, can cause black crush notably in Interiors
 Saturation = 1.0                      # Saturation of the image before tonemapping
 ToneMappingColor = 1.0                # Changes the strength of the vanilla tint influence (not fades)
 TonemapContrast = 1.0                 # Contrast setting for Lottes, Uchimura
@@ -399,13 +399,13 @@ PointLightMultiplier = 1.0            # Experimental - modifies the strength of 
 
 
 [_Shaders.Tonemapping.Night]
-TonemappingMode = 1                   # Tonemapping Algorithm -  0: None (vanilla), 1: VTLottes (default), 2:NVRLottes, 3:Reinhard, 4: Reinhard Jodie, 5: ACES Filmic, 6: ACES Fitted, 7:Uncharted 2, 8:Uchimura (GT), 9:AGX
+TonemappingMode = 1                   # Tonemapping Algorithm -  0:None (vanilla - DXVK HDR), 1:VTLottes (default), 2:NVRLottes, 3:Reinhard, 4:Reinhard Jodie, 5:ACES Filmic, 6:ACES Fitted, 7:Uncharted 2, 8:Uchimura (GT), 9:AGX, 10:DICE
 Exposure = 1.2                        # Scales the engine lighting strength/brightness range before tonemap, useful for HDR rendering
 Gamma = 2.2                           # Gamma modifier to be applied after tonemapping, delinearises output. If placed at 1.0, outputs at linear space for HDR (UI unaffected)
 Linearization = 2.2                   # Converts image to corrected linear space before tonemapping. 1.0 is non-linear, if so place Gamma at 1.0 as well
 SkyMultiplier = 1.0                   # Scales the brightness of the sky/sun textures. Requires Sky shader enabled
 WeatherModifier = 1.0                 # Influence of the vanilla weather modifiers (brightness, contrast, saturation)
-WeatherContrast = 0.1                 # Influence of the vanilla contrast setting, applies post-tonemap. Scales atop WeatherModifier, can cause black crush notably in Interiors
+WeatherContrast = 1.0                 # Influence of the vanilla contrast setting, applies post-tonemap. Scales atop WeatherModifier, can cause black crush notably in Interiors
 Saturation = 1.0                      # Saturation of the image before tonemapping
 ToneMappingColor = 1.0                # Changes the strength of the vanilla tint influence (not fades)
 TonemapContrast = 1.0                 # Contrast setting for Lottes, Uchimura
