@@ -264,14 +264,6 @@ Experimental - modifies the strength of all point lights
 
 ## Night
 
-### TonemappingMode
-
-Tonemapping Algorithm -  0:None (vanilla - DXVK HDR), 1:VTLottes (default), 2:NVRLottes, 3:Reinhard, 4:Reinhard Jodie, 5:ACES Filmic, 6:ACES Fitted, 7:Uncharted 2, 8:Uchimura (GT), 9:AGX, 10:DICE
-
->Default: 1
-
----
-
 ### Exposure
 
 Scales the engine lighting strength/brightness range before tonemap, useful for HDR rendering

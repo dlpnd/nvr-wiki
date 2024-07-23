@@ -52,6 +52,7 @@ HealthEnabled = false
 ForceMSAA = false           # Override game setting to force MSAA.
 RenderEffects = true        # Toggle rendering of all effects.
 RenderPreTonemapping = true # Toggle rendering of some effects in HDR before the game image space effects (can cause glitches).
+InvertedDepth = true        # Toggle to ensure compatibility with inverted depth mod.
 ReplaceIntro = false        # Controls rendering of the main menu custom video.
 ScreenshotKey = 87          # Keycode for custom screenshot hotkey (removes HUD and saves as jpg).
 HDRScreenshot = false       # Save screenshots in fbx (use with DXVK HDR)
@@ -399,7 +400,6 @@ PointLightMultiplier = 1.0            # Experimental - modifies the strength of 
 
 
 [_Shaders.Tonemapping.Night]
-TonemappingMode = 1                   # Tonemapping Algorithm -  0:None (vanilla - DXVK HDR), 1:VTLottes (default), 2:NVRLottes, 3:Reinhard, 4:Reinhard Jodie, 5:ACES Filmic, 6:ACES Fitted, 7:Uncharted 2, 8:Uchimura (GT), 9:AGX, 10:DICE
 Exposure = 1.2                        # Scales the engine lighting strength/brightness range before tonemap, useful for HDR rendering
 Gamma = 2.2                           # Gamma modifier to be applied after tonemapping, delinearises output. If placed at 1.0, outputs at linear space for HDR (UI unaffected)
 Linearization = 2.2                   # Converts image to corrected linear space before tonemapping. 1.0 is non-linear, if so place Gamma at 1.0 as well
@@ -746,10 +746,42 @@ SpecularStrength = 1.0              # Strength of the effect for specular boost 
 Enabled = true                      # Shader that boosts a few lighting effects: specular boost, sky lighting and fresnel boost.
 
 [_Shaders.Terrain.Main]
-DistantNoise = 0.6
-DistantSpecular = 0.2
-MiddleSpecular = 0.0
-NearSpecular = 0.0
+UsePBR = true
+Fresnel = 0.3
+Specular = 0.5
+Roughness = 0.95
+Metallicness = 0.0
+AmbientScale = 3.0
+LightingScale = 0.8
+TerrainSaturation = 1.5
+LODNoiseScale = 1.0
+
+[_Shaders.Terrain.Rain]
+Fresnel = 0.3
+Specular = 0.5
+Roughness = 0.4
+Metallicness = 0.0
+AmbientScale = 3.0
+LightingScale = 0.8
+TerrainSaturation = 0.7
+
+[_Shaders.Terrain.Night]
+Fresnel = 0.3
+Specular = 0.5
+Roughness = 0.8
+Metallicness = 0.0
+AmbientScale = 5.0
+LightingScale = 2.3
+TerrainSaturation = 1.0
+
+[_Shaders.Terrain.NightRain]
+Fresnel = 0.3
+Specular = 0.5
+Roughness = 0.3
+Metallicness = 0.0
+AmbientScale = 2.6
+LightingScale = 1.5
+TerrainSaturation = 1.0
 
 [_Shaders.Terrain.Status]
 Enabled = false                     # Not currently used. Replaces shaders used by terrain.

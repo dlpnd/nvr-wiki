@@ -310,6 +310,14 @@ Toggle rendering of some effects in HDR before the game image space effects (can
 
 ---
 
+#### InvertedDepth
+
+Toggle to ensure compatibility with inverted depth mod.
+
+>Default: true
+
+---
+
 #### ReplaceIntro
 
 Controls rendering of the main menu custom video.
