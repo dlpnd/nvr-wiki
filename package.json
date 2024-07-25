@@ -13,7 +13,7 @@
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
     "convert": "python main.py",
-    "clean": "(rm .\\docs\\Shaders || del /s /q /f .\\docs\\Shaders >nul 2>nul)",
+    "clean": "(rm -rf .\\docs\\Shaders || del /s /q /f .\\docs\\Shaders >nul 2>nul)",
     "lint": "markdownlint -f .\\docs\\",
     "parse": "npm run clean && npm run convert && npm run lint",
     "github": "start https://github.com/dlpnd/nvr-wiki",
