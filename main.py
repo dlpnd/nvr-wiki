@@ -1,5 +1,4 @@
 import toml
-from typing import Any
 
 HEADING = [" ", "# ", "## ", "### ", "#### "]
 DEFAULT = ">Default: "
@@ -22,15 +21,13 @@ def save_file(filename: str, content: str, mode: str) -> None:
         file.write(content)
 
 
-def get_str(value: Any) -> str:
+def get_str(value: bool | int | float | str | toml.decoder.CommentValue) -> str:
     if isinstance(value, (bool, toml.decoder.CommentValue)):
         return str(value).lower()
     elif isinstance(value, (int, float)):
         return str(value)
     elif isinstance(value, str):
         return f"'{value}'"
-    else:
-        return str()
 
 
 with open("dx.md", "r") as file:
@@ -55,13 +52,11 @@ def write_main_settings(main_config: dict[dict[str, dict[str, str]], dict[str, d
             ini_config = sub_menu_values.items()
             for key, value in ini_config:
                 save_file(MAIN_SAVE_LOCATION, f"{HEADING[4]}{key}{NEW_LINE}", "a")
-                if hasattr(value, "val"):
+                if isinstance(value, toml.decoder.CommentValue):
                     save_file(MAIN_SAVE_LOCATION, f"{value.comment[3:]}{NEW_LINE}", "a")
-                    save_file(
-                        MAIN_SAVE_LOCATION, f"{DEFAULT}{get_str(value.val)}{NEW_LINE}{UNDERLINE}", "a")
+                    save_file(MAIN_SAVE_LOCATION, f"{DEFAULT}{get_str(value.val)}{NEW_LINE}{UNDERLINE}", "a")
                 else:
-                    save_file(
-                        MAIN_SAVE_LOCATION, f"{DEFAULT}{get_str(value)}{NEW_LINE}{UNDERLINE}", "a")
+                    save_file(MAIN_SAVE_LOCATION, f"{DEFAULT}{get_str(value)}{NEW_LINE}{UNDERLINE}", "a")
 
 
 def write_shader_settings(shader_config: dict[dict[str, dict[str, str]], dict[str, dict[str, toml.decoder.CommentValue]]]) -> None:
@@ -77,7 +72,7 @@ def write_shader_settings(shader_config: dict[dict[str, dict[str, str]], dict[st
             ini_config = sub_menu_values.items()
             for key, value in ini_config:
                 save_file(f"{SHADERS_SAVE_LOCATION}{menu_items}", f"{HEADING[3]}{key}{NEW_LINE}", "a")
-                if hasattr(value, "val"):
+                if isinstance(value, toml.decoder.CommentValue):
                     save_file(f"{SHADERS_SAVE_LOCATION}{menu_items}", f"{value.comment[3:]}{NEW_LINE}", "a")
                     save_file(f"{SHADERS_SAVE_LOCATION}{menu_items}", f"{DEFAULT}{get_str(value.val)}{NEW_LINE}{UNDERLINE}", "a")
                 else:
