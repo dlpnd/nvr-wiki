@@ -13,8 +13,9 @@
             <link>https://dlpnd.github.io/nvr-wiki/blog/2024/23/02</link>
             <guid>https://dlpnd.github.io/nvr-wiki/blog/2024/23/02</guid>
             <pubDate>Fri, 23 Feb 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[* Added a Gallery]]></description>
-            <content:encoded><![CDATA[<ul>
+            <description><![CDATA[{/ truncate /}]]></description>
+            <content:encoded><![CDATA[
+<ul>
 <li>Added a Gallery</li>
 <li>Redid the landing page</li>
 <li>Added a note about following the Performance Guide before installing</li>
@@ -30,8 +31,9 @@
             <link>https://dlpnd.github.io/nvr-wiki/blog/2023/05/08</link>
             <guid>https://dlpnd.github.io/nvr-wiki/blog/2023/05/08</guid>
             <pubDate>Mon, 08 May 2023 00:00:00 GMT</pubDate>
-            <description><![CDATA[* Added NVR + dxvk + ReShade instructions]]></description>
-            <content:encoded><![CDATA[<ul>
+            <description><![CDATA[{/ truncate /}]]></description>
+            <content:encoded><![CDATA[
+<ul>
 <li>Added NVR + dxvk + ReShade instructions</li>
 <li>Added missing Shader information</li>
 <li>Added Theme to the wiki (Thanks to TheMany from <a href="https://wastelandsurvivalguide.com/" target="_blank" rel="noopener noreferrer">Wasteland SurvivalGuide</a>)</li>
@@ -43,8 +45,9 @@
             <link>https://dlpnd.github.io/nvr-wiki/blog/2023/05/06</link>
             <guid>https://dlpnd.github.io/nvr-wiki/blog/2023/05/06</guid>
             <pubDate>Sat, 06 May 2023 00:00:00 GMT</pubDate>
-            <description><![CDATA[* Transfered the toml config into individual md files]]></description>
-            <content:encoded><![CDATA[<ul>
+            <description><![CDATA[{/ truncate /}]]></description>
+            <content:encoded><![CDATA[
+<ul>
 <li>Transfered the toml config into individual md files</li>
 </ul>]]></content:encoded>
             <category>changelog</category>
