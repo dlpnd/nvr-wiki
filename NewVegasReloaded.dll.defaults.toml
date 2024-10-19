@@ -1,3 +1,4 @@
+
 [_Main.CameraMode.Main]
 ChasingFirst = false    # Use Chasing camera in first person.
 ChasingThird = false    # Use Chasing camera in third person.
@@ -159,24 +160,24 @@ Enabled = false
 [_Shaders.Bloom]
 
 [_Shaders.Bloom.Main]
-Treshold = 2.0                          # treshold value above which lights will bloom
-Scale = 0.31                            # scale the brightness of the bloom
-Strength = 0.1                          # power of the bloom when applied
-Blending = 0.15                         # How much of the bloom is visible
-BloomExponent = 0.7                     # Makes the bloom more spread out or more focused
+Treshold = 0.0                          # treshold value above which lights will bloom
+Scale = 1.8                             # scale the brightness of the bloom
+Strength = 2.0                          # power of the bloom when applied
+Blending = 0.04                         # How much of the bloom is visible
+BloomExponent = 1.0                     # Makes the bloom more spread out or more focused
 
 [_Shaders.Bloom.Night]
-Treshold = 0.4                          # treshold value above which lights will bloom
-Scale = 2.0                             # scale the brightness of the bloom
-Strength = 0.5                          # power of the bloom when applied
-Blending = 0.5                          # How much of the bloom is visible
+Treshold = 0.0                          # treshold value above which lights will bloom
+Scale = 1.8                             # scale the brightness of the bloom
+Strength = 2.0                          # power of the bloom when applied
+Blending = 0.04                          # How much of the bloom is visible
 BloomExponent = 1.0                     # Makes the bloom more spread out or more focused
 
 [_Shaders.Bloom.Interiors]
 Treshold = 0.0                          # treshold value above which lights will bloom
-Scale = 0.61                            # scale the brightness of the bloom
-Strength = 2.3                          # power of the bloom when applied
-Blending = 0.3                          # How much of the bloom is visible
+Scale = 0.31                            # scale the brightness of the bloom
+Strength = 2.0                          # power of the bloom when applied
+Blending = 0.2                          # How much of the bloom is visible
 BloomExponent = 0.9                     # Makes the bloom more spread out or more focused
 
 [_Shaders.Bloom.Status]
@@ -215,7 +216,7 @@ VignetteRadius = 0.6                    # Distance to the center for the start o
 LetterBoxDepth = 0.0                    # Depth of the letter box bars
 
 [_Shaders.Cinema.Status]
-Enabled = true                          # A collection of tweaks to give a more cinematic post processing feel.
+Enabled = false                          # A collection of tweaks to give a more cinematic post processing feel.
 
 [_Shaders.Coloring.Default]
 BaseGamma = 1.6
@@ -242,13 +243,13 @@ Enabled = false                        #
 Enabled = false                        # Displays debug information: depth, normal and shadow buffers, colors of the weather/fog and lights positions.
 
 [_Shaders.DepthOfField.FirstPersonView]
-BaseBlurRadius = 2.0                   # Strength of the blurriness caused by depth of Field.
+BaseBlurRadius = 1.0                   # Strength of the blurriness caused by depth of Field.
 BlurFallOff = 1.5                      # Hyperfocal distance (x1000). Before this distance, near and far field are blurred. After, only the near field is.
 DiameterRange = 0.8                    # Bokeh treshold. Areas with brightness above this value will bloom in a bokeh like effect.
 DistantBlur = true                     # Activate a constant blurriness in the far distance to hide LOD.
 DistantBlurEndRange = 150000           # Far end of the area blurred in the distance (fully blurry).
 DistantBlurStartRange = 30000          # Start of the area blurred in the distance (not yet blurry).
-Enabled = true                         # Wether to activate the DOF effect in first person.
+Enabled = false                        # Wether to activate the DOF effect in first person.
 Mode = 0                               # Chose when the DOF is activated: 0: always, 1: not during dialog, 2: only in dialog.
 NearBlurCutOff = 100                   # Close up range that doesn't get blurred to avoid blurry gun/player character.
 Radius = 1.5                           # Radius for the bokeh blur.
@@ -263,7 +264,7 @@ DiameterRange = 0.8                    # Bokeh treshold. Areas with brightness a
 DistantBlur = true                     # Activate a constant blurriness in the far distance to hide LOD.
 DistantBlurEndRange = 150000           # Far end of the area blurred in the distance (fully blurry).
 DistantBlurStartRange = 30000          # Start of the area blurred in the distance (not yet blurry).
-Enabled = true                         # Wether to activate the DOF effect in third person.
+Enabled = false                        # Wether to activate the DOF effect in third person.
 Mode = 0                               # Chose when the DOF is activated: 0: always, 1: not during dialog, 2: only in dialog.
 NearBlurCutOff = 200                   # Close up range that doesn't get blurred to avoid blurry gun/player character.
 Radius = 1.5                           # Radius for the bokeh blur.
@@ -275,28 +276,28 @@ DiameterRange = 0.8                    # Bokeh treshold. Areas with brightness a
 DistantBlur = true                     # Activate a constant blurriness in the far distance to hide LOD.
 DistantBlurEndRange = 150000           # Far end of the area blurred in the distance (fully blurry).
 DistantBlurStartRange = 30000          # Start of the area blurred in the distance (not yet blurry).
-Enabled = true                         # Wether to activate the DOF effect in vanity camera (free rotation camera).
+Enabled = false                        # Wether to activate the DOF effect in vanity camera (free rotation camera).
 Mode = 0                               # Chose when the DOF is activated: 0: always, 1: not during dialog, 2: only in dialog.
 NearBlurCutOff = 0                     # Close up range that doesn't get blurred to avoid blurry gun/player character.
 Radius = 1.5                           # Radius for the bokeh blur.
 
 [_Shaders.Exposure.Main]
-DarkAdaptSpeed = 1.5                   # Speed for the exposure to adjust when the screen gets darker.
-LightAdaptSpeed = 0.5                  # Speed for the exposure to adjust when the screen gets brighter.
-MaxBrightness = 0.9                    # Brightness treshold above which the screen will be darkened.
-MinBrightness = 0.3                    # Brightness treshold below which the screen will be brightened.
+DarkAdaptSpeed = 50.0                  # Speed for the exposure to adjust when the screen gets darker.
+LightAdaptSpeed = 50.0                 # Speed for the exposure to adjust when the screen gets brighter.
+MaxBrightness = 0.5                    # Brightness treshold above which the screen will be darkened.
+MinBrightness = 0.2                    # Brightness treshold below which the screen will be brightened.
 
 [_Shaders.Exposure.Interiors]
-DarkAdaptSpeed = 1.5                   # Speed for the exposure to adjust when the screen gets darker.
-LightAdaptSpeed = 0.5                  # Speed for the exposure to adjust when the screen gets brighter.
-MaxBrightness = 0.9                    # Brightness treshold above which the screen will be darkened.
-MinBrightness = 0.2                    # Brightness treshold below which the screen will be brightened.
+DarkAdaptSpeed = 50.0                  # Speed for the exposure to adjust when the screen gets darker.
+LightAdaptSpeed = 50.0                 # Speed for the exposure to adjust when the screen gets brighter.
+MaxBrightness = 0.3                    # Brightness treshold above which the screen will be darkened.
+MinBrightness = 1.0                    # Brightness treshold below which the screen will be brightened.
 
 [_Shaders.Exposure.Night]
-DarkAdaptSpeed = 1.5                   # Speed for the exposure to adjust when the screen gets darker.
-LightAdaptSpeed = 0.5                  # Speed for the exposure to adjust when the screen gets brighter.
-MaxBrightness = 0.8                    # Brightness treshold above which the screen will be darkened.
-MinBrightness = 0.2                    # Brightness treshold below which the screen will be brightened.
+DarkAdaptSpeed = 50.0                  # Speed for the exposure to adjust when the screen gets darker.
+LightAdaptSpeed = 50.0                 # Speed for the exposure to adjust when the screen gets brighter.
+MaxBrightness = 0.0                    # Brightness treshold above which the screen will be darkened.
+MinBrightness = 0.3                    # Brightness treshold below which the screen will be brightened.
 
 [_Shaders.Exposure.Status]
 Enabled = true                         # Modulates screen gamma to correct exposure based on average brightness. Avoids screens that are too bright/dark.
@@ -322,7 +323,7 @@ RenderShadows = false                  # Wether to use rendered shadows in the f
 AttachToWeapon = true                  # The flashlight will move with the weapon instead of being fixed to the camera
 
 [_Shaders.Flashlight.Status]
-Enabled = true                         # Replace the pipboy light with a post process flashlight attached to the weapon
+Enabled = false                         # Replace the pipboy light with a post process flashlight attached to the weapon
 
 
 [_Shaders.Grass.Main]
@@ -339,16 +340,16 @@ MaxDistance = 0
 Enabled = false                       # Not currently used. Replaces grass shaders and game options.  
 
 [_Shaders.GodRays.Main]
-DayMultiplier = 0.5                   # Strength of godrays during the day.
+DayMultiplier = 1.0                   # Strength of godrays during the day.
 LightShaftPasses = 8                  # Not used.
 Luminance = 0.8                       # Treshold for minimum luminosity of areas casting rays. Lower means more of the sky will cast rays.
-NightMultiplier = 1.0                 # Strength of godrays during the night.
-RayDensity = 0.5                      # Curve for reduction of the intensity of godrays near the sunglare.
+NightMultiplier = 0.5                 # Strength of godrays during the night.
+RayDensity = 1.0                      # Curve for reduction of the intensity of godrays near the sunglare.
 RayIntensity = 1.0                    # Multiplier for the intensity of the bright areas being blurred to create the rays.
 RayLength = 1.0                       # Multiplier for the length of rays.
-RayVisibility = 5.0                   # Exponent for the godrays contrast.
+RayVisibility = 50.0                  # Exponent for the godrays contrast.
 SunGlareEnabled = true                # Strength of the effect will be scaled with the weather sunglare setting.
-TimeEnabled = true                    # Strength of the effect will be strongest around sunset/sunrise and not at all during noon.
+TimeEnabled = false                    # Strength of the effect will be strongest around sunset/sunrise and not at all during noon.
 
 [_Shaders.GodRays.Coloring]
 RayR = 1.0                            # Red channel for custom coloring of the godrays. Use Saturate setting to tweak the global influence.
@@ -362,13 +363,13 @@ Enabled = true                        # Screenspace godrays/volumetric rays.
 
 
 [_Shaders.Tonemapping.Main]
-TonemappingMode = 1                   # Tonemapping Algorithm -  0:None (vanilla - DXVK HDR), 1:VTLottes (default), 2:NVRLottes, 3:Reinhard, 4:Reinhard Jodie, 5:ACES Filmic, 6:ACES Fitted, 7:Uncharted 2, 8:Uchimura (GT), 9:AGX, 10:DICE
-Exposure = 1.0                        # Scales the engine lighting strength/brightness range before tonemap, useful for HDR rendering
+TonemappingMode = 2                   # Tonemapping Algorithm -  0:None (vanilla - DXVK HDR), 1:VTLottes (default), 2:NVRLottes, 3:Reinhard, 4:Reinhard Jodie, 5:ACES Filmic, 6:ACES Fitted, 7:Uncharted 2, 8:Uchimura (GT), 9:AGX, 10:DICE
+Exposure = 1.5                        # Scales the engine lighting strength/brightness range before tonemap, useful for HDR rendering
 Gamma = 2.2                           # Gamma modifier to be applied after tonemapping, delinearises output. If placed at 1.0, outputs at linear space for HDR (UI unaffected)
 Linearization = 2.2                   # Converts image to corrected linear space before tonemapping. 1.0 is non-linear, if so place Gamma at 1.0 as well
 SkyMultiplier = 1.0                   # Scales the brightness of the sky/sun textures. Requires Sky shader enabled
 WeatherModifier = 1.0                 # Influence of the vanilla weather modifiers (brightness, contrast, saturation)
-WeatherContrast = 1.0                 # Influence of the vanilla contrast setting, applies post-tonemap. Scales atop WeatherModifier, can cause black crush
+WeatherContrast = 0.0                 # Influence of the vanilla contrast setting, applies post-tonemap. Scales atop WeatherModifier, can cause black crush
 Saturation = 1.0                      # Saturation of the image before tonemapping
 ToneMappingColor = 1.0                # Changes the strength of the vanilla tint influence (not fades)
 TonemapContrast = 1.0                 # Contrast setting for Lottes, Uchimura
@@ -382,12 +383,12 @@ PointLightMultiplier = 1.0            # Experimental - modifies the strength of 
 
 [_Shaders.Tonemapping.Interiors]
 TonemappingMode = 1                   # Tonemapping Algorithm -  0:None (vanilla - DXVK HDR), 1:VTLottes (default), 2:NVRLottes, 3:Reinhard, 4:Reinhard Jodie, 5:ACES Filmic, 6:ACES Fitted, 7:Uncharted 2, 8:Uchimura (GT), 9:AGX, 10:DICE
-Exposure = 1.2                        # Scales the engine lighting strength/brightness range before tonemap, useful for HDR rendering
+Exposure = 1.3                        # Scales the engine lighting strength/brightness range before tonemap, useful for HDR rendering
 Gamma = 2.2                           # Gamma modifier to be applied after tonemapping, delinearises output. If placed at 1.0, outputs at linear space for HDR (UI unaffected)
 Linearization = 2.2                   # Converts image to corrected linear space before tonemapping. 1.0 is non-linear, if so place Gamma at 1.0 as well
 SkyMultiplier = 1.0                   # Scales the brightness of the sky/sun textures. Requires Sky shader enabled
 WeatherModifier = 1.0                 # Influence of the vanilla weather modifiers (brightness, contrast, saturation)
-WeatherContrast = 1.0                 # Influence of the vanilla contrast setting, applies post-tonemap. Scales atop WeatherModifier, can cause black crush notably in Interiors
+WeatherContrast = 0.0                 # Influence of the vanilla contrast setting, applies post-tonemap. Scales atop WeatherModifier, can cause black crush notably in Interiors
 Saturation = 1.0                      # Saturation of the image before tonemapping
 ToneMappingColor = 1.0                # Changes the strength of the vanilla tint influence (not fades)
 TonemapContrast = 1.0                 # Contrast setting for Lottes, Uchimura
@@ -400,12 +401,12 @@ PointLightMultiplier = 1.0            # Experimental - modifies the strength of 
 
 
 [_Shaders.Tonemapping.Night]
-Exposure = 1.2                        # Scales the engine lighting strength/brightness range before tonemap, useful for HDR rendering
+Exposure = 1.5                        # Scales the engine lighting strength/brightness range before tonemap, useful for HDR rendering
 Gamma = 2.2                           # Gamma modifier to be applied after tonemapping, delinearises output. If placed at 1.0, outputs at linear space for HDR (UI unaffected)
 Linearization = 2.2                   # Converts image to corrected linear space before tonemapping. 1.0 is non-linear, if so place Gamma at 1.0 as well
 SkyMultiplier = 1.0                   # Scales the brightness of the sky/sun textures. Requires Sky shader enabled
 WeatherModifier = 1.0                 # Influence of the vanilla weather modifiers (brightness, contrast, saturation)
-WeatherContrast = 1.0                 # Influence of the vanilla contrast setting, applies post-tonemap. Scales atop WeatherModifier, can cause black crush notably in Interiors
+WeatherContrast = 0.0                 # Influence of the vanilla contrast setting, applies post-tonemap. Scales atop WeatherModifier, can cause black crush notably in Interiors
 Saturation = 1.0                      # Saturation of the image before tonemapping
 ToneMappingColor = 1.0                # Changes the strength of the vanilla tint influence (not fades)
 TonemapContrast = 1.0                 # Contrast setting for Lottes, Uchimura
@@ -477,7 +478,7 @@ BloomExponent = 0.6             # Determins how far from the light source the di
 Smudginess = 0.2                # Scales the texture so that more of the screen is affected
 
 [_Shaders.Lens.Status]
-Enabled = true                        # Simulates lens smudges refracting light around brightest areas of the screen.
+Enabled = false                 # Simulates lens smudges refracting light around brightest areas of the screen.
 
 [_Shaders.LowHF.Main]
 BlurMultiplier = 0.2
@@ -507,21 +508,50 @@ GaussianWeight = 6.0
 [_Shaders.MotionBlur.Status]
 Enabled = false                      # Blur in direction of the camera when turning. 
 
+[_Shaders.PBR.Main]
+Roughness = 1.0
+Metallicness = 0.0
+AmbientScale = 3.0
+LightingScale = 1.0
+Saturation = 1.5
+
+[_Shaders.PBR.Rain]
+Roughness = 1.0
+Metallicness = 0.0
+AmbientScale = 3.0
+LightingScale = 1.0
+Saturation = 0.7
+
+[_Shaders.PBR.Night]
+Roughness = 1.0
+Metallicness = 0.0
+AmbientScale = 5.0
+LightingScale = 1.0
+Saturation = 1.0
+
+[_Shaders.PBR.NightRain]
+Roughness = 1.0
+Metallicness = 0.0
+AmbientScale = 2.6
+LightingScale = 1.0
+Saturation = 1.0
+
+[_Shaders.PBR.Status]
+Enabled = false                      # Adds PBR specular formula to object shaders
+
 [_Shaders.POM.Main]
-HeightMapScale = 0.55
-MaxSamples = 32
-MinSamples = 8
+HeightMapScale = 0.4                 # Parallax mapping scale. Keep 0.4 for a widely working value.
 
 [_Shaders.POM.Status]
-Enabled = false                      # Not currently used. Parallax occlusion mapping on object shaders to simulate extra detail.
+Enabled = true                       # Parallax mapping on object shaders to simulate extra detail.
 
 [_Shaders.Precipitations.Main]
-Bloom = 0.1                          # Rain effect that is blocked by objects above and refracts light.
-Coloring = 0.3                       # Base coloring amount added to the refracted color.
+Bloom = 0.5                          # Rain effect that is blocked by objects above and refracts light.
+Coloring = 1.1                       # Base coloring amount added to the refracted color.
 Opacity = 1.0                        # Opacity of the drops.
-Refraction = 0.3                     # Distance of the refraction of the screen image by the droplets.
-Speed = 2.0                          # Multiplier for the rain speed.
-VerticalScale = 1.0                  # Multiplier for the length of the drops/streaks.
+Refraction = 1.0                     # Distance of the refraction of the screen image by the droplets.
+Speed = 3.0                          # Multiplier for the rain speed.
+VerticalScale = 1.6                  # Multiplier for the length of the drops/streaks.
 
 [_Shaders.Precipitations.Status]
 Enabled = true                       # Rain effect that is blocked by objects above and refracts light.
@@ -695,9 +725,9 @@ StarTwinkle = 1.0                   # Speed of the star twinkling
 
 [_Shaders.Sky.Clouds]
 UseNormals = false                  # EXPERIMENTAL-Uses the R & G channels of the clouds texture to calculate normals for lighting. Requires special textures
-SphericalNormals = true             # EXPERIMENTAL-Uses this setting if the normals of the clouds point to the center of the panoramic texture
-Transparency = 1.0                  # Clouds base transparency
-Brightness = 1.0                    # Clouds base brightness
+SphericalNormals = false            # EXPERIMENTAL-Uses this setting if the normals of the clouds point to the center of the panoramic texture
+Transparency = 0.4                  # Clouds base transparency
+Brightness = 0.9                    # Clouds base brightness
 
 [_Shaders.Sky.Status]
 Enabled = true                      # Replaces the sky and cloud shaders to add more subtle sky shading.
@@ -707,7 +737,7 @@ Flakes = 0.5
 Speed = 1.4                         # Speed multiplier for snow falling
 
 [_Shaders.Snow.Status]
-Enabled = true                      # Snow precipitation shader.
+Enabled = false                     # Snow precipitation shader.
 
 [_Shaders.SnowAccumulation.Main]
 BlurNormDropThreshhold = 120        # Distance for ortho average sampling around ortho covered area
@@ -720,7 +750,7 @@ SnowColorG = 0.9                    # Green chanel for the color of snow coverag
 SnowColorB = 0.8                    # Blue chanel for the color of snow coverage
 
 [_Shaders.SnowAccumulation.Status]
-Enabled = true                      # Snow accumulation on the floor during snowstorms.
+Enabled = false                      # Snow accumulation on the floor during snowstorms.
 
 [_Shaders.Specular.Exterior]
 BlurMultiplier = 1.0                # Blur strength for detail smoothing.
@@ -743,45 +773,49 @@ SpecLumaTreshold = 0.25              # Treshold for the luma of areas affected b
 SpecularStrength = 1.0              # Strength of the effect for specular boost during rainy weathers.
 
 [_Shaders.Specular.Status]
-Enabled = true                      # Shader that boosts a few lighting effects: specular boost, sky lighting and fresnel boost.
+Enabled = false                      # Shader that boosts a few lighting effects: specular boost, sky lighting and fresnel boost.
 
 [_Shaders.Terrain.Main]
-UsePBR = true
-Fresnel = 0.3
-Specular = 0.5
-Roughness = 0.95
-Metallicness = 0.0
-AmbientScale = 3.0
-LightingScale = 0.8
-TerrainSaturation = 1.5
-LODNoiseScale = 1.0
+UsePBR = true                       # Use PBR lighting, disable to use vanilla.
+Roughness = 1.0                     # Scale texture roughness, higher roughness decreases specular.
+Metallicness = 0.0                  # Add metallicness.
+AmbientScale = 1.0                  # Scale ambient lighting.
+LightingScale = 1.0                 # Scale non-ambient lighting (sun or spotlights).
+TerrainSaturation = 1.0             # Control terrain saturation.
 
 [_Shaders.Terrain.Rain]
-Fresnel = 0.3
-Specular = 0.5
-Roughness = 0.4
-Metallicness = 0.0
-AmbientScale = 3.0
-LightingScale = 0.8
-TerrainSaturation = 0.7
+Roughness = 0.7                     # Scale texture roughness, higher roughness decreases specular.
+Metallicness = 0.0                  # Add metallicness.
+AmbientScale = 1.0                  # Scale ambient lighting.
+LightingScale = 1.0                 # Scale non-ambient lighting (sun or spotlights).
+TerrainSaturation = 1.0             # Control terrain saturation.
 
 [_Shaders.Terrain.Night]
-Fresnel = 0.3
-Specular = 0.5
-Roughness = 0.8
-Metallicness = 0.0
-AmbientScale = 5.0
-LightingScale = 2.3
-TerrainSaturation = 1.0
+Roughness = 1.0                     # Scale texture roughness, higher roughness decreases specular.
+Metallicness = 0.0                  # Add metallicness.
+AmbientScale = 1.0                  # Scale ambient lighting.
+LightingScale = 1.5                 # Scale non-ambient lighting (sun or spotlights).
+TerrainSaturation = 1.0             # Control terrain saturation.
 
 [_Shaders.Terrain.NightRain]
-Fresnel = 0.3
-Specular = 0.5
-Roughness = 0.3
-Metallicness = 0.0
-AmbientScale = 2.6
-LightingScale = 1.5
-TerrainSaturation = 1.0
+Roughness = 0.6                     # Scale texture roughness, higher roughness decreases specular.
+Metallicness = 0.0                  # Add metallicness.
+AmbientScale = 1.0                  # Scale ambient lighting.
+LightingScale = 1.0                 # Scale non-ambient lighting (sun or spotlights).
+TerrainSaturation = 1.0             # Control terrain saturation.
+
+[_Shaders.Terrain.Parallax]
+Enabled = true                      # Turn on parallax occlusion mapping for terrain.
+Shadows = true						# Turn on height based self shadowing.
+HeightBlend = true                  # Turn on height based texture blending.
+HighQuality = true                  # Turn on high quality. Double the number of steps, higher performance impact.
+MaxDistance = 2048                  # Controls the maximum distance for the parallax and shadow effects.
+Height = 0.1						# Controls the height. Changing can break the visuals, especially with low max steps.
+ShadowsIntensity = 2.0              # Intensity of self shadowing.
+
+[_Shaders.Terrain.LOD]
+LODNoiseScale = 0.7                 # Amount of noise applied to LOD.
+LODNoiseTile = 2.7                  # LOD noise texture tiling modifier.
 
 [_Shaders.Terrain.Status]
 Enabled = false                     # Not currently used. Replaces shaders used by terrain.
@@ -790,44 +824,44 @@ Enabled = false                     # Not currently used. Replaces shaders used 
 Enabled = true                      # Post Process underwater fog/godrays/caustics effect.
 
 [_Shaders.VolumetricFog.Main]
-Amount = 1.0                        # Global multiplier for fog strength in exteriors
+Amount = 0.4                        # Global multiplier for fog strength in exteriors
 SunPower = 0.2                      # Controls the influence of Sun Color when shining through fog
 FogSaturation = 1.7                 # Tune the saturation of the fog
 MinimumBaseFog = 0.2                # How much fog will be present as a base line when weather has no fog
-WeatherImpact = 0.6                 # How much the fog will scale with weather fog strength
+WeatherImpact = 0.5                 # How much the fog will scale with weather fog strength
 DistantFogRange = 0.9               # Range of the distance fog that blends moutains into the sky.
 DistantFogBlend = 0.3               # Blending power of the distant fog
 DistantFogHeight = 0.3              # Height limit for the distant fog. If set to 0, will use the sky as a mask.
 HeightFogDensity = 0.6              # Density multiplier for the general height fog
 HeightFogFalloff = 50.0             # Vertical falloff of atmospheric height fog,
-HeightFogDist = 0.3                 # Distance multiplier for Height fog. Pushes back the fog.
+HeightFogDist = 0.4                 # Distance multiplier for Height fog. Pushes back the fog.
 HeightFogSkyColor = 4.0             # Strong fogs will use the weather fog color instead of the sky. This setting changes how strong the fog should be for that.
 HeightFogHeight = 3.0               # "Sea level" from which the Height fog starts to decrease.
 HeightFogBlend = 1.0                # General strength of the impact of Height fog on the final look.
 HeightFogRolloff = 1.3              # Pushes back the Height fog without changing the far distance. Changes the curve of progression
 Extinction = 3.0                    # Light lost due to absorption of particles when seen throught the fog.
-Inscattering = 1.9                  # Light gained from light scattering when seen through the fog.
+Inscattering = 1.6                  # Light gained from light scattering when seen through the fog.
 FogNight = 2.0                      # Scales the fog distances at night.
 SimpleFogSkyColor = 20.0            # Strong fogs will use the weather fog color instead of the sky. This setting changes how strong the fog should be for that.
-SimpleFogHeight = 0.5               # Limit the sky influence/height rate of dissipation for simple fog.
-SimpleFogBlend = 1.0                # General strength of the impact of simple fog on the final look.
+SimpleFogHeight = 0.2               # Limit the sky influence/height rate of dissipation for simple fog.
+SimpleFogBlend = 0.5                # General strength of the impact of simple fog on the final look.
 
 
 [_Shaders.VolumetricFog.Interiors]
-Amount = 1.0                        # Global multiplier for fog strength in interiors
-FogSaturation = 1.7                 # Tune the saturation of the fog
-MinimumBaseFog = 0.2                # How much fog will be present as a base line when weather has no fog
-WeatherImpact = 0.6                 # How much the fog will scale with weather fog strength
+Amount = 0.25                        # Global multiplier for fog strength in interiors
+FogSaturation = 0.5                 # Tune the saturation of the fog
+MinimumBaseFog = 0.3                # How much fog will be present as a base line when weather has no fog
+WeatherImpact = 0.0                 # How much the fog will scale with weather fog strength
 HeightFogDensity = 0.6              # Density multiplier for the general height fog
 HeightFogFalloff = 50.0             # Vertical falloff of atmospheric height fog,
-HeightFogDist = 0.3                 # Distance multiplier for Height fog. Pushes back the fog.
-HeightFogHeight = 3.0               # "Sea level" from which the Height fog starts to decrease.
+HeightFogDist = 0.4                 # Distance multiplier for Height fog. Pushes back the fog.
+HeightFogHeight = 0.0               # "Sea level" from which the Height fog starts to decrease.
 HeightFogBlend = 1.0                # General strength of the impact of Height fog on the final look.
 HeightFogRolloff = 1.3              # Pushes back the Height fog without changing the far distance. Changes the curve of progression
-Extinction = 3.0                    # Light lost due to absorption of particles when seen throught the fog.
-Inscattering = 1.9                  # Light gained from light scattering when seen through the fog.
+Extinction = 0.4                    # Light lost due to absorption of particles when seen throught the fog.
+Inscattering = 0.35                 # Light gained from light scattering when seen through the fog.
 SimpleFogHeight = 0.5               # Limit the sky influence/height rate of dissipation for simple fog.
-SimpleFogBlend = 1.0                # General strength of the impact of simple fog on the final look.
+SimpleFogBlend = 0.2                # General strength of the impact of simple fog on the final look.
 
 
 [_Shaders.VolumetricFog.Status]
@@ -886,13 +920,13 @@ Viscosity = 0.05
 Enabled = true                      # Short refraction water drop animation on the lens when exiting water.
 
 [_Shaders.WetWorld.Main]
-Amount = 1.0                        # Darkness of puddles
-Decrease = 1.2                      # Time it takes in game hours for puddles to dissipate
-Increase = 0.3                      # Time it takes in game hours for puddles to appear
+Amount = 0.0                        # Darkness of puddles
+Decrease = 0.0                      # Time it takes in game hours for puddles to dissipate
+Increase = 0.0                      # Time it takes in game hours for puddles to appear
 PuddleCoeff_B = 0.48                # Not used.
 PuddleCoeff_G = 0.62                # Not used.
 PuddleCoeff_R = 0.72                # Not used.
-PuddleSpecularMultiplier = 0.4      # Not used.
+PuddleSpecularMultiplier = 0.2      # Not used.
 
 [_Shaders.WetWorld.Status]
 Enabled = true                      # Water ripples on surfaces, and puddles based on physical terrain pockets during rainy weathers. 

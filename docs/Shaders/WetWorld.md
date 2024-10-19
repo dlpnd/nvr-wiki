@@ -8,7 +8,7 @@
 
 Darkness of puddles
 
->Default: 1.0
+>Default: 0.0
 
 ---
 
@@ -16,7 +16,7 @@ Darkness of puddles
 
 Time it takes in game hours for puddles to dissipate
 
->Default: 1.2
+>Default: 0.0
 
 ---
 
@@ -24,7 +24,7 @@ Time it takes in game hours for puddles to dissipate
 
 Time it takes in game hours for puddles to appear
 
->Default: 0.3
+>Default: 0.0
 
 ---
 
@@ -56,7 +56,7 @@ Not used.
 
 Not used.
 
->Default: 0.4
+>Default: 0.2
 
 ---
 

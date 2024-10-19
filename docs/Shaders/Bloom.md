@@ -8,7 +8,7 @@
 
 treshold value above which lights will bloom
 
->Default: 2.0
+>Default: 0.0
 
 ---
 
@@ -16,7 +16,7 @@ treshold value above which lights will bloom
 
 scale the brightness of the bloom
 
->Default: 0.31
+>Default: 1.8
 
 ---
 
@@ -24,7 +24,7 @@ scale the brightness of the bloom
 
 power of the bloom when applied
 
->Default: 0.1
+>Default: 2.0
 
 ---
 
@@ -32,7 +32,7 @@ power of the bloom when applied
 
 How much of the bloom is visible
 
->Default: 0.15
+>Default: 0.04
 
 ---
 
@@ -40,7 +40,7 @@ How much of the bloom is visible
 
 Makes the bloom more spread out or more focused
 
->Default: 0.7
+>Default: 1.0
 
 ---
 
@@ -50,7 +50,7 @@ Makes the bloom more spread out or more focused
 
 treshold value above which lights will bloom
 
->Default: 0.4
+>Default: 0.0
 
 ---
 
@@ -58,7 +58,7 @@ treshold value above which lights will bloom
 
 scale the brightness of the bloom
 
->Default: 2.0
+>Default: 1.8
 
 ---
 
@@ -66,7 +66,7 @@ scale the brightness of the bloom
 
 power of the bloom when applied
 
->Default: 0.5
+>Default: 2.0
 
 ---
 
@@ -74,7 +74,7 @@ power of the bloom when applied
 
 How much of the bloom is visible
 
->Default: 0.5
+>Default: 0.04
 
 ---
 
@@ -100,7 +100,7 @@ treshold value above which lights will bloom
 
 scale the brightness of the bloom
 
->Default: 0.61
+>Default: 0.31
 
 ---
 
@@ -108,7 +108,7 @@ scale the brightness of the bloom
 
 power of the bloom when applied
 
->Default: 2.3
+>Default: 2.0
 
 ---
 
@@ -116,7 +116,7 @@ power of the bloom when applied
 
 How much of the bloom is visible
 
->Default: 0.3
+>Default: 0.2
 
 ---
 

@@ -8,7 +8,7 @@
 
 Strength of the blurriness caused by depth of Field.
 
->Default: 2.0
+>Default: 1.0
 
 ---
 
@@ -56,7 +56,7 @@ Start of the area blurred in the distance (not yet blurry).
 
 Wether to activate the DOF effect in first person.
 
->Default: true
+>Default: false
 
 ---
 
@@ -148,7 +148,7 @@ Start of the area blurred in the distance (not yet blurry).
 
 Wether to activate the DOF effect in third person.
 
->Default: true
+>Default: false
 
 ---
 
@@ -230,7 +230,7 @@ Start of the area blurred in the distance (not yet blurry).
 
 Wether to activate the DOF effect in vanity camera (free rotation camera).
 
->Default: true
+>Default: false
 
 ---
 

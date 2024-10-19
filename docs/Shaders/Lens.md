@@ -86,6 +86,6 @@ Scales the texture so that more of the screen is affected
 
 Simulates lens smudges refracting light around brightest areas of the screen.
 
->Default: true
+>Default: false
 
 ---

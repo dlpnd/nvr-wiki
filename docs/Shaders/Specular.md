@@ -140,6 +140,6 @@ Strength of the effect for specular boost during rainy weathers.
 
 Shader that boosts a few lighting effects: specular boost, sky lighting and fresnel boost.
 
->Default: true
+>Default: false
 
 ---

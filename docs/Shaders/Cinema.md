@@ -74,6 +74,6 @@ Depth of the letter box bars
 
 A collection of tweaks to give a more cinematic post processing feel.
 
->Default: true
+>Default: false
 
 ---

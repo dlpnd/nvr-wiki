@@ -6,19 +6,9 @@
 
 ### HeightMapScale
 
->Default: 0.55
+Parallax mapping scale. Keep 0.4 for a widely working value.
 
----
-
-### MaxSamples
-
->Default: 32
-
----
-
-### MinSamples
-
->Default: 8
+>Default: 0.4
 
 ---
 
@@ -26,8 +16,8 @@
 
 ### Enabled
 
-Not currently used. Parallax occlusion mapping on object shaders to simulate extra detail.
+Parallax mapping on object shaders to simulate extra detail.
 
->Default: false
+>Default: true
 
 ---

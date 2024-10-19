@@ -98,6 +98,6 @@ The flashlight will move with the weapon instead of being fixed to the camera
 
 Replace the pipboy light with a post process flashlight attached to the weapon
 
->Default: true
+>Default: false
 
 ---

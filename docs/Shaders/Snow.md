@@ -24,6 +24,6 @@ Speed multiplier for snow falling
 
 Snow precipitation shader.
 
->Default: true
+>Default: false
 
 ---

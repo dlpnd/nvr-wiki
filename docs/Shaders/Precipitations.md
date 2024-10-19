@@ -8,7 +8,7 @@
 
 Rain effect that is blocked by objects above and refracts light.
 
->Default: 0.1
+>Default: 0.5
 
 ---
 
@@ -16,7 +16,7 @@ Rain effect that is blocked by objects above and refracts light.
 
 Base coloring amount added to the refracted color.
 
->Default: 0.3
+>Default: 1.1
 
 ---
 
@@ -32,7 +32,7 @@ Opacity of the drops.
 
 Distance of the refraction of the screen image by the droplets.
 
->Default: 0.3
+>Default: 1.0
 
 ---
 
@@ -40,7 +40,7 @@ Distance of the refraction of the screen image by the droplets.
 
 Multiplier for the rain speed.
 
->Default: 2.0
+>Default: 3.0
 
 ---
 
@@ -48,7 +48,7 @@ Multiplier for the rain speed.
 
 Multiplier for the length of the drops/streaks.
 
->Default: 1.0
+>Default: 1.6
 
 ---
 

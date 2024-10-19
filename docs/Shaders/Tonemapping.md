@@ -8,7 +8,7 @@
 
 Tonemapping Algorithm -  0:None (vanilla - DXVK HDR), 1:VTLottes (default), 2:NVRLottes, 3:Reinhard, 4:Reinhard Jodie, 5:ACES Filmic, 6:ACES Fitted, 7:Uncharted 2, 8:Uchimura (GT), 9:AGX, 10:DICE
 
->Default: 1
+>Default: 2
 
 ---
 
@@ -16,7 +16,7 @@ Tonemapping Algorithm -  0:None (vanilla - DXVK HDR), 1:VTLottes (default), 2:NV
 
 Scales the engine lighting strength/brightness range before tonemap, useful for HDR rendering
 
->Default: 1.0
+>Default: 1.5
 
 ---
 
@@ -56,7 +56,7 @@ Influence of the vanilla weather modifiers (brightness, contrast, saturation)
 
 Influence of the vanilla contrast setting, applies post-tonemap. Scales atop WeatherModifier, can cause black crush
 
->Default: 1.0
+>Default: 0.0
 
 ---
 
@@ -146,7 +146,7 @@ Tonemapping Algorithm -  0:None (vanilla - DXVK HDR), 1:VTLottes (default), 2:NV
 
 Scales the engine lighting strength/brightness range before tonemap, useful for HDR rendering
 
->Default: 1.2
+>Default: 1.3
 
 ---
 
@@ -186,7 +186,7 @@ Influence of the vanilla weather modifiers (brightness, contrast, saturation)
 
 Influence of the vanilla contrast setting, applies post-tonemap. Scales atop WeatherModifier, can cause black crush notably in Interiors
 
->Default: 1.0
+>Default: 0.0
 
 ---
 
@@ -268,7 +268,7 @@ Experimental - modifies the strength of all point lights
 
 Scales the engine lighting strength/brightness range before tonemap, useful for HDR rendering
 
->Default: 1.2
+>Default: 1.5
 
 ---
 
@@ -308,7 +308,7 @@ Influence of the vanilla weather modifiers (brightness, contrast, saturation)
 
 Influence of the vanilla contrast setting, applies post-tonemap. Scales atop WeatherModifier, can cause black crush notably in Interiors
 
->Default: 1.0
+>Default: 0.0
 
 ---
 

@@ -106,7 +106,7 @@ EXPERIMENTAL-Uses the R & G channels of the clouds texture to calculate normals 
 
 EXPERIMENTAL-Uses this setting if the normals of the clouds point to the center of the panoramic texture
 
->Default: true
+>Default: false
 
 ---
 
@@ -114,7 +114,7 @@ EXPERIMENTAL-Uses this setting if the normals of the clouds point to the center 
 
 Clouds base transparency
 
->Default: 1.0
+>Default: 0.4
 
 ---
 
@@ -122,7 +122,7 @@ Clouds base transparency
 
 Clouds base brightness
 
->Default: 1.0
+>Default: 0.9
 
 ---
 

@@ -8,7 +8,7 @@
 
 Speed for the exposure to adjust when the screen gets darker.
 
->Default: 1.5
+>Default: 50.0
 
 ---
 
@@ -16,7 +16,7 @@ Speed for the exposure to adjust when the screen gets darker.
 
 Speed for the exposure to adjust when the screen gets brighter.
 
->Default: 0.5
+>Default: 50.0
 
 ---
 
@@ -24,7 +24,7 @@ Speed for the exposure to adjust when the screen gets brighter.
 
 Brightness treshold above which the screen will be darkened.
 
->Default: 0.9
+>Default: 0.5
 
 ---
 
@@ -32,7 +32,7 @@ Brightness treshold above which the screen will be darkened.
 
 Brightness treshold below which the screen will be brightened.
 
->Default: 0.3
+>Default: 0.2
 
 ---
 
@@ -42,7 +42,7 @@ Brightness treshold below which the screen will be brightened.
 
 Speed for the exposure to adjust when the screen gets darker.
 
->Default: 1.5
+>Default: 50.0
 
 ---
 
@@ -50,7 +50,7 @@ Speed for the exposure to adjust when the screen gets darker.
 
 Speed for the exposure to adjust when the screen gets brighter.
 
->Default: 0.5
+>Default: 50.0
 
 ---
 
@@ -58,7 +58,7 @@ Speed for the exposure to adjust when the screen gets brighter.
 
 Brightness treshold above which the screen will be darkened.
 
->Default: 0.9
+>Default: 0.3
 
 ---
 
@@ -66,7 +66,7 @@ Brightness treshold above which the screen will be darkened.
 
 Brightness treshold below which the screen will be brightened.
 
->Default: 0.2
+>Default: 1.0
 
 ---
 
@@ -76,7 +76,7 @@ Brightness treshold below which the screen will be brightened.
 
 Speed for the exposure to adjust when the screen gets darker.
 
->Default: 1.5
+>Default: 50.0
 
 ---
 
@@ -84,7 +84,7 @@ Speed for the exposure to adjust when the screen gets darker.
 
 Speed for the exposure to adjust when the screen gets brighter.
 
->Default: 0.5
+>Default: 50.0
 
 ---
 
@@ -92,7 +92,7 @@ Speed for the exposure to adjust when the screen gets brighter.
 
 Brightness treshold above which the screen will be darkened.
 
->Default: 0.8
+>Default: 0.0
 
 ---
 
@@ -100,7 +100,7 @@ Brightness treshold above which the screen will be darkened.
 
 Brightness treshold below which the screen will be brightened.
 
->Default: 0.2
+>Default: 0.3
 
 ---
 

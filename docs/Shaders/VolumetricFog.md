@@ -8,7 +8,7 @@
 
 Global multiplier for fog strength in exteriors
 
->Default: 1.0
+>Default: 0.4
 
 ---
 
@@ -40,7 +40,7 @@ How much fog will be present as a base line when weather has no fog
 
 How much the fog will scale with weather fog strength
 
->Default: 0.6
+>Default: 0.5
 
 ---
 
@@ -88,7 +88,7 @@ Vertical falloff of atmospheric height fog,
 
 Distance multiplier for Height fog. Pushes back the fog.
 
->Default: 0.3
+>Default: 0.4
 
 ---
 
@@ -136,7 +136,7 @@ Light lost due to absorption of particles when seen throught the fog.
 
 Light gained from light scattering when seen through the fog.
 
->Default: 1.9
+>Default: 1.6
 
 ---
 
@@ -160,7 +160,7 @@ Strong fogs will use the weather fog color instead of the sky. This setting chan
 
 Limit the sky influence/height rate of dissipation for simple fog.
 
->Default: 0.5
+>Default: 0.2
 
 ---
 
@@ -168,7 +168,7 @@ Limit the sky influence/height rate of dissipation for simple fog.
 
 General strength of the impact of simple fog on the final look.
 
->Default: 1.0
+>Default: 0.5
 
 ---
 
@@ -178,7 +178,7 @@ General strength of the impact of simple fog on the final look.
 
 Global multiplier for fog strength in interiors
 
->Default: 1.0
+>Default: 0.25
 
 ---
 
@@ -186,7 +186,7 @@ Global multiplier for fog strength in interiors
 
 Tune the saturation of the fog
 
->Default: 1.7
+>Default: 0.5
 
 ---
 
@@ -194,7 +194,7 @@ Tune the saturation of the fog
 
 How much fog will be present as a base line when weather has no fog
 
->Default: 0.2
+>Default: 0.3
 
 ---
 
@@ -202,7 +202,7 @@ How much fog will be present as a base line when weather has no fog
 
 How much the fog will scale with weather fog strength
 
->Default: 0.6
+>Default: 0.0
 
 ---
 
@@ -226,7 +226,7 @@ Vertical falloff of atmospheric height fog,
 
 Distance multiplier for Height fog. Pushes back the fog.
 
->Default: 0.3
+>Default: 0.4
 
 ---
 
@@ -234,7 +234,7 @@ Distance multiplier for Height fog. Pushes back the fog.
 
 "Sea level" from which the Height fog starts to decrease.
 
->Default: 3.0
+>Default: 0.0
 
 ---
 
@@ -258,7 +258,7 @@ Pushes back the Height fog without changing the far distance. Changes the curve 
 
 Light lost due to absorption of particles when seen throught the fog.
 
->Default: 3.0
+>Default: 0.4
 
 ---
 
@@ -266,7 +266,7 @@ Light lost due to absorption of particles when seen throught the fog.
 
 Light gained from light scattering when seen through the fog.
 
->Default: 1.9
+>Default: 0.35
 
 ---
 
@@ -282,7 +282,7 @@ Limit the sky influence/height rate of dissipation for simple fog.
 
 General strength of the impact of simple fog on the final look.
 
->Default: 1.0
+>Default: 0.2
 
 ---
 

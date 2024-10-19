@@ -74,6 +74,6 @@ Blue chanel for the color of snow coverage
 
 Snow accumulation on the floor during snowstorms.
 
->Default: true
+>Default: false
 
 ---
