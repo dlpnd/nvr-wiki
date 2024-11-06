@@ -124,7 +124,7 @@ Scale ambient lighting.
 
 Scale non-ambient lighting (sun or spotlights).
 
->Default: 1.5
+>Default: 1.0
 
 ---
 

@@ -4,127 +4,103 @@
 
 ## Main
 
-### Treshold
-
-treshold value above which lights will bloom
-
->Default: 0.0
-
----
-
-### Scale
-
-scale the brightness of the bloom
-
->Default: 1.8
-
----
-
-### Strength
-
-power of the bloom when applied
-
->Default: 2.0
-
----
-
 ### Blending
 
-How much of the bloom is visible
+Blending between the base and bloom. Low values are preferable. Works for NVR and vanilla.
 
 >Default: 0.04
 
 ---
 
-### BloomExponent
+### Strength
 
-Makes the bloom more spread out or more focused
+Scales the bloom. Works for NVR and vanilla.
 
 >Default: 1.0
+
+---
+
+### Passes
+
+Passes to apply, 2-8.
+
+>Default: 8
+
+---
+
+### PassBlending
+
+0: Use additive blending, 0-1: Linear blending coefficient.
+
+>Default: 0.0
 
 ---
 
 ## Night
 
-### Treshold
-
-treshold value above which lights will bloom
-
->Default: 0.0
-
----
-
-### Scale
-
-scale the brightness of the bloom
-
->Default: 1.8
-
----
-
-### Strength
-
-power of the bloom when applied
-
->Default: 2.0
-
----
-
 ### Blending
 
-How much of the bloom is visible
+Blending between the base and bloom. Low values are preferable. Works for NVR and vanilla.
 
 >Default: 0.04
 
 ---
 
-### BloomExponent
+### Strength
 
-Makes the bloom more spread out or more focused
+Scales the bloom. Works for NVR and vanilla.
 
 >Default: 1.0
 
 ---
 
-## Interiors
+### Passes
 
-### Treshold
+Passes to apply, 2-8.
 
-treshold value above which lights will bloom
+>Default: 8
+
+---
+
+### PassBlending
+
+0: Use additive blending, 0-1: Linear blending coefficient.
 
 >Default: 0.0
 
 ---
 
-### Scale
+## Interiors
 
-scale the brightness of the bloom
+### Blending
 
->Default: 0.31
+Blending between the base and bloom. Low values are preferable. Works for NVR and vanilla.
+
+>Default: 0.04
 
 ---
 
 ### Strength
 
-power of the bloom when applied
+Scales the bloom. Works for NVR and vanilla.
 
->Default: 2.0
-
----
-
-### Blending
-
-How much of the bloom is visible
-
->Default: 0.2
+>Default: 1.0
 
 ---
 
-### BloomExponent
+### Passes
 
-Makes the bloom more spread out or more focused
+Passes to apply, 2-8.
 
->Default: 0.9
+>Default: 8
+
+---
+
+### PassBlending
+
+0: Use additive blending, 0-1: Linear blending coefficient.
+
+>Default: 0.0
 
 ---
 

@@ -1,4 +1,3 @@
-
 [_Main.CameraMode.Main]
 ChasingFirst = false    # Use Chasing camera in first person.
 ChasingThird = false    # Use Chasing camera in third person.
@@ -21,10 +20,10 @@ OffsetZ = 5.0
 CompileEffects = 2      # 1 to always recompile, 2 to recompile newer versions.
 CompileShaders = 2      # 1 to always recompile, 2 to recompile newer versions.
 DebugMode = false       # Enables debug features like capture shaders and print shadowmaps.
-DebugVar1 = 1.0         # Custom variable used when developing shaders.
-DebugVar2 = 1.0         # Custom variable used when developing shaders.
-DebugVar3 = 1.0         # Custom variable used when developing shaders.
-DebugVar4 = 1.0         # Custom variable used when developing shaders.
+DebugVar1 = 0.0         # Custom variable used when developing shaders.
+DebugVar2 = 0.0         # Custom variable used when developing shaders.
+DebugVar3 = 0.0         # Custom variable used when developing shaders.
+DebugVar4 = 0.0        # Custom variable used when developing shaders.
 TraceShaders = 25       # Keyboard shortcut to print used shaders list to the log.
 
 [_Main.FlyCam.Main]
@@ -160,29 +159,25 @@ Enabled = false
 [_Shaders.Bloom]
 
 [_Shaders.Bloom.Main]
-Treshold = 0.0                          # treshold value above which lights will bloom
-Scale = 1.8                             # scale the brightness of the bloom
-Strength = 2.0                          # power of the bloom when applied
-Blending = 0.04                         # How much of the bloom is visible
-BloomExponent = 1.0                     # Makes the bloom more spread out or more focused
+Blending = 0.04                         # Blending between the base and bloom. Low values are preferable. Works for NVR and vanilla.
+Strength = 1.0                          # Scales the bloom. Works for NVR and vanilla.
+Passes = 8                              # Passes to apply, 2-8.
+PassBlending = 0.0                      # 0: Use additive blending, 0-1: Linear blending coefficient.
 
 [_Shaders.Bloom.Night]
-Treshold = 0.0                          # treshold value above which lights will bloom
-Scale = 1.8                             # scale the brightness of the bloom
-Strength = 2.0                          # power of the bloom when applied
-Blending = 0.04                          # How much of the bloom is visible
-BloomExponent = 1.0                     # Makes the bloom more spread out or more focused
+Blending = 0.04                         # Blending between the base and bloom. Low values are preferable. Works for NVR and vanilla.
+Strength = 1.0                          # Scales the bloom. Works for NVR and vanilla.
+Passes = 8                              # Passes to apply, 2-8.
+PassBlending = 0.0                      # 0: Use additive blending, 0-1: Linear blending coefficient.
 
 [_Shaders.Bloom.Interiors]
-Treshold = 0.0                          # treshold value above which lights will bloom
-Scale = 0.31                            # scale the brightness of the bloom
-Strength = 2.0                          # power of the bloom when applied
-Blending = 0.2                          # How much of the bloom is visible
-BloomExponent = 0.9                     # Makes the bloom more spread out or more focused
+Blending = 0.04                         # Blending between the base and bloom. Low values are preferable. Works for NVR and vanilla.
+Strength = 1.0                          # Scales the bloom. Works for NVR and vanilla.
+Passes = 8                              # Passes to apply, 2-8.
+PassBlending = 0.0                      # 0: Use additive blending, 0-1: Linear blending coefficient.
 
 [_Shaders.Bloom.Status]
 Enabled = true                          # Replace the vanilla bloom. Requires tonemapping shader to be applied. Also impacts Dirt Lens and Rain shaders
-
 
 [_Shaders.BloomLegacy.Exteriors]
 BloomIntensity = 1.4
@@ -509,32 +504,39 @@ GaussianWeight = 6.0
 Enabled = false                      # Blur in direction of the camera when turning. 
 
 [_Shaders.PBR.Main]
-Roughness = 1.0
-Metallicness = 0.0
-AmbientScale = 3.0
-LightingScale = 1.0
-Saturation = 1.5
+Roughness = 1.0                      # Roughness scale.
+Metallicness = 0.0                   # Metalicness scale - unused, no metalic maps yet.
+AmbientScale = 1.0                   # Ambient lighting scale.
+LightingScale = 1.0                  # Directional and point light scale.
+Saturation = 1.0                     # Color saturation.
 
 [_Shaders.PBR.Rain]
-Roughness = 1.0
-Metallicness = 0.0
-AmbientScale = 3.0
-LightingScale = 1.0
-Saturation = 0.7
+Roughness = 1.0                      # Roughness scale.
+Metallicness = 0.0                   # Metalicness scale - unused, no metalic maps yet.
+AmbientScale = 1.0                   # Ambient lighting scale.
+LightingScale = 1.0                  # Directional and point light scale.
+Saturation = 1.0                     # Color saturation.
 
 [_Shaders.PBR.Night]
-Roughness = 1.0
-Metallicness = 0.0
-AmbientScale = 5.0
-LightingScale = 1.0
-Saturation = 1.0
+Roughness = 1.0                      # Roughness scale.
+Metallicness = 0.0                   # Metalicness scale - unused, no metalic maps yet.
+AmbientScale = 1.0                   # Ambient lighting scale.
+LightingScale = 1.0                  # Directional and point light scale.
+Saturation = 1.0                     # Color saturation.
 
 [_Shaders.PBR.NightRain]
-Roughness = 1.0
-Metallicness = 0.0
-AmbientScale = 2.6
-LightingScale = 1.0
-Saturation = 1.0
+Roughness = 1.0                      # Roughness scale.
+Metallicness = 0.0                   # Metalicness scale - unused, no metalic maps yet.
+AmbientScale = 1.0                   # Ambient lighting scale.
+LightingScale = 1.0                  # Directional and point light scale.
+Saturation = 1.0                     # Color saturation.
+
+[_Shaders.PBR.Interiors]
+Roughness = 1.0                      # Roughness scale.
+Metallicness = 0.0                   # Metalicness scale - unused, no metalic maps yet.
+AmbientScale = 1.0                   # Ambient lighting scale.
+LightingScale = 1.0                  # Directional and point light scale.
+Saturation = 1.0                     # Color saturation.
 
 [_Shaders.PBR.Status]
 Enabled = false                      # Adds PBR specular formula to object shaders
@@ -794,7 +796,7 @@ TerrainSaturation = 1.0             # Control terrain saturation.
 Roughness = 1.0                     # Scale texture roughness, higher roughness decreases specular.
 Metallicness = 0.0                  # Add metallicness.
 AmbientScale = 1.0                  # Scale ambient lighting.
-LightingScale = 1.5                 # Scale non-ambient lighting (sun or spotlights).
+LightingScale = 1.0                 # Scale non-ambient lighting (sun or spotlights).
 TerrainSaturation = 1.0             # Control terrain saturation.
 
 [_Shaders.Terrain.NightRain]

@@ -140,7 +140,7 @@ Enables debug features like capture shaders and print shadowmaps.
 
 Custom variable used when developing shaders.
 
->Default: 1.0
+>Default: 0.0
 
 ---
 
@@ -148,7 +148,7 @@ Custom variable used when developing shaders.
 
 Custom variable used when developing shaders.
 
->Default: 1.0
+>Default: 0.0
 
 ---
 
@@ -156,7 +156,7 @@ Custom variable used when developing shaders.
 
 Custom variable used when developing shaders.
 
->Default: 1.0
+>Default: 0.0
 
 ---
 
@@ -164,7 +164,7 @@ Custom variable used when developing shaders.
 
 Custom variable used when developing shaders.
 
->Default: 1.0
+>Default: 0.0
 
 ---
 
