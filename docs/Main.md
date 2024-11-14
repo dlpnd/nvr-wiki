@@ -312,7 +312,7 @@ Toggle rendering of some effects in HDR before the game image space effects (can
 
 #### InvertedDepth
 
-Toggle to ensure compatibility with inverted depth mod.
+Toggle to invert the depth buffer, fixing Z-fighting (distant objects flickering). Forces Sky and Fog shaders.
 
 >Default: true
 
