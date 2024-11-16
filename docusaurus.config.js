@@ -6,6 +6,9 @@ const darkCodeTheme = require('prism-react-renderer').themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+  future: {
+    experimental_faster: true,
+  },
   title: 'New Vegas Reloaded',
   tagline: 'Wiki to keep all of the content',
   favicon: 'img/favicon.ico',
