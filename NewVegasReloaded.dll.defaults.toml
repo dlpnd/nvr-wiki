@@ -17,8 +17,8 @@ OffsetY = 15.0
 OffsetZ = 5.0
 
 [_Main.Develop.Main]
-CompileEffects = 2      # 1 to always recompile, 2 to recompile newer versions.
-CompileShaders = 2      # 1 to always recompile, 2 to recompile newer versions.
+CompileEffects = 1      # 1 to always recompile, 2 to recompile newer versions.
+CompileShaders = 1      # 1 to always recompile, 2 to recompile newer versions.
 DebugMode = false       # Enables debug features like capture shaders and print shadowmaps.
 DebugVar1 = 0.0         # Custom variable used when developing shaders.
 DebugVar2 = 0.0         # Custom variable used when developing shaders.
@@ -56,6 +56,7 @@ InvertedDepth = true        # Toggle to invert the depth buffer, fixing Z-fighti
 ReplaceIntro = false        # Controls rendering of the main menu custom video.
 ScreenshotKey = 87          # Keycode for custom screenshot hotkey (removes HUD and saves as jpg).
 HDRScreenshot = false       # Save screenshots in fbx (use with DXVK HDR)
+SkipFog = true				# Removes vanilla fog, which is not compatible with NVR fog nor depth inversion.
 
 [_Main.Main.Precipitations]
 RemovePrecipitations = false   # Disables vanilla rain and other precipitations.
@@ -415,6 +416,13 @@ PointLightMultiplier = 1.0            # Experimental - modifies the strength of 
 
 [_Shaders.Tonemapping.Status]
 Enabled = true                        # Replaces vanilla HDR tonemapping shaders with custom ones.
+
+
+[_Shaders.SMAA.Main]
+EdgeDetection = 0                     # Edge detection algorithm - 0:Luma (default), 1:Color, 2:Depth
+
+[_Shaders.SMAA.Status]
+Enabled = false						  # Apply SMAA.
 
 
 [_Shaders.ImageAdjust.Main]

@@ -116,7 +116,7 @@ Custom FOV in Camera Mode.
 
 1 to always recompile, 2 to recompile newer versions.
 
->Default: 2
+>Default: 1
 
 ---
 
@@ -124,7 +124,7 @@ Custom FOV in Camera Mode.
 
 1 to always recompile, 2 to recompile newer versions.
 
->Default: 2
+>Default: 1
 
 ---
 
@@ -339,6 +339,14 @@ Keycode for custom screenshot hotkey (removes HUD and saves as jpg).
 Save screenshots in fbx (use with DXVK HDR)
 
 >Default: false
+
+---
+
+#### SkipFog
+
+Removes vanilla fog, which is not compatible with NVR fog nor depth inversion.
+
+>Default: true
 
 ---
 
