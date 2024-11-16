@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunknvr_wiki=self.webpackChunknvr_wiki||[]).push([[1903],{1912:i=>{i.exports=JSON.parse('{"blogBasePath":"/nvr-wiki/blog","blogTitle":"Blog","authorsListPath":"/nvr-wiki/blog/authors"}')}}]);
