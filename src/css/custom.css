@@ -84,9 +84,12 @@ pre {
 .container {
   border-radius: 25px;
   animation: fadein 2s;
-  -moz-animation: fadein 2s; /* Firefox */
-  -webkit-animation: fadein 2s; /* Safari and Chrome */
-  -o-animation: fadein 2s; /* Opera */
+  -moz-animation: fadein 2s;
+  /* Firefox */
+  -webkit-animation: fadein 2s;
+  /* Safari and Chrome */
+  -o-animation: fadein 2s;
+  /* Opera */
 }
 
 /* Buttons */
@@ -112,41 +115,57 @@ pre {
 /* Fade In */
 .content-body {
   animation: fadein 2s;
-  -moz-animation: fadein 2s; /* Firefox */
-  -webkit-animation: fadein 2s; /* Safari and Chrome */
-  -o-animation: fadein 2s; /* Opera */
+  -moz-animation: fadein 2s;
+  /* Firefox */
+  -webkit-animation: fadein 2s;
+  /* Safari and Chrome */
+  -o-animation: fadein 2s;
+  /* Opera */
 }
 
 @keyframes fadein {
   from {
-      opacity:0;
+    opacity: 0;
   }
+
   to {
-      opacity:1;
+    opacity: 1;
   }
 }
-@-moz-keyframes fadein { /* Firefox */
+
+@-moz-keyframes fadein {
+
+  /* Firefox */
   from {
-      opacity:0;
+    opacity: 0;
   }
+
   to {
-      opacity:1;
+    opacity: 1;
   }
 }
-@-webkit-keyframes fadein { /* Safari and Chrome */
+
+@-webkit-keyframes fadein {
+
+  /* Safari and Chrome */
   from {
-      opacity:0;
+    opacity: 0;
   }
+
   to {
-      opacity:1;
+    opacity: 1;
   }
 }
-@-o-keyframes fadein { /* Opera */
+
+@-o-keyframes fadein {
+
+  /* Opera */
   from {
-      opacity:0;
+    opacity: 0;
   }
+
   to {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
@@ -172,24 +191,23 @@ pre {
   -webkit-user-select: none;
   touch-action: manipulation;
 }
+
 .getting-started-button:hover {
   transform: scale(1.1);
 }
 
 .getting-started-button:before {
   content: "";
-  background: linear-gradient(
-    45deg,
-    #ff0000,
-    #ff7300,
-    #fffb00,
-    #ff7300,
-    #555555,
-    #fffb00,
-    #fffb00,
-    #ff7300,
-    #ff0000
-  );
+  background: linear-gradient(45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #ff7300,
+      #555555,
+      #fffb00,
+      #fffb00,
+      #ff7300,
+      #ff0000);
   position: absolute;
   top: -2px;
   left: -2px;
@@ -208,9 +226,11 @@ pre {
   0% {
     background-position: 0 0;
   }
+
   50% {
     background-position: 400% 0;
   }
+
   100% {
     background-position: 0 0;
   }
@@ -229,7 +249,7 @@ pre {
 }
 
 .getting-started-button:link {
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 .gallery {

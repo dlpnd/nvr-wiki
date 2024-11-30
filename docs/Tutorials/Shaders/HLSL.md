@@ -106,13 +106,13 @@ The reason this isn't bundled in properly after downloading from Github, is beca
 ![09](/img/09.png "09")
 1. What we want to do here, is paste the relative path from the `.sln` file to where that DirectX SDK got put. Which is:
 
-    ```text
+    ```cmake
     packages\Microsoft.DXSDK.D3DX.9.29.952.8
     ```
 
     The result should be this:
 
-    ```text
+    ```cmake
     $(IncludePath);packages\Microsoft.DXSDK.D3DX.9.29.952.8
     ```
 
@@ -133,7 +133,7 @@ Here is the Github link for it, provided by 3an and CeeJay.dk: [LiftGammaGain.fx
 
 And here's the text of the shader, for posterity (link rot is a horrible reality!)
 
-```c++
+```hlsl
 /**
  * Lift Gamma Gain version 1.1
  * by 3an and CeeJay.dk
@@ -156,7 +156,6 @@ uniform float3 RGB_Gain < __UNIFORM_SLIDER_FLOAT3
     ui_label = "RGB Gain";
     ui_tooltip = "Adjust highlights for red, green and blue.";
 > = float3(1.0, 1.0, 1.0);
-
 
 #include "ReShade.fxh"
 
@@ -198,7 +197,7 @@ What we need to do, is the following:
 
 First thing we'll do, is remove the SweetFX UI stuff, and prepare the variables for NVR's system instead. This is easy, just heavy on the jargon. Here's the snippet we'll be working with:
 
-```c++
+```hlsl
 /**
  * Lift Gamma Gain version 1.1
  * by 3an and CeeJay.dk
@@ -255,7 +254,7 @@ technique LiftGammaGain
 
 We got 3 `float3` variables here. And what we'll do is condense them to 2 `float4`s, and 1 `float`. This looks icky to work with, which is why we'll create comments that explicitly state which each one does, so we don't get lost when working with the rest of this.
 
-```c++
+```hlsl
 float4 TESR_LGG_LiftGamma; //.x = LiftRed, .y = LiftGreen, .z = LiftBlue, .w = GammaRed
 float4 TESR_LGG_GammaGain; //.x = GammaGreen, .y = GammaBlue, .z = GainRed, .w = GainGreen
 float TESR_LGG_Gain; //GainBlue
@@ -265,7 +264,7 @@ Notice the prefixes. The first one is very important, `TESR_`, as this is used b
 
 By using // we are able to create comments. Which are sections of text ignored by the compiler, so we can write whatever we want on the same line after them. And a great use for these is keeping notes. For multi line comments, use /*at the beginning of the text/code you want to comment out, and then*/ at the end of it. For example:
 
-```c++
+```hlsl
 //My single line comment!
 /*
 //We can have comments inside multi-line comments too!
@@ -276,7 +275,7 @@ float3 += 1;
 
 After replacing those lines, next thing we see is this:
 
-```c++
+```hlsl
 #include "ReShade.fxh"
 ```
 
@@ -284,13 +283,13 @@ In this case, we can remove that, as we're not working with ReShade's actual fra
 
 Next we see the following function being declared, which has some intimidating text in it:
 
-```c++
+```hlsl
 float3 LiftGammaGainPass(float4 position : SV_Position, float2 texcoord : TexCoord) : SV_Target
 ```
 
 We can just switch that to:
 
-```c++
+```hlsl
 float3 GammaGain(VSOUT IN) : COLOR0
 ```
 
@@ -298,7 +297,7 @@ Isn't that lovely? Now for the code inside that function, what we need to do is 
 
 Before:
 
-```c++
+```hlsl
     float3 color = tex2D(ReShade::BackBuffer, texcoord).rgb;
     
     // -- Lift --
@@ -317,7 +316,7 @@ Before:
 
 After (with comments!):
 
-```c++
+```hlsl
 float3 GammaGain(VSOUT IN) : COLOR0
 {
     
@@ -343,7 +342,7 @@ float3 GammaGain(VSOUT IN) : COLOR0
 
 After, without comments:
 
-```c++
+```hlsl
 float3 GammaGain(VSOUT IN) : COLOR0
 {
     color = color * (1.5 - 0.5 * ) + 0.5 * TESR_LGG_LiftGamma.xyz - 0.5;
@@ -359,7 +358,7 @@ float3 GammaGain(VSOUT IN) : COLOR0
 
 Now, for the last code block in the shader, we have this:
 
-```c++
+```hlsl
 technique
 {
     pass
@@ -372,13 +371,13 @@ technique
 
 Luckily, since this is a simple shader, we don't have a mess of things here. And this is identical to what we need for NVR's shader. The important thing here is on this line:
 
-```c++
+```hlsl
 PixelShader  = compile ps_3_0 GammaGain();
 ```
 
 That function call at the end is what actually gets our shader code to run. And it has to be the same name as our function. Remember the main code block?
 
-```c++
+```hlsl
 float3 GammaGain(VSOUT IN) : COLOR0
 {
 ...
@@ -387,7 +386,7 @@ float3 GammaGain(VSOUT IN) : COLOR0
 
 That function we made, `GammaGain()` is what we need to use there. And we could rename it, so let's do that just to demonstrate. We'll rename it to `SweetFXGammaGain()`.
 
-```c++
+```hlsl
 float3 SweetFXGammaGain(VSOUT IN) : COLOR0
 {
 ...
@@ -407,7 +406,7 @@ After all is said and done, here is the shader with all our changes.
 
 With comments:
 
-```c++
+```hlsl
 /**
  * Lift Gamma Gain version 1.1
  * by 3an and CeeJay.dk
@@ -451,7 +450,7 @@ technique
 
 Without comments:
 
-```c++
+```hlsl
 /**
  * Lift Gamma Gain version 1.1
  * by 3an and CeeJay.dk
@@ -521,7 +520,7 @@ We'll also add a comment to it, which is done with # (unlike //, which is for C+
 
 Now let's add our variables to the .toml (steps 2 & 3). Remember those comments we made in the .hlsl file?
 
-```c++
+```hlsl
 float4 TESR_LGG_LiftGamma; //.x = LiftRed, .y = LiftGreen, .z = LiftBlue, .w = GammaRed
 float4 TESR_LGG_GammaGain; //.x = GammaGreen, .y = GammaBlue, .z = GainRed, .w = GainGreen
 float TESR_LGG_Gain; //GainBlue
@@ -623,7 +622,7 @@ What we're looking at, is the C++ side of the shader's variables. `D3DXVECTOR4` 
 
 In our shader, we made two float4's, and one float. Remember?
 
-```c++
+```hlsl
 float4 TESR_LGG_LiftGamma; //.x = LiftRed, .y = LiftGreen, .z = LiftBlue, .w = GammaRed
 float4 TESR_LGG_GammaGain; //.x = GammaGreen, .y = GammaBlue, .z = GainRed, .w = GainGreen
 float TESR_LGG_Gain; //GainBlue
@@ -631,7 +630,7 @@ float TESR_LGG_Gain; //GainBlue
 
 So if we do a bit of translation here, our struct should be:
 
-```c++
+```cpp
 struct LiftGammaGainStruct {
     D3DXVECTOR4  LiftGamma;
     D3DXVECTOR4  GammaGain;
@@ -649,7 +648,7 @@ That'll do. Now scroll down, we now need to declare it in the end section of the
 
 All we have to do, is declare the effect as a type of LiftGammaGainStruct. Why? Dunno, but it's what we gotta do for things to work. It means something in pro programmer patter, but that's not where we're at. So just chuck it in there, because we have to.
 
-```c++
+```cpp
 LiftGammaGainStruct  LiftGammaGain;
 ```
 
@@ -665,7 +664,7 @@ This is also a very easy thing. All we have to do, is add a pointer to the thing
 
 ![21](/img/21.png "21")
 
-```c++
+```cpp
 EffectRecord*  LiftGammaGain;
 ```
 
@@ -698,7 +697,7 @@ First off, unless your shader does not have day/night nor interior/exterior, you
 
 See where the bloom shader is placed? Let's make our if check right above it.
 
-```c++
+```cpp
 if (Effects.LiftGammaGain->Enabled)
 {
 
@@ -711,7 +710,7 @@ Why do we use -> Enabled? It's a C++ thing, I don't quite get it either, as all 
 
 This looks very intimidating. And it should, because it is. Let's break it down. Remember those three variables we made in the shader? Here's a refresher.
 
-```c++
+```hlsl
 float4 TESR_LGG_LiftGamma; //.x = LiftRed, .y = LiftGreen, .z = LiftBlue, .w = GammaRed
 
 float4 TESR_LGG_GammaGain; //.x = GammaGreen, .y = GammaBlue, .z = GainRed, .w = GainGreen
@@ -735,7 +734,7 @@ And we have the same value names inside each of them, as it makes copy-pasting e
 
 ![26](/img/26.png "26")
 
-```c++
+```cpp
 ShaderConst.LiftGammaGain.LiftGamma.x = lerp(
     TheSettingManager->GetSettingF("Shaders.SweetFXLiftGammaGain.Night", "LiftRed"),
     TheSettingManager->GetSettingF("Shaders.SweetFXLiftGammaGain.Day", "LiftRed"),
@@ -759,7 +758,7 @@ Now we have to do this for all three sections' settings. Here is how the day and
 
 ![27](/img/27.png "27")
 
-```c++
+```cpp
 if (isExterior) {
     
     ShaderConst.LiftGammaGain.LiftGamma.x = lerp(
@@ -831,7 +830,7 @@ Now, luckily for the interior settings, we didn't add day/night separation. So w
 
 ![28](/img/28.png "28")
 
-```c++
+```cpp
 else
 {
     ShaderConst.LiftGammaGain.LiftGamma.x = TheSettingManager->GetSettingF("Shaders.SweetFXLiftGammaGain.Interior", "LiftRed");
@@ -854,7 +853,7 @@ Whew, we're done with that section of the code. I'll have to zoom out a bunch to
 
 And here is the entire code block:
 
-```c++
+```cpp
 if (Effects.LiftGammaGain->Enabled)
 {
 

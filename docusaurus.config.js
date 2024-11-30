@@ -1,8 +1,9 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer').themes.github;
-const darkCodeTheme = require('prism-react-renderer').themes.dracula;
+const { themes } = require('prism-react-renderer');
+const lightTheme = themes.github;
+const darkTheme = themes.palenight;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -37,8 +38,7 @@ const config = {
 
   presets: [
     [
-      'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
+      '@docusaurus/preset-classic',
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
@@ -55,7 +55,7 @@ const config = {
             'https://github.com/dlpnd/nvr-wiki/tree/master/',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: ['./src/css/custom.css'],
         },
       }),
     ],
@@ -64,6 +64,13 @@ const config = {
   plugins: [
     'docusaurus-plugin-image-zoom', // can also just be 'image-zoom'
   ],
+  markdown: {
+    mdx1Compat: {
+      comments: true,
+      admonitions: true,
+      headingIds: true,
+    },
+  },
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -129,8 +136,9 @@ const config = {
         ],
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        additionalLanguages: ['ini', 'toml', 'bash', 'cpp', 'hlsl', 'cmake'],
+        theme: lightTheme,
+        darkTheme: darkTheme,
       },
       zoom: {
         selector: '.gallery img',

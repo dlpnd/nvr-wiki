@@ -19,10 +19,11 @@
     "wiki": "start https://dlpnd.github.io/nvr-wiki"
   },
   "dependencies": {
-    "@docusaurus/core": "^3.6.1",
-    "@docusaurus/faster": "^3.6.1",
-    "@docusaurus/preset-classic": "^3.6.1",
-    "@docusaurus/theme-search-algolia": "^3.6.1",
+    "@docusaurus/core": "^3.6.3",
+    "@docusaurus/faster": "^3.6.3",
+    "@docusaurus/preset-classic": "^3.6.3",
+    "@docusaurus/theme-search-algolia": "^3.6.3",
+    "@mdx-js/react": "^3.1.0",
     "clsx": "^2.1.1",
     "docusaurus-plugin-image-zoom": "^2.0.0",
     "prism-react-renderer": "^2.4.0",
@@ -30,8 +31,9 @@
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "^3.6.1",
-    "markdownlint-cli": "^0.42.0"
+    "@docusaurus/module-type-aliases": "^3.6.3",
+    "@docusaurus/types": "^3.6.3",
+    "markdownlint-cli": "^0.43.0"
   },
   "browserslist": {
     "production": [
@@ -46,6 +48,6 @@
     ]
   },
   "engines": {
-    "node": ">=22.5.1"
+    "node": ">=23.3.0"
   }
 }
