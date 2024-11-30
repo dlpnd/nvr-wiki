@@ -5,7 +5,7 @@ sidebar_position: 3
 # Gallery
 
 <div>
-    <!-- Mathieu -->
+    {/* Mathieu */}
     <h2><a href="https://github.com/mchaptel">Mathieu C</a></h2>
     <div className="gallery">
 
@@ -27,7 +27,7 @@ sidebar_position: 3
         </div>
     </div>
 
-    <!-- Sal -->
+    {/* Sal */}
     <h2><a href="https://salamand3r.fail/texture-guide">Salamand3r</a></h2>
     <div className="gallery">
 
@@ -54,7 +54,7 @@ sidebar_position: 3
         </div>
     </div>
 
-    <!-- Monk -->
+    {/* Monk */}
     <h2><a href="https://www.nexusmods.com/newvegas/users/43532772?tab=user+files">Psychoticmonk</a></h2>
     <div className="gallery">
 
@@ -78,7 +78,7 @@ sidebar_position: 3
         </div>
     </div>
 
-    <!-- Gosh -->
+    {/* Gosh */}
     <h2><a href="https://www.nexusmods.com/newvegas/users/110382718?tab=user+files">Gosh</a></h2>
     <div className="gallery">
 
@@ -96,7 +96,7 @@ sidebar_position: 3
         </div>
     </div>
 
-    <!-- Medik -->
+    {/* Medik */}
     <h2><a href="https://github.com/EddieEldridge">Medik</a></h2>
     <div className="gallery">
 

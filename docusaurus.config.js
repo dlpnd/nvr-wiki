@@ -66,9 +66,9 @@ const config = {
   ],
   markdown: {
     mdx1Compat: {
-      comments: true,
-      admonitions: true,
-      headingIds: true,
+      comments: false,
+      admonitions: false,
+      headingIds: false,
     },
   },
 
