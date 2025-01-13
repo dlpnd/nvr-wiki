@@ -288,27 +288,11 @@ Used for shadow frustum. Don't change this value.
 
 ---
 
-### ShadowMapResolution
-
-Resolution of the texture used to store the shadow maps. LOD map is twice this value. Needs restart to take effect.
-
->Default: 1024
-
----
-
 ### OrthoMapResolution
 
 Resolution of the texture used to store the ortho map.
 
 >Default: 1024
-
----
-
-### ShadowMode
-
-Shadow algorithm used. 1: Variance Shadow Maps, 2: unfiltered Exponenial Shadow Map, 3: filtered ESM.
-
->Default: 1
 
 ---
 
@@ -709,6 +693,40 @@ Wether to render screen space contact/detail shadows
 Max distance at which to compute screen space shadows
 
 >Default: 12000
+
+---
+
+## ShadowMaps
+
+### CascadeResolution
+
+Resolution used for shadow cascades. 0: 1024, 1: 1536, 2: 2048
+
+>Default: 2
+
+---
+
+### MSAA
+
+Enable multisample antialiasing for shadow maps.
+
+>Default: true
+
+---
+
+### Mipmaps
+
+DISABLED. Enable mipmaps for the shadow maps.
+
+>Default: false
+
+---
+
+### Anisotropy
+
+DISABLED. Anisotropic filteric for mipmaps, 0: disabled, 1: 8x, 2: 16x.
+
+>Default: 0
 
 ---
 
