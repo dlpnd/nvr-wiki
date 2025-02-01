@@ -14,7 +14,7 @@ SHADERS = "_Shaders"
 SHADERS_SAVE_LOCATION = f"./docs/{SHADERS[1:]}/"
 
 
-def save_file(filename: str, content: str, mode = "a") -> None:
+def save_file(filename: str, content: str, mode = "w") -> None:
     with open(f"{filename}.md", mode) as file:
         file.write(content)
 
@@ -36,9 +36,7 @@ def write_main_settings(main_config: dict[dict[str, dict[str, str]], dict[str, d
     main_settings_text += f"{HEADING[1]}Main Settings{NEW_LINE}"
 
     for menu_items, section_config in main_config.items():
-        # save_file(MAIN_SAVE_LOCATION, f"{HEADING[2]}{menu_items}{NEW_LINE}")
         main_settings_text += f"{HEADING[2]}{menu_items}{NEW_LINE}"
-        # save_file(MAIN_SAVE_LOCATION, UNDERLINE)
         main_settings_text += UNDERLINE
 
         individual_menu = section_config.items()
@@ -60,28 +58,30 @@ def write_main_settings(main_config: dict[dict[str, dict[str, str]], dict[str, d
 
 def write_shader_settings(shader_config: dict[dict[str, dict[str, str]], dict[str, dict[str, toml.decoder.CommentValue]]]) -> None:
     for menu_items, section_config in shader_config.items():
-        save_file(f"{SHADERS_SAVE_LOCATION}{menu_items}", "", "w")
-        save_file(f"{SHADERS_SAVE_LOCATION}{menu_items}", f"{HEADING[1]}{menu_items}{NEW_LINE}")
-        save_file(f"{SHADERS_SAVE_LOCATION}{menu_items}", UNDERLINE)
+
+        shader_text = ""
+        shader_text += f"{HEADING[1]}{menu_items}{NEW_LINE}"
+        shader_text += UNDERLINE
 
         individual_menu = section_config.items()
         for sub_menu, sub_menu_values in individual_menu:
-            save_file(f"{SHADERS_SAVE_LOCATION}{menu_items}", f"{HEADING[2]}{sub_menu}{NEW_LINE}")
+            shader_text += f"{HEADING[2]}{sub_menu}{NEW_LINE}"
 
             ini_config = sub_menu_values.items()
             for key, value in ini_config:
-                save_file(f"{SHADERS_SAVE_LOCATION}{menu_items}", f"{HEADING[3]}{key}{NEW_LINE}")
+                shader_text += f"{HEADING[3]}{key}{NEW_LINE}"
                 if isinstance(value, toml.decoder.CommentValue):
-                    save_file(f"{SHADERS_SAVE_LOCATION}{menu_items}", f"{value.comment[3:]}{NEW_LINE}")
-                    save_file(f"{SHADERS_SAVE_LOCATION}{menu_items}", f"{DEFAULT}{get_str(value.val)}{NEW_LINE}{UNDERLINE}")
+                    shader_text += f"{value.comment[3:]}{NEW_LINE}"
+                    shader_text += f"{DEFAULT}{get_str(value.val)}{NEW_LINE}{UNDERLINE}"
                 else:
-                    save_file(f"{SHADERS_SAVE_LOCATION}{menu_items}", f"{DEFAULT}{get_str(value)}{NEW_LINE}{UNDERLINE}")
-
+                    shader_text += f"{DEFAULT}{get_str(value)}{NEW_LINE}{UNDERLINE}"
+            
+        save_file(f"{SHADERS_SAVE_LOCATION}{menu_items}", shader_text[:-1])
 
 def main() -> int:
     nvr_config_toml = toml.load("NewVegasReloaded.dll.defaults.toml", decoder=toml.TomlPreserveCommentDecoder())
     write_main_settings(nvr_config_toml[MAIN])
-    # write_shader_settings(nvr_config_toml[SHADERS])
+    write_shader_settings(nvr_config_toml[SHADERS])
     return 0
 
 if __name__ == '__main__':
