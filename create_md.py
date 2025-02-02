@@ -16,12 +16,13 @@ def save_file(filename: str, content: str, mode = "w") -> None:
         file.write(content)
 
 def get_str(value: bool | int | float | str | toml.decoder.CommentValue) -> str:
-    if isinstance(value, (bool, toml.decoder.CommentValue)):
-        return str(value).lower()
-    elif isinstance(value, (int, float)):
-        return str(value)
-    elif isinstance(value, str):
-        return f"'{value}'"
+    match value:
+        case bool() | toml.decoder.CommentValue():
+            return str(value).lower()
+        case int() | float():
+            return str(value)
+        case str():
+            return f"'{value}'"
 
 def write_main_settings(main_config: dict[dict[str, dict[str, str]], dict[str, dict[str, toml.decoder.CommentValue]]]) -> None:
     with open("dx.md", "r") as file:
