@@ -566,100 +566,95 @@ VerticalScale = 1.6                  # Multiplier for the length of the drops/st
 [_Shaders.Precipitations.Status]
 Enabled = true                       # Rain effect that is blocked by objects above and refracts light.
 
-[_Shaders.ShadowsExteriors.Far]
-Activators = false                   # Wether to include objects with "Activator" flag when rendering ps.
-Actors = true                        # Wether to include objects with "Actors" flag when rendering shadowmaps.
-AlphaEnabled = true                  # Wether to take into account alpha of objects when rendering shadowmaps.
-Apparatus = false                    # Wether to include objects with "Apparatus" flag when rendering shadowmaps.
-Books = false                        # Wether to include objects with "Books" flag when rendering shadowmaps.
-Containers = true                    # Wether to include objects with "Containers" flag when rendering shadowmaps.
-Doors = true                         # Wether to include objects with "Doors" flag when rendering shadowmaps.
-Furniture = true                     # Wether to include objects with "Furniture" flag when rendering shadowmaps.
-Lod = false                          # Wether to include objects with "Lod" flag when rendering shadowmaps.
-MinRadius = 10.0                     # Wether to include objects with a radius of less than x pixels on the screen in the shadowmaps.
-Misc = true                          # Wether to include objects with misc flags when rendering shadowmaps.
-Statics = true                       # Wether to include objects with "Statics" flag when rendering shadowmaps.
-Terrain = true                       # Wether to include Terrain when rendering shadowmaps.
-Trees = true                         # Wether to include Trees when rendering shadowmaps.
-
-[_Shaders.ShadowsExteriors.Lod]
-Activators = false                   # Wether to include objects with "Activator" flag when rendering shadowmaps.
-Actors = false                       # Wether to include objects with "Actors" flag when rendering shadowmaps.
-AlphaEnabled = false                 # Wether to take into account alpha of objects when rendering shadowmaps.
-Apparatus = false                    # Wether to include objects with "Apparatus" flag when rendering shadowmaps.
-Books = false                        # Wether to include objects with "Books" flag when rendering shadowmaps.
-Containers = false                   # Wether to include objects with "Containers" flag when rendering shadowmaps.
-Doors = true                         # Wether to include objects with "Doors" flag when rendering shadowmaps.
-Furniture = false                    # Wether to include objects with "Furniture" flag when rendering shadowmaps.
-Lod = false                          # Wether to include objects with "Lod" flag when rendering shadowmaps.
-MinRadius = 100.0                    # Wether to include objects with a radius of less than x pixels on the screen in the shadowmaps.
-Misc = false                         # Wether to include objects with misc flags when rendering shadowmaps.
-Statics = true                       # Wether to include objects with "Statics" flag when rendering shadowmaps.
-Terrain = true                       # Wether to include Terrain when rendering shadowmaps.
-Trees = true                         # Wether to include Trees when rendering shadowmaps.
-
 [_Shaders.ShadowsExteriors.Main]
-PostProcess = true                   # Wether to render shadows as a post process effect. Currently the only supported mode.
-BlurShadowMaps = true                # Blur shadow maps for soft shadows.
-Darkness = 0.65                      # Darkness of shadows.
+Quality = 4                          # Quality preset - 0: Low, 1: Medium, 2: High, 3: Full, 4: Custom
 Enabled = true                       # Enable sun shadows using rendered shadow maps.
+Darkness = 0.75                      # Darkness of shadows.
 NightMinDarkness = 0.35              # Darkness of shadows during dark moon phase. Set to 0 to disable shadows completely when there is no moon.
-Quality = 2                          # Not used.
-ShadowMapFarPlane = 32768            # Used for shadow frustum. Don't change this value.
 OrthoMapResolution = 1024            # Resolution of the texture used to store the ortho map.
-ShadowsRadius = 8000                 # Max distance for rendering of shadow from the camera.
 OrthoRadius = 8000                   # Max distance for rendering of ortho map.
-UsePointShadowsDay = false           # Wether to cast shadows from point lights. Requires a slight darkening of the entire screen.
-UsePointShadowsNight = true          # Wether to cast shadows from point lights during Nights. Requires a slight darkening of the entire screen.
+UsePointShadowsDay = false           # Whether to cast shadows from point lights. Requires a slight darkening of the entire screen.
+UsePointShadowsNight = false         # Whether to cast shadows from point lights during Nights. Requires a slight darkening of the entire screen.
 
-[_Shaders.ShadowsExteriors.Middle]
-Activators = false                   # Wether to include objects with "Activator" flag when rendering shadowmaps.
-Actors = true                        # Wether to include objects with "Actors" flag when rendering shadowmaps.
-AlphaEnabled = true                  # Wether to take into account alpha of objects when rendering shadowmaps.
-Apparatus = false                    # Wether to include objects with "Apparatus" flag when rendering shadowmaps.
-Books = false                        # Wether to include objects with "Books" flag when rendering shadowmaps.
-Containers = true                    # Wether to include objects with "Containers" flag when rendering shadowmaps.
-Doors = true                         # Wether to include objects with "Doors" flag when rendering shadowmaps.
-Furniture = true                     # Wether to include objects with "Furniture" flag when rendering shadowmaps.
-Lod = false                          # Wether to include objects with "Lod" flag when rendering shadowmaps.
-MinRadius = 10.0                     # Wether to include objects with a radius of less than x pixels on the screen in the shadowmaps.
-Misc = true                          # Wether to include objects with misc flags when rendering shadowmaps.
-Statics = true                       # Wether to include objects with "Statics" flag when rendering shadowmaps.
-Terrain = true                       # Wether to include Terrain when rendering shadowmaps.
-Trees = true                         # Wether to include Trees when rendering shadowmaps.
+[_Shaders.ShadowsExteriors.FormsNear]
+Activators = true                    # Whether to include objects with "Activator" flag when rendering shadowmaps.
+Actors = true                        # Whether to include objects with "Actors" flag when rendering shadowmaps.
+AlphaEnabled = true                  # Whether to take into account alpha of objects when rendering shadowmaps.
+Apparatus = false                    # Whether to include objects with "Apparatus" flag when rendering shadowmaps.
+Books = false                        # Whether to include objects with "Books" flag when rendering shadowmaps.
+Containers = true                    # Whether to include objects with "Containers" flag when rendering shadowmaps.
+Doors = true                         # Whether to include objects with "Doors" flag when rendering shadowmaps.
+Furniture = true                     # Whether to include objects with "Furniture" flag when rendering shadowmaps.
+Lod = false                          # Whether to include objects with "Lod" flag when rendering shadowmaps.
+MinRadius = 1.0                      # Whether to include objects with a radius of less than x pixels on the screen in the shadowmaps.
+Misc = true                          # Whether to include objects with misc flags when rendering shadowmaps.
+Statics = true                       # Whether to include objects with "Statics" flag when rendering shadowmaps.
+Terrain = true                       # Whether to include Terrain when rendering shadowmaps.
+Trees = true                         # Whether to include Trees when rendering shadowmaps.
 
-[_Shaders.ShadowsExteriors.Near]
-Activators = false                   # Wether to include objects with "Activator" flag when rendering shadowmaps.
-Actors = true                        # Wether to include objects with "Actors" flag when rendering shadowmaps.
-AlphaEnabled = true                  # Wether to take into account alpha of objects when rendering shadowmaps.
-Apparatus = false                    # Wether to include objects with "Apparatus" flag when rendering shadowmaps.
-Books = false                        # Wether to include objects with "Books" flag when rendering shadowmaps.
-Containers = true                    # Wether to include objects with "Containers" flag when rendering shadowmaps.
-Doors = true                         # Wether to include objects with "Doors" flag when rendering shadowmaps.
-Furniture = true                     # Wether to include objects with "Furniture" flag when rendering shadowmaps.
-Lod = false                          # Wether to include objects with "Lod" flag when rendering shadowmaps.
-MinRadius = 10.0                     # Wether to include objects with a radius of less than x pixels on the screen in the shadowmaps.
-Misc = true                          # Wether to include objects with misc flags when rendering shadowmaps.
-Statics = true                       # Wether to include objects with "Statics" flag when rendering shadowmaps.
-Terrain = true                       # Wether to include Terrain when rendering shadowmaps.
-Trees = true                         # Wether to include Trees when rendering shadowmaps.
+[_Shaders.ShadowsExteriors.FormsMiddle]
+Activators = true                    # Whether to include objects with "Activator" flag when rendering shadowmaps.
+Actors = true                        # Whether to include objects with "Actors" flag when rendering shadowmaps.
+AlphaEnabled = true                  # Whether to take into account alpha of objects when rendering shadowmaps.
+Apparatus = false                    # Whether to include objects with "Apparatus" flag when rendering shadowmaps.
+Books = false                        # Whether to include objects with "Books" flag when rendering shadowmaps.
+Containers = true                    # Whether to include objects with "Containers" flag when rendering shadowmaps.
+Doors = true                         # Whether to include objects with "Doors" flag when rendering shadowmaps.
+Furniture = true                     # Whether to include objects with "Furniture" flag when rendering shadowmaps.
+Lod = false                          # Whether to include objects with "Lod" flag when rendering shadowmaps.
+MinRadius = 1.0                      # Whether to include objects with a radius of less than x pixels on the screen in the shadowmaps.
+Misc = true                          # Whether to include objects with misc flags when rendering shadowmaps.
+Statics = true                       # Whether to include objects with "Statics" flag when rendering shadowmaps.
+Terrain = true                       # Whether to include Terrain when rendering shadowmaps.
+Trees = true                         # Whether to include Trees when rendering shadowmaps.
 
+[_Shaders.ShadowsExteriors.FormsFar]
+Activators = true                    # Whether to include objects with "Activator" flag when rendering shadowmaps.
+Actors = true                        # Whether to include objects with "Actors" flag when rendering shadowmaps.
+AlphaEnabled = true                  # Whether to take into account alpha of objects when rendering shadowmaps.
+Apparatus = false                    # Whether to include objects with "Apparatus" flag when rendering shadowmaps.
+Books = false                        # Whether to include objects with "Books" flag when rendering shadowmaps.
+Containers = true                    # Whether to include objects with "Containers" flag when rendering shadowmaps.
+Doors = true                         # Whether to include objects with "Doors" flag when rendering shadowmaps.
+Furniture = true                     # Whether to include objects with "Furniture" flag when rendering shadowmaps.
+Lod = true                           # Whether to include objects with "Lod" flag when rendering shadowmaps.
+MinRadius = 10.0                     # Whether to include objects with a radius of less than x pixels on the screen in the shadowmaps.
+Misc = true                          # Whether to include objects with misc flags when rendering shadowmaps.
+Statics = true                       # Whether to include objects with "Statics" flag when rendering shadowmaps.
+Terrain = true                       # Whether to include Terrain when rendering shadowmaps.
+Trees = true                         # Whether to include Trees when rendering shadowmaps.
 
-[_Shaders.ShadowsExteriors.Ortho]
-Activators = false                   # Wether to include objects with "Activator" flag when rendering ortho map.
-Actors = false                       # Wether to include objects with "Actors" flag when rendering ortho map.
-AlphaEnabled = false                 # Wether to take into account alpha of objects when rendering ortho map.
-Apparatus = false                    # Wether to include objects with "Apparatus" flag when rendering ortho map.
-Books = false                        # Wether to include objects with "Books" flag when rendering ortho map.
-Containers = false                   # Wether to include objects with "Containers" flag when rendering ortho map.
-Doors = false                        # Wether to include objects with "Doors" flag when rendering ortho map.
-Furniture = false                    # Wether to include objects with "Furniture" flag when rendering ortho map.
-Lod = false                          # Wether to include objects with "Lod" flag when rendering ortho map.
-MinRadius = 100.0                    # Wether to include objects with a radius of less than x pixels on the screen in the ortho map.
-Misc = false                         # Wether to include objects with misc flags when rendering ortho map.
-Statics = true                       # Wether to include objects with "Statics" flag when rendering ortho map.
-Terrain = true                       # Wether to include Terrain when rendering ortho map.
-Trees = true                         # Wether to include Trees when rendering ortho map.
+[_Shaders.ShadowsExteriors.FormsLod]
+Activators = false                   # Whether to include objects with "Activator" flag when rendering shadowmaps.
+Actors = false                       # Whether to include objects with "Actors" flag when rendering shadowmaps.
+AlphaEnabled = true                  # Whether to take into account alpha of objects when rendering shadowmaps.
+Apparatus = false                    # Whether to include objects with "Apparatus" flag when rendering shadowmaps.
+Books = false                        # Whether to include objects with "Books" flag when rendering shadowmaps.
+Containers = false                   # Whether to include objects with "Containers" flag when rendering shadowmaps.
+Doors = true                         # Whether to include objects with "Doors" flag when rendering shadowmaps.
+Furniture = false                    # Whether to include objects with "Furniture" flag when rendering shadowmaps.
+Lod = true                           # Whether to include objects with "Lod" flag when rendering shadowmaps.
+MinRadius = 10.0                     # Whether to include objects with a radius of less than x pixels on the screen in the shadowmaps.
+Misc = false                         # Whether to include objects with misc flags when rendering shadowmaps.
+Statics = true                       # Whether to include objects with "Statics" flag when rendering shadowmaps.
+Terrain = true                       # Whether to include Terrain when rendering shadowmaps.
+Trees = true                         # Whether to include Trees when rendering shadowmaps.
+
+[_Shaders.ShadowsExteriors.FormsOrtho]
+Activators = false                   # Whether to include objects with "Activator" flag when rendering ortho map.
+Actors = false                       # Whether to include objects with "Actors" flag when rendering ortho map.
+AlphaEnabled = false                 # Whether to take into account alpha of objects when rendering ortho map.
+Apparatus = false                    # Whether to include objects with "Apparatus" flag when rendering ortho map.
+Books = false                        # Whether to include objects with "Books" flag when rendering ortho map.
+Containers = false                   # Whether to include objects with "Containers" flag when rendering ortho map.
+Doors = false                        # Whether to include objects with "Doors" flag when rendering ortho map.
+Furniture = false                    # Whether to include objects with "Furniture" flag when rendering ortho map.
+Lod = false                          # Whether to include objects with "Lod" flag when rendering ortho map.
+MinRadius = 1.0						 # Whether to include objects with a radius of less than x pixels on the screen in the ortho map.
+Misc = true                          # Whether to include objects with misc flags when rendering ortho map.
+Statics = true                       # Whether to include objects with "Statics" flag when rendering ortho map.
+Terrain = true                       # Whether to include Terrain when rendering ortho map.
+Trees = true                         # Whether to include Trees when rendering ortho map.
 
 [_Shaders.ShadowsExteriors.ScreenSpace]
 BlurRadius = 5.0                     # Blur strength for denoising screenspace shadows
@@ -668,15 +663,18 @@ RenderDistance = 12000               # Max distance at which to compute screen s
 
 [_Shaders.ShadowsExteriors.ShadowMaps]
 CascadeResolution = 2				 # Resolution used for shadow cascades. 0: 1024, 1: 1536, 2: 2048
+Prefilter = true					 # Enable prefiltering the shadow maps. Prefiltering is a blur.
 MSAA = true							 # Enable multisample antialiasing for shadow maps.
 Mipmaps = false						 # DISABLED. Enable mipmaps for the shadow maps.
 Anisotropy = 0						 # DISABLED. Anisotropic filteric for mipmaps, 0: disabled, 1: 8x, 2: 16x.
+Distance = 0.02                      # [0.001-1.000] Distance to render shadows for, a fraction of the full depth range. Keep low.
+CascadeLambda = 0.9					 # [0.0-1.0] Controls how cascades are split, higher value means nearer cascades get higher resolution.
+LimitFrequency = false				 # Limit the update frequency of the furthest cascade (once per two frames).
 
 [_Shaders.ShadowsExteriors.Status]
 Enabled = true                       # Post process sun and pointlights shadows in exteriors.
 
 [_Shaders.ShadowsInteriors.Main]
-PostProcess = true                   # Wether to render shadows as a post process effect. Currently the only supported mode.
 UseCastShadowFlag = false            # Objects without the cast shadow flag will not be rendered to the shadow maps
 Activators = true                    # Wether to include objects with "Activator" flag when rendering shadowmaps.
 Actors = true                        # Wether to include objects with "Actors" flag when rendering shadowmaps.

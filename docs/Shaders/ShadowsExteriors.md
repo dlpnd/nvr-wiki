@@ -2,257 +2,13 @@
 
 ---
 
-## Far
-
-### Activators
-
-Wether to include objects with "Activator" flag when rendering ps.
-
->Default: false
-
----
-
-### Actors
-
-Wether to include objects with "Actors" flag when rendering shadowmaps.
-
->Default: true
-
----
-
-### AlphaEnabled
-
-Wether to take into account alpha of objects when rendering shadowmaps.
-
->Default: true
-
----
-
-### Apparatus
-
-Wether to include objects with "Apparatus" flag when rendering shadowmaps.
-
->Default: false
-
----
-
-### Books
-
-Wether to include objects with "Books" flag when rendering shadowmaps.
-
->Default: false
-
----
-
-### Containers
-
-Wether to include objects with "Containers" flag when rendering shadowmaps.
-
->Default: true
-
----
-
-### Doors
-
-Wether to include objects with "Doors" flag when rendering shadowmaps.
-
->Default: true
-
----
-
-### Furniture
-
-Wether to include objects with "Furniture" flag when rendering shadowmaps.
-
->Default: true
-
----
-
-### Lod
-
-Wether to include objects with "Lod" flag when rendering shadowmaps.
-
->Default: false
-
----
-
-### MinRadius
-
-Wether to include objects with a radius of less than x pixels on the screen in the shadowmaps.
-
->Default: 10.0
-
----
-
-### Misc
-
-Wether to include objects with misc flags when rendering shadowmaps.
-
->Default: true
-
----
-
-### Statics
-
-Wether to include objects with "Statics" flag when rendering shadowmaps.
-
->Default: true
-
----
-
-### Terrain
-
-Wether to include Terrain when rendering shadowmaps.
-
->Default: true
-
----
-
-### Trees
-
-Wether to include Trees when rendering shadowmaps.
-
->Default: true
-
----
-
-## Lod
-
-### Activators
-
-Wether to include objects with "Activator" flag when rendering shadowmaps.
-
->Default: false
-
----
-
-### Actors
-
-Wether to include objects with "Actors" flag when rendering shadowmaps.
-
->Default: false
-
----
-
-### AlphaEnabled
-
-Wether to take into account alpha of objects when rendering shadowmaps.
-
->Default: false
-
----
-
-### Apparatus
-
-Wether to include objects with "Apparatus" flag when rendering shadowmaps.
-
->Default: false
-
----
-
-### Books
-
-Wether to include objects with "Books" flag when rendering shadowmaps.
-
->Default: false
-
----
-
-### Containers
-
-Wether to include objects with "Containers" flag when rendering shadowmaps.
-
->Default: false
-
----
-
-### Doors
-
-Wether to include objects with "Doors" flag when rendering shadowmaps.
-
->Default: true
-
----
-
-### Furniture
-
-Wether to include objects with "Furniture" flag when rendering shadowmaps.
-
->Default: false
-
----
-
-### Lod
-
-Wether to include objects with "Lod" flag when rendering shadowmaps.
-
->Default: false
-
----
-
-### MinRadius
-
-Wether to include objects with a radius of less than x pixels on the screen in the shadowmaps.
-
->Default: 100.0
-
----
-
-### Misc
-
-Wether to include objects with misc flags when rendering shadowmaps.
-
->Default: false
-
----
-
-### Statics
-
-Wether to include objects with "Statics" flag when rendering shadowmaps.
-
->Default: true
-
----
-
-### Terrain
-
-Wether to include Terrain when rendering shadowmaps.
-
->Default: true
-
----
-
-### Trees
-
-Wether to include Trees when rendering shadowmaps.
-
->Default: true
-
----
-
 ## Main
 
-### PostProcess
+### Quality
 
-Wether to render shadows as a post process effect. Currently the only supported mode.
+Quality preset - 0: Low, 1: Medium, 2: High, 3: Full, 4: Custom
 
->Default: true
-
----
-
-### BlurShadowMaps
-
-Blur shadow maps for soft shadows.
-
->Default: true
-
----
-
-### Darkness
-
-Darkness of shadows.
-
->Default: 0.65
+>Default: 4
 
 ---
 
@@ -264,6 +20,14 @@ Enable sun shadows using rendered shadow maps.
 
 ---
 
+### Darkness
+
+Darkness of shadows.
+
+>Default: 0.75
+
+---
+
 ### NightMinDarkness
 
 Darkness of shadows during dark moon phase. Set to 0 to disable shadows completely when there is no moon.
@@ -272,35 +36,11 @@ Darkness of shadows during dark moon phase. Set to 0 to disable shadows complete
 
 ---
 
-### Quality
-
-Not used.
-
->Default: 2
-
----
-
-### ShadowMapFarPlane
-
-Used for shadow frustum. Don't change this value.
-
->Default: 32768
-
----
-
 ### OrthoMapResolution
 
 Resolution of the texture used to store the ortho map.
 
 >Default: 1024
-
----
-
-### ShadowsRadius
-
-Max distance for rendering of shadow from the camera.
-
->Default: 8000
 
 ---
 
@@ -314,7 +54,7 @@ Max distance for rendering of ortho map.
 
 ### UsePointShadowsDay
 
-Wether to cast shadows from point lights. Requires a slight darkening of the entire screen.
+Whether to cast shadows from point lights. Requires a slight darkening of the entire screen.
 
 >Default: false
 
@@ -322,25 +62,25 @@ Wether to cast shadows from point lights. Requires a slight darkening of the ent
 
 ### UsePointShadowsNight
 
-Wether to cast shadows from point lights during Nights. Requires a slight darkening of the entire screen.
-
->Default: true
-
----
-
-## Middle
-
-### Activators
-
-Wether to include objects with "Activator" flag when rendering shadowmaps.
+Whether to cast shadows from point lights during Nights. Requires a slight darkening of the entire screen.
 
 >Default: false
 
 ---
 
+## FormsNear
+
+### Activators
+
+Whether to include objects with "Activator" flag when rendering shadowmaps.
+
+>Default: true
+
+---
+
 ### Actors
 
-Wether to include objects with "Actors" flag when rendering shadowmaps.
+Whether to include objects with "Actors" flag when rendering shadowmaps.
 
 >Default: true
 
@@ -348,7 +88,7 @@ Wether to include objects with "Actors" flag when rendering shadowmaps.
 
 ### AlphaEnabled
 
-Wether to take into account alpha of objects when rendering shadowmaps.
+Whether to take into account alpha of objects when rendering shadowmaps.
 
 >Default: true
 
@@ -356,7 +96,7 @@ Wether to take into account alpha of objects when rendering shadowmaps.
 
 ### Apparatus
 
-Wether to include objects with "Apparatus" flag when rendering shadowmaps.
+Whether to include objects with "Apparatus" flag when rendering shadowmaps.
 
 >Default: false
 
@@ -364,7 +104,7 @@ Wether to include objects with "Apparatus" flag when rendering shadowmaps.
 
 ### Books
 
-Wether to include objects with "Books" flag when rendering shadowmaps.
+Whether to include objects with "Books" flag when rendering shadowmaps.
 
 >Default: false
 
@@ -372,7 +112,7 @@ Wether to include objects with "Books" flag when rendering shadowmaps.
 
 ### Containers
 
-Wether to include objects with "Containers" flag when rendering shadowmaps.
+Whether to include objects with "Containers" flag when rendering shadowmaps.
 
 >Default: true
 
@@ -380,7 +120,7 @@ Wether to include objects with "Containers" flag when rendering shadowmaps.
 
 ### Doors
 
-Wether to include objects with "Doors" flag when rendering shadowmaps.
+Whether to include objects with "Doors" flag when rendering shadowmaps.
 
 >Default: true
 
@@ -388,7 +128,7 @@ Wether to include objects with "Doors" flag when rendering shadowmaps.
 
 ### Furniture
 
-Wether to include objects with "Furniture" flag when rendering shadowmaps.
+Whether to include objects with "Furniture" flag when rendering shadowmaps.
 
 >Default: true
 
@@ -396,7 +136,7 @@ Wether to include objects with "Furniture" flag when rendering shadowmaps.
 
 ### Lod
 
-Wether to include objects with "Lod" flag when rendering shadowmaps.
+Whether to include objects with "Lod" flag when rendering shadowmaps.
 
 >Default: false
 
@@ -404,7 +144,235 @@ Wether to include objects with "Lod" flag when rendering shadowmaps.
 
 ### MinRadius
 
-Wether to include objects with a radius of less than x pixels on the screen in the shadowmaps.
+Whether to include objects with a radius of less than x pixels on the screen in the shadowmaps.
+
+>Default: 1.0
+
+---
+
+### Misc
+
+Whether to include objects with misc flags when rendering shadowmaps.
+
+>Default: true
+
+---
+
+### Statics
+
+Whether to include objects with "Statics" flag when rendering shadowmaps.
+
+>Default: true
+
+---
+
+### Terrain
+
+Whether to include Terrain when rendering shadowmaps.
+
+>Default: true
+
+---
+
+### Trees
+
+Whether to include Trees when rendering shadowmaps.
+
+>Default: true
+
+---
+
+## FormsMiddle
+
+### Activators
+
+Whether to include objects with "Activator" flag when rendering shadowmaps.
+
+>Default: true
+
+---
+
+### Actors
+
+Whether to include objects with "Actors" flag when rendering shadowmaps.
+
+>Default: true
+
+---
+
+### AlphaEnabled
+
+Whether to take into account alpha of objects when rendering shadowmaps.
+
+>Default: true
+
+---
+
+### Apparatus
+
+Whether to include objects with "Apparatus" flag when rendering shadowmaps.
+
+>Default: false
+
+---
+
+### Books
+
+Whether to include objects with "Books" flag when rendering shadowmaps.
+
+>Default: false
+
+---
+
+### Containers
+
+Whether to include objects with "Containers" flag when rendering shadowmaps.
+
+>Default: true
+
+---
+
+### Doors
+
+Whether to include objects with "Doors" flag when rendering shadowmaps.
+
+>Default: true
+
+---
+
+### Furniture
+
+Whether to include objects with "Furniture" flag when rendering shadowmaps.
+
+>Default: true
+
+---
+
+### Lod
+
+Whether to include objects with "Lod" flag when rendering shadowmaps.
+
+>Default: false
+
+---
+
+### MinRadius
+
+Whether to include objects with a radius of less than x pixels on the screen in the shadowmaps.
+
+>Default: 1.0
+
+---
+
+### Misc
+
+Whether to include objects with misc flags when rendering shadowmaps.
+
+>Default: true
+
+---
+
+### Statics
+
+Whether to include objects with "Statics" flag when rendering shadowmaps.
+
+>Default: true
+
+---
+
+### Terrain
+
+Whether to include Terrain when rendering shadowmaps.
+
+>Default: true
+
+---
+
+### Trees
+
+Whether to include Trees when rendering shadowmaps.
+
+>Default: true
+
+---
+
+## FormsFar
+
+### Activators
+
+Whether to include objects with "Activator" flag when rendering shadowmaps.
+
+>Default: true
+
+---
+
+### Actors
+
+Whether to include objects with "Actors" flag when rendering shadowmaps.
+
+>Default: true
+
+---
+
+### AlphaEnabled
+
+Whether to take into account alpha of objects when rendering shadowmaps.
+
+>Default: true
+
+---
+
+### Apparatus
+
+Whether to include objects with "Apparatus" flag when rendering shadowmaps.
+
+>Default: false
+
+---
+
+### Books
+
+Whether to include objects with "Books" flag when rendering shadowmaps.
+
+>Default: false
+
+---
+
+### Containers
+
+Whether to include objects with "Containers" flag when rendering shadowmaps.
+
+>Default: true
+
+---
+
+### Doors
+
+Whether to include objects with "Doors" flag when rendering shadowmaps.
+
+>Default: true
+
+---
+
+### Furniture
+
+Whether to include objects with "Furniture" flag when rendering shadowmaps.
+
+>Default: true
+
+---
+
+### Lod
+
+Whether to include objects with "Lod" flag when rendering shadowmaps.
+
+>Default: true
+
+---
+
+### MinRadius
+
+Whether to include objects with a radius of less than x pixels on the screen in the shadowmaps.
 
 >Default: 10.0
 
@@ -412,7 +380,7 @@ Wether to include objects with a radius of less than x pixels on the screen in t
 
 ### Misc
 
-Wether to include objects with misc flags when rendering shadowmaps.
+Whether to include objects with misc flags when rendering shadowmaps.
 
 >Default: true
 
@@ -420,7 +388,7 @@ Wether to include objects with misc flags when rendering shadowmaps.
 
 ### Statics
 
-Wether to include objects with "Statics" flag when rendering shadowmaps.
+Whether to include objects with "Statics" flag when rendering shadowmaps.
 
 >Default: true
 
@@ -428,7 +396,7 @@ Wether to include objects with "Statics" flag when rendering shadowmaps.
 
 ### Terrain
 
-Wether to include Terrain when rendering shadowmaps.
+Whether to include Terrain when rendering shadowmaps.
 
 >Default: true
 
@@ -436,17 +404,17 @@ Wether to include Terrain when rendering shadowmaps.
 
 ### Trees
 
-Wether to include Trees when rendering shadowmaps.
+Whether to include Trees when rendering shadowmaps.
 
 >Default: true
 
 ---
 
-## Near
+## FormsLod
 
 ### Activators
 
-Wether to include objects with "Activator" flag when rendering shadowmaps.
+Whether to include objects with "Activator" flag when rendering shadowmaps.
 
 >Default: false
 
@@ -454,15 +422,15 @@ Wether to include objects with "Activator" flag when rendering shadowmaps.
 
 ### Actors
 
-Wether to include objects with "Actors" flag when rendering shadowmaps.
+Whether to include objects with "Actors" flag when rendering shadowmaps.
 
->Default: true
+>Default: false
 
 ---
 
 ### AlphaEnabled
 
-Wether to take into account alpha of objects when rendering shadowmaps.
+Whether to take into account alpha of objects when rendering shadowmaps.
 
 >Default: true
 
@@ -470,7 +438,7 @@ Wether to take into account alpha of objects when rendering shadowmaps.
 
 ### Apparatus
 
-Wether to include objects with "Apparatus" flag when rendering shadowmaps.
+Whether to include objects with "Apparatus" flag when rendering shadowmaps.
 
 >Default: false
 
@@ -478,7 +446,7 @@ Wether to include objects with "Apparatus" flag when rendering shadowmaps.
 
 ### Books
 
-Wether to include objects with "Books" flag when rendering shadowmaps.
+Whether to include objects with "Books" flag when rendering shadowmaps.
 
 >Default: false
 
@@ -486,15 +454,15 @@ Wether to include objects with "Books" flag when rendering shadowmaps.
 
 ### Containers
 
-Wether to include objects with "Containers" flag when rendering shadowmaps.
+Whether to include objects with "Containers" flag when rendering shadowmaps.
 
->Default: true
+>Default: false
 
 ---
 
 ### Doors
 
-Wether to include objects with "Doors" flag when rendering shadowmaps.
+Whether to include objects with "Doors" flag when rendering shadowmaps.
 
 >Default: true
 
@@ -502,23 +470,23 @@ Wether to include objects with "Doors" flag when rendering shadowmaps.
 
 ### Furniture
 
-Wether to include objects with "Furniture" flag when rendering shadowmaps.
-
->Default: true
-
----
-
-### Lod
-
-Wether to include objects with "Lod" flag when rendering shadowmaps.
+Whether to include objects with "Furniture" flag when rendering shadowmaps.
 
 >Default: false
 
 ---
 
+### Lod
+
+Whether to include objects with "Lod" flag when rendering shadowmaps.
+
+>Default: true
+
+---
+
 ### MinRadius
 
-Wether to include objects with a radius of less than x pixels on the screen in the shadowmaps.
+Whether to include objects with a radius of less than x pixels on the screen in the shadowmaps.
 
 >Default: 10.0
 
@@ -526,15 +494,15 @@ Wether to include objects with a radius of less than x pixels on the screen in t
 
 ### Misc
 
-Wether to include objects with misc flags when rendering shadowmaps.
+Whether to include objects with misc flags when rendering shadowmaps.
 
->Default: true
+>Default: false
 
 ---
 
 ### Statics
 
-Wether to include objects with "Statics" flag when rendering shadowmaps.
+Whether to include objects with "Statics" flag when rendering shadowmaps.
 
 >Default: true
 
@@ -542,7 +510,7 @@ Wether to include objects with "Statics" flag when rendering shadowmaps.
 
 ### Terrain
 
-Wether to include Terrain when rendering shadowmaps.
+Whether to include Terrain when rendering shadowmaps.
 
 >Default: true
 
@@ -550,17 +518,17 @@ Wether to include Terrain when rendering shadowmaps.
 
 ### Trees
 
-Wether to include Trees when rendering shadowmaps.
+Whether to include Trees when rendering shadowmaps.
 
 >Default: true
 
 ---
 
-## Ortho
+## FormsOrtho
 
 ### Activators
 
-Wether to include objects with "Activator" flag when rendering ortho map.
+Whether to include objects with "Activator" flag when rendering ortho map.
 
 >Default: false
 
@@ -568,7 +536,7 @@ Wether to include objects with "Activator" flag when rendering ortho map.
 
 ### Actors
 
-Wether to include objects with "Actors" flag when rendering ortho map.
+Whether to include objects with "Actors" flag when rendering ortho map.
 
 >Default: false
 
@@ -576,7 +544,7 @@ Wether to include objects with "Actors" flag when rendering ortho map.
 
 ### AlphaEnabled
 
-Wether to take into account alpha of objects when rendering ortho map.
+Whether to take into account alpha of objects when rendering ortho map.
 
 >Default: false
 
@@ -584,7 +552,7 @@ Wether to take into account alpha of objects when rendering ortho map.
 
 ### Apparatus
 
-Wether to include objects with "Apparatus" flag when rendering ortho map.
+Whether to include objects with "Apparatus" flag when rendering ortho map.
 
 >Default: false
 
@@ -592,7 +560,7 @@ Wether to include objects with "Apparatus" flag when rendering ortho map.
 
 ### Books
 
-Wether to include objects with "Books" flag when rendering ortho map.
+Whether to include objects with "Books" flag when rendering ortho map.
 
 >Default: false
 
@@ -600,7 +568,7 @@ Wether to include objects with "Books" flag when rendering ortho map.
 
 ### Containers
 
-Wether to include objects with "Containers" flag when rendering ortho map.
+Whether to include objects with "Containers" flag when rendering ortho map.
 
 >Default: false
 
@@ -608,7 +576,7 @@ Wether to include objects with "Containers" flag when rendering ortho map.
 
 ### Doors
 
-Wether to include objects with "Doors" flag when rendering ortho map.
+Whether to include objects with "Doors" flag when rendering ortho map.
 
 >Default: false
 
@@ -616,7 +584,7 @@ Wether to include objects with "Doors" flag when rendering ortho map.
 
 ### Furniture
 
-Wether to include objects with "Furniture" flag when rendering ortho map.
+Whether to include objects with "Furniture" flag when rendering ortho map.
 
 >Default: false
 
@@ -624,7 +592,7 @@ Wether to include objects with "Furniture" flag when rendering ortho map.
 
 ### Lod
 
-Wether to include objects with "Lod" flag when rendering ortho map.
+Whether to include objects with "Lod" flag when rendering ortho map.
 
 >Default: false
 
@@ -632,23 +600,23 @@ Wether to include objects with "Lod" flag when rendering ortho map.
 
 ### MinRadius
 
-Wether to include objects with a radius of less than x pixels on the screen in the ortho map.
+Whether to include objects with a radius of less than x pixels on the screen in the ortho map.
 
->Default: 100.0
+>Default: 1.0
 
 ---
 
 ### Misc
 
-Wether to include objects with misc flags when rendering ortho map.
+Whether to include objects with misc flags when rendering ortho map.
 
->Default: false
+>Default: true
 
 ---
 
 ### Statics
 
-Wether to include objects with "Statics" flag when rendering ortho map.
+Whether to include objects with "Statics" flag when rendering ortho map.
 
 >Default: true
 
@@ -656,7 +624,7 @@ Wether to include objects with "Statics" flag when rendering ortho map.
 
 ### Terrain
 
-Wether to include Terrain when rendering ortho map.
+Whether to include Terrain when rendering ortho map.
 
 >Default: true
 
@@ -664,7 +632,7 @@ Wether to include Terrain when rendering ortho map.
 
 ### Trees
 
-Wether to include Trees when rendering ortho map.
+Whether to include Trees when rendering ortho map.
 
 >Default: true
 
@@ -706,6 +674,14 @@ Resolution used for shadow cascades. 0: 1024, 1: 1536, 2: 2048
 
 ---
 
+### Prefilter
+
+Enable prefiltering the shadow maps. Prefiltering is a blur.
+
+>Default: true
+
+---
+
 ### MSAA
 
 Enable multisample antialiasing for shadow maps.
@@ -727,6 +703,30 @@ DISABLED. Enable mipmaps for the shadow maps.
 DISABLED. Anisotropic filteric for mipmaps, 0: disabled, 1: 8x, 2: 16x.
 
 >Default: 0
+
+---
+
+### Distance
+
+[0.001-1.000] Distance to render shadows for, a fraction of the full depth range. Keep low.
+
+>Default: 0.02
+
+---
+
+### CascadeLambda
+
+[0.0-1.0] Controls how cascades are split, higher value means nearer cascades get higher resolution.
+
+>Default: 0.9
+
+---
+
+### LimitFrequency
+
+Limit the update frequency of the furthest cascade (once per two frames).
+
+>Default: false
 
 ---
 

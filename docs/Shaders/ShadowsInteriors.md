@@ -4,14 +4,6 @@
 
 ## Main
 
-### PostProcess
-
-Wether to render shadows as a post process effect. Currently the only supported mode.
-
->Default: true
-
----
-
 ### UseCastShadowFlag
 
 Objects without the cast shadow flag will not be rendered to the shadow maps

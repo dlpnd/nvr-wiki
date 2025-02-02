@@ -64,8 +64,6 @@ Not used.
 
 ### Enabled
 
-Water ripples on surfaces, and puddles based on physical terrain pockets during rainy weathers.
-
 >Default: true
 
 ---
