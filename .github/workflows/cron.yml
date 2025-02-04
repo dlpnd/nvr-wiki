@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Wiki
-          uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Get branch of the latest NVR commit
         run: |
