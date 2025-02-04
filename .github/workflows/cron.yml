@@ -22,4 +22,4 @@ jobs:
 
       - name: List contents
         run: |
-          echo NewVegasReloaded.dll.defaults.toml
+          cat NewVegasReloaded.dll.defaults.toml
