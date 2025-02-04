@@ -1,0 +1,25 @@
+name: Check for new release of nvr
+
+# on:
+#   schedule:
+#     - cron: '0 0 * * *'
+#   workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Wiki
+          uses: actions/checkout@v4
+
+      - name: Get branch of the latest NVR commit
+        run: |
+          echo "NVR_BRANCH=$(curl -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/pr0bability/TESReloaded10/events | jq -r '.[0].payload.ref' | cut -d "/" -f 3)" >> $GITHUB_ENV
+
+      - name: Get nvr toml 
+        run: |
+          curl -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/pr0bability/TESReloaded10/contents/resource/NewVegasReloaded.dll.defaults.toml?ref=${{ env.NVR_BRANCH }} | jq -r '.download_url' | xargs -n 1 curl -O
+
+      - name: List contents
+        run: |
+          echo NewVegasReloaded.dll.defaults.toml
