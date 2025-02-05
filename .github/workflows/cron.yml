@@ -1,4 +1,4 @@
-name: Check for new release of nvr
+name: Check for new release of NVR
 
 on:
   schedule:
@@ -14,12 +14,9 @@ jobs:
       - name: Get branch of the latest NVR commit
         run: |
           echo "NVR_BRANCH=$(curl -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/pr0bability/TESReloaded10/events | jq -r '.[0].payload.ref' | cut -d "/" -f 3)" >> $GITHUB_ENV
-      - name: Get nvr toml 
+      - name: Get NVR toml 
         run: |
           curl -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/pr0bability/TESReloaded10/contents/resource/NewVegasReloaded.dll.defaults.toml?ref=${{ env.NVR_BRANCH }} | jq -r '.download_url' | xargs -n 1 curl -O
-      - name: Remove 1st Line of Comment
-        run: |
-          sed -i '1d' NewVegasReloaded.dll.defaults.toml
       - uses: actions/setup-node@v4
         with:
           node-version: 21
@@ -27,11 +24,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-          cache: 'pip' # caching pip dependencies
+          cache: 'pip'
       - run: pip install -r requirements.txt
       - name: Install dependencies
         run: npm ci
-      - name: Build Markup
+      - name: Parse NVR toml and convert into Markup 
         run: npm run parse
       - name: Build website
         run: npm run build

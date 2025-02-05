@@ -1,4 +1,3 @@
-# This file is for the default values of settings. Do not modify
 
 [_Main.CameraMode.Main]
 ChasingFirst = false    # Use Chasing camera in first person.
