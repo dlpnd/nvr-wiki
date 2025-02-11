@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v4
       - name: Get branch of the latest NVR commit
         run: |
-          echo "NVR_BRANCH=$(curl -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/pr0bability/TESReloaded10/events | jq -r '.[0].payload.ref' | cut -d "/" -f 3)" >> $GITHUB_ENV
+          echo "NVR_BRANCH=$(curl -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/pr0bability/TESReloaded10/events | jq -r 'map(select(.type == "PushEvent") | .payload.ref) | first' | cut -d "/" -f 3)" >> $GITHUB_ENV
       - name: Get NVR toml 
         run: |
           curl -H "Accept: application/vnd.github.v3+json" "https://api.github.com/repos/pr0bability/TESReloaded10/contents/resource/NewVegasReloaded.dll.defaults.toml?ref=${{ env.NVR_BRANCH }}" | jq -r '.download_url' | xargs -n 1 curl -O

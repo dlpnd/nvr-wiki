@@ -12,7 +12,7 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "preparse": "((sed -i '1d' NewVegasReloaded.dll.defaults.toml) || (findstr /V /R \"^#\" NewVegasReloaded.dll.defaults.toml > NewVegasReloaded.dll.defaults.toml.temp && move /y NewVegasReloaded.dll.defaults.toml.temp NewVegasReloaded.dll.defaults.toml)) && (rm -rf Main.md || del /s /q /f .\\Main.md) && (rm -rf docs\\Shaders || del /s /q /f docs\\Shaders >nul 2>nul)",
+    "preparse": "((sed -i -e 's/^#.*$//g' NewVegasReloaded.dll.defaults.toml) || (findstr /V /R \"^#\" NewVegasReloaded.dll.defaults.toml > NewVegasReloaded.dll.defaults.toml.temp && move /y NewVegasReloaded.dll.defaults.toml.temp NewVegasReloaded.dll.defaults.toml)) && (rm -rf Main.md || del /s /q /f .\\Main.md) && (rm -rf docs\\Shaders || del /s /q /f docs\\Shaders >nul 2>nul)",
     "parse": "python create_md.py",
     "postparse": "markdownlint -f .\\docs\\",
     "github": "start https://github.com/dlpnd/nvr-wiki",
