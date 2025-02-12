@@ -29,4 +29,4 @@ The main purpose of the website is to keep track of the features available in NV
 The following steps will guide you through installing **New Vegas Reloaded** for the first time
 
 :::warning
-As **New Vegas Reloaded** can be quite performance intensive, it's **HIGHLY** recommended you follow [WallSogB's Fallout New Vegas Performance Guide](https://wallsogb.github.io/FalloutNV-Performance-Guide) first!
+As **New Vegas Reloaded** can be quite performance intensive, it's **HIGHLY** recommended you follow [WallSogB's Fallout New Vegas Performance Guide](https://performance.moddinglinked.com/falloutnv.html#Introduction) first!
