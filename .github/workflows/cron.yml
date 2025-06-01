@@ -15,32 +15,32 @@ jobs:
         run: |
           echo "NVR_BRANCH=$(curl -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/pr0bability/TESReloaded10/events | jq -r 'map(select(.type == "PushEvent") | .payload.ref) | first' | cut -d "/" -f 3)" >> $GITHUB_ENV
       - name: Get NVR toml
-        if: ${{ env.NVR_BRANCH != '' }}
+        if: ${{ env.NVR_BRANCH != 'null' }}
         run: |
           curl -H "Accept: application/vnd.github.v3+json" "https://api.github.com/repos/pr0bability/TESReloaded10/contents/resource/NewVegasReloaded.dll.defaults.toml?ref=${{ env.NVR_BRANCH }}" | jq -r '.download_url' | xargs -n 1 curl -O
       - uses: actions/setup-node@v4
-        if: ${{ env.NVR_BRANCH != '' }}
+        if: ${{ env.NVR_BRANCH != 'null' }}
         with:
           node-version: 21
           cache: npm
       - uses: actions/setup-python@v5
-        if: ${{ env.NVR_BRANCH != '' }}
+        if: ${{ env.NVR_BRANCH != 'null' }}
         with:
           python-version: "3.12"
           cache: "pip"
       - run: pip install -r requirements.txt
-        if: ${{ env.NVR_BRANCH != '' }}
+        if: ${{ env.NVR_BRANCH != 'null' }}
       - name: Install dependencies
-        if: ${{ env.NVR_BRANCH != '' }}
+        if: ${{ env.NVR_BRANCH != 'null' }}
         run: npm ci
       - name: Parse NVR toml and convert into Markup
-        if: ${{ env.NVR_BRANCH != '' }}
+        if: ${{ env.NVR_BRANCH != 'null' }}
         run: npm run parse
       - name: Build website
-        if: ${{ env.NVR_BRANCH != '' }}
+        if: ${{ env.NVR_BRANCH != 'null' }}
         run: npm run build
       - name: Deploy to GitHub Pages
-        if: ${{ env.NVR_BRANCH != '' }}
+        if: ${{ env.NVR_BRANCH != 'null' }}
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
