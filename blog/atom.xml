@@ -15,13 +15,13 @@
         <summary type="html"><![CDATA[{/ truncate /}]]></summary>
         <content type="html"><![CDATA[
 <ul>
-<li>Added a Gallery</li>
-<li>Redid the landing page</li>
-<li>Added a note about following the Performance Guide before installing</li>
-<li>Fixed some outdated info regarding installation instructions</li>
-<li>Added an embed of Salamanders video for how to install</li>
-<li>Added some small SEOs</li>
-<li>Updated build requirements</li>
+<li class="">Added a Gallery</li>
+<li class="">Redid the landing page</li>
+<li class="">Added a note about following the Performance Guide before installing</li>
+<li class="">Fixed some outdated info regarding installation instructions</li>
+<li class="">Added an embed of Salamanders video for how to install</li>
+<li class="">Added some small SEOs</li>
+<li class="">Updated build requirements</li>
 </ul>]]></content>
         <category label="changelog" term="changelog"/>
     </entry>
@@ -33,9 +33,9 @@
         <summary type="html"><![CDATA[{/ truncate /}]]></summary>
         <content type="html"><![CDATA[
 <ul>
-<li>Added NVR + dxvk + ReShade instructions</li>
-<li>Added missing Shader information</li>
-<li>Added Theme to the wiki (Thanks to TheMany from <a href="https://wastelandsurvivalguide.com/" target="_blank" rel="noopener noreferrer">Wasteland SurvivalGuide</a>)</li>
+<li class="">Added NVR + dxvk + ReShade instructions</li>
+<li class="">Added missing Shader information</li>
+<li class="">Added Theme to the wiki (Thanks to TheMany from <a href="https://wastelandsurvivalguide.com/" target="_blank" rel="noopener noreferrer" class="">Wasteland SurvivalGuide</a>)</li>
 </ul>]]></content>
         <category label="changelog" term="changelog"/>
     </entry>
@@ -47,7 +47,7 @@
         <summary type="html"><![CDATA[{/ truncate /}]]></summary>
         <content type="html"><![CDATA[
 <ul>
-<li>Transfered the toml config into individual md files</li>
+<li class="">Transfered the toml config into individual md files</li>
 </ul>]]></content>
         <category label="changelog" term="changelog"/>
     </entry>
