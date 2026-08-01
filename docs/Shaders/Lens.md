@@ -14,7 +14,7 @@ Global effect strength multiplier.
 
 ### BloomExponent
 
-Determins how far from the light source the dirt particles are lit
+Determins how far from the light source the dirt particles are lit 
 
 >Default: 0.7
 
@@ -22,7 +22,7 @@ Determins how far from the light source the dirt particles are lit
 
 ### Smudginess
 
-Scales the texture so that more of the screen is affected
+Scales the texture so that more of the screen is affected 
 
 >Default: 0.0
 

@@ -40,7 +40,7 @@ Darkness of shadows during dark moon phase. Set to 0 to disable shadows complete
 
 Resolution of the texture used to store the ortho map.
 
->Default: 1024
+>Default: 256
 
 ---
 
@@ -65,6 +65,56 @@ Whether to cast shadows from point lights. Requires a slight darkening of the en
 Whether to cast shadows from point lights during Nights. Requires a slight darkening of the entire screen.
 
 >Default: false
+
+---
+
+## SunSmoothing
+
+### SmoothSun
+
+Smooth the sun rotation by interpolating between positions.
+
+>Default: 1
+
+---
+
+### QuantizeSun
+
+Quantize the sun rotation by making sure the sun moves in constant size increments, instead of constantly.
+
+>Default: 1
+
+---
+
+### SmoothingFactor
+
+[0.0-1.0] Lower number means slower smoothing between positions, higher means more instantenous.
+
+>Default: 0.1
+
+---
+
+### YawStepSize
+
+[0.0-15.0] Step size for changes in the horizontal rotation of the sun, angle in degrees.
+
+>Default: 1.0
+
+---
+
+### PitchStepSize
+
+[0.0-15.0] Step size for changes in the vertical rotation of the sun, angle in degrees.
+
+>Default: 0.25
+
+---
+
+### MaxJumpAngle
+
+[5.0-30.0] A maximum angle difference for which smoothing works, if higher the jump is instaneous. Required for time jumps / waiting.
+
+>Default: 5.0
 
 ---
 
@@ -642,9 +692,9 @@ Whether to include Trees when rendering ortho map.
 
 ### BlurRadius
 
-Blur strength for denoising screenspace shadows
+Blur strength for denoising screenspace shadows. Keep low, otherwise a lot of pixelation will occur.
 
->Default: 5.0
+>Default: 1.0
 
 ---
 
@@ -660,11 +710,35 @@ Wether to render screen space contact/detail shadows
 
 Max distance at which to compute screen space shadows
 
->Default: 12000
+>Default: 180000
+
+---
+
+### Intensity
+
+Rescale the intensity of screenspace shadows, to combat jitter and blur making them very faint even at maximum brightness. 
+
+>Default: 2.0
 
 ---
 
 ## ShadowMaps
+
+### Mode
+
+Shadow mode, higher means higher quality, but higher computational cost. 0: VSM, 1: EVSM2, 2: EVSM4
+
+>Default: 2
+
+---
+
+### Format
+
+Texture format, higher means higher quality, but higher bandwidth cost. 0: 16 bit, 1: 32 bit
+
+>Default: 0
+
+---
 
 ### CascadeResolution
 
@@ -700,7 +774,7 @@ DISABLED. Enable mipmaps for the shadow maps.
 
 ### Anisotropy
 
-DISABLED. Anisotropic filteric for mipmaps, 0: disabled, 1: 8x, 2: 16x.
+DISABLED. Anisotropic filteric for mipmaps, 0: disabled, 1: 8x, 2: 16x
 
 >Default: 0
 
@@ -708,9 +782,9 @@ DISABLED. Anisotropic filteric for mipmaps, 0: disabled, 1: 8x, 2: 16x.
 
 ### Distance
 
-[0.001-1.000] Distance to render shadows for, a fraction of the full depth range. Keep low.
+Distance to render shadows for. The unit is the same as the game uses for i.e. fog values. 
 
->Default: 0.02
+>Default: 6000
 
 ---
 
@@ -724,9 +798,35 @@ DISABLED. Anisotropic filteric for mipmaps, 0: disabled, 1: 8x, 2: 16x.
 
 ### LimitFrequency
 
-Limit the update frequency of the furthest cascade (once per two frames).
+Limit the update frequency of the furthest cascade (once per four frames).
 
->Default: false
+>Default: true
+
+---
+
+## Ortho
+
+### Resolution
+
+Resolution of the texture used to store the ortho map. 0: 128, 1: 256, 2: 512, 3: 1024, 4: 2048
+
+>Default: 2
+
+---
+
+### Distance
+
+Distance to render ortho for. The unit is the same as the game uses for i.e. fog values.
+
+>Default: 3000
+
+---
+
+### LimitFrequency
+
+Limit the update frequency of the ortho map (one per four frames).
+
+>Default: true
 
 ---
 

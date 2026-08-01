@@ -14,7 +14,7 @@ Caustic strength underwater. Caustics seen from above water not currently suppor
 
 ### causticsStrengthS
 
-Not used.
+Godrays intensity underwater.
 
 >Default: 0.2
 
@@ -38,7 +38,7 @@ How much light reaches the bottom of the water.
 
 ### inExtCoeff_B
 
-Not used.
+Underwater fog color tint (blue component).
 
 >Default: 1.0
 
@@ -46,7 +46,7 @@ Not used.
 
 ### inExtCoeff_G
 
-Not used.
+Underwater fog color tint (green component).
 
 >Default: 1.0
 
@@ -54,7 +54,7 @@ Not used.
 
 ### inExtCoeff_R
 
-Not used.
+Underwater fog color tint (red component).
 
 >Default: 1.0
 
@@ -62,7 +62,7 @@ Not used.
 
 ### inScattCoeff
 
-Not used.
+Underwater scattering modifier, higher values lead to less brightness.
 
 >Default: 1.0
 

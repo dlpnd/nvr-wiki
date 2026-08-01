@@ -44,14 +44,6 @@ Multiplier for stars brightness
 
 ---
 
-### ReplaceSun
-
-Replaces vanilla sun by a procedural sun for whatever reason
-
->Default: false
-
----
-
 ### UseSunDiskColor
 
 Uses the color from the sun disk from the game weather to calculate the sky tint. Otherwise uses the sun lighting

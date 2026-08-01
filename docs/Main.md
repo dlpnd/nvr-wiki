@@ -112,22 +112,6 @@ Custom FOV in Camera Mode.
 
 ### Main
 
-#### CompileEffects
-
-1 to always recompile, 2 to recompile newer versions.
-
->Default: 1
-
----
-
-#### CompileShaders
-
-1 to always recompile, 2 to recompile newer versions.
-
->Default: 1
-
----
-
 #### DebugMode
 
 Enables debug features like capture shaders and print shadowmaps.
@@ -310,14 +294,6 @@ Toggle rendering of some effects in HDR before the game image space effects (can
 
 ---
 
-#### InvertedDepth
-
-Toggle to invert the depth buffer, fixing Z-fighting (distant objects flickering). Forces Sky and Fog shaders.
-
->Default: true
-
----
-
 #### ReplaceIntro
 
 Controls rendering of the main menu custom video.
@@ -339,14 +315,6 @@ Keycode for custom screenshot hotkey (removes HUD and saves as jpg).
 Save screenshots in fbx (use with DXVK HDR)
 
 >Default: false
-
----
-
-#### SkipFog
-
-Removes vanilla fog, which is not compatible with NVR fog nor depth inversion.
-
->Default: true
 
 ---
 

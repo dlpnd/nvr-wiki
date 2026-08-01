@@ -8,7 +8,11 @@ const darkTheme = themes.palenight;
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   future: {
-    experimental_faster: true,
+    faster: true,
+    v4:{
+      removeLegacyPostBuildHeadAttribute: true
+    }
+
   },
   title: 'New Vegas Reloaded',
   tagline: 'Wiki to keep all of the content',
@@ -26,7 +30,6 @@ const config = {
   projectName: 'dlpnd.github.io', // Usually your repo name.
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -70,6 +73,9 @@ const config = {
       admonitions: false,
       headingIds: false,
     },
+    hooks:{
+      onBrokenMarkdownLinks: 'warn'
+    }
   },
 
   themeConfig:
