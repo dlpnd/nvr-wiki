@@ -21,7 +21,7 @@ jobs:
       - uses: actions/setup-node@v7
         if: ${{ env.NVR_BRANCH != 'null' }}
         with:
-          node-version: 21
+          node-version: 23
           cache: npm
       - uses: actions/setup-python@v7
         if: ${{ env.NVR_BRANCH != 'null' }}
