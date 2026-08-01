@@ -12,7 +12,7 @@
         <id>https://dlpnd.github.io/nvr-wiki/blog/2024/23/02</id>
         <link href="https://dlpnd.github.io/nvr-wiki/blog/2024/23/02"/>
         <updated>2024-02-23T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[{/ truncate /}]]></summary>
+        <summary type="html"><![CDATA[{/truncate/}]]></summary>
         <content type="html"><![CDATA[
 <ul>
 <li class="">Added a Gallery</li>
@@ -30,7 +30,7 @@
         <id>https://dlpnd.github.io/nvr-wiki/blog/2023/05/08</id>
         <link href="https://dlpnd.github.io/nvr-wiki/blog/2023/05/08"/>
         <updated>2023-05-08T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[{/ truncate /}]]></summary>
+        <summary type="html"><![CDATA[{/truncate/}]]></summary>
         <content type="html"><![CDATA[
 <ul>
 <li class="">Added NVR + dxvk + ReShade instructions</li>
@@ -44,7 +44,7 @@
         <id>https://dlpnd.github.io/nvr-wiki/blog/2023/05/06</id>
         <link href="https://dlpnd.github.io/nvr-wiki/blog/2023/05/06"/>
         <updated>2023-05-06T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[{/ truncate /}]]></summary>
+        <summary type="html"><![CDATA[{/truncate/}]]></summary>
         <content type="html"><![CDATA[
 <ul>
 <li class="">Transfered the toml config into individual md files</li>
