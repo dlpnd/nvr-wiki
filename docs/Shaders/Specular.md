@@ -38,7 +38,7 @@ Higher value will make the specular effect affect more intensely a smaller regio
 
 ### SkyTintSaturation
 
-Saturation of the sky lighting effect. Sky lighting is based on sky color. 
+Saturation of the sky lighting effect. Sky lighting is based on sky color.
 
 >Default: 1.0
 
@@ -104,7 +104,7 @@ Higher value will make the specular effect affect more intensely a smaller regio
 
 ### SkyTintSaturation
 
-Saturation of the sky lighting effect. Sky lighting is based on sky color during rainy weathers. 
+Saturation of the sky lighting effect. Sky lighting is based on sky color during rainy weathers.
 
 >Default: 1.0
 

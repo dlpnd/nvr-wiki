@@ -716,7 +716,7 @@ Max distance at which to compute screen space shadows
 
 ### Intensity
 
-Rescale the intensity of screenspace shadows, to combat jitter and blur making them very faint even at maximum brightness. 
+Rescale the intensity of screenspace shadows, to combat jitter and blur making them very faint even at maximum brightness.
 
 >Default: 2.0
 
@@ -782,7 +782,7 @@ DISABLED. Anisotropic filteric for mipmaps, 0: disabled, 1: 8x, 2: 16x
 
 ### Distance
 
-Distance to render shadows for. The unit is the same as the game uses for i.e. fog values. 
+Distance to render shadows for. The unit is the same as the game uses for i.e. fog values.
 
 >Default: 6000
 

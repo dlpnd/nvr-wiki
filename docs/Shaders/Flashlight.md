@@ -54,7 +54,7 @@ Distance radius for the light
 
 ### OffsetX
 
-X coordinate offset for the position of the light relative to the weapon position 
+X coordinate offset for the position of the light relative to the weapon position
 
 >Default: 0.0
 
